@@ -159,7 +159,8 @@ body {
   position: relative;
 }
 
-.showcase-box img {
+.showcase-box .mobile {
+  display: block;
   max-width: 16rem;
   margin-bottom: -.3rem;
   box-shadow: 2px 3px 7px 0px #333;
@@ -169,7 +170,18 @@ body {
 }
 
 @media only screen and (min-width: 23.75rem) {
+  .showcase-box .mobile {
+    display: none;
+  }
+}
+
+.showcase-box img {
+  display: none;
+}
+
+@media only screen and (min-width: 23.75rem) {
   .showcase-box img {
+    display: inherit;
     max-width: 18rem;
     margin-top: 4%;
   }
