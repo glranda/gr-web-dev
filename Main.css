@@ -159,7 +159,7 @@ body {
   position: relative;
 }
 
-.showcase-box .mobile {
+.showcase-box-home .mobile {
   display: inline-block;
   max-width: 16rem;
   margin-bottom: -.3rem;
@@ -170,12 +170,22 @@ body {
 }
 
 @media only screen and (min-width: 23.75rem) {
-  .showcase-box .mobile {
+  .showcase-box-home .mobile {
     display: none;
   }
 }
 
 .showcase-box img {
+  display: inline-block;
+  max-width: 16rem;
+  margin-bottom: -.3rem;
+  box-shadow: 2px 3px 7px 0px #333;
+  border-radius: 16px 16px 0 0;
+  border-radius: 5px 5px 0 0;
+  margin-top: 12%;
+}
+
+.showcase-box-home img {
   display: none;
   max-width: 16rem;
   margin-bottom: -.3rem;
@@ -187,6 +197,12 @@ body {
 
 @media only screen and (min-width: 23.75rem) {
   .showcase-box img {
+    display: inline-block;
+    max-width: 18rem;
+    margin-top: 4%;
+  }
+
+  .showcase-box-home img {
     display: inline-block;
     max-width: 18rem;
     margin-top: 4%;
