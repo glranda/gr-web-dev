@@ -569,7 +569,7 @@ div.wh-page-box img {
 
 @media only screen and (min-width: 26.25rem) {
   .su-page-box img:last-child {
-    min-width: 38.34rem;
+    width: 48%;
   }
 }
 
