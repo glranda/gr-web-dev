@@ -775,7 +775,7 @@ div.wh-page-box img {
   padding-left: 0;
 }
 
-@media only screen and (min-width: 26.25rem) {
+@media only screen and (min-width: 30rem) {
   .before-after .top .content {
     width: 30rem;
   }
@@ -799,7 +799,7 @@ div.wh-page-box img {
   }
 }
 
-@media only screen and (min-width: 26.25rem) {
+@media only screen and (min-width: 30rem) {
   .before-after .top img {
     max-width: 30rem;
     max-height: 21rem;
