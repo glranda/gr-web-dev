@@ -209,7 +209,7 @@ body {
   }
 }
 
-@media only screen and (min-width: 26.25rem) {
+@media only screen and (min-width: 35rem) {
   .showcase-box img {
     max-width: 35rem;
   }
