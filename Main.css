@@ -236,7 +236,7 @@ body {
   font-weight: normal;
 }
 
-@media only screen and (min-width: 26.25rem) {
+@media only screen and (min-width: 35rem) {
   .showcase-box h2 {
     font-size: 3rem;
   }
