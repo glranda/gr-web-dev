@@ -588,6 +588,12 @@ div.wh-page-box img {
 
 @media only screen and (min-width: 23.75rem) {
     .wh-page-box img:first-child {
+      margin-top: 0rem;
+    }
+}
+
+@media only screen and (min-width: 26.25rem) {
+    .wh-page-box img:first-child {
       margin-top: -2rem;
     }
 }
