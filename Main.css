@@ -801,11 +801,11 @@ div.wh-page-box img {
 
 @media only screen and (min-width: 23.75rem) {
   .before-after .top img {
-    max-width: 17rem;
+    max-width: 19rem;
   }
 }
 
-@media only screen and (min-width: 30rem) {
+@media only screen and (min-width: 32rem) {
   .before-after .top img {
     max-width: 30rem;
     max-height: 21rem;
