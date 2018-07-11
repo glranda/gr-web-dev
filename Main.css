@@ -949,11 +949,11 @@ div.wh-page-box img {
 
 @media only screen and (min-width: 23.75rem) {
   .functionality-section h2 {
-    margin-top: 60%;
+    margin-top: 68%;
   }
 }
 
-@media only screen and (min-width: 26.25rem) {
+@media only screen and (min-width: 30rem) {
   .functionality-section h2 {
     margin-top: 25%;
     font-size: 5rem;
