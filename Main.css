@@ -527,7 +527,13 @@ div.wh-page-box img {
 }
 
 .su-page-box , .wh-page-box {
-  padding-top: 4rem;
+  padding-top: 1.5rem;
+}
+
+@media only screen and (min-width: 26.25rem) {
+    .su-page-box , .wh-page-box {
+      padding-top: 4rem;
+    }
 }
 
 .wh-page-box {
