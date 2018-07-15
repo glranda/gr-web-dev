@@ -35,7 +35,7 @@ body {
 }
 
 .navigation {
-  padding: 1rem 1rem;
+  padding: 0 1rem;
   position: fixed;
   top: 0;
   background: #fff;
@@ -46,6 +46,12 @@ body {
   opacity: .9;
 }
 
+@media only screen and (min-width: 19.375rem) {
+  .navigation {
+    padding: 1rem 1rem;
+  }
+}
+
 @media only screen and (min-width: 26.25rem) {
   .navigation {
     padding: 1rem 2rem;
@@ -54,9 +60,15 @@ body {
 
 .navigation ul {
   padding: 0;
-  display: flex;
+  display: block;
   align-items: center;
   justify-content: center;
+}
+
+@media only screen and (min-width: 19.375rem) {
+  .navigation ul {
+    display: flex;
+  }
 }
 
 @media only screen and (min-width: 26.25rem) {
@@ -79,7 +91,13 @@ body {
 
 .navigation ul li {
   list-style-type: none;
-  margin: 0 .8rem;
+  margin: .5rem .8rem;
+}
+
+@media only screen and (min-width: 19.375rem) {
+  .navigation ul li {
+    margin: 0 .8rem;
+  }
 }
 
 @media only screen and (min-width: 26.25rem) {
@@ -1012,6 +1030,13 @@ div.wh-page-box img {
   margin-right: 0;
   margin-left: auto;
   width: 95px;
+  display: none;
+}
+
+@media only screen and (min-width: 19.375rem) {
+  .footer ul li:last-child {
+    display: block;
+  }
 }
 
 @media only screen and (min-width: 26.25rem) {
@@ -1023,7 +1048,13 @@ div.wh-page-box img {
 .footer ul li.linkedin {
   margin-left: auto;
   margin-top: -.5rem;
-  padding-right: 21px;
+  padding-right: 0;
+}
+
+@media only screen and (min-width: 19.375rem) {
+  .footer ul li.linkedin {
+    padding-right: 21px;
+  }
 }
 
 .footer .linkedin img {
