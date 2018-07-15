@@ -562,6 +562,13 @@ div.wh-page-box img {
 
 .wh-page-box {
   margin-bottom: 2rem;
+  padding-bottom: 0;
+}
+
+@media only screen and (min-width: 65.625rem) {
+  .wh-page-box {
+    padding-bottom: 2rem;
+  }
 }
 
 .su-page-box {
@@ -1072,7 +1079,17 @@ div.wh-page-box img {
 .footer-home .linkedin img {
   max-width: 3rem;
   margin-right: auto;
-  margin-left: calc(50% - 165px);
+  margin-left: 0;
+}
+
+@media only screen and (min-width: 19.375rem) {
+  .footer-home .linkedin img {
+    margin-left: calc(50% - 165px);
+  }
+}
+
+.footer-home ul li:last-child {
+  display: block;
 }
 
 .linkedin a:hover {
