@@ -1082,7 +1082,7 @@ div.wh-page-box img {
   margin-left: 0;
 }
 
-@media only screen and (min-width: 23.75rem) {
+@media only screen and (min-width: 35rem) {
   .footer-home .linkedin img {
     margin-left: calc(50% - 165px);
   }
