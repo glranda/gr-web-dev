@@ -772,7 +772,15 @@ div.wh-page-box img {
 
 @media only screen and (min-width: 41.875rem) {
   .interview-section img {
+    margin-right: 0rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media only screen and (min-width: 53.25rem) {
+  .interview-section img {
     margin-right: 2rem;
+    margin-bottom: 0
   }
 }
 
@@ -789,7 +797,7 @@ div.wh-page-box img {
 
 @media only screen and (min-width: 41.875rem) {
   .interview-section a:last-child img {
-    max-width: 26.26rem;
+    max-width: 25rem;
   }
 }
 
@@ -975,8 +983,15 @@ div.wh-page-box img {
   position: absolute;
   left: 0;
   right: 0;
-  margin-top: 80%;
-  font-size: 2.5rem;
+  margin-top: 100%;
+  font-size: 1.5rem;
+}
+
+@media only screen and (min-width: 20.5rem) {
+  .functionality-section h2 {
+    margin-top: 80%;
+    font-size: 2.5rem;
+  }
 }
 
 @media only screen and (min-width: 23.75rem) {
@@ -985,14 +1000,14 @@ div.wh-page-box img {
   }
 }
 
-@media only screen and (min-width: 30rem) {
+@media only screen and (min-width: 34rem) {
   .functionality-section h2 {
     margin-top: 49%;
     font-size: 4rem;
   }
 }
 
-@media only screen and (min-width: 39.5rem) {
+@media only screen and (min-width: 41rem) {
   .functionality-section h2 {
     margin-top: 29%;
     font-size: 5rem;
