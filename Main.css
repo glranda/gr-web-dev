@@ -5,7 +5,7 @@
 
 @font-face {
     font-family: 'Hiragino Kaku Gothic Std';
-    src: /portfolio/hiragino-kaku-gothic-std-w8.otf;
+    src: url(/portfolio/hiragino-kaku-gothic-std-w8.otf);
 }
 
 a {
@@ -926,7 +926,7 @@ div.wh-page-box img {
 }
 
 .functionality-section h2 {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Hiragino Kaku Gothic Std';
 }
 
 @media only screen and (min-width: 75rem) {
@@ -937,13 +937,13 @@ div.wh-page-box img {
 
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   .functionality-section h2 {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Hiragino Kaku Gothic Std';
   }
 }
 
 @-moz-document url-prefix() {
   .functionality-section h2 {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Hiragino Kaku Gothic Std';
   }
 }
 
@@ -986,7 +986,14 @@ div.wh-page-box img {
 
 @media only screen and (min-width: 30rem) {
   .functionality-section h2 {
-    margin-top: 25%;
+    margin-top: 49%;
+    font-size: 4rem;
+  }
+}
+
+@media only screen and (min-width: 32rem) {
+  .functionality-section h2 {
+    margin-top: 29%;
     font-size: 5rem;
   }
 }
