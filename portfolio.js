@@ -1,3 +1,6 @@
+/* ----- Designed and coded by Grayson Randall -----
+----- https://graysonrandall.github.io/portfolio/index.html ----- */
+
 var GRAYSON = (function($, GRAYSON) {
 
 $(document).ready(function() {
