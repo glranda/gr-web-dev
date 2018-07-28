@@ -764,6 +764,7 @@ div.wh-page-box img {
 .interview-section img {
   max-width: 15rem;
   margin-right: 0;
+  margin-bottom: 1.5rem;
   box-shadow: 2px 3px 7px 0px #333;
 }
 
