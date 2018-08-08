@@ -1059,7 +1059,7 @@ div.wh-page-box img {
 
 .print-media .cds img {
    max-width: 30rem;
-   min-height: 9rem;
+   max-height: 9rem;
  }
 
 
@@ -1072,7 +1072,7 @@ div.wh-page-box img {
 
 .featherlight .featherlight-inner {
     max-height: inherit;
-    max-width: 85rem;
+    max-width: 75rem;
     margin: auto;
 }
 
