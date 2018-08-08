@@ -1046,7 +1046,7 @@ div.wh-page-box img {
   margin: .5rem auto 1.5rem;
 }
 
-@media only screen and (min-width: 23.75rem) {
+@media only screen and (min-width: 29rem) {
   .print-media img {
     max-width: 25rem;
   }
@@ -1095,7 +1095,7 @@ div.wh-page-box img {
   max-width: 13rem;
 }
 
-@media only screen and (min-width: 23.75rem) {
+@media only screen and (min-width: 29rem) {
   .print-media .stickers {
     max-width: 15rem;
   }
@@ -1106,7 +1106,7 @@ div.wh-page-box img {
    max-height: 6rem;
  }
 
- @media only screen and (min-width: 23.75rem) {
+ @media only screen and (min-width: 29rem) {
    .print-media .cds img {
       max-width: 30rem;
       max-height: 9rem;
