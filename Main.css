@@ -1063,7 +1063,7 @@ div.wh-page-box img {
 
 .featherlight .featherlight-inner {
     max-height: inherit;
-    max-width: inherit;
+    max-width: 85rem;
     margin: auto;
 }
 
