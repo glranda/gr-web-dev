@@ -1043,16 +1043,35 @@ div.wh-page-box img {
 
 .print-media img {
   max-width: 25rem;
-  margin: .5rem 0 1.5rem;
+  margin: .5rem auto 1.5rem;
+}
+
+@media only screen and (min-width: 65.625rem) {
+  .print-media img {
+    margin: .5rem 0 1.5rem;
+  }
 }
 
 .print-media .columns {
-  text-align: center;
+  margin: 5rem 0;
+}
+
+@media only screen and (min-width: 65.625rem) {
+  .print-media .columns {
+    margin: 0;
+  }
 }
 
 .print-media .column-right {
-  margin-left: 16%;
+  margin-left: 0;
 }
+
+@media only screen and (min-width: 65.625rem) {
+  .print-media .column-right {
+    margin-left: 16%;
+  }
+}
+
 
 .print-media .cds {
   display: block;
