@@ -1036,7 +1036,7 @@ div.wh-page-box img {
 }
 
 .print-media img {
-  max-width: 18rem;
+  max-width: 25rem;
   margin: .5rem 0 1.5rem;
 }
 
@@ -1044,13 +1044,22 @@ div.wh-page-box img {
   text-align: center;
 }
 
+.print-media .column-right {
+  margin-left: 16%;
+}
+
 .print-media .cds {
   display: flex;
+  margin-bottom: 5rem;
+}
+
+.print-media .stickers {
+  max-width: 15rem;
 }
 
 .print-media .cds img {
-   max-width: 10rem;
-   height: 4rem;
+   max-width: 30rem;
+   min-height: 9rem;
  }
 
 
