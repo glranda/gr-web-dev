@@ -1030,9 +1030,15 @@ div.wh-page-box img {
 
 .print-media {
   margin-bottom: 10rem;
-  display: flex;
+  display: block;
   align-items: start;
   justify-content: space-around;
+}
+
+@media only screen and (min-width: 65.625rem) {
+  .print-media {
+    display: flex;
+  }
 }
 
 .print-media img {
@@ -1049,8 +1055,14 @@ div.wh-page-box img {
 }
 
 .print-media .cds {
-  display: flex;
+  display: block;
   margin-bottom: 5rem;
+}
+
+@media only screen and (min-width: 65.625rem) {
+  .print-media .cds {
+    display: flex;
+  }
 }
 
 .print-media .stickers {
