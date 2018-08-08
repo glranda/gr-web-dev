@@ -1042,8 +1042,14 @@ div.wh-page-box img {
 }
 
 .print-media img {
-  max-width: 25rem;
+  max-width: 13rem;
   margin: .5rem auto 1.5rem;
+}
+
+@media only screen and (min-width: 23.75rem) {
+  .print-media img {
+    max-width: 25rem;
+  }
 }
 
 @media only screen and (min-width: 65.625rem) {
@@ -1086,12 +1092,25 @@ div.wh-page-box img {
 }
 
 .print-media .stickers {
-  max-width: 15rem;
+  max-width: 13rem;
+}
+
+@media only screen and (min-width: 23.75rem) {
+  .print-media .stickers {
+    max-width: 15rem;
+  }
 }
 
 .print-media .cds img {
-   max-width: 30rem;
-   max-height: 9rem;
+   max-width: 24rem;
+   max-height: 6rem;
+ }
+
+ @media only screen and (min-width: 23.75rem) {
+   .print-media .cds img {
+      max-width: 30rem;
+      max-height: 9rem;
+    }
  }
 
 
