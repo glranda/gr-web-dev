@@ -500,7 +500,7 @@ body {
   margin-top: 12rem;
 }
 
-@media only screen and (min-width: 26.25rem) {
+@media only screen and (min-width: 27rem) {
   .process-page-header {
     font-size: 2.5rem;
   }
