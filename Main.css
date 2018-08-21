@@ -500,6 +500,12 @@ body {
   margin-top: 12rem;
 }
 
+@media only screen and (min-width: 26.25rem) {
+  .process-page-header {
+    font-size: 2.5rem;
+  }
+}
+
 .su-page-box , .su-layout-box , .su-main-box {
   background-color: #72A2BA;
 }
