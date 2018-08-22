@@ -1198,8 +1198,46 @@ div.wh-page-box img {
   margin-bottom: 3rem;
 }
 
+.what-i-did ul {
+  padding-left: 1.3rem;
+  display: flex;
+}
 
+.what-i-did .dev-list-left {
+  margin: 0 3rem 0 0;
+  display: block;
+}
 
+.what-i-did .dev-list-right {
+  margin: 0 0 0 3rem;
+  display: block;
+}
+
+.next-project {
+  margin-top: 2.5rem;
+}
+
+.next-project ul {
+  display: inline-block;
+  width: auto;
+  margin: 0;
+  padding: 0;
+}
+
+.next-project li {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 0 8px;
+  background: #333;
+  border-radius: 50%;
+  opacity: .25;
+  cursor: pointer;
+}
+
+.next-project li.active {
+  opacity: 1;
+}
 
 
 
