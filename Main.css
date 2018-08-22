@@ -426,7 +426,7 @@ body {
   margin: 2rem 0;
 }
 
-.su-wrapper , .wh-wrapper {
+.su-wrapper , .wh-wrapper, .dev-wrapper {
   text-align: left;
 }
 
@@ -548,6 +548,60 @@ div.wh-page-box img {
 }
 
 .wh-main-box:hover {
+  opacity: .9;
+}
+
+.anni-main-box:hover h2 {
+  text-decoration: underline;
+}
+
+.anni-main-box h2 {
+  text-decoration: underline;
+}
+
+@media only screen and (min-width: 65.625rem) {
+  .anni-main-box h2 {
+    text-decoration: none;
+  }
+}
+
+.anni-main-box:hover {
+  opacity: .9;
+}
+
+.ci-main-box:hover h2 {
+  text-decoration: underline;
+}
+
+.ci-main-box h2 {
+  text-decoration: underline;
+}
+
+@media only screen and (min-width: 65.625rem) {
+  .ci-main-box h2 {
+    text-decoration: none;
+  }
+}
+
+.ci-main-box:hover {
+  opacity: .9;
+}
+
+.att-main-box:hover h2 {
+  text-decoration: underline;
+}
+
+.att-main-box h2 {
+  text-decoration: underline;
+}
+
+@media only screen and (min-width: 65.625rem) {
+  .att-main-box h2 {
+    text-decoration: none;
+  }
+}
+
+.att-main-box:hover {
   opacity: .9;
 }
 
@@ -1138,6 +1192,15 @@ div.wh-page-box img {
       max-height: 9rem;
     }
  }
+
+.what-i-did {
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+}
+
+
+
+
 
 
 
