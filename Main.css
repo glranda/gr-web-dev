@@ -1250,6 +1250,10 @@ div.wh-page-box img {
   margin-top: 1.5rem;
 }
 
+.next-project p {
+  display: inline-block;
+}
+
 .next-project p:after {
   content: '';
   background-image: url(/portfolio/image/arrow-dev.png);
