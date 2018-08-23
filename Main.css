@@ -1264,9 +1264,15 @@ div.wh-page-box img {
   position: absolute;
   width: 3rem;
   height: 1rem;
-  display: inline-block;
+  display: none;
   margin-left: 1rem;
   top: .25rem;
+}
+
+@media only screen and (min-width: 65.625rem) {
+  .next-project p:after {
+    display: inline-block;
+  }
 }
 
 .next-project ul {
