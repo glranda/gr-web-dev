@@ -1247,12 +1247,21 @@ div.wh-page-box img {
 }
 
 .next-project {
-  margin-top: 2.5rem;
+  margin-top: 1.5rem;
 }
 
 .next-project p:after {
   content: '';
   background-image: url(/portfolio/image/arrow-dev.png);
+  background-size: 3rem;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  position: absolute;
+  width: 3rem;
+  height: 1rem;
+  display: inline-block;
+  margin-left: 1rem;
+  top: 1.25rem;
 }
 
 .next-project ul {
