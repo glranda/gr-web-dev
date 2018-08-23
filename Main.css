@@ -1233,11 +1233,13 @@ div.wh-page-box img {
 .what-i-did .dev-list-left {
   margin: 0 3rem 0 0;
   display: block;
+  width: 100%;
 }
 
 .what-i-did .dev-list-right {
   margin: 0;
   display: block;
+  width: 100%;
 }
 
 @media only screen and (min-width: 65.625rem) {
