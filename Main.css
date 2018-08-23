@@ -1251,7 +1251,8 @@ div.wh-page-box img {
 }
 
 .next-project p:after {
-  content: url(/portfolio/image/arrow-dev.png);
+  content: '';
+  background-image: url(/portfolio/image/arrow-dev.png);
 }
 
 .next-project ul {
