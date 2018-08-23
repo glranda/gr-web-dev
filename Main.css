@@ -506,6 +506,22 @@ body {
   }
 }
 
+.dev-page-header {
+  margin-top: 12rem;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+
+@media only screen and (min-width: 27rem) {
+  .dev-page-header {
+    font-size: 2.5rem;
+    text-align: center;
+    width: auto;
+  }
+}
+
 .su-page-box , .su-layout-box , .su-main-box {
   background-color: #72A2BA;
 }
@@ -1200,7 +1216,18 @@ div.wh-page-box img {
 
 .what-i-did ul {
   padding-left: 1.3rem;
-  display: flex;
+  display: block;
+}
+
+@media only screen and (min-width: 65.625rem) {
+  .what-i-did ul {
+    display: flex;
+  }
+}
+
+.what-i-did  li {
+  font-size: 1.2rem;
+  padding: .3rem 0;
 }
 
 .what-i-did .dev-list-left {
