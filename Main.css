@@ -224,6 +224,10 @@ body {
   margin-top: 12%;
 }
 
+.showcase-box-secondary img {
+  max-width: 16rem;
+}
+
 @media only screen and (min-width: 23.75rem) {
   .showcase-box img {
     display: inline-block;
@@ -236,10 +240,18 @@ body {
     max-width: 18rem;
     margin-top: 4%;
   }
+
+  .showcase-box-secondary img {
+    max-width: 18rem;
+  }
 }
 
 @media only screen and (min-width: 35rem) {
   .showcase-box img {
+    max-width: 35rem;
+  }
+
+  .showcase-box-secondary img {
     max-width: 35rem;
   }
 }
@@ -247,6 +259,10 @@ body {
 @media only screen and (min-width: 45.875rem) {
   .showcase-box img {
     max-width: 45rem;
+  }
+
+  .showcase-box-secondary img {
+    max-width: 35rem;
   }
 }
 
