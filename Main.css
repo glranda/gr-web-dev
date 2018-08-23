@@ -1236,12 +1236,22 @@ div.wh-page-box img {
 }
 
 .what-i-did .dev-list-right {
-  margin: 0 0 0 3rem;
+  margin: 0;
   display: block;
+}
+
+@media only screen and (min-width: 65.625rem) {
+  .what-i-did .dev-list-right {
+    margin: 0 0 0 3rem;
+  }
 }
 
 .next-project {
   margin-top: 2.5rem;
+}
+
+.next-project p:after {
+  content: url(/portfolio/image/arrow-dev.png);
 }
 
 .next-project ul {
