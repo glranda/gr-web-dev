@@ -1252,6 +1252,7 @@ div.wh-page-box img {
 
 .next-project p {
   display: inline-block;
+  position: relative;
 }
 
 .next-project p:after {
@@ -1269,7 +1270,7 @@ div.wh-page-box img {
 }
 
 .next-project ul {
-  display: inline-block;
+  display: block;
   width: auto;
   margin: 0;
   padding: 0;
