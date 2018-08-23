@@ -1269,7 +1269,7 @@ div.wh-page-box img {
   top: .25rem;
 }
 
-@media only screen and (min-width: 65.625rem) {
+@media only screen and (min-width: 30rem) {
   .next-project p:after {
     display: inline-block;
   }
