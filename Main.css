@@ -1,4 +1,4 @@
-\/* ----- Designed and coded by Grayson Randall -----
+/* ----- Designed and coded by Grayson Randall -----
 ----- https://graysonrandall.github.io/portfolio/index.html ----- */
 
 @font-face {
@@ -147,6 +147,21 @@ body {
     margin-top: .8rem;
   }
 }
+
+.intro-text {
+  font-size: 1.4rem;
+  width: 80%;
+  text-align: left;
+  margin: 5rem auto 9rem;
+}
+
+@media only screen and (min-width: 65.625rem) {
+  .intro-text {
+    width: 65%;
+  }
+}
+
+
 
 .arrow-wrapper {
   opacity: 0;
@@ -402,8 +417,13 @@ body {
   }
 }
 
+.logos-header {
+  margin-top: -4rem;
+  padding-bottom: 1rem;
+}
+
 .logos-home-container {
-  margin: -4rem auto 3rem;
+  margin: 0rem auto 5rem;
   display: flex;
   align-items: center;
   max-width: 80%;
@@ -417,7 +437,14 @@ body {
 }
 
 .logos-home-container img {
-  width: 2rem;
+  width: 3rem;
+}
+
+.logos-home-container span {
+  display: block;
+  text-align: center;
+  padding-top: .5rem;
+  font-size: .8rem;
 }
 
 .home-about-wrapper {
