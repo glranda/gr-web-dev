@@ -148,7 +148,7 @@ body {
   }
 }
 
-.intro-text {
+.home-top-section p.intro-text {
   font-size: 1.4rem;
   width: 80%;
   text-align: left;
@@ -156,7 +156,7 @@ body {
 }
 
 @media only screen and (min-width: 65.625rem) {
-  .intro-text {
+  .home-top-section p.intro-text {
     width: 65%;
   }
 }
