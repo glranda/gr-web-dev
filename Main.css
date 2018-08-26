@@ -112,10 +112,10 @@ body {
 .home-top-section h1 {
   padding-top: 15rem;
   font-size: 1.5rem;
-  margin-bottom: 70%;
+  margin-bottom: 20%;
 }
 
-@media only screen and (min-width: 24.2rem) {
+@media only screen and (min-width: 25rem) {
   .home-top-section h1  {
     font-size: 2rem;
   }
@@ -141,7 +141,7 @@ body {
   font-size: 1.2rem;
 }
 
-@media only screen and (min-width: 24.2rem) {
+@media only screen and (min-width: 25rem) {
   .home-top-section .underbrow {
     font-size: 1.7rem;
     margin-top: .8rem;
@@ -149,10 +149,16 @@ body {
 }
 
 .home-top-section p.intro-text {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   width: 80%;
   text-align: left;
   margin: 5rem auto 9rem;
+}
+
+@media only screen and (min-width: 25rem) {
+  .home-top-section p.intro-text {
+    font-size: 1.4rem;
+  }
 }
 
 @media only screen and (min-width: 65.625rem) {
@@ -423,11 +429,18 @@ body {
 }
 
 .logos-home-container {
-  margin: 0rem auto 5rem;
+  margin: 0rem auto 11rem;
   display: flex;
   align-items: center;
   max-width: 80%;
   justify-content: space-between;
+  display: none;
+}
+
+@media only screen and (min-width: 40rem) {
+  .logos-home-container {
+    display: block;
+  }
 }
 
 @media only screen and (min-width: 65.625rem) {
@@ -441,6 +454,32 @@ body {
 }
 
 .logos-home-container span {
+  display: block;
+  text-align: center;
+  padding-top: .5rem;
+  font-size: .8rem;
+}
+
+.logos-home-container-mobile {
+  margin: 0rem auto 11rem;
+  display: flex;
+  align-items: center;
+  max-width: 80%;
+  justify-content: space-around;
+  display: block;
+}
+
+@media only screen and (min-width: 40rem) {
+  .logos-home-container-mobile {
+    display: none;
+  }
+}
+
+.logos-home-container-mobile img {
+  width: 3rem;
+}
+
+.logos-home-container-mobile span {
   display: block;
   text-align: center;
   padding-top: .5rem;
