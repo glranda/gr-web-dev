@@ -430,7 +430,6 @@ body {
 
 .logos-home-container {
   margin: 0rem auto 11rem;
-  display: flex;
   align-items: center;
   max-width: 80%;
   justify-content: space-between;
@@ -439,7 +438,7 @@ body {
 
 @media only screen and (min-width: 40rem) {
   .logos-home-container {
-    display: block;
+    display: flex;
   }
 }
 
@@ -466,12 +465,19 @@ body {
   align-items: center;
   max-width: 80%;
   justify-content: space-around;
-  display: block;
+}
+
+.invision {
+  display: none;
 }
 
 @media only screen and (min-width: 40rem) {
   .logos-home-container-mobile {
     display: none;
+  }
+
+  .invision {
+    display: block;
   }
 }
 
