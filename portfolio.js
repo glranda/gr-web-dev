@@ -38,12 +38,8 @@ var animateIntro = function() {
         }, 1600);
     });
 
-  $(".arrow-wrapper").delay(1800).animate({
-        opacity: .7
-    }, 800);
-
-    $(function() {
-      $('#intro-content').delay(1800).addClass('show');
+    $(function(delay(1200)) {
+      $('#intro-content').addClass('show');
     });
 
 };
