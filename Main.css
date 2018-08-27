@@ -1435,7 +1435,7 @@ div.wh-page-box img {
 @media only screen and (min-width: 26.25rem) {
   .footer ul li {
     margin: 0 0 0 2rem;
-    padding-right: 0;
+    padding-right: 1rem;
   }
 }
 
@@ -1496,6 +1496,16 @@ div.wh-page-box img {
 
 .footer-home ul li:last-child {
   display: block;
+}
+
+.footer-home ul li:first-child {
+  padding-left: 1rem;
+}
+
+@media only screen and (min-width: 35rem) {
+  .footer-home ul li:first-child {
+    padding-left: 0;
+  }
 }
 
 .linkedin a:hover {
