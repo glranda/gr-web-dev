@@ -167,7 +167,13 @@ body {
   }
 }
 
+.intro-content {
+  opacity: 0;
+}
 
+.show-intro {
+  opacity: 1;
+}
 
 .arrow-wrapper {
   opacity: 0;
