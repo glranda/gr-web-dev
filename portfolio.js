@@ -43,7 +43,7 @@ var animateIntro = function() {
     }, 800);
 
     $(function() {
-      $('#intro-content').addClass('show');
+      $('#intro-content').delay(1800).addClass('show');
     });
 
 };
