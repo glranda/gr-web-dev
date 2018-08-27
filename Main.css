@@ -456,21 +456,19 @@ body {
   margin: 0rem auto 11rem;
   display: flex;
   align-items: center;
-  max-width: 80%;
+  max-width: 100%;
   justify-content: space-around;
 }
 
-.invision {
-  display: none;
+@media only screen and (min-width: 19.375rem) {
+  .logos-home-container-mobile {
+    max-width: 80%;
+  }
 }
 
 @media only screen and (min-width: 47rem) {
   .logos-home-container-mobile {
     display: none;
-  }
-
-  .invision {
-    display: block;
   }
 }
 
