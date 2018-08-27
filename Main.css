@@ -169,21 +169,21 @@ body {
 
 .intro-content {
   opacity: 0;
-  transform: translate(0, 350px);
-  -webkit-transform: translate(0, 350px);
-  -moz-transform: translate(0, 350px);
-  -o-transform: translate(0, 350px);
-  -ms-transform: translate(0, 350px);
-  transform: translate(0, 350px);
+  transform: translate(0, 400px);
+  -webkit-transform: translate(0, 400px);
+  -moz-transform: translate(0, 400px);
+  -o-transform: translate(0, 400px);
+  -ms-transform: translate(0, 400px);
+  transform: translate(0, 400px);
 }
 
 .show-intro {
   opacity: 1;
-  -webkit-transition: all .8s ease-in;
-  -moz-transition: all .8s ease-in;
-  -o-transition: all .8s ease-in;
-  -ms-transition: all .8s ease-in;
-  transition: all .8s ease-in;
+  -webkit-transition: all .7s ease-in;
+  -moz-transition: all .7s ease-in;
+  -o-transition: all .7s ease-in;
+  -ms-transition: all .7s ease-in;
+  transition: all .7s ease-in;
   -webkit-transform: translate(0, 0);
   -moz-transform: translate(0, 0);
   -o-transform: translate(0, 0);
