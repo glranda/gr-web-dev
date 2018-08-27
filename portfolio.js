@@ -38,9 +38,13 @@ var animateIntro = function() {
         }, 1600);
     });
 
-  $(".arrow-wrapper").delay(2500).animate({
+  $(".arrow-wrapper").delay(1800).animate({
         opacity: .7
     }, 800);
+
+    $(function() {
+      $('#intro-content').addClass('show');
+    });
 
 };
 
