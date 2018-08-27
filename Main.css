@@ -1562,7 +1562,7 @@ div.wh-page-box img {
   }
 }
 
-.external-link:after {
+/* .external-link:after {
   content: '';
   background-image: url(/portfolio/image/link-external.png);
   background-size: 3rem;
@@ -1574,4 +1574,4 @@ div.wh-page-box img {
   display: none;
   margin-left: 1rem;
   top: .25rem;
-}
+} */
