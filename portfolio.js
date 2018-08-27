@@ -38,7 +38,7 @@ var animateIntro = function() {
         }, 1600);
     });
 
-    $(function() {
+    setTimeout(function() {
       $('#intro-content').addClass('show');
     }, 1600);
 
