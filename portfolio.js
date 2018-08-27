@@ -38,9 +38,9 @@ var animateIntro = function() {
         }, 1600);
     });
 
-    // $(function(.delay(1200)) {
-    //   $('#intro-content').addClass('show');
-    // });
+    $(function() {
+      $('#intro-content').addClass('show');
+    }, 1600);
 
 };
 
