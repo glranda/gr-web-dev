@@ -39,7 +39,7 @@ var animateIntro = function() {
     });
 
     setTimeout(function() {
-      $('#intro-content').addClass('show');
+      $('#intro-content').addClass('show-intro');
     }, 1600);
 
 };
