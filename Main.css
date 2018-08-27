@@ -173,9 +173,14 @@ body {
 
 .show-intro {
   opacity: 1;
+  -webkit-transition: all .5s ease-in;
+  -moz-transition: all .5s ease-in;
+  -o-transition: all .5s ease-in;
+  -ms-transition: all .5s ease-in;
+  transition: all .5s ease-in;
 }
 
-.arrow-wrapper {
+/* .arrow-wrapper {
   opacity: 0;
 }
 
@@ -202,7 +207,7 @@ body {
     50% {
         opacity: 0.5;
     }
-}
+} */
 
 .home-top-section p {
   font-size: 3rem;
