@@ -26,7 +26,6 @@ $(document).ready(function() {
 var setupValues = function() {
   myHeader = document.querySelector('.main-header');
   subHead = document.querySelector('.underbrow');
-  scrollArrow = document.querySelector('.arrow-wrapper');
 };
 
 var animateIntro = function() {
