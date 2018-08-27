@@ -1561,3 +1561,17 @@ div.wh-page-box img {
     display: none !important;
   }
 }
+
+.external-link {
+  content: '';
+  background-image: url(/portfolio/image/link-external.png);
+  background-size: 3rem;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  position: absolute;
+  width: 3rem;
+  height: 1rem;
+  display: none;
+  margin-left: 1rem;
+  top: .25rem;
+}
