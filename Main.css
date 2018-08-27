@@ -1429,7 +1429,7 @@ div.wh-page-box img {
   list-style-type: none;
   margin: 0;
   width: 120px;
-  padding-right: 2rem;
+  padding-right: 1rem;
 }
 
 @media only screen and (min-width: 26.25rem) {
