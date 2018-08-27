@@ -191,35 +191,6 @@ body {
   transform: translate(0, 0);
 }
 
-/* .arrow-wrapper {
-  opacity: 0;
-}
-
-.arrow {
-  max-width: 4rem;
-  margin-top: 10rem;
-  margin-bottom: 25%;
-  opacity: 0;
-  display: none;
-  -webkit-animation: pulse 5s infinite;
-  animation: pulse 5s infinite;
-}
-
-@media only screen and (min-width: 26.25rem) {
-  .arrow {
-    display: inline;
-  }
-}
-
-@keyframes pulse {
-    0%, 100% {
-        opacity: 0.2;
-    }
-    50% {
-        opacity: 0.5;
-    }
-} */
-
 .home-top-section p {
   font-size: 3rem;
 }
