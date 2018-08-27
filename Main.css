@@ -1562,7 +1562,7 @@ div.wh-page-box img {
   }
 }
 
-.external-link {
+.external-link:after {
   content: '';
   background-image: url(/portfolio/image/link-external.png);
   background-size: 3rem;
