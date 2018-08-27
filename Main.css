@@ -169,17 +169,26 @@ body {
 
 .intro-content {
   opacity: 0;
-  transform: translate(0, 300px);
+  transform: translate(0, 600px);
+  -webkit-transform: translate(0, 600px);
+  -moz-transform: translate(0, 600px);
+  -o-transform: translate(0, 600px);
+  -ms-transform: translate(0, 600px);
+  transform: translate(0, 600px);
 }
 
 .show-intro {
   opacity: 1;
-  transform: translate(0, 0);
   -webkit-transition: all .5s ease-in;
   -moz-transition: all .5s ease-in;
   -o-transition: all .5s ease-in;
   -ms-transition: all .5s ease-in;
   transition: all .5s ease-in;
+  -webkit-transform: translate(0, 0);
+  -moz-transform: translate(0, 0);
+  -o-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  transform: translate(0, 0);
 }
 
 /* .arrow-wrapper {
