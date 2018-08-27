@@ -1497,7 +1497,13 @@ div.wh-page-box img {
 }
 
 .footer-home ul li:first-child {
-  padding-left: 1rem;
+  padding-left: 0rem;
+}
+
+@media only screen and (min-width: 19.375rem) {
+  .footer-home ul li:first-child {
+    padding-left: 1rem;
+  }
 }
 
 @media only screen and (min-width: 35rem) {
