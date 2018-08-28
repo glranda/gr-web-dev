@@ -1573,7 +1573,7 @@ div.wh-page-box img {
   width: .65rem;
   height: .65rem;
   margin-left: .65rem;
-  top: .3rem;
+  top: .33rem;
 }
 
 @media only screen and (min-width: 65.625rem) {
@@ -1624,5 +1624,5 @@ div.wh-page-box img {
   width: .7rem;
   height: .7rem;
   margin-left: .7rem;
-  bottom: 4.36rem;
+  bottom: 4.34rem;
  }
