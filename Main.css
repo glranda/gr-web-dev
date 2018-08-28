@@ -1562,15 +1562,15 @@ div.wh-page-box img {
   }
 }
 
-.external-link a::after {
+.external-link::after {
   content: '';
   background-image: url(/portfolio/image/link-external.png);
-  background-size: 3rem;
+  background-size: .9rem;
   background-repeat: no-repeat;
   background-color: transparent;
   position: absolute;
-  width: 3rem;
-  height: 1rem;
-  margin-left: 1rem;
-  top: .25rem;
+  width: .9rem;
+  height: .9rem;
+  margin-left: .8rem;
+  top: .8rem;
 }
