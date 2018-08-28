@@ -1587,3 +1587,16 @@ div.wh-page-box img {
   margin-left: .8rem;
   top: 5.46rem;
 }
+
+.external-link-inv::after {
+  content: '';
+  background-image: url(/portfolio/image/link-external.png);
+  background-size: .7rem;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  position: absolute;
+  width: .7rem;
+  height: .7rem;
+  margin-left: .7rem;
+  bottom: 4.355rem;
+ }
