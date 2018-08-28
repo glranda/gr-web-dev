@@ -323,6 +323,7 @@ body {
 
 .mobile-cover-links {
   display: block;
+  position: relative;
 }
 
 .mobile-cover-links a {
@@ -1565,14 +1566,24 @@ div.wh-page-box img {
 .external-link-home::after {
   content: '';
   background-image: url(/portfolio/image/link-external.png);
-  background-size: .9rem;
   background-repeat: no-repeat;
   background-color: transparent;
   position: absolute;
-  width: .9rem;
-  height: .9rem;
-  margin-left: .8rem;
-  top: .8rem;
+  background-size: .65rem;
+  width: .65rem;
+  height: .65rem;
+  margin-left: .65rem;
+  top: 9.13rem;
+}
+
+@media only screen and (min-width: 65.625rem) {
+  .external-link-home::after {
+    background-size: .9rem;
+    width: .9rem;
+    height: .9rem;
+    margin-left: .8rem;
+    top: .8rem;
+  }
 }
 
 .external-link-main::after {
