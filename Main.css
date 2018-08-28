@@ -1596,7 +1596,13 @@ div.wh-page-box img {
   width: 1.3rem;
   height: 1.3rem;
   margin-left: .8rem;
-  top: 5.46rem;
+  top: 4.5rem;
+}
+
+@media only screen and (min-width: 65.625rem) {
+  .external-link-main::after {
+    top: 5.46rem;
+  }
 }
 
 .external-link-inv::after {
@@ -1609,5 +1615,5 @@ div.wh-page-box img {
   width: .7rem;
   height: .7rem;
   margin-left: .7rem;
-  bottom: 4.355rem;
+  bottom: 4.36rem;
  }
