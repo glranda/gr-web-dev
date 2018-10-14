@@ -807,6 +807,23 @@ div.wh-page-box img {
   }
 }
 
+.photography-main-section {
+  margin: 5rem 0;
+  padding: 0 2rem;
+}
+
+.photo-spacer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.photo-spacer img {
+  max-width: 17rem;
+  max-height: 17rem;
+  margin: 0 2rem;
+}
+
 .su-main-box:hover h2 {
   text-decoration: underline;
 }
