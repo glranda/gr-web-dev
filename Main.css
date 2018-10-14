@@ -177,6 +177,18 @@ body {
   }
 }
 
+.photography-showcase {
+  background-image: url(/portfolio/image/su-page-site.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-top: 14rem;
+  min-height: 40rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .intro-content {
   opacity: 0;
   transform: translate(0, 400px);
