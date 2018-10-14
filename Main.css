@@ -742,6 +742,38 @@ div.wh-page-box img {
   opacity: .9;
 }
 
+.photography-showcase:hover h2 {
+  text-decoration: underline;
+}
+
+.photography-showcase h2 {
+  text-decoration: underline;
+}
+
+@media only screen and (min-width: 65.625rem) {
+  .photography-showcase h2 {
+    text-decoration: none;
+  }
+}
+
+.reference-section {
+    display: block;
+}
+
+.reference-section p:before {
+  content: '';
+  background-image: url(/portfolio/image/nelnet-logo.png);
+  background-size: 3rem;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  position: absolute;
+  width: 3rem;
+  height: 1rem;
+  display: none;
+  margin-left: 1rem;
+  top: .25rem;
+}
+
 .su-main-box:hover h2 {
   text-decoration: underline;
 }
