@@ -109,8 +109,12 @@ body {
   }
 }
 
+.main-logo {
+  padding-top: 14rem;
+  max-width: 15rem;
+}
+
 .home-top-section h1 {
-  padding-top: 15rem;
   font-size: 1.5rem;
   margin-bottom: 20%;
 }
@@ -123,8 +127,11 @@ body {
 
 @media only screen and (min-width: 26.25rem) {
   .home-top-section h1 {
-    padding-top: 20rem;
     margin-bottom: inherit;
+  }
+
+  .main-logo {
+    padding-top: 16rem;
   }
 }
 
