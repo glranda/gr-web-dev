@@ -820,16 +820,35 @@ div.wh-page-box img {
 }
 
 .photo-spacer {
-  display: flex;
+  display: inline;
   align-items: center;
   justify-content: center;
-  margin-bottom: 2rem;
+  margin-bottom: 0;
+}
+
+@media only screen and (min-width: 70.6rem) {
+  .photo-spacer {
+    display: flex;
+    margin-bottom: 2rem;
+  }
 }
 
 .photo-spacer img {
   max-width: 20rem;
   max-height: 20rem;
-  margin: 0 1rem;
+  margin: 1rem 0;
+}
+
+@media only screen and (min-width: 26.25rem) {
+  .photo-spacer img {
+    margin: 1rem;
+  }
+}
+
+@media only screen and (min-width: 70.6rem) {
+  .photo-spacer img {
+    margin: 0 1rem;
+  }
 }
 
 .su-main-box:hover h2 {
