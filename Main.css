@@ -824,7 +824,13 @@ div.wh-page-box img {
 
 .photography-main-section {
   margin: 5rem 0;
-  padding: 0 2rem;
+  padding: 0;
+}
+
+@media only screen and (min-width: 35rem) {
+  .photography-main-section {
+    padding: 0 2rem;
+  }
 }
 
 .photo-spacer {
