@@ -185,15 +185,22 @@ body {
 }
 
 .photography-showcase {
-  background-image: url(/portfolio/image/15-homepage.png);
+  background-image: url(/portfolio/image/photography/15.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   margin-top: 14rem;
-  min-height: 40rem;
+  min-height: 35rem;
+  max-height: 35rem;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+@media only screen and (min-width: 43rem) {
+  .photography-showcase {
+    background-image: url(/portfolio/image/15-homepage.png);
+  }
 }
 
 .intro-content {
