@@ -827,9 +827,9 @@ div.wh-page-box img {
 }
 
 .photo-spacer img {
-  max-width: 17rem;
-  max-height: 17rem;
-  margin: 0 2rem;
+  max-width: 20rem;
+  max-height: 20rem;
+  margin: 0 1rem;
 }
 
 .su-main-box:hover h2 {
