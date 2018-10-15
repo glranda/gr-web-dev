@@ -199,6 +199,7 @@ body {
 
 @media only screen and (min-width: 43rem) {
   .photography-showcase {
+    min-height: 35rem;
     background-image: url(/portfolio/image/15-homepage.png);
   }
 }
