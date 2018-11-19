@@ -826,6 +826,9 @@ div.wh-page-box img {
 .mypicture {
   display: block;
   margin-bottom: 5rem;
+  max-width: 200px;
+  border: 8px solid #FF776E;
+  border-radius: 108px;
 }
 
 .photography-main-section {
