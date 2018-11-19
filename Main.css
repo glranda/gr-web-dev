@@ -814,12 +814,18 @@ div.wh-page-box img {
 .reference-quote {
   display: block;
   margin-top: 1.5rem;
+  font-weight: bold;
 }
 
 @media only screen and (min-width: 43rem) {
   .nelnet-logo-mobile {
     display: none;
   }
+}
+
+.mypicture {
+  display: block;
+  margin-bottom: 5rem;
 }
 
 .photography-main-section {
