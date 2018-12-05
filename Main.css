@@ -112,6 +112,7 @@ body {
 .main-logo {
   padding-top: 14rem;
   max-width: 15rem;
+  opacity: 0;
 }
 
 .home-top-section h1 {
@@ -144,8 +145,28 @@ body {
   margin-top: .5rem;
   display: inline-block;
   padding-top: 0.5rem;
-  opacity: 0;
   font-size: 1.2rem;
+  opacity: 0;
+  transform: translate(0, 400px);
+  -webkit-transform: translate(0, 400px);
+  -moz-transform: translate(0, 400px);
+  -o-transform: translate(0, 400px);
+  -ms-transform: translate(0, 400px);
+  transform: translate(0, 400px);
+}
+
+.home-top-section .show-under {
+  opacity: 1;
+  -webkit-transition: all .7s ease-in;
+  -moz-transition: all .7s ease-in;
+  -o-transition: all .7s ease-in;
+  -ms-transition: all .7s ease-in;
+  transition: all .7s ease-in;
+  -webkit-transform: translate(0, 0);
+  -moz-transform: translate(0, 0);
+  -o-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  transform: translate(0, 0);
 }
 
 @media only screen and (min-width: 25rem) {
