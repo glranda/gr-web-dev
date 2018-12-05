@@ -29,16 +29,17 @@ var setupValues = function() {
 };
 
 var animateIntro = function() {
-  $(".main-header").delay(100).animate({
+  $(".main-logo").delay(100).animate({
         opacity: 1
     }, 1200, function() {
-        $(".underbrow").animate({
+        $(".main-header").animate({
             opacity: 1
         }, 1600);
     });
 
     setTimeout(function() {
       $('#intro-content').addClass('show-intro');
+      $('.underbrow').addClass('show-intro');
     }, 1600);
 
 };
