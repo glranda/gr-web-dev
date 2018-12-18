@@ -50,6 +50,7 @@ body {
   top: 0;
   padding: .5rem 0.25rem 0.25rem;
   text-align: center;
+  margin-top: -.5rem;
 }
 
 .global-link img {
@@ -130,6 +131,12 @@ h2 {
 .footer {
   background-color: #00244a;
   color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.company-info {
   display: flex;
   align-items: center;
   justify-content: center;
