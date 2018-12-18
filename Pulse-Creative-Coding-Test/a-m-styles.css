@@ -13,6 +13,7 @@ body {
 
 .navigation {
   position: relative;
+  padding-top: 2rem;
 }
 
 .navigation a {
@@ -32,7 +33,7 @@ body {
 }
 
 .home {
-  background: url(/portfolio/Pulse-Creative-Coding-Test/images/A&M_Wheel.png) 0 0 no-repeat;
+  background: url(/portfolio/Pulse-Creative-Coding-Test/images/A&M_Taxand_Logo_color.jpeg) 0 0 no-repeat;
   height: 64px;
   width: 15rem;
   background-position: center;
@@ -45,9 +46,17 @@ body {
 
 .global-link {
   background-color: #00244a;
+  color: #fff;
   position: absolute;
   right: 0;
   top: 0;
+
+  padding: .5rem;
+  border-bottom: 2px solid #fff;
+}
+
+.global-link img {
+  width: auto;
 }
 
 .homepage-header-image {
@@ -60,7 +69,15 @@ h1 {
 
 .top-content {
   text-align: center;
-  padding: 0px 15%;
+  padding: 2rem 15%;
+}
+
+.scroll-down {
+
+}
+
+.scroll-down::after {
+
 }
 
 .what-we-do-section {
@@ -70,10 +87,13 @@ h1 {
 
 .cover-text {
   background-color: rgba(204, 204, 204, .5);
-
+  padding: 1rem 5rem;
 }
 
 .footer {
   background-color: #00244a;
   color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
