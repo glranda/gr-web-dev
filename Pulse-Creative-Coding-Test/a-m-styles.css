@@ -95,9 +95,12 @@ h1 {
   background: url(/portfolio/Pulse-Creative-Coding-Test/images/what-we-do-background.png) 0 0 no-repeat;
   min-height: 35rem;
   width: auto;
-  background-position: center;
+  background-position: 100% 20%;
   background-size: cover;
   border-top: 12px solid #4e8abe;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 h2 {
@@ -107,11 +110,25 @@ h2 {
 }
 
 .cover-text {
-  background-color: rgba(204, 204, 204, .5);
+  background-color: rgba(204, 204, 204, .8);
   padding: 1rem 5rem;
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 20rem;
+}
+
+.cover-div1 {
+  padding-left: 8rem;
+  padding-right: 5rem;
+}
+
+.cover-div2 {
+  padding-right: 5rem;
+}
+
+.cover-text img {
+  width: 28rem;
 }
 
 .footer {
@@ -120,4 +137,8 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.footer-info p {
+  margin: 0;
 }
