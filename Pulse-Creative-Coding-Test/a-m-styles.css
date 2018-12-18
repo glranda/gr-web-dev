@@ -132,14 +132,19 @@ h2 {
   background-color: #00244a;
   color: #fff;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: start;
+  justify-content: space-evenly;
+  padding: 5rem 0rem;
 }
 
 .company-info {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.company-info img {
+  width: 5rem;
 }
 
 .footer-info p {
