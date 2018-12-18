@@ -11,6 +11,15 @@ body {
   margin: 0 auto;
 }
 
+.navigation {
+  position: relative;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: #3585b7;
+}
+
 .navigation ul {
   display: flex;
   align-items: center;
@@ -22,12 +31,31 @@ body {
   padding: 0 1rem;
 }
 
+.home {
+  background: url(/portfolio/Pulse-Creative-Coding-Test/images/A&M_Wheel.png) 0 0 no-repeat;
+  height: 64px;
+  width: 15rem;
+  background-position: center;
+  background-size: cover;
+}
+
+.home a {
+  color: transparent;
+}
+
 .global-link {
   background-color: #00244a;
+  position: absolute;
+  right: 0;
+  top: 0;
 }
 
 .homepage-header-image {
 
+}
+
+h1 {
+  color: #00355f;
 }
 
 .top-content {
@@ -37,7 +65,7 @@ body {
 
 .what-we-do-section {
   background-color: blue;
-  border-top: 5px solid black;
+  border-top: 5px solid #4e8abe;
 }
 
 .cover-text {
