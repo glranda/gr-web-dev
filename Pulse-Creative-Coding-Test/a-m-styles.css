@@ -93,7 +93,7 @@ h1 {
 
 .what-we-do-section {
   background: url(/portfolio/Pulse-Creative-Coding-Test/images/what-we-do-background.png) 0 0 no-repeat;
-  height: 87px;
+  min-height: 35rem;
   width: auto;
   background-position: center;
   background-size: cover;
