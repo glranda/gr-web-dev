@@ -1,4 +1,15 @@
+@font-face {
+    font-family: "Helvetica Neue Bold";
+    src: /portfolio/Pulse-Creative-Coding-Test/fonts/HelveticaNeueLTStd-Bd.otf;
+}
+
+/* @font-face {
+    font-family: "Arial Rounded MT Bold";
+    src: /portfolio/Pulse-Creative-Coding-Test/fonts/ArialRoundedMTStd.otf;
+} */
+
 body {
+  font-family: 'Helvetica Neue Bold';
   background-color: #fff;
   margin: 0;
 }
@@ -46,6 +57,8 @@ body {
 
 .home a {
   color: transparent;
+  padding: 0rem 2rem 4rem 1rem;
+  margin-left: -2rem;
 }
 
 .global-link {
