@@ -1,5 +1,6 @@
 body {
   background-color: #fff;
+  margin: 0;
 }
 
 .outer-wrapper {
@@ -18,6 +19,10 @@ body {
   font-size: 1.1rem;
 }
 
+.navigation a:hover {
+  text-decoration: underline;
+}
+
 .navigation ul {
   display: flex;
   align-items: center;
@@ -26,16 +31,17 @@ body {
 
 .navigation li {
   list-style: none;
-  padding: 0 1rem;
+  padding: 0 1.5rem;
 }
 
 .home {
   background: url(/portfolio/Pulse-Creative-Coding-Test/images/A&M_Taxand_Logo_color.jpeg) 0 0 no-repeat;
   height: 87px;
-  width: auto;
+  width: 1.6rem;
   background-position: center;
   background-size: cover;
   margin-top: -2rem;
+  margin-right: 2rem;
 }
 
 .home a {
@@ -48,21 +54,20 @@ body {
   position: absolute;
   right: 0;
   top: 0;
-  padding: .5rem 0.25rem 0.25rem;
+  padding: .4rem 0.25rem 0.25rem;
   text-align: center;
-  margin-top: -.5rem;
 }
 
 .global-link img {
-  width: auto;
-  padding-bottom: 5px;
+  width: 2rem;
+  padding-bottom: 1px;
 }
 
 .global-link span {
   display: block;
   font-size: 0.5rem;
-  border-top: 2px solid #fff;
-  line-height: 1.8;
+  border-top: 1px solid #fff;
+  line-height: 1.6;
 }
 
 .homepage-header-image {
@@ -145,6 +150,7 @@ h2 {
 
 .company-info img {
   width: 5rem;
+  margin-right: 2rem;
 }
 
 .footer-info p {
