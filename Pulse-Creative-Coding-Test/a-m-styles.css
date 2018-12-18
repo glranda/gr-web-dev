@@ -13,12 +13,13 @@ body {
 
 .navigation {
   position: relative;
-  padding-top: 2rem;
+  padding-top: 3rem;
 }
 
 .navigation a {
   text-decoration: none;
   color: #3585b7;
+  font-size: 1.1rem;
 }
 
 .navigation ul {
@@ -34,10 +35,11 @@ body {
 
 .home {
   background: url(/portfolio/Pulse-Creative-Coding-Test/images/A&M_Taxand_Logo_color.jpeg) 0 0 no-repeat;
-  height: 64px;
-  width: 15rem;
+  height: 87px;
+  width: auto;
   background-position: center;
   background-size: cover;
+  margin-top: -2rem;
 }
 
 .home a {
@@ -50,13 +52,20 @@ body {
   position: absolute;
   right: 0;
   top: 0;
-
-  padding: .5rem;
-  border-bottom: 2px solid #fff;
+  padding: .5rem 0.25rem 0.25rem;
+  text-align: center;
 }
 
 .global-link img {
   width: auto;
+  padding-bottom: 5px;
+}
+
+.global-link span {
+  display: block;
+  font-size: 0.5rem;
+  border-top: 2px solid #fff;
+  line-height: 1.8;
 }
 
 .homepage-header-image {
@@ -65,6 +74,8 @@ body {
 
 h1 {
   color: #00355f;
+  text-transform: uppercase;
+  font-size: 2.5rem;
 }
 
 .top-content {
@@ -82,12 +93,21 @@ h1 {
 
 .what-we-do-section {
   background-color: blue;
-  border-top: 5px solid #4e8abe;
+  border-top: 12px solid #4e8abe;
+}
+
+h2 {
+  color: #00355f;
+  text-transform: uppercase;
+  font-size: 2.5rem;
 }
 
 .cover-text {
   background-color: rgba(204, 204, 204, .5);
   padding: 1rem 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .footer {
