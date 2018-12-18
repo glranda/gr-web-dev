@@ -92,7 +92,11 @@ h1 {
 }
 
 .what-we-do-section {
-  background-color: blue;
+  background: url(/portfolio/Pulse-Creative-Coding-Test/images/what-we-do-background.png) 0 0 no-repeat;
+  height: 87px;
+  width: auto;
+  background-position: center;
+  background-size: cover;
   border-top: 12px solid #4e8abe;
 }
 
