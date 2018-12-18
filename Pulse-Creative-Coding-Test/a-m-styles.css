@@ -1,17 +1,29 @@
 img {
-  max-width: 5rem;
+  max-width: 10rem;
 }
 
 body {
-  background-color: #FFF;
+  background-color: #fff;
 }
 
 .outer-wrapper {
-
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
-.navigation {
+.navigation ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
+.navigation li {
+  list-style: none;
+  padding: 0 1rem;
+}
+
+.global-link {
+  background-color: #00244a;
 }
 
 .homepage-header-image {
@@ -19,13 +31,21 @@ body {
 }
 
 .top-content {
-
+  text-align: center;
+  padding: 0px 15%;
 }
 
 .what-we-do-section {
+  background-color: blue;
+  border-top: 5px solid black;
+}
+
+.cover-text {
+  background-color: rgba(204, 204, 204, .5);
 
 }
 
 .footer {
   background-color: #00244a;
+  color: #fff;
 }
