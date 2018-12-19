@@ -200,7 +200,7 @@ body {
   background: url(/portfolio/Pulse-Creative-Coding-Test/images/mobile-header-image.png) 53% 0 no-repeat;
 }
 
-@media only screen and (min-width: 40rem) {
+@media only screen and (min-width: 65.625rem) {
   .homepage-header-image {
     background: none;
     background-color: #3585b7;
@@ -216,7 +216,7 @@ body {
   display: none;
 }
 
-@media only screen and (min-width: 40rem) {
+@media only screen and (min-width: 65.625rem) {
   .homepage-header-image video {
     display: inherit;
   }
