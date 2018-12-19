@@ -1,15 +1,10 @@
 @font-face {
-    font-family: 'Helvetica Neue LT Std Bold';
-    src: url(/portfolio/Pulse-Creative-Coding-Test/fonts/HelveticaNeueLTStd-Bd.otf);
+    font-family: 'Helvetica Neue LT Std Bold Condensed';
+    src: url(/portfolio/Pulse-Creative-Coding-Test/fonts/HelveticaNeueLTStd-BdCn.otf);
 }
 
-/* @font-face {
-    font-family: "Arial Rounded MT Bold";
-    src: /portfolio/Pulse-Creative-Coding-Test/fonts/ArialRoundedMTStd.otf;
-} */
-
 body {
-  font-family: 'Helvetica Neue LT Std Bold';
+  font-family: 'Helvetica Neue LT Std Bold Condensed';
   background-color: #fff;
   margin: 0;
 }
@@ -28,6 +23,7 @@ body {
   text-decoration: none;
   color: #3585b7;
   font-size: 1.1rem;
+  text-transform: uppercase;
 }
 
 .navigation a:hover {
