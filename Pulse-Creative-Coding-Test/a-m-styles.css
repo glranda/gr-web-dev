@@ -74,7 +74,7 @@ body {
   padding: 0 .8rem;
 }
 
-@media only screen and (min-width: 74.625rem) {
+@media only screen and (min-width: 65rem) {
   .navigation li {
     padding: 0 1.5rem;
   }
@@ -88,6 +88,9 @@ body {
   background-size: cover;
   margin-top: -2rem;
   margin-right: 2rem;
+}
+
+.home li {
   padding: 0 1.5rem;
 }
 
