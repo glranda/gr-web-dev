@@ -52,7 +52,8 @@ body {
   position: relative;
   z-index: 1000;
   top: 0;
-  padding: 0 1rem 1rem;
+  padding: 1rem 2rem;
+  margin-top: 1rem;
 }
 
 @media only screen and (min-width: 50rem) {
@@ -68,7 +69,7 @@ body {
 }
 
 .nav .logo img {
-  max-width: 10rem;
+  max-width: 5rem;
 }
 
 .nav .main-nav .hamburger-nav::after {
@@ -94,16 +95,23 @@ body {
 .nav .main-nav .menu {
   display: none;
   list-style: none;
-  position: relative;
   top: 64%;
   padding-left: 0;
+  right: 2rem;
   width: 100%;
   overflow: hidden;
-  text-align: center;
-  background: #235057;
-  padding: .5rem 0;
+  text-align: right;
+  padding: 0;
+  margin: .5rem 0 0;
 }
 
+.nav .main-nav .menu li {
+  padding: .2rem 0;
+}
+
+.nav .main-nav .menu li a {
+  color: #00244a;
+}
 
 
 
