@@ -98,6 +98,7 @@ body {
   position: relative;
   overflow: hidden;
   height: 40rem;
+  background-color: #3585b7;
 }
 
 .homepage-header-image img {
@@ -105,16 +106,23 @@ body {
 }
 
 .homepage-header-image img:nth-child(2) {
-  width: 21rem;
-  right: 10rem;
-  top: 7rem;
+  width: auto;
+  right: 8rem;
+  top: 4rem;
 }
 
+.homepage-header-image img:nth-child(3) {
+  top: 8rem;
+  left: -5rem;
+}
+
+
 .fullscreen-bg__video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0.7;
 }
 
 h1 {
@@ -132,11 +140,31 @@ h1 {
 }
 
 .scroll-down {
-
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  color: #fff;
+  opacity: .7;
+  letter-spacing: .15rem;
+  font-size: .8rem;
+  text-transform: uppercase;
 }
 
 .scroll-down::after {
-
+  content: "";
+  display: inline-block !important;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-top: 9px solid #df7a00;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin-left: 6px;
+  font-size: 13px;
 }
 
 .what-we-do-section {
