@@ -4,6 +4,11 @@
 }
 
 @font-face {
+    font-family: 'Helvetica Neue LT Std Bold';
+    src: url(/portfolio/Pulse-Creative-Coding-Test/fonts/HelveticaNeueLTStd-Bd.otf);
+}
+
+@font-face {
     font-family: 'Helvetica Neue LT Std Light';
     src: url(/portfolio/Pulse-Creative-Coding-Test/fonts/HelveticaNeueLTStd-Lt.otf);
 }
@@ -125,6 +130,27 @@ body {
   opacity: 0.7;
 }
 
+.infographic {
+  position: absolute;
+  bottom: 13rem;
+  left: 14rem;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.infographic span {
+  font-weight: normal;
+  font-size: 1.5rem;
+  text-transform: initial;
+  border-left: 2px solid;
+  padding-top: 0.1rem;
+  margin: .5rem 0 0 .5rem;
+  padding-left: 1rem;
+  display: block;
+}
+
 h1 {
   color: #00355f;
   text-transform: uppercase;
@@ -218,10 +244,6 @@ h2 {
   padding: 5rem 0rem 1rem;
 }
 
-.footer p {
-  margin-top: 0;
-}
-
 .company-info {
   display: flex;
   align-items: center;
@@ -241,4 +263,8 @@ h2 {
   margin-top: 6rem;
   font-size: .8rem;
   margin-bottom: 0;
+}
+
+.media {
+  margin-top: 0;
 }
