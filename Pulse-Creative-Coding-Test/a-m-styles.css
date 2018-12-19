@@ -513,6 +513,16 @@ h2 {
     font-family: 'Roboto', sans-serif;
   }
 
+  .homepage-header-image video {
+    display: none;
+  }
+
+  .homepage-header-image {
+    background: none;
+    background-color: #3585b7;
+    background: url(/portfolio/Pulse-Creative-Coding-Test/images/mobile-header-image.png) 53% 0 no-repeat;
+  }
+
   .infographic {
     font-family: 'Roboto', sans-serif;
   }
