@@ -36,7 +36,76 @@ body {
 .navigation {
   position: relative;
   padding-top: 3rem;
+  display: none;
 }
+
+@media only screen and (min-width: 50rem) {
+  .navigation {
+    display: block;
+  }
+}
+
+
+
+.nav {
+	display: block;
+	position: relative;
+	z-index: 1000;
+	top: 0;
+}
+
+@media only screen and (min-width: 50rem) {
+	.nav {
+		display: none;
+	}
+}
+
+.nav .logo a {
+	border-bottom: none;
+  position: absolute;
+  top: -0.5rem;
+}
+
+.nav .logo img {
+	 max-width: 10rem;
+}
+
+.nav .main-nav .hamburger-nav::after {
+	content: "\f0c9";
+	color: #fafafa;
+	font-size: 1.5rem;
+	top: 11px;
+	right: 20px;
+	cursor: pointer;
+	font-family: fontawesome;
+	text-align: right;
+}
+
+
+.nav .main-nav .hamburger-nav {
+	border-bottom: none;
+}
+
+.nav .main-nav {
+	 text-align: right;
+}
+
+.nav .main-nav .menu {
+	display: none;
+  list-style: none;
+  position: relative;
+  top: 64%;
+  padding-left: 0;
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
+  background: #235057;
+  padding: .5rem 0;
+}
+
+
+
+
 
 .navigation a {
   text-decoration: none;
@@ -120,6 +189,7 @@ body {
   font-size: 0.5rem;
   border-top: 1px solid #fff;
   line-height: 1.6;
+  padding-top: .1rem;
 }
 
 .homepage-header-image {
