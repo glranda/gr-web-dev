@@ -6,6 +6,9 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <link rel="stylesheet" href="a-m-styles.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -24,6 +27,24 @@
     <div class="global-link">
       <img src="/portfolio/Pulse-Creative-Coding-Test/images/A&M_Global_White.png" alt="Alvarez & Marshal Logo" />
       <span>A&M Global</span>
+    </div>
+  </div>
+
+  <div class="nav">
+    <div class="logo">
+      <a href="#"><img src="/portfolio/Pulse-Creative-Coding-Test/images/A&M_Global_White.png" alt="Alvarez & Marshal Logo" /></a>
+    </div>
+    <div class="main-nav">
+    <a class="hamburger-nav"></a>
+      <ul class="menu">
+        <li><a href="#">About</a></li>
+        <li><a href="#">Who We Serve</a></li>
+        <li><a href="#">What We Do</a></li>
+        <li><a href="#">Thought Leadership</a></li>
+        <li><a href="#">Events</a></li>
+        <li><a href="#">Our Partners</a></li>
+        <li><a href="#">A&M Global</a></li>
+      </ul>
     </div>
   </div>
 
@@ -76,6 +97,19 @@
 
 
 </div>
+
+<script>
+$(document).ready(function(){
+  $(".hamburger-nav").on("click", function(){
+    // $(".menu").fadeToggle("slow").toggleClass("menu-hide");
+    $(".menu").animate({
+      height: 'toggle'
+    });
+
+  });
+
+});
+</script>
 
 </body>
 
