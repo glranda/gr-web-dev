@@ -226,7 +226,7 @@ body {
   width: 25rem;
 }
 
-@media only screen and (min-width: 30rem) {
+@media only screen and (min-width: 40rem) {
   .homepage-header-image img:nth-child(3) {
     top: 15rem;
     left: -6rem;
@@ -284,7 +284,7 @@ body {
   font-family: 'Helvetica Neue LT Std Light';
 }
 
-@media only screen and (min-width: 30rem) {
+@media only screen and (min-width: 40rem) {
   .infographic {
     bottom: 10rem;
     left: 12.5rem;
