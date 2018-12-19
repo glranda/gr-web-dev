@@ -3,8 +3,13 @@
     src: url(/portfolio/Pulse-Creative-Coding-Test/fonts/HelveticaNeueLTStd-BdCn.otf);
 }
 
+@font-face {
+    font-family: 'Helvetica Neue LT Std Medium';
+    src: url(/portfolio/Pulse-Creative-Coding-Test/fonts/HelveticaNeueLTStd-Md.otf);
+}
+
 body {
-  font-family: 'Helvetica Neue LT Std Bold Condensed';
+  font-family: 'Helvetica Neue LT Std Medium';
   background-color: #fff;
   margin: 0;
 }
@@ -24,6 +29,7 @@ body {
   color: #3585b7;
   font-size: 1.1rem;
   text-transform: uppercase;
+  font-family: 'Helvetica Neue LT Std Bold Condensed';
 }
 
 .navigation a:hover {
