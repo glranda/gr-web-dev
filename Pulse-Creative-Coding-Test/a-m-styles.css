@@ -179,6 +179,11 @@ body {
 }
 
 .global-link {
+  background: url(/portfolio/Pulse-Creative-Coding-Test/images/A&M_Global_White.png) 0 0 no-repeat;
+  height: 87px;
+  width: 1.69rem;
+  background-position: center;
+  background-size: cover;
   background-color: #00244a;
   color: #fff;
   position: absolute;
