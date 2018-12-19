@@ -242,16 +242,37 @@ h2 {
 }
 
 .cover-div1 {
-  padding-left: 8rem;
-  padding-right: 5rem;
+  padding-left: 0;
+  padding-right: 2rem;
+}
+
+@media only screen and (min-width: 74.625rem) {
+  .cover-div1 {
+    padding-left: 8rem;
+    padding-right: 5rem;
+  }
 }
 
 .cover-div2 {
-  padding-right: 5rem;
+  padding-right: 0;
+  text-align: center;
+}
+
+@media only screen and (min-width: 74.625rem) {
+  .cover-div2 {
+    padding-right: 5rem;
+    text-align: left;
+  }
 }
 
 .cover-text img {
-  width: 28rem;
+  width: 20rem;
+}
+
+@media only screen and (min-width: 74.625rem) {
+  .cover-text img {
+    width: 28rem;
+  }
 }
 
 .footer {
