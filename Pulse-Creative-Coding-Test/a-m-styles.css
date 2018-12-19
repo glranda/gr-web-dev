@@ -25,6 +25,14 @@ body {
   margin: 0;
 }
 
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  body {
+    font-family: 'Roboto', sans-serif;
+  }
+}
+
+
+
 .outer-wrapper {
   max-width: 1400px;
   margin: 0 auto;
@@ -423,15 +431,9 @@ h2 {
 
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   .cover-text {
-    margin-top: 0;
-  }
-
-  @media only screen and (min-width: 50rem) {
-    .cover-text {
       margin-top: 6rem;
     }
   }
-}
 
 @media only screen and (min-width: 50rem) {
   .cover-text {
