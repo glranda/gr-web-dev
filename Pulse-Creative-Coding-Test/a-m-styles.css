@@ -307,11 +307,13 @@ h2 {
   align-items: start;
   justify-content: space-around;
   padding: 5rem 0rem 1rem;
+  text-align: center;
 }
 
 @media only screen and (min-width: 35rem) {
   .footer {
     display: flex;
+    text-align: left;
   }
 }
 
@@ -329,7 +331,15 @@ h2 {
 
 .company-info img {
   width: 5rem;
-  margin-right: 2rem;
+  margin-right: 0;
+  margin-bottom: 1.5rem;
+}
+
+@media only screen and (min-width: 35rem) {
+  .company-info img {
+    margin-right: 2rem;
+    margin-bottom: 0;
+  }
 }
 
 .footer-info p {
