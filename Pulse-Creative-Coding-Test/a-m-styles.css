@@ -78,7 +78,7 @@ body {
   position: absolute;
   right: 0;
   top: 0;
-  padding: .4rem 0.25rem 0.25rem;
+  padding: .4rem 0.25rem 0;
   text-align: center;
 }
 
@@ -125,8 +125,10 @@ body {
 h1 {
   color: #00355f;
   text-transform: uppercase;
-  font-size: 2.5rem;
+  font-size: 3.5rem;
   font-family: 'Helvetica Neue LT Std Thin Condensed';
+  margin: .5rem 0;
+  letter-spacing: 0.15rem;
 }
 
 .top-content {
@@ -157,7 +159,10 @@ h1 {
 h2 {
   color: #00355f;
   text-transform: uppercase;
-  font-size: 2.5rem;
+  font-size: 3.5rem;
+  font-family: 'Helvetica Neue LT Std Thin Condensed';
+  margin: .5rem 0;
+  letter-spacing: 0.15rem;
 }
 
 .cover-text {
