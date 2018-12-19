@@ -421,10 +421,22 @@ h2 {
   height: auto;
 }
 
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .cover-text {
+    margin-top: 0;
+  }
+}
+
 @media only screen and (min-width: 50rem) {
   .cover-text {
     display: flex;
     padding: 1rem 5rem;
+  }
+
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    .cover-text {
+      margin-top: 6rem;
+    }
   }
 }
 
