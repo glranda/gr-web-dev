@@ -110,11 +110,6 @@ body {
   top: 7rem;
 }
 
-.homepage-header-image img:nth-child(3) {
-  right: 6rem;
-  top: 3rem;
-}
-
 .fullscreen-bg__video {
     position: absolute;
     top: 0;
