@@ -197,7 +197,7 @@ body {
   overflow: hidden;
   height: 40rem;
   background-color: transparent;
-  background: url(/portfolio/Pulse-Creative-Coding-Test/images/mobile-header-image.png) 0 0 no-repeat;
+  background: url(/portfolio/Pulse-Creative-Coding-Test/images/mobile-header-image.png) 53% 0 no-repeat;
 }
 
 @media only screen and (min-width: 40rem) {
@@ -216,7 +216,7 @@ body {
   display: none;
 }
 
-@media only screen and (min-width: 30rem) {
+@media only screen and (min-width: 40rem) {
   .homepage-header-image video {
     display: inherit;
   }
