@@ -150,6 +150,7 @@ h1 {
   letter-spacing: .15rem;
   font-size: .8rem;
   text-transform: uppercase;
+  margin-bottom: 1.5rem;
 }
 
 .scroll-down::after {
@@ -214,13 +215,17 @@ h2 {
   display: flex;
   align-items: start;
   justify-content: space-around;
-  padding: 5rem 0rem;
+  padding: 5rem 0rem 1rem;
+}
+
+.footer p {
+  margin-top: 0;
 }
 
 .company-info {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: start;
 }
 
 .company-info img {
