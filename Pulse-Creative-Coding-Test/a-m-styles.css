@@ -48,10 +48,11 @@ body {
 
 
 .nav {
-	display: block;
-	position: relative;
-	z-index: 1000;
-	top: 0;
+  display: block;
+  position: relative;
+  z-index: 1000;
+  top: 0;
+  padding: 0 1rem 1rem;
 }
 
 @media only screen and (min-width: 50rem) {
@@ -61,37 +62,37 @@ body {
 }
 
 .nav .logo a {
-	border-bottom: none;
+  border-bottom: none;
   position: absolute;
   top: -0.5rem;
 }
 
 .nav .logo img {
-	 max-width: 10rem;
+  max-width: 10rem;
 }
 
 .nav .main-nav .hamburger-nav::after {
-	content: "\f0c9";
-	color: #fafafa;
-	font-size: 1.5rem;
-	top: 11px;
-	right: 20px;
-	cursor: pointer;
-	font-family: fontawesome;
-	text-align: right;
+  content: "\f0c9";
+  color: #00244a;
+  font-size: 2.5rem;
+  top: 11px;
+  right: 20px;
+  cursor: pointer;
+  font-family: fontawesome;
+  text-align: right;
 }
 
 
 .nav .main-nav .hamburger-nav {
-	border-bottom: none;
+  border-bottom: none;
 }
 
 .nav .main-nav {
-	 text-align: right;
+  text-align: right;
 }
 
 .nav .main-nav .menu {
-	display: none;
+  display: none;
   list-style: none;
   position: relative;
   top: 64%;
