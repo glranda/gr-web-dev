@@ -132,7 +132,7 @@ body {
 
 .infographic {
   position: absolute;
-  bottom: 13rem;
+  bottom: 10rem;
   left: 14rem;
   font-size: 1.8rem;
   font-family: 'Helvetica Neue LT Std Bold';
@@ -149,6 +149,7 @@ body {
   margin: .5rem 0 0 .5rem;
   padding-left: 1rem;
   display: block;
+  font-family: 'Helvetica Neue LT Std Light';
 }
 
 h1 {
