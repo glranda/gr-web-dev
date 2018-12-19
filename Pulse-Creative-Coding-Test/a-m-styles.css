@@ -18,9 +18,6 @@
     src: url(/portfolio/Pulse-Creative-Coding-Test/fonts/HelveticaNeueLTStd-ThCn.otf);
 }
 
-
-
-
 body {
   font-family: 'Helvetica Neue LT Std Light';
   line-height: 1.45;
@@ -199,11 +196,30 @@ body {
   position: relative;
   overflow: hidden;
   height: 40rem;
-  background-color: #3585b7;
+  background-color: transparent;
+  background-image: url(/portfolio/Pulse-Creative-Coding-Test/images/mobile-header-image.png) 0 0 no-repeat;
+}
+
+@media only screen and (min-width: 30rem) {
+  .homepage-header-image {
+    background-color: #3585b7;
+    background-image: none;
+  }
 }
 
 .homepage-header-image img {
   position: absolute;
+}
+
+.homepage-header-image video {
+  position: absolute;
+  display: none;
+}
+
+@media only screen and (min-width: 30rem) {
+  .homepage-header-image video {
+    display: inherit;
+  }
 }
 
 .homepage-header-image img:nth-child(2) {
@@ -298,7 +314,14 @@ h1 {
   font-size: 2.5rem;
   font-family: 'Helvetica Neue LT Std Thin Condensed';
   margin: .5rem 0;
-  letter-spacing: 0.15rem;
+  line-height: 1.1rem;
+}
+
+@media only screen and (min-width: 30rem) {
+  h1 {
+    letter-spacing: 0.15rem;
+    line-height: inherit;
+  }
 }
 
 @media only screen and (min-width: 50rem) {
@@ -380,9 +403,15 @@ h2 {
   font-size: 3.5rem;
   font-family: 'Helvetica Neue LT Std Thin Condensed';
   margin: .5rem 0;
-  letter-spacing: 0.15rem;
+  line-height: 1.1rem;
 }
 
+@media only screen and (min-width: 30rem) {
+  h2 {
+    letter-spacing: 0.15rem;
+    line-height: inherit;
+  }
+}
 .cover-text {
   background-color: rgba(204, 204, 204, .8);
   padding: 1rem 2rem;
