@@ -85,19 +85,21 @@ body {
 
 .homepage-header-image {
   position: relative;
+  overflow: hidden;
+  height: 40rem;
 }
 
 .homepage-header-image img {
   position: absolute;
 }
 
-.homepage-header-image img:nth-child(1) {
+.homepage-header-image img:nth-child(2) {
   width: 21rem;
   right: 10rem;
   top: 7rem;
 }
 
-.homepage-header-image img:nth-child(2) {
+.homepage-header-image img:nth-child(3) {
   right: 6rem;
   top: 3rem;
 }
