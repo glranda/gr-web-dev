@@ -45,8 +45,6 @@ body {
   }
 }
 
-
-
 .nav {
   display: block;
   position: relative;
@@ -83,7 +81,6 @@ body {
   text-align: right;
 }
 
-
 .nav .main-nav .hamburger-nav {
   border-bottom: none;
 }
@@ -112,9 +109,6 @@ body {
 .nav .main-nav .menu li a {
   color: #00244a;
 }
-
-
-
 
 .navigation a {
   text-decoration: none;
@@ -214,8 +208,15 @@ body {
 
 .homepage-header-image img:nth-child(2) {
   width: 20rem;
-  right: 2rem;
-  top: 4rem;
+  right: 1rem;
+  top: 1rem;
+}
+
+@media only screen and (min-width: 45rem) {
+  .homepage-header-image img:nth-child(2) {
+    right: 2rem;
+    top: 4rem;
+  }
 }
 
 @media only screen and (min-width: 74.625rem) {
@@ -245,7 +246,6 @@ body {
   }
 }
 
-
 .fullscreen-bg__video {
   position: absolute;
   top: 0;
@@ -253,7 +253,7 @@ body {
   opacity: 0.7;
 }
 
-@media only screen and (min-width: 45rem) {
+@media only screen and (min-width: 74.625rem) {
   .fullscreen-bg__video {
     width: 100%;
     left: 0;
