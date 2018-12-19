@@ -197,13 +197,13 @@ body {
   overflow: hidden;
   height: 40rem;
   background-color: transparent;
-  background-image: url(/portfolio/Pulse-Creative-Coding-Test/images/mobile-header-image.png) 0 0 no-repeat;
+  background: url(/portfolio/Pulse-Creative-Coding-Test/images/mobile-header-image.png) 0 0 no-repeat;
 }
 
-@media only screen and (min-width: 30rem) {
+@media only screen and (min-width: 40rem) {
   .homepage-header-image {
+    background: none;
     background-color: #3585b7;
-    background-image: none;
   }
 }
 
@@ -314,7 +314,7 @@ h1 {
   font-size: 2.5rem;
   font-family: 'Helvetica Neue LT Std Thin Condensed';
   margin: .5rem 0;
-  line-height: 1.1rem;
+  line-height: 1.1;
 }
 
 @media only screen and (min-width: 30rem) {
@@ -403,7 +403,7 @@ h2 {
   font-size: 3.5rem;
   font-family: 'Helvetica Neue LT Std Thin Condensed';
   margin: .5rem 0;
-  line-height: 1.1rem;
+  line-height: 1.1;
 }
 
 @media only screen and (min-width: 30rem) {
