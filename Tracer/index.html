@@ -1,24 +1,45 @@
-// $(function() {
-//   fetch('https://jsonplaceholder.typicode.com/albums')
-//     .then(responseOne => responseOne.json())
-//     .then(jsonOne => console.log(jsonOne))
-// });
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tracer Frontend Code Test</title>
 
-// $.get('https://jsonplaceholder.typicode.com/albums?userId=1', function(data1) {
-//   console.log(data1);
-//
-// });
+    <link rel='stylesheet' href='https://necolas.github.io/normalize.css/7.0.0/normalize.css' />
+    <link rel='stylesheet' href='styles.css' />
 
-$.get('https://jsonplaceholder.typicode.com/albums?userId=2', function(data2) {
-  var container = $(".table-one")[0];
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+    <script src='scripts.js'></script>
+</head>
 
-  for(var i = 0; i < data2.length; i++){
-    var newDiv1 = document.createElement('div');
-    var newDiv2 = document.createElement('div');
-    newDiv1.className = 'table__cell table__cell--short';
-    newDiv2.className = 'table__cell table__cell';
-    container.append(newDiv);
-    container.append(newDiv2);
-  }
+<body>
+    <h1>Tracer Frontend Code Test</h1>
 
-});
+    <div class='search'>
+        <label class='search__label'>Search</label>
+        <input class='search__input' type='text'></input>
+        <button class='search__button' type='submit'>Submit</button>
+    </div>
+
+    <main>
+        <div class='table'>
+            <div class='table__row table__header'>
+                <div class='table__cell table__cell--short'>id</div>
+                <div class='table__cell'>title</div>
+            </div>
+            <div class='table__row table-one'></div>
+        </div>
+
+
+        <div class='table'>
+            <div class='table__row table__header'>
+                <div class='table__cell table__cell--short'>id</div>
+                <div class='table__cell'>title</div>
+            </div>
+            <div class='table__row'>
+                <div class='table__cell table__cell--short'></div>
+                <div class='table__cell table__cell'></div>
+            </div>
+        </div>
+
+    </main>
+</body>
+</html>
