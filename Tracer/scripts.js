@@ -4,6 +4,8 @@ $(function() {
     .then(jsonOne => console.log(jsonOne))
 });
 
+var dropContainer = $(".table__row");
+
 ////// -- Drop and Drop Functions
 
 function allowDrop(ev) {
@@ -17,11 +19,10 @@ function drag(ev) {
 function drop(ev) {
   ev.preventDefault();
   var data = ev.dataTransfer.getData("text");
-  ev.target.appendChild(document.getElementById(data));
+  ev.target.after(document.getElementById(dropContainer));
 }
 
 $.get('https://jsonplaceholder.typicode.com/albums?userId=1', function(data1) {
-  var container = $(".table-one");
 
   for(var i = 0; i < data1.length; i++) {
     let newRow = '<div class="table__row"><div draggable="true" class="user-id1 table__cell table__cell--short"></div><div draggable="true" class="album-name1 table__cell"></div></div>';
