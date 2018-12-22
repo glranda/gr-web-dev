@@ -9,8 +9,8 @@ let selectUser2 = document.getElementById("select2");
 let newUser1 = selectUser1.options[selectUser1.selectedIndex].value;
 let newUser2 = selectUser2.options[selectUser2.selectedIndex].value;
 
-let x = newUser1;
-let y = newUser2;
+let x;
+let y;
 
 ////// -- Drag and Drop Functions
 
@@ -47,17 +47,19 @@ function isBefore(el1, el2) {
 selectUser1.onchange = function() {
   newUser1 = selectUser1.options[selectUser1.selectedIndex].value;
   x = newUser1
+  return x;
   console.log(x);
 }
+console.log(x);
 
-function updateUserX() {
-  x = newUser1;
-  console.log(x);
-}
-
-function updateUserY() {
-  y = newUser2;
-}
+// function updateUserX() {
+//   x = newUser1;
+//   console.log(x);
+// }
+//
+// function updateUserY() {
+//   y = newUser2;
+// }
 
 
 
