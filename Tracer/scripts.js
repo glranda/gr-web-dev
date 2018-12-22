@@ -15,6 +15,9 @@ let userId8 = 'https://jsonplaceholder.typicode.com/albums?userId=8';
 let userId9 = 'https://jsonplaceholder.typicode.com/albums?userId=9';
 let userId10 = 'https://jsonplaceholder.typicode.com/albums?userId=10';
 
+let x;
+let y;
+
 ////// -- Drag and Drop Functions
 
 let _el;
@@ -55,21 +58,25 @@ let newUser2 = selectUser2.options[selectUser2.selectedIndex].value;
 
 function updateUserX() {
   x = newUser1;
+  console.log(x);
 }
 
 function updateUserY() {
   y = newUser2;
 }
 
+console.log(x);
+
 ////// -- Build and Populate rows
 
-var x;
-var y;
-$( document ).ready(function() {
-  var x = newUser1;
-  var y = newUser2;
-
-console.log(x);
+// var x;
+// var y;
+// $( document ).ready(function() {
+//   var x = newUser1;
+//   var y = newUser2;
+// });
+//
+// console.log(x);
 
 
 $.get(x, function(data1) {
@@ -103,7 +110,5 @@ $.get(y, function(data2) {
     ids[j].innerHTML = data2[j].userId;
     albums[j].innerHTML = data2[j].title;
   }
-
-});
 
 });
