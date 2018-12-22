@@ -13,8 +13,9 @@ $.get('https://jsonplaceholder.typicode.com/albums?userId=2', function(data2) {
     container.after(newRow);
 
     console.log(data2[i]);
-    let ids = $("div.user-id");
-    console.log(ids[i]);
+    let ids = $(".user-id");
+    console.log(ids);
+    //console.log(ids[i]);
     ids.text(data2[i].id);
   }
 
