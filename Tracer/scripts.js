@@ -1,39 +1,7 @@
-$(function() {
+$(function(data) {
   fetch('https://jsonplaceholder.typicode.com/albums/1')
     .then(responseOne => responseOne.json())
     .then(jsonOne => console.log(jsonOne))
 
-    fetch('https://jsonplaceholder.typicode.com/albums/2')
-      .then(responseTwo => responseTwo.json())
-      .then(jsonTwo => console.log(jsonTwo))
+    $('.test-id').html(data);
 });
-
-//User 1 Random ID
-function uniqId1() {
-  return Math.round(new Date().getTime() + (Math.random() * 100));
-}
-
-$(function() {
-  let newID = document.querySelector('.test-id');
-  console.log(newID);
-
-  newID.attr('id', 'haha');
-
-});
-
-
-// var $li = $('<li/>', {
-//   'class': 'bigger',
-//   id: uniqId()
-// });
-//
-// var $span = $('<span/>', {
-//   'class': 'Sp icon icon-color icon-plus',
-//   title: 'Remove from list',
-//   text: 'I\'m a span',
-//   click: function() {
-//     alert( $(this).parent().attr('id') );
-//   }
-// });
-//
-// $('body').append( $li.append( $span ) );
