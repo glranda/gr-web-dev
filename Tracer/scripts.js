@@ -5,6 +5,18 @@ $(function() {
 });
 
 var userId1 = 'https://jsonplaceholder.typicode.com/albums?userId=1';
+var userId2 = 'https://jsonplaceholder.typicode.com/albums?userId=2';
+var userId3 = 'https://jsonplaceholder.typicode.com/albums?userId=3';
+var userId4 = 'https://jsonplaceholder.typicode.com/albums?userId=4';
+var userId5 = 'https://jsonplaceholder.typicode.com/albums?userId=5';
+var userId6 = 'https://jsonplaceholder.typicode.com/albums?userId=6';
+var userId7 = 'https://jsonplaceholder.typicode.com/albums?userId=7';
+var userId8 = 'https://jsonplaceholder.typicode.com/albums?userId=8';
+var userId9 = 'https://jsonplaceholder.typicode.com/albums?userId=9';
+var userId10 = 'https://jsonplaceholder.typicode.com/albums?userId=10';
+
+let x;
+let y;
 
 ////// -- Drag and Drop Functions
 
@@ -35,6 +47,16 @@ function isBefore(el1, el2) {
                 return true;
     return false;
 }
+
+////// -- User Select
+
+let select = document.querySelector("select");
+console.log(select);
+
+
+
+
+
 
 ////// -- Build and Populate rows
 
