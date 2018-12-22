@@ -48,9 +48,11 @@ function updateUserX() {
   newUser1 = selectUser1.options[selectUser1.selectedIndex].value;
   x = newUser1;
   console.log('update ' + x);
+  doSomething();
 }
 
 function updateUserY() {
+  newUser2 = selectUser2.options[selectUser2.selectedIndex].value;
   y = newUser2;
 }
 
@@ -59,6 +61,7 @@ console.log(x);
 
 ////// -- Build and Populate rows
 
+function doSomething() {
 $.get('https://jsonplaceholder.typicode.com/albums?userId=' + x, function(data1) {
   let container = $(".table-one");
 
@@ -75,6 +78,7 @@ $.get('https://jsonplaceholder.typicode.com/albums?userId=' + x, function(data1)
   }
 
 });
+}
 
 $.get('https://jsonplaceholder.typicode.com/albums?userId=' + x, function(data2) {
   let container = $(".table-two");
