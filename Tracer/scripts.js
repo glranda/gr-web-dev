@@ -96,3 +96,7 @@ $.get('https://jsonplaceholder.typicode.com/albums?userId=' + x, function(data2)
   }
 
 });
+
+window.onload = function() {
+  doSomething();
+}
