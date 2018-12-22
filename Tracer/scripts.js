@@ -4,23 +4,23 @@ $(function() {
     .then(jsonOne => console.log(jsonOne))
 });
 
-var userId1 = 'https://jsonplaceholder.typicode.com/albums?userId=1';
-var userId2 = 'https://jsonplaceholder.typicode.com/albums?userId=2';
-var userId3 = 'https://jsonplaceholder.typicode.com/albums?userId=3';
-var userId4 = 'https://jsonplaceholder.typicode.com/albums?userId=4';
-var userId5 = 'https://jsonplaceholder.typicode.com/albums?userId=5';
-var userId6 = 'https://jsonplaceholder.typicode.com/albums?userId=6';
-var userId7 = 'https://jsonplaceholder.typicode.com/albums?userId=7';
-var userId8 = 'https://jsonplaceholder.typicode.com/albums?userId=8';
-var userId9 = 'https://jsonplaceholder.typicode.com/albums?userId=9';
-var userId10 = 'https://jsonplaceholder.typicode.com/albums?userId=10';
+let userId1 = 'https://jsonplaceholder.typicode.com/albums?userId=1';
+let userId2 = 'https://jsonplaceholder.typicode.com/albums?userId=2';
+let userId3 = 'https://jsonplaceholder.typicode.com/albums?userId=3';
+let userId4 = 'https://jsonplaceholder.typicode.com/albums?userId=4';
+let userId5 = 'https://jsonplaceholder.typicode.com/albums?userId=5';
+let userId6 = 'https://jsonplaceholder.typicode.com/albums?userId=6';
+let userId7 = 'https://jsonplaceholder.typicode.com/albums?userId=7';
+let userId8 = 'https://jsonplaceholder.typicode.com/albums?userId=8';
+let userId9 = 'https://jsonplaceholder.typicode.com/albums?userId=9';
+let userId10 = 'https://jsonplaceholder.typicode.com/albums?userId=10';
 
 let x;
 let y;
 
 ////// -- Drag and Drop Functions
 
-var _el;
+let _el;
 
 function dragOver(e) {
   if (isBefore(_el, e.target))
@@ -50,10 +50,7 @@ function isBefore(el1, el2) {
 
 ////// -- User Select
 
-let selecters = document.querySelectorAll(".user-selector");
-console.log(selecters);
-
-selecters.onchange = function() {
+function updateUser() {
   alert('ahh! fuck im dying');
 }
 
@@ -64,7 +61,7 @@ selecters.onchange = function() {
 ////// -- Build and Populate rows
 
 $.get(userId1, function(data1) {
-  var container = $(".table-one");
+  let container = $(".table-one");
 
   for(var i = 0; i < data1.length; i++) {
     let newRow = '<div draggable="true" ondragend="dragEnd()" ondragover="dragOver(event)" ondragstart="dragStart(event)" class="table__row"><div class="user-id1 table__cell table__cell--short"></div><div class="album-name1 table__cell"></div></div>';
@@ -81,7 +78,7 @@ $.get(userId1, function(data1) {
 });
 
 $.get('https://jsonplaceholder.typicode.com/albums?userId=2', function(data2) {
-  var container = $(".table-two");
+  let container = $(".table-two");
 
   for(var i = 0; i < data2.length; i++) {
     let newRow = '<div draggable="true" ondragend="dragEnd()" ondragover="dragOver(event)" ondragstart="dragStart(event)" class="table__row"><div class="user-id2 table__cell table__cell--short"></div><div class="album-name2 table__cell"></div></div>';
