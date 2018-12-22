@@ -22,13 +22,11 @@ $.get('https://jsonplaceholder.typicode.com/albums?userId=2', function(data2) {
   // }
 
   for(var i = 0; i < data2.length; i++){
-    //let newRow =
 
     let newRow = '<div class="table__row"></div>';
     let shortCell = '<div class="table__cell table__cell--short"></div>';
 
-    container.after(newRow);
-    newRow.append(shortCell);
+    container.after(newRow).append(shortCell);
   }
 
 });
