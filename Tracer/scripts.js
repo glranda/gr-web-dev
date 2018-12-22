@@ -50,7 +50,7 @@ function isBefore(el1, el2) {
 
 ////// -- User Select
 
-let select = document.querySelector("select");
+let select = document.querySelectorAll(".user-selector");
 console.log(select);
 
 
