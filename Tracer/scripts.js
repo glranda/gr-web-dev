@@ -50,8 +50,14 @@ function isBefore(el1, el2) {
 
 ////// -- User Select
 
-function updateUser() {
-  alert('ahh! fuck im dying');
+function updateUserX() {
+  x = select.value;
+  console.log(x);
+}
+
+function updateUserY() {
+  y = select.value;
+  console.log(y);  
 }
 
 
