@@ -50,17 +50,18 @@ selectUser1.onchange = function() {
   return x;
   console.log(x);
 }
+console.log('first ' = x);
+
+function updateUserX() {
+  x = newUser1;
+  console.log('update ' + x);
+}
+
+function updateUserY() {
+  y = newUser2;
+}
+
 console.log(x);
-
-// function updateUserX() {
-//   x = newUser1;
-//   console.log(x);
-// }
-//
-// function updateUserY() {
-//   y = newUser2;
-// }
-
 
 
 ////// -- Build and Populate rows
