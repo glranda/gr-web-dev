@@ -14,8 +14,8 @@ $.get('https://jsonplaceholder.typicode.com/albums?userId=2', function(data2) {
   var container = $( ".table-one" );
 
   for(var i = 0; i < data2.length; i++){
-    var $idDiv1 = $( "<div class='table__cell table__cell--short'></div>" );
-    container.appendChild(newDiv);
+    var idDiv1 = $( "<div class='table__cell table__cell--short'></div>" );
+    container.appendChild(idDiv1);
   }
   document.appendChild(container);
 
