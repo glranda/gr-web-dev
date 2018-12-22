@@ -10,7 +10,7 @@
 // });
 
 $.get('https://jsonplaceholder.typicode.com/albums?userId=2', function(data2) {
-  var container = document.querySelector(".table-one");
+  var container = $(".table-one");
 
   // for(var i = 0; i < data2.length; i++){
   //   var newDiv1 = document.createElement('div');
@@ -24,7 +24,7 @@ $.get('https://jsonplaceholder.typicode.com/albums?userId=2', function(data2) {
   for(var i = 0; i < data2.length; i++){
     //let newRow =
 
-    let newRow = $('<div class="table__row"></div>');
+    let newRow = '<div></div>';
 
     container.after(newRow);
   }
