@@ -12,8 +12,10 @@ $.get('https://jsonplaceholder.typicode.com/albums?userId=1', function(data1) {
     container.after(newRow);
   }
 
+  let ids = $(".user-id1");
   let albums = $(".album-name1");
   for(var j = 0; j < albums.length; j++) {
+    ids[j].innerHTML = data1[j].userID;
     albums[j].innerHTML = data1[j].title;
   }
 
@@ -27,8 +29,10 @@ $.get('https://jsonplaceholder.typicode.com/albums?userId=2', function(data2) {
     container.after(newRow);
   }
 
+  let ids = $(".user-id2");
   let albums = $(".album-name2");
   for(var j = 0; j < albums.length; j++) {
+    ids[j].innerHTML = data2[j].userID;
     albums[j].innerHTML = data2[j].title;
   }
 
