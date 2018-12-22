@@ -50,7 +50,7 @@ selectUser1.onchange = function() {
   return x;
   console.log(x);
 }
-console.log('first ' = x);
+console.log('first ' + x);
 
 function updateUserX() {
   x = newUser1;
