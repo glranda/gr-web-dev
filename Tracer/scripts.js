@@ -51,9 +51,11 @@ function isBefore(el1, el2) {
 ////// -- User Select
 
 let select1 = $(".select1");
+console.log(select1);
 let select2 = $(".select2");
 
 function updateUserX() {
+  console.log('select');
   x = select1.value;
   console.log(x);
 }
