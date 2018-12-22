@@ -52,8 +52,8 @@ function isBefore(el1, el2) {
 
 
 
-var e = document.getElementById ("select1");
-var strUser = e.options [e.selectedIndex] .value;
+var e = document.getElementById("select1");
+var strUser = e.options[e.selectedIndex].value;
 
 function updateUserX() {
   let x = strUser;
