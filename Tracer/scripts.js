@@ -63,8 +63,8 @@ function updateUserY() {
 
 ////// -- Build and Populate rows
 
-let x;
-let y;
+var x;
+var y;
 $( document ).ready(function() {
   x = newUser1;
   y = newUser2;
