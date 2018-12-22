@@ -1,8 +1,8 @@
-// $(function() {
-//   fetch('https://jsonplaceholder.typicode.com/albums')
-//     .then(responseOne => responseOne.json())
-//     .then(jsonOne => console.log(jsonOne))
-// });
+$(function() {
+  fetch('https://jsonplaceholder.typicode.com/albums')
+    .then(responseOne => responseOne.json())
+    .then(jsonOne => console.log(jsonOne))
+});
 
 $.get('https://jsonplaceholder.typicode.com/albums?userId=1', function(data1) {
   var container = $(".table-one");
