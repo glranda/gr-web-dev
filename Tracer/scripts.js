@@ -4,6 +4,8 @@ $(function() {
     .then(jsonOne => console.log(jsonOne))
 });
 
+
+
 ////// -- Drag and Drop Functions
 
 var _el;
@@ -16,8 +18,8 @@ function dragOver(e) {
 }
 
 function dragEnd() {
-  alert('dropped!');
   _el = null;
+
 }
 
 function dragStart(e) {
@@ -38,6 +40,7 @@ function isBefore(el1, el2) {
 
 $.get('https://jsonplaceholder.typicode.com/albums?userId=1', function(data1) {
   var container = $(".table-one");
+  console.log(data1.userId);
 
   for(var i = 0; i < data1.length; i++) {
     let newRow = '<div draggable="true" ondragend="dragEnd()" ondragover="dragOver(event)" ondragstart="dragStart(event)" class="table__row"><div class="user-id1 table__cell table__cell--short"></div><div class="album-name1 table__cell"></div></div>';
