@@ -50,12 +50,14 @@ function isBefore(el1, el2) {
 
 ////// -- User Select
 
-let selected = $( '#select1' )[0];
-console.log(selected);
+
+
+var e = document.getElementById ("select1");
+var strUser = e.options [e.selectedIndex] .value;
 
 function updateUserX() {
-  let x = $( "#select1" ).value;
-  console.log(x);
+  let x = strUser;
+  console.log(strUser);
 }
 
 function updateUserY() {
