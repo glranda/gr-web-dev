@@ -1,8 +1,8 @@
-$(function() {
-  fetch('https://jsonplaceholder.typicode.com/albums/1')
-    .then(response => response.json())
-    .then(json => console.log(json))
-});
+// $(function() {
+//   fetch('https://jsonplaceholder.typicode.com/albums/1')
+//     .then(response => response.json())
+//     .then(json => console.log(json))
+// });
 
 //User 1 Random ID
 function uniqId() {
