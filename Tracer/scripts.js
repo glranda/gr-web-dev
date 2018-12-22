@@ -26,7 +26,7 @@ $.get('https://jsonplaceholder.typicode.com/albums?userId=2', function(data2) {
 
     //let newRow = '<div class="table__row"></div>';
 
-    container.append("<div>new div</div>");;
+    container.after('<div>new div</div>');
   }
 
 });
