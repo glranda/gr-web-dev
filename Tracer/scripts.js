@@ -68,7 +68,8 @@ var y;
 $( document ).ready(function() {
   x = newUser1;
   y = newUser2;
-  console.log(x);
+  return x;
+  return y;
 });
 
 console.log(x);
