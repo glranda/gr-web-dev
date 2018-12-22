@@ -48,7 +48,7 @@ function updateUserX() {
   newUser1 = selectUser1.options[selectUser1.selectedIndex].value;
   x = newUser1;
   console.log('update ' + x);
-  $(".table-one").remove( ".new-row" );
+  $( ".new-row" ).remove();
   doSomething();
 }
 
