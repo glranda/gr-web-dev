@@ -4,6 +4,22 @@ $(function() {
     .then(jsonOne => console.log(jsonOne))
 });
 
+////// -- Drop and Drop Functions
+
+function allowDrop(ev) {
+  ev.preventDefault();
+}
+
+function drag(ev) {
+  ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function drop(ev) {
+  ev.preventDefault();
+  var data = ev.dataTransfer.getData("text");
+  ev.target.appendChild(document.getElementById(data));
+}
+
 $.get('https://jsonplaceholder.typicode.com/albums?userId=1', function(data1) {
   var container = $(".table-one");
 
@@ -25,7 +41,7 @@ $.get('https://jsonplaceholder.typicode.com/albums?userId=2', function(data2) {
   var container = $(".table-two");
 
   for(var i = 0; i < data2.length; i++) {
-    let newRow = '<div class="table__row"><div class="user-id2 table__cell table__cell--short"></div><div class="album-name2 table__cell"></div></div>';
+    let newRow = '<div class="table__row"><div  draggable="true" class="user-id2 table__cell table__cell--short"></div><div draggable="true" class="album-name2 table__cell"></div></div>';
     container.after(newRow);
   }
 
