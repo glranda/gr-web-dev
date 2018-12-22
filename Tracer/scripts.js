@@ -14,8 +14,9 @@ $.get('https://jsonplaceholder.typicode.com/albums?userId=2', function(data2) {
 
     console.log(data2[i]);
     let ids = $("div.user-id");
-    let idscurrnet = ids[i];
-    idscurrnet.text(data2[i].id);
+    console.log(ids);
+    console.log(ids[1]);
+    ids.text(data2[i].id);
   }
 
 });
