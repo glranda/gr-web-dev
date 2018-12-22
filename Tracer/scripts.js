@@ -10,14 +10,12 @@
 // });
 
 $.get('https://jsonplaceholder.typicode.com/albums?userId=2', function(data2) {
-  console.log(data2.length);
   var container = $(".table-one")[0];
+  var newDiv = document.createElement('div');
   console.log(container);
 
   for(var i = 0; i < data2.length; i++){
-    //var idDiv1 = $( "<div class='table__cell table__cell--short'></div>" );
-    container.append('<div class="table__cell table__cell--short"></div>');
+    container.append(newDiv);
   }
-  //document.appendChild(container);
 
 });
