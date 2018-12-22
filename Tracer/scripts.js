@@ -66,10 +66,10 @@ function doSomething() {
     let container = $(".table-one");
     let ids = $(".user-id1");
     let albums = $(".album-name1");
-    container.remove( ".table__row" );
+    container.remove( ".new-row" );
 
     for(var i = 0; i < data1.length; i++) {
-      let newRow = '<div draggable="true" ondragend="dragEnd()" ondragover="dragOver(event)" ondragstart="dragStart(event)" class="table__row"><div class="user-id1 table__cell table__cell--short"></div><div class="album-name1 table__cell"></div></div>';
+      let newRow = '<div draggable="true" ondragend="dragEnd()" ondragover="dragOver(event)" ondragstart="dragStart(event)" class="table__row new-row"><div class="user-id1 table__cell table__cell--short"></div><div class="album-name1 table__cell"></div></div>';
       container.after(newRow);
     }
 
