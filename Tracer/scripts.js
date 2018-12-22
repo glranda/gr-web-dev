@@ -64,14 +64,17 @@ console.log(x);
 function doSomething() {
   $.get('https://jsonplaceholder.typicode.com/albums?userId=' + x, function(data1) {
     let container = $(".table-one");
+    let ids = $(".user-id1");
+    let albums = $(".album-name1");
+    ids.innerHTML = '';
+    albums.innerHTML = ''
 
     for(var i = 0; i < data1.length; i++) {
       let newRow = '<div draggable="true" ondragend="dragEnd()" ondragover="dragOver(event)" ondragstart="dragStart(event)" class="table__row"><div class="user-id1 table__cell table__cell--short"></div><div class="album-name1 table__cell"></div></div>';
       container.after(newRow);
     }
 
-    let ids = $(".user-id1");
-    let albums = $(".album-name1");
+
     for(var j = 0; j < albums.length; j++) {
       ids[j].innerHTML = data1[j].userId;
       albums[j].innerHTML = data1[j].title;
@@ -84,8 +87,6 @@ $.get('https://jsonplaceholder.typicode.com/albums?userId=' + x, function(data2)
   let container = $(".table-two");
   let ids = $(".user-id2");
   let albums = $(".album-name2");
-  ids.innerHTML = '';
-  albums.innerHTML = ''
 
   for(var i = 0; i < data2.length; i++) {
     let newRow = '<div draggable="true" ondragend="dragEnd()" ondragover="dragOver(event)" ondragstart="dragStart(event)" class="table__row"><div class="user-id2 table__cell table__cell--short"></div><div class="album-name2 table__cell"></div></div>';
