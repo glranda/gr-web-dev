@@ -50,6 +50,7 @@ function isBefore(el1, el2) {
 
 ////// -- User Select
 
+
 let selectUser1 = document.getElementById("select1");
 let selectUser2 = document.getElementById("select2");
 let newUser1 = selectUser1.options[selectUser1.selectedIndex].value;
@@ -57,13 +58,14 @@ let newUser2 = selectUser2.options[selectUser2.selectedIndex].value;
 
 function updateUserX() {
   x = newUser1;
-  console.log(x);
 }
 
 function updateUserY() {
   y = newUser2;
-  console.log(y);
 }
+
+console.log(x);
+console.log(y);
 
 ////// -- Build and Populate rows
 
