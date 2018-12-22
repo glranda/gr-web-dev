@@ -56,18 +56,18 @@ function updateUserY() {
 
 ////// -- Build and Populate rows
 
-let userId1 = 'https://jsonplaceholder.typicode.com/albums?userId=1';
-let userId2 = 'https://jsonplaceholder.typicode.com/albums?userId=2';
-let userId3 = 'https://jsonplaceholder.typicode.com/albums?userId=3';
-let userId4 = 'https://jsonplaceholder.typicode.com/albums?userId=4';
-let userId5 = 'https://jsonplaceholder.typicode.com/albums?userId=5';
-let userId6 = 'https://jsonplaceholder.typicode.com/albums?userId=6';
-let userId7 = 'https://jsonplaceholder.typicode.com/albums?userId=7';
-let userId8 = 'https://jsonplaceholder.typicode.com/albums?userId=8';
-let userId9 = 'https://jsonplaceholder.typicode.com/albums?userId=9';
-let userId10 = 'https://jsonplaceholder.typicode.com/albums?userId=10';
+// let userId1 = 'userId=1';
+// let userId2 = 'https://jsonplaceholder.typicode.com/albums?userId=2';
+// let userId3 = 'https://jsonplaceholder.typicode.com/albums?userId=3';
+// let userId4 = 'https://jsonplaceholder.typicode.com/albums?userId=4';
+// let userId5 = 'https://jsonplaceholder.typicode.com/albums?userId=5';
+// let userId6 = 'https://jsonplaceholder.typicode.com/albums?userId=6';
+// let userId7 = 'https://jsonplaceholder.typicode.com/albums?userId=7';
+// let userId8 = 'https://jsonplaceholder.typicode.com/albums?userId=8';
+// let userId9 = 'https://jsonplaceholder.typicode.com/albums?userId=9';
+// let userId10 = 'https://jsonplaceholder.typicode.com/albums?userId=10';
 
-$.get(x, function(data1) {
+$.get('https://jsonplaceholder.typicode.com/albums?userId=' + x, function(data1) {
   let container = $(".table-one");
 
   for(var i = 0; i < data1.length; i++) {
