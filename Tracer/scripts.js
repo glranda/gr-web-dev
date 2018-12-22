@@ -68,9 +68,6 @@ var y;
 $( document ).ready(function() {
   var x = newUser1;
   var y = newUser2;
-  return x;
-  return y;
-});
 
 console.log(x);
 
@@ -106,5 +103,7 @@ $.get(y, function(data2) {
     ids[j].innerHTML = data2[j].userId;
     albums[j].innerHTML = data2[j].title;
   }
+
+});
 
 });
