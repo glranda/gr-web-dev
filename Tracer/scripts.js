@@ -19,7 +19,7 @@ function drag(ev) {
 function drop(ev) {
   ev.preventDefault();
   var data = ev.dataTransfer.getData("text");
-  ev.target.after(document.getElementById(dropContainer));
+  ev.target.after(dropContainer);
 }
 
 ////// -- Build and Pop rows
