@@ -14,13 +14,6 @@ let newUser2 = selectUser2.options[selectUser2.selectedIndex].value;
 let x = newUser1;
 let y = newUser2;
 
-////// -- Upate on drop /////
-
-function updateAlbums() {
-  alert('called the function');
-
-}
-
 ////// -- Drag and Drop Functions /////
 
 let _el;
@@ -34,6 +27,7 @@ function dragOver(e) {
 
 function dragEnd() {
   _el = null;
+  console.log(this.innerHTML);
   updateAlbums();
 }
 
@@ -67,6 +61,20 @@ function updateUserY() {
   buildTableTwo();
 }
 
+////// -- Upate on drop /////
+
+function updateAlbums() {
+  console.log('alert');
+
+  $.ajax({
+       url: 'https://jsonplaceholder.typicode.com/albums',
+       type: 'POST',
+       data: { value: inputValue },
+       success: function( response ) {
+          console.log('yay?');
+       }
+    });
+}
 
 ////// -- Build and Populate rows /////
 
