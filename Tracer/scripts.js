@@ -4,7 +4,7 @@ $(function() {
     .then(jsonOne => console.log(jsonOne))
 });
 
-
+var userId1 = 'https://jsonplaceholder.typicode.com/albums?userId=1';
 
 ////// -- Drag and Drop Functions
 
@@ -38,9 +38,8 @@ function isBefore(el1, el2) {
 
 ////// -- Build and Populate rows
 
-$.get('https://jsonplaceholder.typicode.com/albums?userId=1', function(data1) {
+$.get(userId1, function(data1) {
   var container = $(".table-one");
-  console.log(data1.userId);
 
   for(var i = 0; i < data1.length; i++) {
     let newRow = '<div draggable="true" ondragend="dragEnd()" ondragover="dragOver(event)" ondragstart="dragStart(event)" class="table__row"><div class="user-id1 table__cell table__cell--short"></div><div class="album-name1 table__cell"></div></div>';
