@@ -54,7 +54,7 @@ function isBefore(el1, el2) {
 
 function updateUserX() {
   x = $( ".mhatthehell" ).value;
-  console.log(x);
+  console.log(($( ".mhatthehell" ).value));
 }
 
 function updateUserY() {
