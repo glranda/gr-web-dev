@@ -11,10 +11,10 @@ var _el;
 function dragOver(e) {
   if (isBefore(_el, e.target))
     e.target.parentNode.insertBefore(_el, e.target);
-    alert('dropped!');
+    //alert('dropped!');
   else
     e.target.parentNode.insertBefore(_el, e.target.nextSibling);
-    alert('dropped!');
+    //alert('dropped!');
 }
 
 function dragEnd() {
