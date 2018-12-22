@@ -63,10 +63,11 @@ function updateUserY() {
 
 ////// -- Build and Populate rows
 
-
+let x;
+let y;
 $( document ).ready(function() {
-  let x = newUser1;
-  let y = newUser2;
+  x = newUser1;
+  y = newUser2;
   console.log(x);
 });
 
