@@ -71,6 +71,7 @@ $( document ).ready(function() {
   console.log(x);
 });
 
+console.log(x);
 
 
 $.get(x, function(data1) {
