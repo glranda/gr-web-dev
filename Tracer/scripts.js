@@ -50,8 +50,8 @@ function isBefore(el1, el2) {
 
 ////// -- User Select
 
-let select = $(".user-selector");
-console.log(select);
+let selecters = $("select");
+console.log(selecters);
 
 
 
