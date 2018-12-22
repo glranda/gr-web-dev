@@ -51,13 +51,13 @@ function isBefore(el1, el2) {
 ////// -- User Select
 
 function updateUserX() {
-  x = select.value;
+  x = this.value;
   console.log(x);
 }
 
 function updateUserY() {
-  y = select.value;
-  console.log(y);  
+  y = this.value;
+  console.log(y);
 }
 
 
