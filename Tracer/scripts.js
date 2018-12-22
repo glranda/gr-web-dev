@@ -15,7 +15,7 @@ let userId8 = 'https://jsonplaceholder.typicode.com/albums?userId=8';
 let userId9 = 'https://jsonplaceholder.typicode.com/albums?userId=9';
 let userId10 = 'https://jsonplaceholder.typicode.com/albums?userId=10';
 
-let x;
+//let x;
 let y;
 
 ////// -- Drag and Drop Functions
@@ -50,10 +50,11 @@ function isBefore(el1, el2) {
 
 ////// -- User Select
 
-
+let selected = $( "#select1" );
+console.log(selected);
 
 function updateUserX() {
-  x = $( "#select1" ).value;
+  let x = $( "#select1" ).value;
   console.log(x);
 }
 
