@@ -12,8 +12,11 @@ $.get('https://jsonplaceholder.typicode.com/albums?userId=2', function(data2) {
     let newRow = '<div class="table__row"><div class="user-id table__cell table__cell--short"></div><div class="album-name table__cell"></div></div>';
     container.after(newRow);
 
+    console.log(data2[i]);
     let ids = $("div.user-id");
-    ids.id = 'id' +  i;
+    console.log(ids);
+    console.log(ids[1]);
+    ids.text(data2[i].id);
   }
 
 });
