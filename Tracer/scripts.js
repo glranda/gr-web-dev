@@ -4,14 +4,14 @@ $(function() {
     .then(jsonOne => console.log(jsonOne))
 });
 
-$.get('https://jsonplaceholder.typicode.com/albums/1', function(data1) {
+$.get('https://jsonplaceholder.typicode.com/albums?userId=1', function(data1) {
   console.log(data1);
   $('.user-one-id').html(data1.id);
-  $('.user-one-title').html(data1.title);
+  //$('.user-one-title').html(data1.title);
 });
 
-$.get('https://jsonplaceholder.typicode.com/albums/2', function(data2) {
+$.get('https://jsonplaceholder.typicode.com/albums?userId=2', function(data2) {
   console.log(data2);
-  $('.user-two-id').html(data2.id);
-  $('.user-two-title').html(data2.title);
+  $('.user-two-id').html(data2.title);
+  //$('.user-two-title').html(data2.title);
 });
