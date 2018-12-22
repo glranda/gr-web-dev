@@ -66,8 +66,8 @@ function updateUserY() {
 var x;
 var y;
 $( document ).ready(function() {
-  x = newUser1;
-  y = newUser2;
+  var x = newUser1;
+  var y = newUser2;
   return x;
   return y;
 });
