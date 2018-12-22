@@ -1,4 +1,4 @@
-var e = $("#select1")[0];
+var e = document.getElementById('select1');
 console.log(e);
 
 // var strUser = e.options[e.selectedIndex].value;
