@@ -15,7 +15,7 @@ $.get('https://jsonplaceholder.typicode.com/albums?userId=2', function(data2) {
   for(var i = 0; i < data2.length; i++){
     var newDiv = document.createElement('div');
     newDiv.className = 'table__cell table__cell--short';
-    container.html(newDiv);
+    container.append(newDiv);
   }
 
 });
