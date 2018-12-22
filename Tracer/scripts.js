@@ -66,14 +66,14 @@ function updateUserY() {
 function updateAlbums() {
   console.log('alert');
 
-  $.ajax({
-       url: 'https://jsonplaceholder.typicode.com/albums',
-       type: 'POST',
-       data: { value: inputValue },
-       success: function( response ) {
-          console.log('yay?');
-       }
-    });
+  // $.ajax({
+  //      url: 'https://jsonplaceholder.typicode.com/albums',
+  //      type: 'POST',
+  //      data: { value: inputValue },
+  //      success: function( response ) {
+  //         console.log('yay?');
+  //      }
+  //   });
 }
 
 ////// -- Build and Populate rows /////
