@@ -11,7 +11,6 @@ let newUser2 = selectUser2.options[selectUser2.selectedIndex].value;
 
 let x = newUser1;
 let y = newUser2;
-console.log(x);
 
 ////// -- Drag and Drop Functions
 
@@ -45,6 +44,12 @@ function isBefore(el1, el2) {
 
 ////// -- User Select
 
+selectUser1.onchange = function() {
+  newUser1 = selectUser1.options[selectUser1.selectedIndex].value;
+  x = newUser1
+  console.log(x);
+}
+
 function updateUserX() {
   x = newUser1;
   console.log(x);
@@ -54,9 +59,7 @@ function updateUserY() {
   y = newUser2;
 }
 
-// input.onchange = function() {
-//
-// }
+
 
 ////// -- Build and Populate rows
 
