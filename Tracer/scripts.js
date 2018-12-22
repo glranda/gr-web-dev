@@ -65,7 +65,6 @@ function buildTableOne() {
   $.get('https://jsonplaceholder.typicode.com/albums?userId=' + x, function(data1) {
     let container = $(".table-one");
 
-
     for(var i = 0; i < data1.length; i++) {
       let newRow = '<div draggable="true" ondragend="dragEnd()" ondragover="dragOver(event)" ondragstart="dragStart(event)" class="table__row new-row-one"><div class="user-id1 table__cell table__cell--short"></div><div class="album-name1 table__cell"></div></div>';
       container.after(newRow);
@@ -82,7 +81,7 @@ function buildTableOne() {
 }
 
 function buildTableTwo() {
-  $.get('https://jsonplaceholder.typicode.com/albums?userId=' + x, function(data2) {
+  $.get('https://jsonplaceholder.typicode.com/albums?userId=' + y, function(data2) {
     let container = $(".table-two");
 
     for(var i = 0; i < data2.length; i++) {
