@@ -15,8 +15,9 @@ function uniqId1() {
 
 $(function() {
   let newID = document.querySelector('.test-id');
+  console.log(newID);
 
-  newID.attr('id', uniqId1());
+  newID.attr('id', 'haha');
 
 });
 
