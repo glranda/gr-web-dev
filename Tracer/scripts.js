@@ -25,7 +25,7 @@ function dragOver(e) {
     e.target.parentNode.insertBefore(_el, e.target.nextSibling);
 }
 
-function dragEnd() {
+function dragEnd(this) {
   _el = null;
   console.log(this.innerHTML);
   updateAlbums();
