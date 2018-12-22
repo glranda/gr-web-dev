@@ -9,7 +9,6 @@ $(function() {
 var _el;
 
 function dragOver(e) {
-  alert('dropped!');
   if (isBefore(_el, e.target))
     e.target.parentNode.insertBefore(_el, e.target);
   else
@@ -17,6 +16,7 @@ function dragOver(e) {
 }
 
 function dragEnd() {
+  alert('dropped!');
   _el = null;
 }
 
