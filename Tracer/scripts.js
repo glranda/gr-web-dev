@@ -48,6 +48,7 @@ function updateUserX() {
   newUser1 = selectUser1.options[selectUser1.selectedIndex].value;
   x = newUser1;
   console.log('update ' + x);
+  $( ".new-row" ).remove();
   doSomething();
 }
 
@@ -66,7 +67,6 @@ function doSomething() {
     let container = $(".table-one");
     let ids = $(".user-id1");
     let albums = $(".album-name1");
-    $( ".new-row" ).remove();
 
     for(var i = 0; i < data1.length; i++) {
       let newRow = '<div draggable="true" ondragend="dragEnd()" ondragover="dragOver(event)" ondragstart="dragStart(event)" class="table__row new-row"><div class="user-id1 table__cell table__cell--short"></div><div class="album-name1 table__cell"></div></div>';
