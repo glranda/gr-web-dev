@@ -4,6 +4,8 @@ $(function() {
     .then(jsonOne => console.log(jsonOne))
 });
 
+///////
+
 let selectUser1 = document.getElementById("select1");
 let selectUser2 = document.getElementById("select2");
 let newUser1 = selectUser1.options[selectUser1.selectedIndex].value;
@@ -12,7 +14,14 @@ let newUser2 = selectUser2.options[selectUser2.selectedIndex].value;
 let x = newUser1;
 let y = newUser2;
 
-////// -- Drag and Drop Functions
+////// -- Upate on drop /////
+
+function updateAlbums() {
+  alert('called the function');
+
+}
+
+////// -- Drag and Drop Functions /////
 
 let _el;
 
@@ -25,7 +34,7 @@ function dragOver(e) {
 
 function dragEnd() {
   _el = null;
-
+  updateAlbums();
 }
 
 function dragStart(e) {
@@ -42,7 +51,7 @@ function isBefore(el1, el2) {
     return false;
 }
 
-////// -- User Select
+////// -- User Select /////
 
 function updateUserX() {
   newUser1 = selectUser1.options[selectUser1.selectedIndex].value;
@@ -59,7 +68,7 @@ function updateUserY() {
 }
 
 
-////// -- Build and Populate rows
+////// -- Build and Populate rows /////
 
 function buildTableOne() {
   $.get('https://jsonplaceholder.typicode.com/albums?userId=' + x, function(data1) {
@@ -72,6 +81,7 @@ function buildTableOne() {
 
     let ids = $(".user-id1");
     let albums = $(".album-name1");
+
     for(var j = 0; j < albums.length; j++) {
       ids[j].innerHTML = data1[j].userId;
       albums[j].innerHTML = data1[j].title;
@@ -91,6 +101,7 @@ function buildTableTwo() {
 
     let ids = $(".user-id2");
     let albums = $(".album-name2");
+
     for(var j = 0; j < albums.length; j++) {
       ids[j].innerHTML = data2[j].userId;
       albums[j].innerHTML = data2[j].title;
