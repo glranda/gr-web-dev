@@ -6,20 +6,47 @@ $(function() {
 
 ////// -- Drag and Drop Functions
 
-var dropContainer = $(".table__row");
+// var dropContainer = $(".table__row");
+//
+// function allowDrop(ev) {
+//   ev.preventDefault();
+// }
+//
+// function drag(ev) {
+//   ev.dataTransfer.setData("text", ev.target.id);
+// }
+//
+// function drop(ev) {
+//   ev.preventDefault();
+//   var data = ev.dataTransfer.getData("text");
+//   ev.target.after(dropContainer);
+// }
 
-function allowDrop(ev) {
-  ev.preventDefault();
+var _el;
+
+function dragOver(e) {
+  if (isBefore(_el, e.target))
+    e.target.parentNode.insertBefore(_el, e.target);
+  else
+    e.target.parentNode.insertBefore(_el, e.target.nextSibling);
 }
 
-function drag(ev) {
-  ev.dataTransfer.setData("text", ev.target.id);
+function dragEnd() {
+  _el = null;
 }
 
-function drop(ev) {
-  ev.preventDefault();
-  var data = ev.dataTransfer.getData("text");
-  ev.target.append(dropContainer);
+function dragStart(e) {
+  e.dataTransfer.effectAllowed = "move";
+  e.dataTransfer.setData("text/plain", null);
+  _el = e.target;
+}
+
+function isBefore(el1, el2) {
+    if (el2.parentNode === el1.parentNode)
+        for (var cur = el1.previousSibling; cur; cur = cur.previousSibling)
+            if (cur === el2)
+                return true;
+    return false;
 }
 
 ////// -- Build and Pop rows
@@ -28,7 +55,7 @@ $.get('https://jsonplaceholder.typicode.com/albums?userId=1', function(data1) {
   var container = $(".table-one");
 
   for(var i = 0; i < data1.length; i++) {
-    let newRow = '<div draggable="true" class="table__row"><div class="user-id1 table__cell table__cell--short"></div><div class="album-name1 table__cell"></div></div>';
+    let newRow = '<div draggable="true" ondragend="dragEnd()" ondragover="dragOver(event)" ondragstart="dragStart(event)" class="table__row"><div class="user-id1 table__cell table__cell--short"></div><div class="album-name1 table__cell"></div></div>';
     container.after(newRow);
   }
 
@@ -45,7 +72,7 @@ $.get('https://jsonplaceholder.typicode.com/albums?userId=2', function(data2) {
   var container = $(".table-two");
 
   for(var i = 0; i < data2.length; i++) {
-    let newRow = '<div draggable="true" class="table__row"><div class="user-id2 table__cell table__cell--short"></div><div class="album-name2 table__cell"></div></div>';
+    let newRow = '<div draggable="true" ondragend="dragEnd()" ondragover="dragOver(event)" ondragstart="dragStart(event)" class="table__row"><div class="user-id2 table__cell table__cell--short"></div><div class="album-name2 table__cell"></div></div>';
     container.after(newRow);
   }
 
