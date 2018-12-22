@@ -19,7 +19,7 @@ $.get('https://jsonplaceholder.typicode.com/albums?userId=2', function(data2) {
 
     console.log(data2[i]);
     let ids = $("div.user-id");
-    ids.text(data2.id[i]);
+    ids.text(data2[i].id);
   }
 
 });
