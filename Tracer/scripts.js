@@ -50,9 +50,12 @@ function isBefore(el1, el2) {
 
 ////// -- User Select
 
-let selecters = $("select");
+let selecters = $( "select" );
 console.log(selecters);
 
+selecters.onchange = function() {
+  alert('ahh! fuck im dying');
+}
 
 
 
