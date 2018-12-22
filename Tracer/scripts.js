@@ -1,8 +1,9 @@
-var e = document.getElementById("select1");
+var e = $("#select1");
+console.log(e);
+
 var strUser = e.options[e.selectedIndex].value;
 
 function updateUserX() {
-
   let x = strUser;
   console.log(strUser);
 }
