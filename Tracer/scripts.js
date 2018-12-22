@@ -9,12 +9,11 @@ $(function() {
 var _el;
 
 function dragOver(e) {
+  alert('dropped!');
   if (isBefore(_el, e.target))
     e.target.parentNode.insertBefore(_el, e.target);
-    //alert('dropped!');
   else
     e.target.parentNode.insertBefore(_el, e.target.nextSibling);
-    //alert('dropped!');
 }
 
 function dragEnd() {
