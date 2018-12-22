@@ -13,6 +13,7 @@ $.get('https://jsonplaceholder.typicode.com/albums?userId=2', function(data2) {
 
     let ids = $(".user-id");
     console.log(ids[i]);
+    ids[i].text(i);
   }
 
 });
