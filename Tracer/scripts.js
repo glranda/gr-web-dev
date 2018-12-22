@@ -9,20 +9,14 @@ $(function() {
 });
 
 //User 1 Random ID
-function uniqId() {
-  let id1 = Math.round(new Date().getTime() + (Math.random() * 100));
-  let id2 = Math.round(new Date().getTime() + (Math.random() * 100));
-  return id1;
-  return id2;
-  console.log(id1, id2);
+function uniqId1() {
+  return Math.round(new Date().getTime() + (Math.random() * 100));
 }
 
 $(function() {
   let newID = document.querySelectorAll('.table__cell--short');
 
-  newID = {
-    id: uniqId()
-  };
+  newID.attr('id', uniqId1());
 
 });
 
