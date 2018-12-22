@@ -14,7 +14,7 @@ function uniqId1() {
 }
 
 $(function() {
-  let newID = document.querySelectorAll('.table__cell--short');
+  let newID = document.querySelector('.test-id');
 
   newID.attr('id', uniqId1());
 
