@@ -1,13 +1,21 @@
-// $(function(data) {
-//   fetch('https://jsonplaceholder.typicode.com/albums/1')
-//     .then(responseOne => responseOne.json())
-//     .then(jsonOne => console.log(jsonOne))
-//
-//     $('.test-id').html(data);
-// });
+$(function(data) {
+  fetch('https://jsonplaceholder.typicode.com/albums/1')
+    .then(responseOne => responseOne.json())
+    .then(jsonOne => console.log(jsonOne))
+
+    $('.test-id').html(data);
+});
 
 $.get('https://jsonplaceholder.typicode.com/albums/1', function(data) {
-  $('.test-id').html(data.id);
+  console.log(data);
+  $('.user-one-id').html(data.id);
+  $('.user-one-title').html(data.title);
+});
+
+$.get('https://jsonplaceholder.typicode.com/albums/2', function(data) {
+  console.log('album 2 = ' + data);
+  $('.user-two-id').html(data.id);
+  $('.user-two-title').html(data.id);
 });
 
 
