@@ -13,6 +13,8 @@ $.get('https://jsonplaceholder.typicode.com/albums?userId=2', function(data2) {
     container.after(newRow);
   }
 
+  let ids = $(".user-id");
+  
   ids.forEach(function(el){
     el.text(data2.id);
   });
