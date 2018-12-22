@@ -12,10 +12,9 @@
 $.get('https://jsonplaceholder.typicode.com/albums?userId=2', function(data2) {
   var container = $(".table-one")[0];
 
-  console.log(container);
-
   for(var i = 0; i < data2.length; i++){
     var newDiv = document.createElement('div');
+    newDiv.className = 'table__cell table__cell--short';
     container.append(newDiv);
   }
 
