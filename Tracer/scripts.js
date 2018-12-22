@@ -50,7 +50,7 @@ function isBefore(el1, el2) {
 
 ////// -- User Select
 
-let selected = $( "#select1" )[0];
+let selected = $( '#select1' )[0];
 console.log(selected);
 
 function updateUserX() {
