@@ -1,4 +1,4 @@
-var e = $("#select1");
+var e = $("#select1")[0];
 console.log(e);
 
 var strUser = e.options[e.selectedIndex].value;
@@ -8,10 +8,10 @@ function updateUserX() {
   console.log(strUser);
 }
 
-function updateUserY() {
-  y = select2.value;
-  console.log(y);
-}
+// function updateUserY() {
+//   y = select2.value;
+//   console.log(y);
+// }
 
 
 // $(function() {
