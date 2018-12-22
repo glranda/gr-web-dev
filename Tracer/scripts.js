@@ -11,9 +11,12 @@
 
 $.get('https://jsonplaceholder.typicode.com/albums?userId=2', function(data2) {
   console.log(data2.length);
-  var $idDiv1 = $( "<div class='table__cell table__cell--short'></div>" );
+  var container = $( ".table-one" );
 
   for(var i = 0; i < data2.length; i++){
-    $( ".table-one" ).append( $idDiv1 );
+    var $idDiv1 = $( "<div class='table__cell table__cell--short'></div>" );
+    container.appendChild(newDiv);
   }
+  document.appendChild(container);
+
 });
