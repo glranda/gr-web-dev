@@ -15,9 +15,6 @@ let userId8 = 'https://jsonplaceholder.typicode.com/albums?userId=8';
 let userId9 = 'https://jsonplaceholder.typicode.com/albums?userId=9';
 let userId10 = 'https://jsonplaceholder.typicode.com/albums?userId=10';
 
-let x;
-let y;
-
 ////// -- Drag and Drop Functions
 
 let _el;
@@ -64,10 +61,16 @@ function updateUserY() {
   y = newUser2;
 }
 
-console.log(x);
-console.log(y);
-
 ////// -- Build and Populate rows
+
+
+$( document ).ready(function() {
+  let x = newUser1;
+  let y = newUser2;
+  console.log(x);
+}
+
+
 
 $.get(x, function(data1) {
   let container = $(".table-one");
