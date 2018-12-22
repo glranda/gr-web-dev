@@ -6,29 +6,15 @@ $(function() {
 
 ////// -- Drag and Drop Functions
 
-// var dropContainer = $(".table__row");
-//
-// function allowDrop(ev) {
-//   ev.preventDefault();
-// }
-//
-// function drag(ev) {
-//   ev.dataTransfer.setData("text", ev.target.id);
-// }
-//
-// function drop(ev) {
-//   ev.preventDefault();
-//   var data = ev.dataTransfer.getData("text");
-//   ev.target.after(dropContainer);
-// }
-
 var _el;
 
 function dragOver(e) {
   if (isBefore(_el, e.target))
     e.target.parentNode.insertBefore(_el, e.target);
+    alert('dropped!');
   else
     e.target.parentNode.insertBefore(_el, e.target.nextSibling);
+    alert('dropped!');
 }
 
 function dragEnd() {
@@ -49,7 +35,7 @@ function isBefore(el1, el2) {
     return false;
 }
 
-////// -- Build and Pop rows
+////// -- Build and Populate rows
 
 $.get('https://jsonplaceholder.typicode.com/albums?userId=1', function(data1) {
   var container = $(".table-one");
