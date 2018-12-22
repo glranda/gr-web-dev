@@ -1,12 +1,12 @@
 var e = $("#select1")[0];
 console.log(e);
 
-var strUser = e.options[e.selectedIndex].value;
-
-function updateUserX() {
-  let x = strUser;
-  console.log(strUser);
-}
+// var strUser = e.options[e.selectedIndex].value;
+//
+// function updateUserX() {
+//   let x = strUser;
+//   console.log(strUser);
+// }
 
 // function updateUserY() {
 //   y = select2.value;
