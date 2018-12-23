@@ -19,6 +19,8 @@ main {
 
 .underbrow {
   color: #aaa;
+  margin-top: -.8rem;
+  margin-bottom: 2.5rem;
 }
 
 .search {
@@ -51,6 +53,7 @@ main {
     background-color: white;
     width: 100%;
     margin-bottom: 2rem;
+    box-shadow: #ccc 3px 3px 12px -1px;
 }
 
 @media only screen and (min-width: 40rem) {
