@@ -27,7 +27,6 @@ function dragOver(e) {
 
 function dragEnd() {
   _el = null;
-  console.log($( 'table__cell--short' ).innerHTML);
   updateAlbums();
 }
 
@@ -66,14 +65,16 @@ function updateUserY() {
 function updateAlbums() {
   console.log('alert');
 
-  // $.ajax({
-  //      url: 'https://jsonplaceholder.typicode.com/albums',
-  //      type: 'POST',
-  //      data: { value: inputValue },
-  //      success: function( response ) {
-  //         console.log('yay?');
-  //      }
-  //   });
+  $.ajax({
+       url: 'https://jsonplaceholder.typicode.com/albums?userId=1',
+       type: 'POST',
+       title: { value: 'FUCK' },
+       success: function( response ) {
+         fetch('https://jsonplaceholder.typicode.com/albums?userId=1')
+           .then(responseOne => responseOne.json())
+           .then(jsonOne => console.log(jsonOne))
+       }
+    });
 }
 
 ////// -- Build and Populate rows /////
