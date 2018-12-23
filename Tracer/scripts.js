@@ -1,4 +1,4 @@
-$(function() {
+$(function logData() {
   fetch('https://jsonplaceholder.typicode.com/albums')
     .then(responseOne => responseOne.json())
     .then(jsonOne => console.log(jsonOne))
@@ -66,6 +66,7 @@ function updateAlbums() {
   console.log('alert');
 
   $.post( "https://jsonplaceholder.typicode.com/albums?userId=1", { title: "FUCK" } );
+  logData();
 }
 
 ////// -- Build and Populate rows /////
