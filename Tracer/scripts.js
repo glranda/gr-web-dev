@@ -67,7 +67,7 @@ function updateAlbums() {
 
   $.ajax({
     type: 'PUT',
-    url: 'https://jsonplaceholder.typicode.com/albums?userId=1',
+    url: 'https://jsonplaceholder.typicode.com/albums',
     data: { title: 'quidem molestiae enim' }
   });
 }
