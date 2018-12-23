@@ -47,7 +47,7 @@ main {
 }
 
 select {
-  color: white;
+  color: #fff;
   background: #ffb433;
   border-color: #fff8eb;
 }
@@ -56,7 +56,7 @@ select {
 .table {
     border: 1px solid #ffb433;
     border-radius: 8px;
-    background-color: white;
+    background-color: #fff;
     width: 100%;
     margin-bottom: 2rem;
     box-shadow: #ccc 3px 3px 12px -1px;
@@ -80,7 +80,7 @@ select {
 .table__header {
     background: #ffb433;
     font-weight: bold;
-    color: white;
+    color: #fff;
     border-top-left-radius: 6px;
     border-top-right-radius: 6px;
 }
@@ -109,4 +109,13 @@ select {
 
 .rowTag:nth-child(odd) {
   background-color: #fff8eb;
+}
+
+.rowTag:hover {
+  background-color: #ffb433;
+  color: #fff;
+}
+
+.rowTag:hover .table__cell--short {
+  color: #fff;
 }
