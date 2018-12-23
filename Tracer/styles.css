@@ -62,3 +62,7 @@ main {
 .table__cell:last-child {
     margin-right: 0px;
 }
+
+.rowTag:nth-child(even) {
+  background-color: blue;
+}
