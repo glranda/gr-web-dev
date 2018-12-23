@@ -123,6 +123,9 @@ window.onload = function() {
   buildTableTwo();
 }
 
+let test = $( ".search__input" );
+console.log(test);
+
 function searchBar() {
   console.log('alert');
 
