@@ -91,7 +91,7 @@ function buildTableOne() {
     let albums = $(".album-name1");
 
     for(var j = 0; j < albums.length; j++) {
-      ids[j].innerHTML = data1[j].userId;
+      ids[j].innerHTML = 'User ' + data1[j].userId;
       albums[j].innerHTML = data1[j].title;
     }
 
@@ -111,7 +111,7 @@ function buildTableTwo() {
     let albums = $(".album-name2");
 
     for(var j = 0; j < albums.length; j++) {
-      ids[j].innerHTML = data2[j].userId;
+      ids[j].innerHTML = 'User ' + data2[j].userId;
       albums[j].innerHTML = data2[j].title;
     }
 
