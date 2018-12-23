@@ -125,17 +125,17 @@ window.onload = function() {
 
 function searchBar() {
 
-    var input, filter, li, a, i, txtValue;
+    let input, filter, li, a, i, txtValue;
     input = $( ".search__input" )[0];
     filter = input.value.toUpperCase();
-    li = $( ".searchTag" );
-    for (i = 0; i < li.length; i++) {
-        a = li[i];
+    tag = $( ".searchTag" );
+    for (i = 0; i < tag.length; i++) {
+        a = tag[i];
         txtValue = a.textContent || a.innerText;
         if (txtValue.toUpperCase().indexOf(filter) > -1) {
-            li[i].style.display = "";
+            tag[i].style.display = "";
         } else {
-            li[i].style.display = "none";
+            tag[i].style.display = "none";
         }
 
       }
