@@ -83,7 +83,7 @@ function buildTableOne() {
     let container = $(".table-one");
 
     for(var i = 0; i < data1.length; i++) {
-      let newRow = '<div draggable="true" ondragend="dragEnd()" ondragover="dragOver(event)" ondragstart="dragStart(event)" class="table__row new-row-one"><div class="user-id1 table__cell table__cell--short"></div><div class="album-name1 album table__cell"></div></div>';
+      let newRow = '<div draggable="true" ondragend="dragEnd()" ondragover="dragOver(event)" ondragstart="dragStart(event)" class="table__row searchTag new-row-one"><div class="user-id1 table__cell table__cell--short"></div><div class="album-name1 table__cell"></div></div>';
       container.after(newRow);
     }
 
@@ -103,7 +103,7 @@ function buildTableTwo() {
     let container = $(".table-two");
 
     for(var i = 0; i < data2.length; i++) {
-      let newRow = '<div draggable="true" ondragend="dragEnd()" ondragover="dragOver(event)" ondragstart="dragStart(event)" class="table__row new-row-two"><div class="user-id2 table__cell table__cell--short"></div><div class="album-name2 album table__cell"></div></div>';
+      let newRow = '<div draggable="true" ondragend="dragEnd()" ondragover="dragOver(event)" ondragstart="dragStart(event)" class="table__row searchTag new-row-two"><div class="user-id2 table__cell table__cell--short"></div><div class="album-name2 table__cell"></div></div>';
       container.after(newRow);
     }
 
@@ -124,12 +124,11 @@ window.onload = function() {
 }
 
 function searchBar() {
-  console.log('alert');
 
     var input, filter, li, a, i, txtValue;
     input = $( ".search__input" )[0];
     filter = input.value.toUpperCase();
-    li = $( ".album" );
+    li = $( ".searchTag" );
     for (i = 0; i < li.length; i++) {
         a = li[i];
         txtValue = a.textContent || a.innerText;
