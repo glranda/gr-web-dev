@@ -11,7 +11,7 @@ main {
     justify-content: space-between;
 }
 
-@media only screen and (min-width: 30rem) {
+@media only screen and (min-width: 40rem) {
   main {
       display: flex;
   }
@@ -41,14 +41,34 @@ main {
 
 
 .table {
-    width: 48%;
     border: 1px solid #ffb433;
+    border-radius: 8px;
     background-color: white;
+    width: 100%;
+    margin-bottom: 2rem;
 }
+
+@media only screen and (min-width: 40rem) {
+  main {
+      display: flex;
+  }
+
+  .table {
+    width: 48%;
+  }
+}
+
+.table__row:last-child {
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
 .table__header {
     background: #ffb433;
     font-weight: bold;
     color: white;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
 }
 
 .table__row {
