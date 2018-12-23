@@ -25,9 +25,9 @@ function dragOver(e) {
     e.target.parentNode.insertBefore(_el, e.target.nextSibling);
 }
 
-function dragEnd(this) {
+function dragEnd() {
   _el = null;
-  console.log(this.innerHTML);
+  console.log($( 'table__cell--short' ).innerHTML);
   updateAlbums();
 }
 
@@ -83,7 +83,7 @@ function buildTableOne() {
     let container = $(".table-one");
 
     for(var i = 0; i < data1.length; i++) {
-      let newRow = '<div draggable="true" ondragend="dragEnd(this)" ondragover="dragOver(event)" ondragstart="dragStart(event)" class="table__row new-row-one"><div class="user-id1 table__cell table__cell--short"></div><div class="album-name1 table__cell"></div></div>';
+      let newRow = '<div draggable="true" ondragend="dragEnd()" ondragover="dragOver(event)" ondragstart="dragStart(event)" class="table__row new-row-one"><div class="user-id1 table__cell table__cell--short"></div><div class="album-name1 table__cell"></div></div>';
       container.after(newRow);
     }
 
