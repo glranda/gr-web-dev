@@ -65,8 +65,16 @@ function updateUserY() {
 function updateAlbums() {
   console.log('alert');
 
-  $.post( "https://jsonplaceholder.typicode.com/albums?userId=1", { title: "FUCK" } );
-  logData();
+  var data = {title: 'example'};
+
+  fetch('https://jsonplaceholder.typicode.com/albums', {
+    method: 'POST',
+    body: JSON.stringify(data),
+    headers:{
+      'Content-Type': 'application/json'
+    }
+  }).then(res => res.json())
+  .then(response => console.log(response))
 }
 
 ////// -- Build and Populate rows /////
