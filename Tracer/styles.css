@@ -1,7 +1,7 @@
 body {
     font-family: 'Helvetica', 'Arial', sans-serif;
     padding: 0 50px;
-    background-color: #fff;
+    background-color: #fff8eb;
     max-width: 1400px;
     margin: 0 auto;
 }
@@ -29,7 +29,7 @@ main {
 .search__label {
     font-weight: bold;
     font-size: 18px;
-    color: #aaa;
+    color: #ffb433;
 }
 .search__input {
     padding: 5px;
@@ -43,8 +43,14 @@ main {
     background-color: #ffb433;
     color: #fff;
     border-radius: 5px;
+    border-color: #fff8eb;
 }
 
+select {
+  color: white;
+  background: #ffb433;
+  border-color: #fff8eb;
+}
 
 
 .table {
