@@ -65,15 +65,7 @@ function updateUserY() {
 function updateAlbums() {
   console.log('alert');
 
-  // $.ajax({
-  //      type: "POST",
-  //      url: "https://jsonplaceholder.typicode.com/albums?userId=1",
-  //      data: 'n='+n,
-  //      cache: false,
-  //      success: function(response) {
-  //        alert("Record successfully updated");
-  //      }
-  //    });
+  $.post( "https://jsonplaceholder.typicode.com/albums?userId=1", { title: "FUCK" } );
 }
 
 ////// -- Build and Populate rows /////
