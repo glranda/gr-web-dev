@@ -65,14 +65,11 @@ function updateUserY() {
 function updateAlbums() {
   console.log('alert');
 
-
-  $.post("https://jsonplaceholder.typicode.com/albums?userId=1",
-    {
-      title: "FUCK"
-    },
-    function(data,status){
-      console.log('success');
-    });
+  $.ajax({
+    type: 'PUT',
+    url: 'https://jsonplaceholder.typicode.com/albums?userId=1',
+    data: { title: 'FucK' }
+  });
 }
 
 ////// -- Build and Populate rows /////
