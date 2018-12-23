@@ -118,6 +118,11 @@ function buildTableTwo() {
   });
 }
 
+window.onload = function() {
+  buildTableOne();
+  buildTableTwo();
+}
+
 function searchBar() {
   console.log('alert');
 
@@ -136,8 +141,3 @@ function searchBar() {
 
       }
     }
-
-window.onload = function() {
-  buildTableOne();
-  buildTableTwo();
-}
