@@ -72,6 +72,10 @@ select {
   }
 }
 
+.album-title {
+  padding-top: .1rem;
+}
+
 .table__row:last-child {
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
