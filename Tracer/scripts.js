@@ -123,14 +123,11 @@ window.onload = function() {
   buildTableTwo();
 }
 
-let test = $( ".search__input" );
-console.log(test);
-
 function searchBar() {
   console.log('alert');
 
     var input, filter, li, a, i, txtValue;
-    input = $( ".search__input" );
+    input = $( ".search__input" )[0];
     filter = input.value.toUpperCase();
     li = $( ".album" );
     for (i = 0; i < li.length; i++) {
