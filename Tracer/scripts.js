@@ -76,14 +76,14 @@ function updateAlbums() {
   //   });
 }
 
-////// -- Build and Populate rows ///// 
+////// -- Build and Populate rows /////
 
 function buildTableOne() {
   $.get('https://jsonplaceholder.typicode.com/albums?userId=' + x, function(data1) {
     let container = $(".table-one");
 
     for(var i = 0; i < data1.length; i++) {
-      let newRow = '<div draggable="true" ondragend="dragEnd()" ondragover="dragOver(event)" ondragstart="dragStart(event)" class="table__row new-row-one"><div class="user-id1 table__cell table__cell--short"></div><div class="album-name1 table__cell"></div></div>';
+      let newRow = '<div draggable="true" ondragend="dragEnd(this)" ondragover="dragOver(event)" ondragstart="dragStart(event)" class="table__row new-row-one"><div class="user-id1 table__cell table__cell--short"></div><div class="album-name1 table__cell"></div></div>';
       container.after(newRow);
     }
 
