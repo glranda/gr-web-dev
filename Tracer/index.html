@@ -1,62 +1,143 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Tracer Frontend Code Test</title>
+$(function() {
+  fetch('https://jsonplaceholder.typicode.com/albums')
+    .then(responseOne => responseOne.json())
+    .then(jsonOne => console.log(jsonOne))
+});
 
-    <link rel='stylesheet' href='https://necolas.github.io/normalize.css/7.0.0/normalize.css' />
-    <link rel='stylesheet' href='styles.css' />
+///////
 
-    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
-</head>
+let selectUser1 = document.getElementById("select1");
+let selectUser2 = document.getElementById("select2");
+let newUser1 = selectUser1.options[selectUser1.selectedIndex].value;
+let newUser2 = selectUser2.options[selectUser2.selectedIndex].value;
 
-<body>
-    <h1>Tracer Frontend Code Test</h1>
+let x = newUser1;
+let y = newUser2;
 
-    <div class='search'>
-        <label class='search__label'>Search</label>
-        <input onkeyup="searchBar()" class='search__input' type='text'></input>
-        <button class='search__button' type='submit'>Submit</button>
-    </div>
+////// -- Drag and Drop Functions /////
 
-    <main>
-        <div class='table'>
-            <div class='table__row table__header table-one'>
-                <div class='table__cell table__cell--short'><select id="select1" onchange="updateUserX()">
-                  <option selected="selected" value="1">User 1</option>
-                  <option value="2">User 2</option>
-                  <option value="3">User 3</option>
-                  <option value="4">User 4</option>
-                  <option value="5">User 5</option>
-                  <option value="6">User 6</option>
-                  <option value="7">User 7</option>
-                  <option value="8">User 8</option>
-                  <option value="9">User 9</option>
-                  <option value="10">User 10</option>
-                </select></div>
-                <div class='table__cell'>title</div>
-            </div>
-        </div>
+let _el;
 
+function dragOver(e) {
+  if (isBefore(_el, e.target))
+    e.target.parentNode.insertBefore(_el, e.target);
+  else
+    e.target.parentNode.insertBefore(_el, e.target.nextSibling);
+}
 
-        <div class='table'>
-            <div class='table__row table__header table-two'>
-              <div class='table__cell table__cell--short'><select id="select2" onchange="updateUserY()">
-                  <option value="1">User 1</option>
-                  <option selected="selected" value="2">User 2</option>
-                  <option value="3">User 3</option>
-                  <option value="4">User 4</option>
-                  <option value="5">User 5</option>
-                  <option value="6">User 6</option>
-                  <option value="7">User 7</option>
-                  <option value="8">User 8</option>
-                  <option value="9">User 9</option>
-                  <option value="10">User 10</option>
-                </select></div>
-                <div class='table__cell'>title</div>
-            </div>
-        </div>
+function dragEnd() {
+  _el = null;
+  updateAlbums();
+}
 
-    </main>
-<script src='scripts.js'></script>
-</body>
-</html>
+function dragStart(e) {
+  e.dataTransfer.effectAllowed = "move";
+  e.dataTransfer.setData("text/plain", null);
+  _el = e.target;
+}
+
+function isBefore(el1, el2) {
+    if (el2.parentNode === el1.parentNode)
+        for (var cur = el1.previousSibling; cur; cur = cur.previousSibling)
+            if (cur === el2)
+                return true;
+    return false;
+}
+
+////// -- User Select /////
+
+function updateUserX() {
+  newUser1 = selectUser1.options[selectUser1.selectedIndex].value;
+  x = newUser1;
+  $( ".new-row-one" ).remove();
+  buildTableOne();
+}
+
+function updateUserY() {
+  newUser2 = selectUser2.options[selectUser2.selectedIndex].value;
+  y = newUser2;
+  $( ".new-row-two" ).remove();
+  buildTableTwo();
+}
+
+////// -- Upate on drop /////
+
+function updateAlbums() {
+  console.log('alert');
+
+  // $.ajax({
+  //      type: "POST",
+  //      url: "https://jsonplaceholder.typicode.com/albums?userId=1",
+  //      data: 'n='+n,
+  //      cache: false,
+  //      success: function(response) {
+  //        alert("Record successfully updated");
+  //      }
+  //    });
+}
+
+////// -- Build and Populate rows /////
+
+function buildTableOne() {
+  $.get('https://jsonplaceholder.typicode.com/albums?userId=' + x, function(data1) {
+    let container = $(".table-one");
+
+    for(var i = 0; i < data1.length; i++) {
+      let newRow = '<div draggable="true" ondragend="dragEnd()" ondragover="dragOver(event)" ondragstart="dragStart(event)" class="table__row new-row-one"><div class="user-id1 table__cell table__cell--short"></div><div class="album-name1 album table__cell"></div></div>';
+      container.after(newRow);
+    }
+
+    let ids = $(".user-id1");
+    let albums = $(".album-name1");
+
+    for(var j = 0; j < albums.length; j++) {
+      ids[j].innerHTML = data1[j].userId;
+      albums[j].innerHTML = data1[j].title;
+    }
+
+  });
+}
+
+function buildTableTwo() {
+  $.get('https://jsonplaceholder.typicode.com/albums?userId=' + y, function(data2) {
+    let container = $(".table-two");
+
+    for(var i = 0; i < data2.length; i++) {
+      let newRow = '<div draggable="true" ondragend="dragEnd()" ondragover="dragOver(event)" ondragstart="dragStart(event)" class="table__row new-row-two"><div class="user-id2 table__cell table__cell--short"></div><div class="album-name2 album table__cell"></div></div>';
+      container.after(newRow);
+    }
+
+    let ids = $(".user-id2");
+    let albums = $(".album-name2");
+
+    for(var j = 0; j < albums.length; j++) {
+      ids[j].innerHTML = data2[j].userId;
+      albums[j].innerHTML = data2[j].title;
+    }
+
+  });
+}
+
+window.onload = function() {
+  buildTableOne();
+  buildTableTwo();
+}
+
+function searchBar() {
+  console.log('alert');
+
+    var input, filter, li, a, i, txtValue;
+    input = $( ".search__input" );
+    filter = input.value.toUpperCase();
+    li = $( ".album" );
+    for (i = 0; i < li.length; i++) {
+        a = li[i];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+
+      }
+    }
