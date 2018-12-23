@@ -68,7 +68,7 @@ function updateAlbums() {
   $.ajax({
        url: 'https://jsonplaceholder.typicode.com/albums?userId=1',
        type: 'POST',
-       title: { value: 'FUCK' },
+       data: { title: 'FUCK' },
        success: function( response ) {
          fetch('https://jsonplaceholder.typicode.com/albums?userId=1')
            .then(responseOne => responseOne.json())
