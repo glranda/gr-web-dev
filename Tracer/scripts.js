@@ -65,11 +65,15 @@ function updateUserY() {
 function updateAlbums() {
   console.log('alert');
 
-  $.ajax({
-    type: 'PUT',
-    url: 'https://jsonplaceholder.typicode.com/albums',
-    data: { title: 'quidem molestiae enim' }
-  });
+  // $.ajax({
+  //      type: "POST",
+  //      url: "https://jsonplaceholder.typicode.com/albums?userId=1",
+  //      data: 'n='+n,
+  //      cache: false,
+  //      success: function(response) {
+  //        alert("Record successfully updated");
+  //      }
+  //    });
 }
 
 ////// -- Build and Populate rows /////
@@ -79,7 +83,7 @@ function buildTableOne() {
     let container = $(".table-one");
 
     for(var i = 0; i < data1.length; i++) {
-      let newRow = '<div draggable="true" ondragend="dragEnd()" ondragover="dragOver(event)" ondragstart="dragStart(event)" class="table__row new-row-one"><div class="user-id1 table__cell table__cell--short"></div><div class="album-name1 table__cell"></div></div>';
+      let newRow = '<div draggable="true" ondragend="dragEnd()" ondragover="dragOver(event)" ondragstart="dragStart(event)" class="table__row new-row-one"><div class="user-id1 table__cell table__cell--short"></div><div class="album-name1 album table__cell"></div></div>';
       container.after(newRow);
     }
 
@@ -99,7 +103,7 @@ function buildTableTwo() {
     let container = $(".table-two");
 
     for(var i = 0; i < data2.length; i++) {
-      let newRow = '<div draggable="true" ondragend="dragEnd()" ondragover="dragOver(event)" ondragstart="dragStart(event)" class="table__row new-row-two"><div class="user-id2 table__cell table__cell--short"></div><div class="album-name2 table__cell"></div></div>';
+      let newRow = '<div draggable="true" ondragend="dragEnd()" ondragover="dragOver(event)" ondragstart="dragStart(event)" class="table__row new-row-two"><div class="user-id2 table__cell table__cell--short"></div><div class="album-name2 album table__cell"></div></div>';
       container.after(newRow);
     }
 
@@ -113,6 +117,25 @@ function buildTableTwo() {
 
   });
 }
+
+function searchBar() {
+  console.log('alert');
+
+    var input, filter, li, a, i, txtValue;
+    input = $( ".search__input" );
+    filter = input.value.toUpperCase();
+    li = $( ".album" );
+    for (i = 0; i < li.length; i++) {
+        a = li[i];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+
+      }
+    }
 
 window.onload = function() {
   buildTableOne();
