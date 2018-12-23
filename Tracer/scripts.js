@@ -1,8 +1,8 @@
-$(function logData() {
+function logData() {
   fetch('https://jsonplaceholder.typicode.com/albums')
     .then(responseOne => responseOne.json())
     .then(jsonOne => console.log(jsonOne))
-});
+}
 
 ///////
 
