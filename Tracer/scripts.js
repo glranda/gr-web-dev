@@ -76,7 +76,7 @@ function updateAlbums() {
   //   });
 }
 
-////// -- Build and Populate rows /////
+////// -- Build and Populate rows ///// 
 
 function buildTableOne() {
   $.get('https://jsonplaceholder.typicode.com/albums?userId=' + x, function(data1) {
