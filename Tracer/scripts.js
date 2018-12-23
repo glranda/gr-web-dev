@@ -65,15 +65,13 @@ function updateUserY() {
 function updateAlbums() {
   console.log('alert');
 
-  $.ajax({
-       url: 'https://jsonplaceholder.typicode.com/albums?userId=1',
-       type: 'POST',
-       data: { title: 'FUCK' },
-       success: function( response ) {
-         fetch('https://jsonplaceholder.typicode.com/albums?userId=1')
-           .then(responseOne => responseOne.json())
-           .then(jsonOne => console.log(jsonOne))
-       }
+
+  $.post("https://jsonplaceholder.typicode.com/albums?userId=1",
+    {
+      title: "FUCK"
+    },
+    function(data,status){
+      console.log('success');
     });
 }
 
