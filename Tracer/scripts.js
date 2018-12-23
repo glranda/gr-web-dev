@@ -83,7 +83,7 @@ function buildTableOne() {
     let container = $(".table-one");
 
     for(var i = 0; i < data1.length; i++) {
-      let newRow = '<div draggable="true" ondragend="dragEnd()" ondragover="dragOver(event)" ondragstart="dragStart(event)" class="table__row searchTag new-row-one"><div class="user-id1 table__cell table__cell--short"></div><div class="album-name1 table__cell"></div></div>';
+      let newRow = '<div draggable="true" ondragend="dragEnd()" ondragover="dragOver(event)" ondragstart="dragStart(event)" class="table__row rowTag new-row-one"><div class="user-id1 table__cell table__cell--short"></div><div class="album-name1 table__cell"></div></div>';
       container.after(newRow);
     }
 
@@ -103,7 +103,7 @@ function buildTableTwo() {
     let container = $(".table-two");
 
     for(var i = 0; i < data2.length; i++) {
-      let newRow = '<div draggable="true" ondragend="dragEnd()" ondragover="dragOver(event)" ondragstart="dragStart(event)" class="table__row searchTag new-row-two"><div class="user-id2 table__cell table__cell--short"></div><div class="album-name2 table__cell"></div></div>';
+      let newRow = '<div draggable="true" ondragend="dragEnd()" ondragover="dragOver(event)" ondragstart="dragStart(event)" class="table__row rowTag new-row-two"><div class="user-id2 table__cell table__cell--short"></div><div class="album-name2 table__cell"></div></div>';
       container.after(newRow);
     }
 
@@ -124,19 +124,18 @@ window.onload = function() {
 }
 
 function searchBar() {
-
-    let input, filter, li, a, i, txtValue;
-    input = $( ".search__input" )[0];
-    filter = input.value.toUpperCase();
-    tag = $( ".searchTag" );
-    for (i = 0; i < tag.length; i++) {
-        a = tag[i];
-        txtValue = a.textContent || a.innerText;
-        if (txtValue.toUpperCase().indexOf(filter) > -1) {
-            tag[i].style.display = "";
-        } else {
-            tag[i].style.display = "none";
-        }
-
+  let input, filter, li, a, i, txtValue;
+  input = $( ".search__input" )[0];
+  filter = input.value.toUpperCase();
+  tag = $( ".rowTag" );
+  for (i = 0; i < tag.length; i++) {
+      a = tag[i];
+      txtValue = a.textContent || a.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+          tag[i].style.display = "";
+      } else {
+          tag[i].style.display = "none";
       }
+
     }
+}
