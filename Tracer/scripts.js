@@ -65,7 +65,7 @@ function updateUserY() {
 ////// -- Upate on drop /////
 
 function updateAlbums(event) {
-  //event || window.event;
+  //event || window.event; I know there is a way to use this to fix the FF bug
   let target = event.target;
   let parent = target.parentElement;
   let z;
