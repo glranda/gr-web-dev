@@ -36,15 +36,6 @@ main {
     border: 1px solid #ffb433;
     border-radius: 3px;
 }
-.search__button{
-    display: inline-block;
-    height: 30px;
-    padding: 5px;
-    background-color: #ffb433;
-    color: #fff;
-    border-radius: 5px;
-    border-color: #fff8eb;
-}
 
 select {
   color: #fff;
