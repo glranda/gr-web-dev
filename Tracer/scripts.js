@@ -64,13 +64,13 @@ function updateUserY() {
 
 function updateAlbums(event) {
 
-  var $target = event.target;
-  var parent = $target.parentElement;
+  var target = event.target;
+  var parent = target.parentElement;
   var z;
 
   if (parent.classList.contains("table_one") == true) {
     z = x;
-    $target.find('.table__cell--short').innerHTML = 'User ' + z;
+    target.querySelectorAll(".table__cell--short").innerHTML = 'User ' + z;
   } else {
     z = y;
     target.innerHTML = 'User ' + z;
