@@ -27,7 +27,7 @@ function dragOver(e) {
 
 function dragEnd() {
   _el = null;
-  updateAlbums();
+  updateAlbums(event);
 }
 
 function dragStart(e) {
@@ -62,11 +62,14 @@ function updateUserY() {
 
 ////// -- Upate on drop /////
 
-function updateAlbums() {
-  console.log('alert');
-  console.log($this.parents());
-  //var z;
+function updateAlbums(event) {
 
+  var target = event.target;
+  var parent = target.parentElement;
+
+  console.log(parent);
+  // var z;
+  //
   // if () {
   //
   // }
