@@ -64,7 +64,7 @@ function updateUserY() {
 
 function updateAlbums(event) {
 
-  var target = event.target;
+  var $target = event.target;
   var $parent = target.parentElement;
   var $test = document.getElementsByClassName('table_one');
 
@@ -72,7 +72,7 @@ function updateAlbums(event) {
   console.log($test);
   var z;
 
-  if ($test.hasClass( ".table_one" ).length) {
+  if ($target.parents( ".table_one" ).length) {
     z = x;
     console.log(z);
   } else {
