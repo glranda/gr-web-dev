@@ -19,6 +19,12 @@ main {
   }
 }
 
+
+
+.selected {
+  background-color: rgba(13, 173, 253, 0.37)
+}
+
 .underbrow {
   color: #aaa;
   margin-top: -.8rem;
