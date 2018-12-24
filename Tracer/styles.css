@@ -110,6 +110,10 @@ select {
     margin-left: 3rem;
 }
 
+.rowTag {
+  cursor: move;
+}
+
 .rowTag:nth-child(odd) {
   background-color: #fff8eb;
 }
