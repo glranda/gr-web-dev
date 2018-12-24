@@ -66,13 +66,13 @@ function updateAlbums(event) {
 
   var target = event.target;
   var $parent = target.parentElement;
-  var test = document.getElementsByClassName('table_one');
+  var $test = document.getElementsByClassName('table_one');
 
   console.log($parent);
-  console.log(test);
+  console.log($test);
   var z;
 
-  if (test.hasClass( ".table_one" ).length) {
+  if ($test.hasClass( ".table_one" ).length) {
     z = x;
     console.log(z);
   } else {
