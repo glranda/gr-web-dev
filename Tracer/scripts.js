@@ -72,7 +72,7 @@ function updateAlbums(event) {
   console.log(test);
   var z;
 
-  if ($parent.hasClass( ".table_one" ).length) {
+  if (test.hasClass( ".table_one" ).length) {
     z = x;
     console.log(z);
   } else {
