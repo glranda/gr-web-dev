@@ -70,7 +70,7 @@ function updateAlbums(event) {
   console.log(parent);
   var z;
 
-  if (parent.hasClass( "table_one" )) {
+  if ($parent.hasClass( "table_one" )) {
     z = x;
     console.log(z);
   } else {
