@@ -51,7 +51,6 @@ function updateUserX() {
   x = newUser1;
   $( ".new-row-one" ).remove();
   buildTableOne();
-  searchBar();
 }
 
 function updateUserY() {
@@ -59,7 +58,6 @@ function updateUserY() {
   y = newUser2;
   $( ".new-row-two" ).remove();
   buildTableTwo();
-  searchBar();
 }
 
 ////// -- Upate on drop /////
@@ -108,7 +106,7 @@ function buildTableOne() {
       ids[j].innerHTML = 'User ' + data1[j].userId;
       albums[j].innerHTML = data1[j].title;
     }
-
+    searchBar();
   });
 }
 
@@ -128,7 +126,7 @@ function buildTableTwo() {
       ids[j].innerHTML = 'User ' + data2[j].userId;
       albums[j].innerHTML = data2[j].title;
     }
-
+    searchBar();
   });
 }
 
