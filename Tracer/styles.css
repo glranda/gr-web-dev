@@ -41,7 +41,9 @@ main {
 select {
   color: #fff;
   background: #ffb433;
-  border-color: #fff8eb;
+  border: 1px solid #fff8eb;
+  padding-top: .1rem;
+  border-radius: 5px;
 }
 
 .table {
