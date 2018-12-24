@@ -72,7 +72,7 @@ function updateAlbums(event) {
   console.log(test);
   var z;
 
-  if ($parent.parents( ".table_one" ).length) {
+  if (target.parents( ".table_one" ).length) {
     z = x;
     console.log(z);
   } else {
