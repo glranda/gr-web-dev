@@ -14,6 +14,33 @@ let newUser2 = selectUser2.options[selectUser2.selectedIndex].value;
 let x = newUser1;
 let y = newUser2;
 
+////// -- Upate on drop /////
+
+function updateAlbums(event) {
+  let target = event.target;
+  let parent = target.parentElement;
+  let z;
+
+  if (parent.classList.contains("table_one") == true) {
+    z = x;
+    target.querySelector(".table__cell--short").innerHTML = 'User ' + z;
+  } else {
+    z = y;
+    target.querySelector(".table__cell--short").innerHTML = 'User ' + z;
+  }
+
+  let data = {userId: z};
+
+  fetch('https://jsonplaceholder.typicode.com/albums', {
+    method: 'POST',
+    body: JSON.stringify(data),
+    headers: {
+      'Content-Type': 'application/json'
+    }
+  }).then(res => res.json())
+  .then(response => console.log('New POST data = ' + response))
+}
+
 ////// -- Drag and Drop Functions /////
 
 let _el;
@@ -60,33 +87,6 @@ function updateUserY() {
 
   $( ".new-row-two" ).remove();
   buildTableTwo();
-}
-
-////// -- Upate on drop /////
-
-function updateAlbums(event) {
-  let target = event.target;
-  let parent = target.parentElement;
-  let z;
-
-  if (parent.classList.contains("table_one") == true) {
-    z = x;
-    target.querySelector(".table__cell--short").innerHTML = 'User ' + z;
-  } else {
-    z = y;
-    target.querySelector(".table__cell--short").innerHTML = 'User ' + z;
-  }
-
-  let data = {userId: z};
-
-  fetch('https://jsonplaceholder.typicode.com/albums', {
-    method: 'POST',
-    body: JSON.stringify(data),
-    headers: {
-      'Content-Type': 'application/json'
-    }
-  }).then(res => res.json())
-  .then(response => console.log('New POST data = ' + response))
 }
 
 ////// -- Build and Populate rows /////
