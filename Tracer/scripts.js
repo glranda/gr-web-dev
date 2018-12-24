@@ -66,7 +66,6 @@ function updateUserY() {
 ////// -- Upate on drop /////
 
 function updateAlbums(evt) {
-  let evt = event || window.event;
   let target = evt.target;
   let parent = target.parentElement;
   let z;
