@@ -1,25 +1,17 @@
 @import url('https://fonts.googleapis.com/css?family=Lato');
 
 body {
-    font-family: 'Lato', sans-serif;
-    padding: 0 50px;
-    background-color: #fff8eb;
-    max-width: 1400px;
-    margin: 0 auto;
+  font-family: 'Lato', sans-serif;
+  padding: 0 50px;
+  background-color: #fff8eb;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 main {
-    display: block;
-    justify-content: space-between;
+  display: block;
+  justify-content: space-between;
 }
-
-@media only screen and (min-width: 40rem) {
-  main {
-      display: flex;
-  }
-}
-
-
 
 .selected {
   background-color: rgba(13, 173, 253, 0.37)
@@ -32,17 +24,18 @@ main {
 }
 
 .search {
-    padding-bottom: 30px;
+  padding-bottom: 30px;
 }
+
 .search__label {
-    font-weight: bold;
-    font-size: 18px;
-    color: #ffb433;
+  font-weight: bold;
+  font-size: 18px;
+  color: #ffb433;
 }
 .search__input {
-    padding: 5px;
-    border: 1px solid #ffb433;
-    border-radius: 3px;
+  padding: 5px;
+  border: 1px solid #ffb433;
+  border-radius: 3px;
 }
 
 select {
@@ -51,24 +44,13 @@ select {
   border-color: #fff8eb;
 }
 
-
 .table {
-    border: 1px solid #ffb433;
-    border-radius: 8px;
-    background-color: #fff;
-    width: 100%;
-    margin-bottom: 2rem;
-    box-shadow: #ccc 3px 3px 12px -1px;
-}
-
-@media only screen and (min-width: 40rem) {
-  main {
-      display: flex;
-  }
-
-  .table {
-    width: 48%;
-  }
+  border: 1px solid #ffb433;
+  border-radius: 8px;
+  background-color: #fff;
+  width: 100%;
+  margin-bottom: 2rem;
+  box-shadow: #ccc 3px 3px 12px -1px;
 }
 
 .album-title {
@@ -81,33 +63,36 @@ select {
 }
 
 .table__header {
-    background: #ffb433;
-    font-weight: bold;
-    color: #fff;
-    border-top-left-radius: 6px;
-    border-top-right-radius: 6px;
+  background: #ffb433;
+  font-weight: bold;
+  color: #fff;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
 }
 
 .table__row {
-    display: flex;
-    padding: 5px;
-    border-bottom: 1px solid #ffb433;
+  display: flex;
+  padding: 5px;
+  border-bottom: 1px solid #ffb433;
 }
+
 .table__row:last-child {
-    border-bottom: 0
+  border-bottom: 0;
 }
 
 .table__cell {
-    margin-right: 10px;
+  margin-right: 10px;
 }
+
 .table__cell--short {
-    flex-shrink: 0;
-    width: 50px;
-    color: #aaa;
+  flex-shrink: 0;
+  width: 50px;
+  color: #aaa;
 }
+
 .table__cell:last-child {
-    margin-right: 0px;
-    margin-left: 3rem;
+  margin-right: 0px;
+  margin-left: 3rem;
 }
 
 .rowTag {
@@ -125,4 +110,14 @@ select {
 
 .rowTag:hover .table__cell--short {
   color: #fff;
+}
+
+@media only screen and (min-width: 50rem) {
+  main {
+    display: flex;
+  }
+
+  .table {
+    width: 48%;
+  }
 }
