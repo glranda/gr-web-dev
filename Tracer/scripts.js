@@ -33,11 +33,6 @@ function dragEnd() {
 function dragStart(e) {
   e.dataTransfer.effectAllowed = "move";
   e.dataTransfer.setData("text/plain", null);
-  
-  var img = document.createElement("img");
-    img.src = "http://kryogenix.org/images/hackergotchi-simpler.png";
-    e.dataTransfer.setDragImage(img, 0, 0);
-
   _el = e.target;
 }
 
@@ -121,7 +116,7 @@ function buildTableTwo() {
     let container = $(".table-two");
 
     for(var i = 0; i < data2.length; i++) {
-      let newRow = '<div draggable="true" ondragend="dragEnd()" ondragover="dragOver(event)" ondragstart="dragStart(event)" class="table__row rowTag new-row-two"><div class="user-id2 table__cell table__cell--short"></div><div class="album-name2 table__cell"></div></div>';
+      let newRow = '<div draggable="true" ondragend="dragEnd()" ondragover="dragOver(event)" ondragstart="dragStart(event)" tabindex="0" class="table__row rowTag new-row-two"><div class="user-id2 table__cell table__cell--short"></div><div class="album-name2 table__cell"></div></div>';
       container.after(newRow);
     }
 
