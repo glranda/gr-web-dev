@@ -16,53 +16,33 @@ let y = newUser2;
 
 ////// -- Drag and Drop Functions /////
 
-// let _el;
-//
-// function dragOver(e) {
-//   if (isBefore(_el, e.target))
-//     e.target.parentNode.insertBefore(_el, e.target);
-//   else
-//     e.target.parentNode.insertBefore(_el, e.target.nextSibling);
-// }
-//
-// function dragEnd() {
-//   _el = null;
-//   updateAlbums(event);
-// }
-//
-// function dragStart(e) {
-//   e.dataTransfer.effectAllowed = "move";
-//   e.dataTransfer.setData("text/plain", null);
-//   _el = e.target;
-// }
-//
-// function isBefore(el1, el2) {
-//     if (el2.parentNode === el1.parentNode)
-//         for (var cur = el1.previousSibling; cur; cur = cur.previousSibling)
-//             if (cur === el2)
-//                 return true;
-//     return false;
-// }
+let _el;
 
-$(document).ready(function() {
-  $('.table__row [data-action="draggable"]').draggable({
-    revert: true,
-    helper: function() {
-      var selected = $('.table__row [data-action="draggable"].selected');
-      if (selected.length === 0) {
-        $(this).addClass('selected');
-        selected = $(this);
-      }
-      var container = $('<div/>').attr('id', 'draggingContainer');
-      container.append('<div>' + selected.length + '</div>')
-      container.append(selected.clone());
-      return container;
-    }
-  });
-  $('.table__row [data-action="draggable"]').click(function() {
-    $(this).toggleClass('selected')
-  });
-});
+function dragOver(e) {
+  if (isBefore(_el, e.target))
+    e.target.parentNode.insertBefore(_el, e.target);
+  else
+    e.target.parentNode.insertBefore(_el, e.target.nextSibling);
+}
+
+function dragEnd() {
+  _el = null;
+  updateAlbums(event);
+}
+
+function dragStart(e) {
+  e.dataTransfer.effectAllowed = "move";
+  e.dataTransfer.setData("text/plain", null);
+  _el = e.target;
+}
+
+function isBefore(el1, el2) {
+    if (el2.parentNode === el1.parentNode)
+        for (var cur = el1.previousSibling; cur; cur = cur.previousSibling)
+            if (cur === el2)
+                return true;
+    return false;
+}
 
 ////// -- User Select /////
 
@@ -115,9 +95,7 @@ function buildTableOne() {
     let container = $(".table-one");
 
     for(var i = 0; i < data1.length; i++) {
-      //let newRow = '<div draggable="true" ondragend="dragEnd()" ondragover="dragOver(event)" ondragstart="dragStart(event)" class="table__row rowTag new-row-one"><div class="user-id1 table__cell table__cell--short"></div><div class="album-name1 table__cell"></div></div>';
-      let newRow = '<div data-action="draggable" class="table__row rowTag new-row-one"><div class="user-id1 table__cell table__cell--short"></div><div class="album-name1 table__cell"></div></div>';
-
+      let newRow = '<div draggable="true" ondragend="dragEnd()" ondragover="dragOver(event)" ondragstart="dragStart(event)" class="table__row rowTag new-row-one"><div class="user-id1 table__cell table__cell--short"></div><div class="album-name1 table__cell"></div></div>';
       container.after(newRow);
     }
 
