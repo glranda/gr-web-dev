@@ -27,8 +27,9 @@ function dragOver(e) {
 
 function dragEnd() {
   _el = null;
-  updateAlbums(event);
   event = event || window.event;
+  updateAlbums(event);
+
 }
 
 function dragStart(e) {
