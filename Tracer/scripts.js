@@ -77,6 +77,7 @@ function updateAlbums(event) {
     console.log(z);
   } else {
     z = y;
+    console.log(z);
   }
 
   var data = {userId: x};
