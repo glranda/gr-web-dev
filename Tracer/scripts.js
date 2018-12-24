@@ -18,8 +18,6 @@ let y = newUser2;
 
 let _el;
 
-let event = event || window.event;
-
 function dragOver(e) {
   if (isBefore(_el, e.target))
     e.target.parentNode.insertBefore(_el, e.target);
