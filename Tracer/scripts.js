@@ -1,7 +1,7 @@
 function logData() {
   fetch('https://jsonplaceholder.typicode.com/albums')
     .then(responseOne => responseOne.json())
-    .then(jsonOne => console.log(jsonOne))
+    .then(jsonOne => console.log('Inital log of Albums = ' + jsonOne))
 }
 
 ///////
@@ -33,6 +33,11 @@ function dragEnd() {
 function dragStart(e) {
   e.dataTransfer.effectAllowed = "move";
   e.dataTransfer.setData("text/plain", null);
+  
+  var img = document.createElement("img");
+    img.src = "http://kryogenix.org/images/hackergotchi-simpler.png";
+    e.dataTransfer.setDragImage(img, 0, 0);
+
   _el = e.target;
 }
 
@@ -49,6 +54,7 @@ function isBefore(el1, el2) {
 function updateUserX() {
   newUser1 = selectUser1.options[selectUser1.selectedIndex].value;
   x = newUser1;
+
   $( ".new-row-one" ).remove();
   buildTableOne();
 }
@@ -56,6 +62,7 @@ function updateUserX() {
 function updateUserY() {
   newUser2 = selectUser2.options[selectUser2.selectedIndex].value;
   y = newUser2;
+
   $( ".new-row-two" ).remove();
   buildTableTwo();
 }
@@ -63,10 +70,9 @@ function updateUserY() {
 ////// -- Upate on drop /////
 
 function updateAlbums(event) {
-
-  var target = event.target;
-  var parent = target.parentElement;
-  var z;
+  let target = event.target;
+  let parent = target.parentElement;
+  let z;
 
   if (parent.classList.contains("table_one") == true) {
     z = x;
@@ -76,16 +82,16 @@ function updateAlbums(event) {
     target.querySelector(".table__cell--short").innerHTML = 'User ' + z;
   }
 
-  var data = {userId: z};
+  let data = {userId: z};
 
   fetch('https://jsonplaceholder.typicode.com/albums', {
     method: 'POST',
     body: JSON.stringify(data),
-    headers:{
+    headers: {
       'Content-Type': 'application/json'
     }
   }).then(res => res.json())
-  .then(response => console.log(response))
+  .then(response => console.log('New POST data = ' + response))
 }
 
 ////// -- Build and Populate rows /////
@@ -95,7 +101,7 @@ function buildTableOne() {
     let container = $(".table-one");
 
     for(var i = 0; i < data1.length; i++) {
-      let newRow = '<div draggable="true" ondragend="dragEnd()" ondragover="dragOver(event)" ondragstart="dragStart(event)" class="table__row rowTag new-row-one"><div class="user-id1 table__cell table__cell--short"></div><div class="album-name1 table__cell"></div></div>';
+      let newRow = '<div draggable="true" ondragend="dragEnd()" ondragover="dragOver(event)" ondragstart="dragStart(event)" tabindex="0" class="table__row rowTag new-row-one"><div class="user-id1 table__cell table__cell--short"></div><div class="album-name1 table__cell"></div></div>';
       container.after(newRow);
     }
 
@@ -135,18 +141,22 @@ window.onload = function() {
   buildTableTwo();
 }
 
+////// -- Search Bar /////
+
 function searchBar() {
   let input, filter, li, a, i, txtValue;
   input = $( ".search__input" )[0];
   filter = input.value.toUpperCase();
   tag = $( ".rowTag" );
+
   for (i = 0; i < tag.length; i++) {
-      a = tag[i];
-      txtValue = a.textContent || a.innerText;
-      if (txtValue.toUpperCase().indexOf(filter) > -1) {
-          tag[i].style.display = "";
-      } else {
-          tag[i].style.display = "none";
-      }
+    a = tag[i];
+    txtValue = a.textContent || a.innerText;
+
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        tag[i].style.display = "";
+    } else {
+        tag[i].style.display = "none";
     }
+  }
 }
