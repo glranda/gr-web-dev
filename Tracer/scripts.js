@@ -66,8 +66,10 @@ function updateAlbums(event) {
 
   var target = event.target;
   var $parent = target.parentElement;
+  var test = document.getElementsByClassName('table_one');
 
   console.log($parent);
+  console.log(test);
   var z;
 
   if ($parent.parents( ".table_one" ).length) {
