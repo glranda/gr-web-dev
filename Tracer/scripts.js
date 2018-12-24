@@ -64,9 +64,9 @@ function updateUserY() {
 
 function updateAlbums() {
   console.log('alert');
+  console.log(this.parentElement);
+  //var z;
 
-  // var z;
-  //
   // if () {
   //
   // }
