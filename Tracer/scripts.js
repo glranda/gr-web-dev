@@ -65,9 +65,9 @@ function updateUserY() {
 function updateAlbums(event) {
 
   var target = event.target;
-  var parent = target.parentElement;
+  var $parent = target.parentElement;
 
-  console.log(parent);
+  console.log($parent);
   var z;
 
   if ($parent.hasClass( "table_one" )) {
@@ -149,6 +149,5 @@ function searchBar() {
       } else {
           tag[i].style.display = "none";
       }
-
     }
 }
