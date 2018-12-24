@@ -71,7 +71,7 @@ function updateAlbums(event) {
 
   if (parent.classList.contains("table_one") == true) {
     z = x;
-    target.innerHTML = 'User ' + z;
+    target.find('.table__cell--short').innerHTML = 'User ' + z;
   } else {
     z = y;
     target.innerHTML = 'User ' + z;
