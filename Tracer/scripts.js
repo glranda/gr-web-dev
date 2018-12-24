@@ -65,7 +65,13 @@ function updateUserY() {
 function updateAlbums() {
   console.log('alert');
 
-  var data = {title: 'example'};
+  // var z;
+  //
+  // if () {
+  //
+  // }
+
+  var data = {userId: x};
 
   fetch('https://jsonplaceholder.typicode.com/albums', {
     method: 'POST',
