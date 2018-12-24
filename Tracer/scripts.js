@@ -51,6 +51,7 @@ function updateUserX() {
   x = newUser1;
   $( ".new-row-one" ).remove();
   buildTableOne();
+  updateAlbums(event);
 }
 
 function updateUserY() {
@@ -58,6 +59,7 @@ function updateUserY() {
   y = newUser2;
   $( ".new-row-two" ).remove();
   buildTableTwo();
+  updateAlbums(event);
 }
 
 ////// -- Upate on drop /////
