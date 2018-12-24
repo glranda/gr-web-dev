@@ -18,6 +18,8 @@ let y = newUser2;
 
 let _el;
 
+let event = event || window.event;
+
 function dragOver(e) {
   if (isBefore(_el, e.target))
     e.target.parentNode.insertBefore(_el, e.target);
@@ -27,7 +29,7 @@ function dragOver(e) {
 
 function dragEnd() {
   _el = null;
-  updateAlbums(e);
+  updateAlbums(event);
 }
 
 function dragStart(e) {
@@ -64,8 +66,8 @@ function updateUserY() {
 
 ////// -- Upate on drop /////
 
-function updateAlbums(e) {
-  let target = e.target;
+function updateAlbums(event) {
+  let target = event.target;
   let parent = target.parentElement;
   let z;
 
