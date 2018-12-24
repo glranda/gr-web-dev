@@ -64,7 +64,7 @@ function updateUserY() {
 
 function updateAlbums() {
   console.log('alert');
-  console.log(this.parentElement);
+  console.log($this.parents());
   //var z;
 
   // if () {
