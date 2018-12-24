@@ -45,10 +45,10 @@ let y = newUser2;
 // }
 
 $(document).ready(function() {
-  $('.table [data-action="draggable"]').draggable({
+  $('.table__row [data-action="draggable"]').draggable({
     revert: true,
     helper: function() {
-      var selected = $('.table [data-action="draggable"].selected');
+      var selected = $('.table__row [data-action="draggable"].selected');
       if (selected.length === 0) {
         $(this).addClass('selected');
         selected = $(this);
@@ -59,7 +59,7 @@ $(document).ready(function() {
       return container;
     }
   });
-  $('.table [data-action="draggable"]').click(function() {
+  $('.table__row [data-action="draggable"]').click(function() {
     $(this).toggleClass('selected')
   });
 });
