@@ -70,7 +70,7 @@ function updateAlbums(event) {
 
   if (parent.classList.contains("table_one") == true) {
     z = x;
-    target.querySelectorAll(".table__cell--short").innerHTML = 'User ' + z;
+    target.querySelector(".table__cell--short").innerHTML = 'User ' + z;
   } else {
     z = y;
     target.innerHTML = 'User ' + z;
