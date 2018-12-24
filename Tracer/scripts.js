@@ -80,7 +80,7 @@ function updateAlbums(event) {
     console.log(z);
   }
 
-  var data = {userId: x};
+  var data = {userId: z};
 
   fetch('https://jsonplaceholder.typicode.com/albums', {
     method: 'POST',
