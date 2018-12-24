@@ -64,15 +64,15 @@ function updateUserY() {
 
 function updateAlbums(event) {
 
-  var $target = event.target;
-  var parent = $target.parentElement;
+  var target = event.target;
+  var parent = target.parentElement;
   var test = document.getElementsByClassName('table_one');
 
   console.log(parent);
   console.log(test);
   var z;
 
-  if ($target.parents( ".table_one" ).length) {
+  if (parent.classList.contains("table_one") == true) {
     z = x;
     console.log(z);
   } else {
