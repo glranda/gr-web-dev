@@ -66,18 +66,15 @@ function updateAlbums(event) {
 
   var target = event.target;
   var parent = target.parentElement;
-  var test = document.getElementsByClassName('table_one');
 
-  console.log(parent);
-  console.log(test);
   var z;
 
   if (parent.classList.contains("table_one") == true) {
     z = x;
-    console.log(z);
+    target.innerHTML = 'User ' + z;
   } else {
     z = y;
-    console.log(z);
+    target.innerHTML = 'User ' + z;
   }
 
   var data = {userId: z};
