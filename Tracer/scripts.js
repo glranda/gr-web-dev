@@ -73,7 +73,7 @@ function updateAlbums(event) {
     target.querySelector(".table__cell--short").innerHTML = 'User ' + z;
   } else {
     z = y;
-    target.innerHTML = 'User ' + z;
+    target.querySelector(".table__cell--short").innerHTML = 'User ' + z;
   }
 
   var data = {userId: z};
