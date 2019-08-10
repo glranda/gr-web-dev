@@ -402,20 +402,6 @@ body {
   color: #fff;
 }
 
-.arrow a::after {
-  content: '';
-  background-image: url(/portfolio/image/arrow-dev.png);
-  background-size: 3rem;
-  background-repeat: no-repeat;
-  background-color: transparent;
-  position: absolute;
-  width: 3rem;
-  height: 1rem;
-  display: none;
-  margin-left: 1rem;
-  top: .25rem;
-}
-
 @media only screen and (min-width: 65.625rem) {
   .mobile-cover-links {
     display: none;
@@ -427,8 +413,9 @@ body {
   color: #fff;
 }
 
-.arrow a::after {
-  content: '';
+.cover-links p.arrow {
+  margin-top: auto;
+  /* content: '';
   background-image: url(/portfolio/image/arrow-dev.png);
   background-size: 3rem;
   background-repeat: no-repeat;
@@ -438,7 +425,7 @@ body {
   height: 1rem;
   display: none;
   margin-left: 1rem;
-  top: .25rem;
+  top: .25rem; */
 }
 
 @media only screen and (min-width: 30rem) {
