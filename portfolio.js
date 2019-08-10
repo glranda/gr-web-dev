@@ -40,7 +40,7 @@ var animateIntro = function() {
     setTimeout(function() {
       $('#intro-content').addClass('show-intro');
       $('.underbrow').addClass('show-under');
-    }, 1600);
+    }, 800);
 
 };
 
