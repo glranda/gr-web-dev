@@ -402,7 +402,7 @@ body {
   color: #fff;
 }
 
-.mobile-cover-links a.arrow:after {
+.mobile-cover-links .arrow a:after {
   content: '';
   background-image: url(/portfolio/image/arrow-dev.png);
   background-size: 3rem;
@@ -427,7 +427,7 @@ body {
   color: #fff;
 }
 
-.cover-links a.arrow:after {
+.cover-links .arrow a:after {
   content: '';
   background-image: url(/portfolio/image/arrow-dev.png);
   background-size: 3rem;
