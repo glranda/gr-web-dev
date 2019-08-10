@@ -731,11 +731,17 @@ body {
 }
 
 .dev-page-header {
-  margin-top: 12rem;
+  margin-top: 9rem;
   width: 80%;
   margin-left: auto;
   margin-right: auto;
   text-align: left;
+}
+
+@media only screen and (min-width: 43rem) {
+  .dev-page-header {
+    margin-top: 12rem;
+  }
 }
 
 @media only screen and (min-width: 27rem) {
