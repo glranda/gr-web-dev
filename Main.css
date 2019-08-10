@@ -251,7 +251,8 @@ body {
 }
 
 .home-top-section p {
-  font-size: 3rem;
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .showcase-box {
@@ -269,7 +270,7 @@ body {
 
 @media only screen and (min-width: 65.625rem) {
   .homepage-wrapper .showcase-box {
-    width: 80%;
+    width: 85%;
   }
 }
 
@@ -343,7 +344,7 @@ body {
 
 @media only screen and (min-width: 45.875rem) {
   .showcase-box img {
-    max-width: 45rem;
+    max-width: 40rem;
   }
 
   .showcase-box-secondary img {
@@ -483,7 +484,7 @@ body {
 
 .dev-header-home {
   margin-top: 11rem;
-  font-size: 3rem;
+  font-size: 2.5rem;
   margin-bottom: 1.5rem;
 }
 
