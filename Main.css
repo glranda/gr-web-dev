@@ -263,6 +263,16 @@ body {
   border-radius: 5px 5px 0 0;
 }
 
+.homepage-wrapper h2 {
+  text-decoration: underline;
+}
+
+@media only screen and (min-width: 45.875rem) {
+  .homepage-wrapper h2 {
+    text-decoration: none;
+  }
+}
+
 .homepage-wrapper .showcase-box {
   width: 100%;
   margin: 0 auto 2rem;
@@ -1650,7 +1660,7 @@ div.wh-page-box img {
   float: right;
 }
 
-.single {
+.cover-links.single {
   margin-top: auto
 }
 
