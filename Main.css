@@ -181,7 +181,7 @@ body {
   font-size: 1.2rem;
   width: 80%;
   text-align: left;
-  margin: 5rem auto 9rem;
+  margin: 5rem auto;
 }
 
 @media only screen and (min-width: 25rem) {
@@ -194,6 +194,25 @@ body {
   .home-top-section p.intro-text {
     width: 65%;
   }
+}
+
+.homepage-button {
+  background: #72a2ba;
+  height: 5rem;
+  width: 35rem;
+  margin: -1rem auto 8rem;
+  font-size: 1.2rem;
+  border-radius: 7px;
+  margin-bottom: 9rem;
+}
+
+.homepage-button:hover {
+  text-decoration: underline;
+}
+
+.homepage-button a {
+  text-decoration: none;
+  color: #fff;
 }
 
 .photography-header {
