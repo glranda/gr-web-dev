@@ -1063,7 +1063,7 @@ div.wh-page-box img {
 }
 
 .wh-page-box.hearst img:first-child {
-  margin-bottom: 0;
+  margin-bottom: -1rem;
 }
 
 .wh-page-box.hearst {
