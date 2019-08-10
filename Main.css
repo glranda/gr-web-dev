@@ -198,14 +198,21 @@ body {
 
 .homepage-button {
   background: #72a2ba;
-  height: 5rem;
-  width: 35rem;
+  padding: 1.5rem 0;
   margin: -1rem auto 8rem;
-  font-size: 1.2rem;
+  width: 18rem;
+  font-size: .85rem;
   border-radius: 7px;
   margin-bottom: 9rem;
   cursor: pointer;
   transition: all .2s ease-in-out;
+}
+
+@media only screen and (min-width: 35rem) {
+  .homepage-button {
+    width: 35rem;
+    font-size: 1.2rem;
+  }
 }
 
 .homepage-button:hover {
