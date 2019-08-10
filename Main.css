@@ -333,7 +333,7 @@ body {
 
 @media only screen and (min-width: 35rem) {
   .showcase-box img {
-    max-width: 35rem;
+    max-width: 30rem;
   }
 
   .showcase-box-secondary img {
