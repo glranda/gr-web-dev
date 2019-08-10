@@ -1066,6 +1066,14 @@ div.wh-page-box img {
   margin-bottom: 0;
 }
 
+.wh-page-box.hearst {
+  padding-bottom: 0;
+}
+
+.wh-page-box.hearst img {
+  border-radius: 5px 5px 0 0;
+}
+
 @media only screen and (min-width: 23.75rem) {
     .wh-page-box img:first-child {
       margin-top: 0rem;
