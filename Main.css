@@ -1657,7 +1657,7 @@ div.wh-page-box img {
   margin: 0 auto;
 }
 
-@media only screen and (min-width: 30rem) {
+@media only screen and (min-width: 65.625rem) {
   .image-showcase .h-images {
     width: 100%;
   }
