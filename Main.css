@@ -460,6 +460,13 @@ body {
 
 .home-hearst-box {
   background-color: #73ADA1;
+  border-radius: 2px 2px 0 0;
+}
+
+@media only screen and (min-width: 26.25rem) {
+  .home-hearst-box {
+    border-radius: 5px 5px 0 0;
+  }
 }
 
 .home-su-box {
