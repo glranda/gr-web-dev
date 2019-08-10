@@ -1650,7 +1650,9 @@ div.wh-page-box img {
   float: right;
 }
 
-
+.single {
+  margin-top: auto
+}
 
 
 
