@@ -196,6 +196,12 @@ body {
   }
 }
 
+.home-top-section p.intro-text.paragraph {
+  border-top: 1px solid #ccc;
+  padding-top: 4rem;
+  margin-top: -7rem;
+}
+
 .homepage-button {
   background: #72a2ba;
   color: #fff;
