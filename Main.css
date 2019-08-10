@@ -402,6 +402,20 @@ body {
   color: #fff;
 }
 
+.mobile-cover-links a:after {
+  content: '';
+  background-image: url(/portfolio/image/arrow-dev.png);
+  background-size: 3rem;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  position: absolute;
+  width: 3rem;
+  height: 1rem;
+  display: none;
+  margin-left: 1rem;
+  top: .25rem;
+}
+
 @media only screen and (min-width: 65.625rem) {
   .mobile-cover-links {
     display: none;
@@ -411,6 +425,26 @@ body {
 .cover-links a {
   text-decoration: none;
   color: #fff;
+}
+
+.cover-links a:after {
+  content: '';
+  background-image: url(/portfolio/image/arrow-dev.png);
+  background-size: 3rem;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  position: absolute;
+  width: 3rem;
+  height: 1rem;
+  display: none;
+  margin-left: 1rem;
+  top: .25rem;
+}
+
+@media only screen and (min-width: 30rem) {
+  .next-project p:after {
+    display: inline-block;
+  }
 }
 
 .cover-links a:hover {
@@ -1617,6 +1651,16 @@ div.wh-page-box img {
 .image-showcase .h-images {
   position: absolute;
   height: 100%;
+  width: 87%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+@media only screen and (min-width: 30rem) {
+  .image-showcase .h-images {
+    width: 100%;
+  }
 }
 
 .image-showcase img {
