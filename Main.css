@@ -208,10 +208,9 @@ body {
   display: inline-block;
   font-size: .85rem;
   padding: 1.5rem 0;
-  margin: -1rem auto 8rem;
+  margin: -2rem auto 12rem;
   width: 18rem;
   border-radius: 7px;
-  margin-bottom: 9rem;
   cursor: pointer;
   transition: all .2s ease-in-out;
 }
