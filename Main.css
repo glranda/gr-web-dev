@@ -198,17 +198,19 @@ body {
 
 .homepage-button {
   background: #72a2ba;
+  color: #fff;
+  display: inline-block;
+  font-size: .85rem;
   padding: 1.5rem 0;
   margin: -1rem auto 8rem;
   width: 18rem;
-  font-size: .85rem;
   border-radius: 7px;
   margin-bottom: 9rem;
   cursor: pointer;
   transition: all .2s ease-in-out;
 }
 
-@media only screen and (min-width: 35rem) {
+@media only screen and (min-width: 45rem) {
   .homepage-button {
     width: 35rem;
     font-size: 1.2rem;
@@ -218,11 +220,6 @@ body {
 .homepage-button:hover {
   text-decoration: underline;
   transform: scale(1.06);
-}
-
-.homepage-button a {
-  text-decoration: none;
-  color: #fff;
 }
 
 .photography-header {
