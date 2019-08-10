@@ -444,6 +444,10 @@ body {
   }
 }
 
+.home-hearst-box {
+  background-color: #73ADA1;
+}
+
 .home-su-box {
   background-color: #72A2BA;
 }
@@ -677,6 +681,10 @@ body {
     text-align: center;
     width: auto;
   }
+}
+
+.dev-wrapper .su-page-box .hearst {
+  border-radius: 5px;
 }
 
 .su-page-box , .su-layout-box , .su-main-box {
@@ -1572,6 +1580,21 @@ div.wh-page-box img {
 .next-project li.active {
   opacity: 1;
 }
+
+.image-showcase {
+
+}
+
+.image-showcase img {
+  max-width: 35rem;
+  display: block;
+  border-radius: 3px;
+}
+
+.image-showcase .content {
+
+}
+
 
 
 
