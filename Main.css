@@ -251,8 +251,14 @@ body {
 }
 
 .home-top-section p {
-  font-size: 2.5rem;
+  font-size: 1.75rem;
   margin-bottom: 1.5rem;
+}
+
+@media only screen and (min-width: 65.625rem) {
+  .home-top-section p {
+    font-size: 2.5rem;
+  }
 }
 
 .showcase-box {
@@ -267,7 +273,7 @@ body {
   text-decoration: underline;
 }
 
-@media only screen and (min-width: 45.875rem) {
+@media only screen and (min-width: 65.625rem) {
   .homepage-wrapper h2 {
     text-decoration: none;
   }
@@ -401,6 +407,7 @@ body {
   color: #fff;
   z-index: 2;
   font-size: 1.8rem;
+  text-decoration: underline;
 }
 
 .mobile-cover-links {
@@ -510,13 +517,19 @@ body {
 
 .dev-header-home {
   margin-top: 11rem;
-  font-size: 2.5rem;
+  font-size: 1.8rem;
   margin-bottom: 1.5rem;
 }
 
 @media only screen and (min-width: 26.25rem) {
   .dev-header-home {
     margin-top: 16rem;
+  }
+}
+
+@media only screen and (min-width: 65.625rem) {
+  .dev-header-home {
+    font-size: 2.5rem;
   }
 }
 
