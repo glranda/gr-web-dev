@@ -118,6 +118,7 @@ body {
 .home-top-section h1 {
   font-size: 1.5rem;
   margin-bottom: 20%;
+  margin-bottom: 1.5rem;
 }
 
 @media only screen and (min-width: 25rem) {
@@ -258,6 +259,18 @@ body {
   color: #fff;
   overflow: hidden;
   position: relative;
+  border-radius: 5px 5px 0 0;
+}
+
+.homepage-wrapper .showcase-box {
+  width: 100%;
+  margin: 0 auto 2rem;
+}
+
+@media only screen and (min-width: 65.625rem) {
+  .homepage-wrapper .showcase-box {
+    width: 80%;
+  }
 }
 
 .showcase-box-home .mobile {
@@ -469,13 +482,14 @@ body {
 }
 
 .dev-header-home {
-  margin-top: 12rem;
+  margin-top: 11rem;
   font-size: 3rem;
+  margin-bottom: 1.5rem;
 }
 
 @media only screen and (min-width: 26.25rem) {
   .dev-header-home {
-    margin-top: 20rem;
+    margin-top: 16rem;
   }
 }
 
@@ -1582,17 +1596,31 @@ div.wh-page-box img {
 }
 
 .image-showcase {
+  width: 100%;
+  position: relative;
+  height: 28rem;
+  margin-bottom: 3rem;
+  overflow: scroll;
+}
 
+.image-showcase .h-images {
+  position: absolute;
+  height: 100%;
 }
 
 .image-showcase img {
-  max-width: 35rem;
+  width: 100%;
+  max-width: 39rem;
   display: block;
-  border-radius: 3px;
+  border-radius: 2px;
+  padding-bottom: 4rem;
 }
 
 .image-showcase .content {
-
+  width: 45%;
+  right: 0;
+  padding: 6rem 2rem 0 6rem;
+  float: right;
 }
 
 
