@@ -1,1897 +1,256 @@
-/* ----- Designed and coded by Grayson Randall -----
------ https://graysonrandall.github.io/portfolio/index.html ----- */
-
-@font-face {
-    font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
-    src: /portfolio/ArialRoundedMTStd.otf;
-}
-
-@font-face {
-    font-family: 'Hiragino Kaku Gothic Std';
-    src: url(/portfolio/hiragino-kaku-gothic-std-w8.otf);
-}
-
-a {
-  color: blue;
-}
-
-a:visited {
-  color: blue;
-}
-
-body {
-  font-family: 'Libre Franklin', sans-serif;
-  line-height: 1.3;
-  color: #343434;
-}
-
-.outer-wrapper {
-  max-width: 1366px;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.content-wrapper {
-  max-width: 1280px;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.navigation {
-  padding: 0 1rem;
-  position: fixed;
-  top: 0;
-  background: #fff;
-  box-shadow: 0 1px 9px #ccc;
-  left: 0;
-  right: 0;
-  z-index: 3;
-  opacity: .9;
-}
-
-@media only screen and (min-width: 19.375rem) {
-  .navigation {
-    padding: 1rem 1rem;
-  }
-}
-
-@media only screen and (min-width: 26.25rem) {
-  .navigation {
-    padding: 1rem 2rem;
-  }
-}
-
-.navigation ul {
-  padding: 0;
-  display: block;
-  align-items: center;
-  justify-content: center;
-}
-
-@media only screen and (min-width: 19.375rem) {
-  .navigation ul {
-    display: flex;
-  }
-}
-
-@media only screen and (min-width: 26.25rem) {
-  .navigation ul {
-    justify-content: inherit;
-  }
-}
-
-.navigation ul li:last-child {
-  margin-right: .8rem;
-  margin-left: .8rem;
-}
-
-@media only screen and (min-width: 26.25rem) {
-  .navigation ul li:last-child {
-    margin-left: auto;
-    margin-right: 2rem;
-  }
-}
-
-.navigation ul li {
-  list-style-type: none;
-  margin: .5rem .8rem;
-}
-
-@media only screen and (min-width: 19.375rem) {
-  .navigation ul li {
-    margin: 0 .8rem;
-  }
-}
-
-@media only screen and (min-width: 26.25rem) {
-  .navigation ul li {
-    margin: 0 2rem;
-  }
-}
-
-.main-logo {
-  padding-top: 14rem;
-  max-width: 15rem;
-  opacity: 0;
-}
-
-.home-top-section h1 {
-  font-size: 1.5rem;
-  margin-bottom: 20%;
-  margin-bottom: 1.5rem;
-}
-
-@media only screen and (min-width: 25rem) {
-  .home-top-section h1  {
-    font-size: 2rem;
-  }
-}
-
-@media only screen and (min-width: 26.25rem) {
-  .home-top-section h1 {
-    margin-bottom: inherit;
-  }
-
-  .main-logo {
-    padding-top: 16rem;
-  }
-}
-
-.main-header {
-  opacity: 0;
-}
-
-.home-top-section .underbrow {
-  border-top: 1px solid black;
-  margin-top: .5rem;
-  display: inline-block;
-  padding-top: 0.5rem;
-  font-size: 1.2rem;
-  opacity: 0;
-  transform: translate(0, 400px);
-  -webkit-transform: translate(0, 400px);
-  -moz-transform: translate(0, 400px);
-  -o-transform: translate(0, 400px);
-  -ms-transform: translate(0, 400px);
-  transform: translate(0, 400px);
-}
-
-.home-top-section .show-under {
-  opacity: 1;
-  -webkit-transition: all .7s ease-in;
-  -moz-transition: all .7s ease-in;
-  -o-transition: all .7s ease-in;
-  -ms-transition: all .7s ease-in;
-  transition: all .7s ease-in;
-  -webkit-transform: translate(0, 0);
-  -moz-transform: translate(0, 0);
-  -o-transform: translate(0, 0);
-  -ms-transform: translate(0, 0);
-  transform: translate(0, 0);
-}
-
-@media only screen and (min-width: 25rem) {
-  .home-top-section .underbrow {
-    font-size: 1.7rem;
-    margin-top: .8rem;
-  }
-}
-
-.home-top-section p.intro-text {
-  font-size: 1.2rem;
-  width: 80%;
-  text-align: left;
-  margin: 5rem auto 9rem;
-}
-
-@media only screen and (min-width: 25rem) {
-  .home-top-section p.intro-text {
-    font-size: 1.4rem;
-  }
-}
-
-@media only screen and (min-width: 65.625rem) {
-  .home-top-section p.intro-text {
-    width: 65%;
-  }
-}
-
-.photography-header {
-  display: none;
-}
-
-@media only screen and (min-width: 43rem) {
-  .photography-header {
-    display: block;
-  }
-}
-
-.photography-showcase {
-  background-image: url(/portfolio/image/photography/15.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  margin-top: 14rem;
-  min-height: 26rem;
-  max-height: 35rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-@media only screen and (min-width: 43rem) {
-  .photography-showcase {
-    min-height: 35rem;
-    background-image: url(/portfolio/image/15-homepage.png);
-  }
-}
-
-.intro-content {
-  opacity: 0;
-  transform: translate(0, 400px);
-  -webkit-transform: translate(0, 400px);
-  -moz-transform: translate(0, 400px);
-  -o-transform: translate(0, 400px);
-  -ms-transform: translate(0, 400px);
-  transform: translate(0, 400px);
-}
-
-.show-intro {
-  opacity: 1;
-  -webkit-transition: all .7s ease-in;
-  -moz-transition: all .7s ease-in;
-  -o-transition: all .7s ease-in;
-  -ms-transition: all .7s ease-in;
-  transition: all .7s ease-in;
-  -webkit-transform: translate(0, 0);
-  -moz-transform: translate(0, 0);
-  -o-transform: translate(0, 0);
-  -ms-transform: translate(0, 0);
-  transform: translate(0, 0);
-}
-
-.home-top-section p {
-  font-size: 2.5rem;
-  margin-bottom: 1.5rem;
-}
-
-.showcase-box {
-  text-align: center;
-  color: #fff;
-  overflow: hidden;
-  position: relative;
-  border-radius: 5px 5px 0 0;
-}
-
-.homepage-wrapper .showcase-box {
-  width: 100%;
-  margin: 0 auto 2rem;
-}
-
-@media only screen and (min-width: 68rem) {
-  .homepage-wrapper .showcase-box {
-    width: 85%;
-  }
-}
-
-.showcase-box-home .mobile {
-  display: inline-block;
-  max-width: 16rem;
-  margin-bottom: -.3rem;
-  box-shadow: 2px 3px 7px 0px #333;
-  border-radius: 16px 16px 0 0;
-  border-radius: 5px 5px 0 0;
-  margin-top: 12%;
-}
-
-@media only screen and (min-width: 23.75rem) {
-  .showcase-box-home .mobile {
-    display: none;
-  }
-}
-
-.showcase-box img {
-  display: inline-block;
-  max-width: 16rem;
-  margin-bottom: -.3rem;
-  box-shadow: 2px 3px 7px 0px #333;
-  border-radius: 16px 16px 0 0;
-  border-radius: 5px 5px 0 0;
-  margin-top: 12%;
-}
-
-.showcase-box-home img {
-  display: none;
-  max-width: 16rem;
-  margin-bottom: -.3rem;
-  box-shadow: 2px 3px 7px 0px #333;
-  border-radius: 16px 16px 0 0;
-  border-radius: 5px 5px 0 0;
-  margin-top: 12%;
-}
-
-.showcase-box-secondary img {
-  max-width: 16rem;
-}
-
-@media only screen and (min-width: 23.75rem) {
-  .showcase-box img {
-    display: inline-block;
-    max-width: 18rem;
-    margin-top: 4%;
-  }
-
-  .showcase-box-home img {
-    display: inline-block;
-    max-width: 18rem;
-    margin-top: 4%;
-  }
-
-  .showcase-box-secondary img {
-    max-width: 18rem;
-  }
-}
-
-@media only screen and (min-width: 35rem) {
-  .showcase-box img {
-    max-width: 30rem;
-  }
-
-  .showcase-box-secondary img {
-    max-width: 35rem;
-  }
-}
-
-@media only screen and (min-width: 45.875rem) {
-  .showcase-box img {
-    max-width: 40rem;
-  }
-
-  .showcase-box-secondary img {
-    max-width: 35rem;
-  }
-}
-
-@media only screen and (min-width: 65.625rem) {
-  .showcase-box img {
-    border-radius: 16px 16px 0 0;
-    margin-top: 0;
-  }
-}
-
-.showcase-box h2 {
-  padding: 3rem 0 1rem;
-  margin: 0;
-  font-size: 2rem;
-  font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
-  font-weight: normal;
-}
-
-@media only screen and (min-width: 35rem) {
-  .showcase-box h2 {
-    font-size: 3rem;
-  }
-}
-
-@media only screen and (min-width: 65.625rem) {
-  .showcase-box h2 {
-    padding: 4rem 0;
-  }
-}
-
-.cover-links {
-  position: absolute;
-  width: 50%;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  top: 40%;
-  height: auto;
-  margin: auto;
-  color: #fff;
-  z-index: 2;
-  font-size: 1.8rem;
-}
-
-.mobile-cover-links {
-  display: block;
-  position: relative;
-}
-
-.mobile-cover-links a {
-  color: #fff;
-}
-
-@media only screen and (min-width: 65.625rem) {
-  .mobile-cover-links {
-    display: none;
-  }
-}
-
-.cover-links a {
-  text-decoration: none;
-  color: #fff;
-}
-
-.cover-links p.arrow {
-  margin-top: auto;
-  /* content: '';
-  background-image: url(/portfolio/image/arrow-dev.png);
-  background-size: 3rem;
-  background-repeat: no-repeat;
-  background-color: transparent;
-  position: absolute;
-  width: 3rem;
-  height: 1rem;
-  display: none;
-  margin-left: 1rem;
-  top: .25rem; */
-}
-
-@media only screen and (min-width: 30rem) {
-  .next-project p:after {
-    display: inline-block;
-  }
-}
-
-.cover-links a:hover {
-  text-decoration: underline;
-}
-
-.cover-links:last-child {
-  margin-top: 5.5rem;
-}
-
-.showcase-box .cover {
-  position: absolute;
-  top: 0;
-  left: 0;
-  background: black;
-  z-index: 1;
-  opacity: .7;
-  background-size: cover;
-  width: 100%;
-  height: 100%;
-  display: none;
-}
-
-.showcase-box:hover .cover {
-  display: none;
-}
-
-@media only screen and (min-width: 65.625rem) {
-  .showcase-box:hover .cover {
-    display: block;
-  }
-}
-
-.showcase-box .cover-links {
-  display: none;
-}
-
-.showcase-box:hover .cover-links {
-  display: none;
-}
-
-@media only screen and (min-width: 65.625rem) {
-  .showcase-box:hover .cover-links {
-    display: block;
-  }
-}
-
-.home-hearst-box {
-  background-color: #73ADA1;
-}
-
-.home-hearst-box img {
-  border-radius: 2px 2px 0 0;
-}
-
-@media only screen and (min-width: 26.25rem) {
-  .home-hearst-box img {
-    border-radius: 5px 5px 0 0;
-  }
-}
-
-.home-su-box {
-  background-color: #72A2BA;
-}
-
-.home-wh-box {
-  background-color: #73ADA1;
-}
-
-.home-anni-box {
-  background-color: #72A2BA;
-}
-
-.home-ci-box {
-  background-color: #F9E399;
-}
-
-.home-att-box {
-  background-color: #FF776E;
-}
-
-.dev-header-home {
-  margin-top: 11rem;
-  font-size: 2.5rem;
-  margin-bottom: 1.5rem;
-}
-
-@media only screen and (min-width: 26.25rem) {
-  .dev-header-home {
-    margin-top: 16rem;
-  }
-}
-
-.logos-header {
-  margin-top: -4rem;
-  padding-bottom: 1rem;
-}
-
-.logos-home-container {
-  margin: 0rem auto 11rem;
-  align-items: center;
-  max-width: 80%;
-  justify-content: space-between;
-  display: none;
-}
-
-@media only screen and (min-width: 47rem) {
-  .logos-home-container {
-    display: flex;
-  }
-}
-
-@media only screen and (min-width: 65.625rem) {
-  .logos-home-container {
-    max-width: 65%;
-  }
-}
-
-.logos-home-container img {
-  width: 3rem;
-}
-
-.logos-home-container span {
-  display: block;
-  text-align: center;
-  padding-top: .5rem;
-  font-size: .8rem;
-}
-
-.logos-home-container-mobile {
-  margin: 0rem auto 11rem;
-  display: flex;
-  align-items: center;
-  max-width: 100%;
-  justify-content: space-around;
-}
-
-@media only screen and (min-width: 19.375rem) {
-  .logos-home-container-mobile {
-    max-width: 80%;
-  }
-}
-
-@media only screen and (min-width: 47rem) {
-  .logos-home-container-mobile {
-    display: none;
-  }
-}
-
-.logos-home-container-mobile img {
-  width: 3rem;
-}
-
-.logos-home-container-mobile span {
-  display: block;
-  text-align: center;
-  padding-top: .5rem;
-  padding-bottom: 1.8rem;
-  font-size: .8rem;
-}
-
-.home-about-wrapper {
-  margin: 10rem auto 8rem;
-}
-
-.about-section-spacer {
-  text-align: left;
-  max-width: 80%;
-  margin: 2rem auto;
-  display: block;
-  align-items: baseline;
-}
-
-@media only screen and (min-width: 65.625rem) {
-  .about-section-spacer {
-    display: flex;
-    max-width: 65%;
-  }
-}
-
-.about-section-spacer p {
-  font-size: 1.4rem;
-}
-
-.about-section-spacer h3 {
-  width: 100%;
-  min-width: 8rem;
-  margin-right: 4rem;
-  font-size: 2.5rem;
-}
-
-@media only screen and (min-width: 26.25rem) {
-  .about-section-spacer h3 {
-    font-size: 1.5rem;
-  }
-}
-
-.resume-link {
-  margin: 2rem 0;
-}
-
-.su-wrapper , .wh-wrapper, .dev-wrapper {
-  text-align: left;
-}
-
-.text-spacer {
-  width: 80%;
-  margin: 0 auto;
-}
-
-@media only screen and (min-width: 65.625rem) {
-  .text-spacer {
-    margin: 0 auto 0 7rem;
-  }
-}
-
-.text-spacer p {
-  font-size: 1.4rem;
-}
-
-.text-spacer h2 {
-  font-size: 2rem;
-}
-
-.before-after p {
-  font-size: 1.4rem;
-}
-
-.before-after h2 {
-  font-size: 2rem;
-}
-
-.wh-progress-content {
-  margin-top: 4rem;
-}
-
-@media only screen and (min-width: 26.25rem) {
-  .wh-progress-content {
-    margin-top: 6rem;
-  }
-}
-
-.text-spacer-center {
-  width: 80%;
-  margin: 0 auto;
-}
-
-@media only screen and (min-width: 26.25rem) {
-    .text-spacer-center {
-      width: 70%;
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Grayson Randall | Portfolio</title>
+  <meta name="keywords" content="grayson, randall, grayson randall, design, development, portfolio, grayson randall design, grayson randall portfolio, grayson randall design portfolio, grayson randall design development, grayson randall designer, grayson randall design developer">
+  <meta name="description" content="Grayson Randall's Portfolio">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/portfolio/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/portfolio/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/portfolio/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/portfolio/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+
+  <link href="https://fonts.googleapis.com/css?family=Libre+Franklin" rel="stylesheet">
+  <link rel="stylesheet" href="Main.css">
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+  <script type="text/javascript" src="/portfolio/portfolio.js"></script>
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://graysonrandall.github.io/portfolio/",
+      "@type": "Product",
+      "name": "Grayson Randall Design and Development",
+      "image": [
+        "https://graysonrandall.github.io/portfolio/image/GR-logo.png"
+       ],
+      "description": "Hi, I’m Grayson. I’m 25 years old and I’m a Senior Front-End Web Developer and Freelance UI/UX Designer. Welcome to my Portfolio!",
+      "brand": {
+        "@type": "Thing",
+        "name": "Grayson Randall Design and Development"
+      }
     }
-}
-
-.text-spacer-center p {
-  font-size: 1.4rem;
-}
-
-.wh-mockups {
-  margin-bottom: 8rem;
-}
-
-.wh-mockups img {
-  width: 100%;
-}
-
-@media only screen and (min-width: 65.625rem) {
-  .wh-mockups img {
-    width: 90%;
-  }
-}
-
-.process-page-header {
-  margin-top: 12rem;
-}
-
-@media only screen and (min-width: 27rem) {
-  .process-page-header {
-    font-size: 2.5rem;
-  }
-}
-
-.dev-page-header {
-  margin-top: 12rem;
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: left;
-}
-
-@media only screen and (min-width: 27rem) {
-  .dev-page-header {
-    font-size: 2.5rem;
-    text-align: center;
-    width: auto;
-  }
-}
-
-.dev-wrapper .su-page-box .hearst {
-  border-radius: 5px;
-}
-
-.su-page-box , .su-layout-box , .su-main-box {
-  background-color: #72A2BA;
-}
-
-.wh-page-box , .wh-main-box {
-  background-color: #73ADA1;
-}
-
-.anni-main-box {
-  background-color: #72A2BA;
-}
-
-.ci-main-box {
-  background-color: #F9E399;
-}
-
-.att-main-box {
-  background-color: #FF776E;
-}
-
-div.wh-page-box img {
-  width: 100%;
-  border-radius: 0;
-  box-shadow: none;
-  margin-bottom: 0;
-}
-
-.wh-main-box:hover h2 {
-  text-decoration: underline;
-}
-
-.wh-main-box h2 {
-  text-decoration: underline;
-}
-
-@media only screen and (min-width: 65.625rem) {
-  .wh-main-box h2 {
-    text-decoration: none;
-  }
-}
-
-.wh-main-box:hover {
-  opacity: .9;
-}
-
-.anni-main-box:hover h2 {
-  text-decoration: underline;
-}
-
-.anni-main-box h2 {
-  text-decoration: underline;
-}
-
-@media only screen and (min-width: 65.625rem) {
-  .anni-main-box h2 {
-    text-decoration: none;
-  }
-}
-
-.anni-main-box:hover {
-  opacity: .9;
-}
-
-.ci-main-box:hover h2 {
-  text-decoration: underline;
-}
-
-.ci-main-box h2 {
-  text-decoration: underline;
-}
-
-@media only screen and (min-width: 65.625rem) {
-  .ci-main-box h2 {
-    text-decoration: none;
-  }
-}
-
-.ci-main-box:hover {
-  opacity: .9;
-}
-
-.att-main-box:hover h2 {
-  text-decoration: underline;
-}
-
-.att-main-box h2 {
-  text-decoration: underline;
-}
-
-@media only screen and (min-width: 65.625rem) {
-  .att-main-box h2 {
-    text-decoration: none;
-  }
-}
-
-.att-main-box:hover {
-  opacity: .9;
-}
-
-.photography-showcase:hover h2 {
-  text-decoration: underline;
-}
-
-.photography-showcase h2 {
-  text-decoration: underline;
-}
-
-@media only screen and (min-width: 65.625rem) {
-  .photography-showcase h2 {
-    text-decoration: none;
-  }
-}
-
-.reference-section {
-    display: block;
-    margin-top: 10rem;
-}
-
-.reference-section p {
-    padding-left: 0;
-    margin-bottom: 10rem;
-}
-
-@media only screen and (min-width: 43rem) {
-  .reference-section p {
-    padding-left: 12rem;
-  }
-}
-
-.reference-section p:before {
-  content: '';
-  background-image: url(/portfolio/image/nelnet-logo.png);
-  background-size: 9rem;
-  background-repeat: no-repeat;
-  background-color: transparent;
-  position: absolute;
-  width: 9rem;
-  height: 9rem;
-  margin-left: -12.5rem;
-  display: none;
-}
-
-@media only screen and (min-width: 43rem) {
-  .reference-section p:before {
-    display: block;
-  }
-}
-
-.nelnet-logo-mobile {
-  display: block;
-  margin: 0 auto;
-}
-
-.reference-quote {
-  display: block;
-  margin-top: 1.5rem;
-  font-weight: bold;
-}
-
-@media only screen and (min-width: 43rem) {
-  .nelnet-logo-mobile {
-    display: none;
-  }
-}
-
-.mypicture {
-  display: block;
-  margin-bottom: 3rem;
-  max-width: 200px;
-  border: 8px solid #FF776E;
-  border-radius: 108px;
-}
-
-.photography-main-section {
-  margin: 5rem 0;
-  padding: 0;
-}
-
-@media only screen and (min-width: 35rem) {
-  .photography-main-section {
-    padding: 0 2rem;
-  }
-}
-
-.photo-spacer {
-  display: inline;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 0;
-}
-
-@media only screen and (min-width: 70.6rem) {
-  .photo-spacer {
-    display: flex;
-    margin-bottom: 2rem;
-  }
-}
-
-.photo-spacer img {
-  max-width: 20rem;
-  max-height: 20rem;
-  margin: 1rem 0;
-  display: inline;
-}
-
-@media only screen and (min-width: 35rem) {
-  .photo-spacer img {
-    margin: 1rem;
-  }
-}
-
-@media only screen and (min-width: 70.6rem) {
-  .photo-spacer img {
-    margin: 0 1rem;
-  }
-}
-
-.su-main-box:hover h2 {
-  text-decoration: underline;
-}
-
-.su-main-box h2 {
-  text-decoration: underline;
-}
-
-@media only screen and (min-width: 65.625rem) {
-  .su-main-box h2 {
-    text-decoration: none;
-  }
-}
-
-.su-main-box:hover {
-  opacity: .9;
-}
-
-.su-main-box {
-  margin-top: 6rem;
-}
-
-@media only screen and (min-width: 65.625rem) {
-  .su-main-box {
-    margin-top: 0;
-  }
-}
-
-.su-page-box , .wh-page-box {
-  padding-top: 1.5rem;
-}
-
-@media only screen and (min-width: 26.25rem) {
-    .su-page-box , .wh-page-box {
-      padding-top: 4rem;
-    }
-}
-
-.wh-page-box {
-  margin-bottom: 2rem;
-  padding-bottom: 0;
-}
-
-@media only screen and (min-width: 65.625rem) {
-  .wh-page-box {
-    padding-bottom: 2rem;
-  }
-}
-
-.su-page-box {
-  margin-bottom: 5rem;
-}
-
-@media only screen and (min-width: 26.25rem) {
-  .wh-page-box {
-    margin-bottom: inherit;
-  }
-}
-
-.su-page-box img , .wh-page-box img {
-  width: 40%;
-}
-
-.su-page-box img:first-child {
-  margin-left: -1rem;
-  margin-right: 1rem;
-  display: none;
-}
-
-@media only screen and (min-width: 65.625rem) {
-  .su-page-box img:first-child {
-    display: inline;
-    border-radius: 0;
-  }
-}
-
-.su-page-box img:last-child {
-  min-width: 17rem;
-  border-radius: 0;
-  box-shadow: none;
-}
-
-@media only screen and (min-width: 26.25rem) {
-  .su-page-box img:last-child {
-    width: 48%;
-  }
-}
-
-.wh-page-box img:first-child {
-  margin-left: 0;
-  margin-right: 0;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-}
-
-@media only screen and (min-width: 23.75rem) {
-    .wh-page-box img:first-child {
-      margin-top: 0rem;
-    }
-}
-
-@media only screen and (min-width: 26.25rem) {
-    .wh-page-box img:first-child {
-      margin-top: -2rem;
-    }
-}
-
-@media only screen and (min-width: 65.625rem) {
-  .wh-page-box img:first-child {
-    margin-left: -1rem;
-    margin-right: 1rem;
-    margin-top: inherit;
-    margin-bottom: inherit;
-  }
-}
-
-.su-layout-box {
-  padding-top: 1rem;
-  margin-bottom: 6rem;
-}
-
-.su-layout-box .images {
-  display: inherit;
-  margin: 0 auto;
-  width: fit-content;
-  width: -moz-fit-content;
-}
-
-@media only screen and (min-width: 65.625rem) {
-  .su-layout-box .images {
-    display: flex;
-    align-items: center;
-  }
-}
-
-.su-layout-box .images img {
-  border-radius: 0;
-  box-shadow: none;
-  max-width: 16rem;
-}
-
-@media only screen and (min-width: 23.75rem) {
-  .su-layout-box .images img {
-    max-width: 20rem;
-  }
-}
-
-@media only screen and (min-width: 40rem) {
-  .su-layout-box .images img {
-    max-width: 40rem;
-  }
-}
-
-@media only screen and (min-width: 75rem) {
-  .su-layout-box .images img {
-    max-width: 53rem;
-  }
-}
-
-.su-layout-box .images a {
-  margin: 0rem auto 2rem auto;
-}
-
-@media only screen and (min-width: 26.25rem) {
-  .su-layout-box .images a {
-    margin: 4rem 2rem 2rem auto;
-  }
-}
-
-.su-layout-box a.second img {
-  box-shadow: 2px 3px 7px 0px #333;
-  max-width: 13rem;
-}
-
-@media only screen and (min-width: 23.75rem) {
-  .su-layout-box a.second img {
-    max-width: 18rem;
-  }
-}
-
-.su-layout-box .images a:last-child {
-  margin: 2rem auto;
-}
-
-@media only screen and (min-width: 65.625rem) {
-  .su-layout-box .images a:last-child {
-    margin: auto auto auto 2rem;
-  }
-}
-
-.su-layout-box a {
-  display: block;
-  margin: 4rem 0 2rem;
-}
-
-.su-layout-box a {
-  margin: 2rem auto 4rem;
-  width: fit-content;
-  width: -moz-fit-content;
-  display: table;
-  text-transform: uppercase;
-  color: #fff;
-}
-
-.site-wrapper-link {
-  text-decoration: none;
-  color: #fff;
-}
-
-.functionality-header {
-  display: none;
-}
-
-.functionality-header-mobile {
-  display: inherit;
-  margin-top: 6rem;
-}
-
-@media only screen and (min-width: 64.375rem) {
-  .functionality-header {
-    margin-top: 4rem;
-    font-size: 2rem;
-    display: inherit;
-  }
-
-  .functionality-header-mobile {
-    display: none;
-  }
-}
-
-.interview-section {
-  text-align: center;
-  margin-bottom: 6rem;
-  margin-top: 2.4%;
-}
-
-.interview-section img {
-  max-width: 15rem;
-  margin-right: 0;
-  margin-bottom: 1.5rem;
-  box-shadow: 2px 3px 7px 0px #333;
-}
-
-@media only screen and (min-width: 26.25rem) {
-  .interview-section img {
-    max-width: 25rem;
-  }
-}
-
-@media only screen and (min-width: 41.875rem) {
-  .interview-section img {
-    margin-right: 0rem;
-    margin-bottom: 1.5rem;
-  }
-}
-
-@media only screen and (min-width: 53.25rem) {
-  .interview-section img {
-    margin-right: 2rem;
-    margin-bottom: 0
-  }
-}
-
-.interview-section a:last-child img {
-  max-width: 15rem;
-  margin-right: 0;
-}
-
-@media only screen and (min-width: 26.25rem) {
-  .interview-section a:last-child img {
-    max-width: 25rem;
-  }
-}
-
-@media only screen and (min-width: 41.875rem) {
-  .interview-section a:last-child img {
-    max-width: 25rem;
-  }
-}
-
-.before-after {
-  margin-top: 1rem;
-}
-
-@media only screen and (min-width: 26.25rem) {
-  .before-after {
-    margin-top: 6.5rem;
-  }
-}
-
-.before-after img {
-  box-shadow: 2px 3px 7px 0px #333;
-}
-
-.before-after .top {
-  display: inherit;
-  margin: 0 2rem;
-}
-
-@media only screen and (min-width: 65.625rem) {
-  .before-after .top {
-    display: flex;
-  }
-}
-
-.before-after .top .content {
-  display: inline-block;
-  width: auto;
-  text-align: left;
-  padding-left: 0;
-}
-
-@media only screen and (min-width: 30rem) {
-  .before-after .top .content {
-    width: 30rem;
-  }
-}
-
-@media only screen and (min-width: 65.625rem) {
-  .before-after .top .content {
-    padding-left: 3rem;
-  }
-}
-
-.before-after .top img {
-  max-width: 14rem;
-  max-height: 30rem;
-  display: inline-block;
-}
-
-@media only screen and (min-width: 23.75rem) {
-  .before-after .top img {
-    max-width: 19rem;
-  }
-}
-
-@media only screen and (min-width: 32rem) {
-  .before-after .top img {
-    max-width: 30rem;
-    max-height: 21rem;
-  }
-}
-
-@media only screen and (min-width: 65.625rem) {
-  .before-after .top img {
-    max-width: inherit;
-    width: 46%;
-    height: 30%;
-    max-height: inherit;
-  }
-}
-
-@media only screen and (min-width: 85.375rem) {
-  .before-after .top img {
-    max-width: inherit;
-    width: auto;
-    height: auto;
-    max-height: 30rem;
-  }
-}
-
-.before-after .bottom {
-  display: none;
-  justify-content: space-between;
-  align-items: center;
-  margin: 2rem 2rem 7rem;
-}
-
-@media only screen and (min-width: 65.625rem) {
-  .before-after .bottom {
-    display: flex;
-  }
-}
-
-.before-after .bottom img {
-  max-width: 23rem;
-  max-height: 15rem;
-  height: 15rem;
-  width: 33%;
-}
-
-@media only screen and (min-width: 85.375rem) {
-  .before-after .bottom img {
-    max-width: 26rem;
-    max-height: 18rem;
-    width: 26rem;
-    height: 18rem;
-  }
-}
-
-
-
-
-.mobile-background {
-  background: url(/portfolio/image/madison-mobile.jpg);
-  position: absolute;
-  width: 100%;
-  z-index: -1;
-  height: 100%;
-  padding: 0;
-  margin: 0;
-  background-repeat: no-repeat;
-  background-position: 50% 0;
-  display: inherit;
-}
-
-.functionality-section {
-    background-image: none;
-    height: 41rem;
-    overflow: hidden;
-    position: relative;
-}
-
-.functionality-section h2 {
-  font-family: 'Hiragino Kaku Gothic Std';
-}
-
-@media only screen and (min-width: 75rem) {
-  .functionality-section h2 {
-    font-family: 'Hiragino Kaku Gothic Std';
-  }
-}
-
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .functionality-section h2 {
-    font-family: 'Roboto';
-  }
-}
-
-@-moz-document url-prefix() {
-  .functionality-section h2 {
-    font-family: 'Hiragino Kaku Gothic Std';
-  }
-}
-
-@media only screen and (min-width: 26.25rem) {
-  .mobile-background {
-    background: url(/portfolio/image/Wyldhaven-background.png);
-    background-position: 50% 50%;
-  }
-}
-
-@media only screen and (min-width: 64.375rem) {
-  .functionality-section {
-    background: url(/portfolio/image/Wyldhaven-background.png);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: initial;
-  }
-
-  .mobile-background {
-    display: none;
-  }
-}
-
-.functionality-section h2 {
-  color: #fff;
-  text-transform: uppercase;
-  position: absolute;
-  left: 0;
-  right: 0;
-  margin-top: 100%;
-  font-size: 1.5rem;
-}
-
-@media only screen and (min-width: 20.5rem) {
-  .functionality-section h2 {
-    margin-top: 80%;
-    font-size: 2.5rem;
-  }
-}
-
-@media only screen and (min-width: 23.75rem) {
-  .functionality-section h2 {
-    margin-top: 68%;
-  }
-}
-
-@media only screen and (min-width: 34rem) {
-  .functionality-section h2 {
-    margin-top: 49%;
-    font-size: 4rem;
-  }
-}
-
-@media only screen and (min-width: 41rem) {
-  .functionality-section h2 {
-    margin-top: 29%;
-    font-size: 5rem;
-  }
-}
-
-@media only screen and (min-width: 65.625rem) {
-  .functionality-section h2 {
-    margin-top: 20%;
-  }
-}
-
-.print-header {
-  text-align: center;
-}
-
-.print-media {
-  margin-bottom: 10rem;
-  display: block;
-  align-items: start;
-  justify-content: space-around;
-}
-
-@media only screen and (min-width: 65.625rem) {
-  .print-media {
-    display: flex;
-  }
-}
-
-.print-media img {
-  max-width: 13rem;
-  margin: .5rem auto 1.5rem;
-}
-
-@media only screen and (min-width: 29rem) {
-  .print-media img {
-    max-width: 25rem;
-  }
-}
-
-@media only screen and (min-width: 65.625rem) {
-  .print-media img {
-    margin: .5rem 0 1.5rem;
-  }
-}
-
-.print-media .columns {
-  margin: 5rem 0;
-  text-align: center;
-}
-
-@media only screen and (min-width: 65.625rem) {
-  .print-media .columns {
-    margin: 0;
-  }
-}
-
-.print-media .column-right {
-  margin-left: 0;
-}
-
-@media only screen and (min-width: 65.625rem) {
-  .print-media .column-right {
-    margin-left: 16%;
-  }
-}
-
-
-.print-media .cds {
-  display: block;
-  margin-bottom: 5rem;
-}
-
-@media only screen and (min-width: 65.625rem) {
-  .print-media .cds {
-    display: flex;
-  }
-}
-
-.print-media .stickers {
-  max-width: 13rem;
-}
-
-@media only screen and (min-width: 29rem) {
-  .print-media .stickers {
-    max-width: 15rem;
-  }
-}
-
-.print-media .cds img {
-   max-width: 24rem;
-   max-height: 6rem;
- }
-
- @media only screen and (min-width: 29rem) {
-   .print-media .cds img {
-      max-width: 30rem;
-      max-height: 9rem;
-    }
- }
-
-.what-i-did {
-  margin-top: 5rem;
-  margin-bottom: 3rem;
-}
-
-.what-i-did ul {
-  padding-left: 1.3rem;
-  display: block;
-}
-
-@media only screen and (min-width: 65.625rem) {
-  .what-i-did ul {
-    display: flex;
-  }
-}
-
-.what-i-did  li {
-  font-size: 1.2rem;
-  padding: .3rem 0;
-}
-
-.what-i-did .dev-list-left {
-  margin: 0 3rem 0 0;
-  display: block;
-  width: 100%;
-}
-
-.what-i-did .dev-list-right {
-  margin: 0;
-  display: block;
-  width: 100%;
-}
-
-@media only screen and (min-width: 65.625rem) {
-  .what-i-did .dev-list-right {
-    margin: 0 0 0 3rem;
-  }
-}
-
-.next-project {
-  margin-top: 1.5rem;
-}
-
-.next-project p {
-  display: inline-block;
-  position: relative;
-}
-
-.next-project p:after {
-  content: '';
-  background-image: url(/portfolio/image/arrow-dev.png);
-  background-size: 3rem;
-  background-repeat: no-repeat;
-  background-color: transparent;
-  position: absolute;
-  width: 3rem;
-  height: 1rem;
-  display: none;
-  margin-left: 1rem;
-  top: .25rem;
-}
-
-@media only screen and (min-width: 30rem) {
-  .next-project p:after {
-    display: inline-block;
-  }
-}
-
-.next-project ul {
-  display: block;
-  width: auto;
-  margin: 0;
-  padding: 0;
-}
-
-.next-project li {
-  display: inline-block;
-  width: 10px;
-  height: 10px;
-  margin: 0 18px;
-  background: #333;
-  border-radius: 50%;
-  opacity: .25;
-}
-
-.next-project li.active {
-  opacity: 1;
-}
-
-.image-showcase {
-  width: 100%;
-  position: relative;
-  height: 28rem;
-  margin-bottom: 3rem;
-  overflow: scroll;
-}
-
-.image-showcase .h-images {
-  position: absolute;
-  height: 100%;
-  width: 87%;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
-}
-
-@media only screen and (min-width: 65.625rem) {
-  .image-showcase .h-images {
-    width: 100%;
-  }
-}
-
-.image-showcase img {
-  width: 100%;
-  max-width: 39rem;
-  display: block;
-  border-radius: 2px;
-  padding-bottom: 4rem;
-}
-
-.image-showcase .content {
-  width: 45%;
-  right: 0;
-  padding: 6rem 2rem 0 6rem;
-  float: right;
-}
-
-
-
-
-
-
-
-.featherlight .featherlight-content {
-  margin: auto !important;
-}
-
-.featherlight .featherlight-inner {
-    max-height: inherit;
-    max-width: 75rem;
-    margin: auto;
-}
-
-.footer {
-  padding: 1rem 0;
-  background: #fff;
-  margin-top: 5rem;
-}
-
-.footer ul {
-  padding: 0 .8rem;
-  display: flex;
-  align-items: center;
-}
-
-.footer ul li {
-  list-style-type: none;
-  margin: 0;
-  width: 120px;
-  padding-right: 1rem;
-}
-
-@media only screen and (min-width: 26.25rem) {
-  .footer ul li {
-    margin: 0 0 0 2rem;
-    padding-right: 1rem;
-  }
-}
-
-.footer ul li:last-child {
-  margin-right: 0;
-  margin-left: auto;
-  width: 95px;
-  display: none;
-}
-
-@media only screen and (min-width: 19.375rem) {
-  .footer ul li:last-child {
-    display: block;
-  }
-}
-
-@media only screen and (min-width: 26.25rem) {
-  .footer ul li:last-child {
-    margin-right: 2rem;
-  }
-}
-
-.footer ul li.linkedin {
-  margin-left: auto;
-  margin-top: -.5rem;
-  padding-right: 0;
-}
-
-@media only screen and (min-width: 19.375rem) {
-  .footer ul li.linkedin {
-    padding-right: 21px;
-  }
-}
-
-.footer .linkedin img {
-  max-width: 3rem;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-.footer-home ul li.linkedin {
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: -.5rem;
-}
-
-.footer-home .linkedin img {
-  max-width: 3rem;
-  margin-right: auto;
-  margin-left: 0;
-}
-
-@media only screen and (min-width: 35rem) {
-  .footer-home .linkedin img {
-    margin-left: calc(50% - 165px);
-  }
-}
-
-.footer-home ul li:last-child {
-  display: block;
-}
-
-.footer-home ul li:first-child {
-  padding-left: 0rem;
-}
-
-@media only screen and (min-width: 19.375rem) {
-  .footer-home ul li:first-child {
-    padding-left: 1rem;
-  }
-}
-
-@media only screen and (min-width: 35rem) {
-  .footer-home ul li:first-child {
-    padding-left: 0;
-  }
-}
-
-.linkedin a:hover {
-  opacity: .6;
-}
-
-.su-layout-box a.light-box-desktop {
-  display: none;
-}
-
-@media only screen and (min-width: 65.625rem) {
-  .su-layout-box a.light-box-desktop {
-    display: table;
-  }
-}
-
-.light-box-desktop {
-  display: none;
-}
-
-@media only screen and (min-width: 65.625rem) {
-  .light-box-desktop {
-    display: inherit;
-  }
-}
-
-.su-layout-box a.light-box-mobile {
-  display: inherit;
-}
-
-@media only screen and (min-width: 65.625rem) {
-  .su-layout-box a.light-box-mobile {
-    display: none;
-  }
-}
-
-.images .light-box-mobile {
-  margin-left: auto;
-  margin-right: auto;
-  position: relative;
-}
-
-.light-box-mobile {
-  display: block;
-}
-
-@media only screen and (min-width: 65.625rem) {
-  .light-box-mobile {
-    display: none !important;
-  }
-}
-
-.external-link-home::after {
-  content: '';
-  background-image: url(/portfolio/image/link-external.png);
-  background-repeat: no-repeat;
-  background-color: transparent;
-  position: absolute;
-  background-size: .65rem;
-  width: .65rem;
-  height: .65rem;
-  margin-left: .65rem;
-  top: .33rem;
-}
-
-@media only screen and (min-width: 65.625rem) {
-  .external-link-home::after {
-    background-size: .9rem;
-    width: .9rem;
-    height: .9rem;
-    margin-left: .8rem;
-    top: .8rem;
-  }
-}
-
-.external-link-main::after {
-  content: '';
-  background-image: url(/portfolio/image/link-external.png);
-  background-repeat: no-repeat;
-  background-color: transparent;
-  position: absolute;
-  margin-left: .8rem;
-  background-size: 1rem;
-  width: 1rem;
-  height: 1rem;
-  top: 3.9rem;
-}
-
-@media only screen and (min-width: 35rem) {
-  .external-link-main::after {
-    width: 1.3rem;
-    height: 1.3rem;
-    top: 4.47rem;
-    background-size: 1.3rem;
-  }
-}
-
-@media only screen and (min-width: 65.625rem) {
-  .external-link-main::after {
-    top: 5.46rem;
-  }
-}
-
-.external-link-inv::after {
-  content: '';
-  background-image: url(/portfolio/image/link-external.png);
-  background-size: .7rem;
-  background-repeat: no-repeat;
-  background-color: transparent;
-  position: absolute;
-  width: .7rem;
-  height: .7rem;
-  margin-left: .7rem;
-  bottom: 4.319rem;
- }
+  </script>
+
+</head>
+
+<body>
+
+  <!--
+-----
+----- Designed and coded by Grayson Randall -----
+----- https://graysonrandall.github.io/portfolio/index.html -----
+-----
+-->
+
+  <div id="top" class="outer-wrapper homepage-wrapper">
+
+    <div class="navigation">
+      <ul>
+        <li><a href="#top">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a target="_blank" href="/portfolio/Grayson-Randall_Resume.pdf">Resume</a></li>
+        <li class="photography-header"><a href="#home-photos">Photography</a></li>
+        <li><a href="mailto:graysonrandallwebdev@gmail.com">Contact</a></li>
+      </ul>
+    </div>
+
+  <div class="home-top-section">
+    <img class="main-logo" src="/portfolio/image/GR-logo.png" alt="Grayson Randall Logo" />
+    <h1><span class="main-header">Grayson Randall</span> <br /><span class="underbrow">Design & Development</span></h1>
+
+  <div id="intro-content" class="intro-content">
+    <p class="intro-text">Hi, I’m Grayson. Welcome to my Portfolio! I’m 25 years old and I’m a Front-End Engineer and UI/UX Designer in NYC.  My works featured below are either coded or designed (or both) by me. I specialize in making ideas become reality, so <a href="mailto:graysonrandallwebdev@gmail.com">reach out to me with your project</a> or continue scrolling to learn more.</p>
+
+    <h2 class="logos-header">This is my tool kit:</h2>
+
+    <div class="logos-home-container">
+      <div>
+        <img src="/portfolio/image/html-logo.png" alt="HTML5 logo">
+        <span>HTML5</span>
+      </div>
+      <div>
+        <img src="/portfolio/image/css-logo.png" alt="CSS3 logo">
+        <span>CSS3</span>
+      </div>
+      <div>
+        <img src="/portfolio/image/js-logo.png" alt="JavaScript logo">
+        <span>JavaScript</span>
+      </div>
+      <div>
+        <img src="/portfolio/image/jquery-logo.png" alt="jQuery logo">
+        <span>jQuery</span>
+      </div>
+      <div>
+        <img src="/portfolio/image/sketch.png" alt="Sketch for Mac logo">
+        <span>Sketch</span>
+      </div>
+      <div>
+        <img src="/portfolio/image/ai-logo.png" alt="Adobe Illustrator logo">
+        <span>Illustrator</span>
+      </div>
+      <div>
+        <img src="/portfolio/image/ps-logo.png" alt="Photoshop logo">
+        <span>Photoshop</span>
+      </div>
+      <div>
+        <img src="/portfolio/image/React-logo.png" alt="React logo">
+        <span>React</span>
+      </div>
+      <div>
+        <img src="/portfolio/image/git-logo.png" alt="Git logo">
+        <span>Git</span>
+      </div>
+    </div>
+
+    <div class="logos-home-container-mobile">
+      <div>
+        <div>
+          <img src="/portfolio/image/html-logo.png" alt="HTML5 logo">
+          <span>HTML5</span>
+        </div>
+        <div>
+          <img src="/portfolio/image/css-logo.png" alt="CSS3 logo">
+          <span>CSS3</span>
+        </div>
+        <div>
+          <img src="/portfolio/image/js-logo.png" alt="JavaScript logo">
+          <span>JavaScript</span>
+        </div>
+      </div>
+      <div>
+        <div>
+          <img src="/portfolio/image/jquery-logo.png" alt="jQuery logo">
+          <span>jQuery</span>
+        </div>
+        <div>
+          <img src="/portfolio/image/sketch.png" alt="Sketch for Mac logo">
+          <span>Sketch</span>
+        </div>
+        <div>
+          <img src="/portfolio/image/ai-logo.png" alt="Adobe Illustrator logo">
+          <span>Illustrator</span>
+        </div>
+      </div>
+      <div>
+        <div>
+          <img src="/portfolio/image/ps-logo.png" alt="Photoshop logo">
+          <span>Photoshop</span>
+        </div>
+        <div>
+          <img src="/portfolio/image/React-logo.png" alt="React logo">
+          <span>React</span>
+        </div>
+        <div>
+          <img src="/portfolio/image/git-logo.png" alt="Git logo">
+          <span>Git</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+    <p id="work">Development</p>
+  </div>
+
+    <div class="showcase-box showcase-box-home home-hearst-box">
+      <h2>Hearst Newspapers</h2>
+      <p class="mobile-cover-links"><a href="hearst-process.html">Projects and more</a></p>
+      <img src="/portfolio/image/sfg.png" alt="SF Gate website" />
+      <img class="mobile" src="/portfolio/image/sfg.png" alt="See more about my work at Hearst" />
+      <div class="cover"></div>
+      <p class="cover-links single"><a href="hearst-process.html">Projects and more</a></p>
+    </div>
+
+    <div class="showcase-box showcase-box-home home-anni-box">
+      <h2>Great Lakes <br />50th Anniversary Timeline</h2>
+      <p class="mobile-cover-links"><a class="external-link-home" target="_blank" href="https://home.mygreatlakes.org/web/about/gl/timeline">See The Site</a></p>
+      <p class="mobile-cover-links "><a href="anni-dev-process.html">What I Did</a></p>
+      <img src="/portfolio/image/homepage-tm.png" alt="Great Lakes 50th Anniversary Website" />
+      <img class="mobile" src="/portfolio/image/homepage-tm-mobile.png" alt="Great Lakes 50th Anniversary Website" />
+      <div class="cover"></div>
+      <p class="cover-links"><a class="external-link-home" target="_blank" href="https://home.mygreatlakes.org/web/about/gl/timeline">See The Site</a></p>
+      <p class="cover-links"><a href="anni-dev-process.html">What I Did</a></p>
+    </div>
+
+    <div class="showcase-box showcase-box-home home-att-box">
+      <h2>Attigo</h2>
+      <p class="mobile-cover-links"><a class="external-link-home" target="_blank" href="https://www.attigo.com/">See The Site</a></p>
+      <p class="mobile-cover-links "><a href="att-dev-process.html">What I Did</a></p>
+      <img src="/portfolio/image/homepage-att.png" alt="Attigo Website" />
+      <img class="mobile" src="/portfolio/image/homepage-att-mobile.png" alt="Attigo Website" />
+      <div class="cover"></div>
+      <p class="cover-links"><a class="external-link-home" target="_blank" href="https://www.attigo.com/">See The Site</a></p>
+      <p class="cover-links"><a href="att-dev-process.html">What I Did</a></p>
+    </div>
+
+    <p class="dev-header-home">Projects</p>
+
+    <div class="showcase-box showcase-box-home home-su-box">
+        <h2>Structures Unlimited</h2>
+        <p class="mobile-cover-links "><a href="process-page-su.html">Start-to-Finish Process</a></p>
+        <img src="/portfolio/image/homepage-su.png" alt="Structures Unlimited Website" />
+        <img class="mobile" src="/portfolio/image/homepage-su-mobile.png" alt="Structures Unlimited Website" />
+        <div class="cover"></div>
+        <p class="cover-links single"><a href="process-page-su.html">Start-to-Finish Process</a></p>
+    </div>
+
+    <p class="dev-header-home">Design</p>
+
+    <div class="showcase-box showcase-box-home home-wh-box">
+      <h2>Wyldhaven</h2>
+      <p class="mobile-cover-links "><a href="process-page-wh.html">Wireframes and Print</a></p>
+      <img src="/portfolio/image/homepage-wh.png" alt="Wyldhaven Website" />
+      <img class="mobile" src="/portfolio/image/homepage-wh-mobile.png" alt="Wyldhaven Website" />
+      <div class="cover"></div>
+      <p class="cover-links single"><a href="process-page-wh.html">Wireframes and Print Media</a></p>
+    </div>
+
+    <div class="content-wrapper home-about-wrapper">
+
+    <div class="about-section-spacer">
+      <div>
+        <h3 id="about">About Me</h3>
+      </div>
+      <div>
+        <p>In 2015 I graduated from Illinois State University with a Bachelors in Arts Technology. Afterwards, I moved to New York City to become a Front-End Engineer and have since broadened my interest to Freelance UI/UX Design. I love exploring new technologies and writing lean, semantic code for all types of interfaces; meant for any user or device. That is why my focus is on Responsiveness, Accessibility, and User Experience.</p>
+        <p class="resume-link"><a target="_blank" href="/portfolio/Grayson-Randall_Resume.pdf">Download my resume</a></p>
+        <p>I also have a passion for live music, world culture, <a href="#home-photos">photography</a>, and cooking; I strive to fill up my life with exciting adventures and creative projects. If you would like to know more, share an interest with me, or just want to say hello - feel free to <a href="mailto:graysonrandallwebdev@gmail.com">contact me</a> or connect with me on <a href="https://www.linkedin.com/in/graysonrandall/" target="_blank">LinkedIn</a>.</p>
+      </div>
+    </div>
+
+    <div class="about-section-spacer reference-section">
+        <img class="nelnet-logo-mobile mypicture" src="/portfolio/image/IMG_0109-cropped.png" alt="Picture of me - Grayson Randall" />
+          <p>"Grayson worked directly with our Executive clients to gather the necessary requirements for modifications to their websites.  He was able to understand their business needs and translate those into technical solutions. [He] has strong technical skills but is also a pleasure to work with." -  <a target="_blank" href="/portfolio/Grayson Letter of Recommendation.pdf">Read the full recommendation here.</a> <span class="reference-quote">John K. Vanderhoef - IT Director at Nelnet</span></p>
+    </div>
+
+  </div>
+
+  <a class="site-wrapper-link" href="photography.html"><div id="home-photos" class="showcase-box showcase-box-secondary photography-showcase">
+    <h2>Photography</h2>
+  </div></a>
+
+
+  <div class="footer footer-home">
+    <ul>
+      <li><a href="#top">Home</a></li>
+      <li class="linkedin"><a href="https://www.linkedin.com/in/graysonrandall/" target="_blank"><img src="/portfolio/image/linkedin.png" alt="Click for my Linkedin Portfolio" /></a></li>
+    </ul>
+
+  </div>
+
+</div>
+
+<script>
+  GRAYSON.scrolling.init();
+</script>
+
+</body>
+
+
+</html>
