@@ -1702,14 +1702,27 @@ div.wh-page-box img {
 }
 
 .image-showcase {
-  width: 100%;
+  width: 95%;
   position: relative;
   height: 28rem;
   margin-bottom: 3rem;
   overflow: scroll;
-  -ms-overflow-style: none;
-  overflow: -moz-scrollbars-none;
+  margin: 0 auto;
+  display: block;
 }
+
+@media only screen and (min-width: 26.25rem) {
+  .image-showcase {
+    width: 57%;
+  }
+}
+
+@media only screen and (min-width: 40.625rem) {
+  .image-showcase {
+    width: 100%;
+  }
+}
+
 
 .image-showcase::-webkit-scrollbar { width: 0 !important }
 
@@ -1747,11 +1760,23 @@ div.wh-page-box img {
 }
 
 .h-bottom-content {
-  width: 45%;
+  width: 34%;
   right: 0;
-  padding: 6rem 2rem 0 6rem;
+  padding: 5rem 2rem 0 6rem;
   float: right;
   position: absolute;
+}
+
+@media only screen and (min-width: 40.625rem) {
+  .h-bottom-content {
+    width: 45%;
+  }
+}
+
+@media only screen and (min-width: 65.625rem) {
+  .h-bottom-content {
+    width: 45%;
+  }
 }
 
 .cover-links.single {
