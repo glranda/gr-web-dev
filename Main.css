@@ -1741,9 +1741,16 @@ div.wh-page-box img {
   display: block;
   border-radius: 2px;
   padding-bottom: 4rem;
+  margin: 0 auto;
 }
 
-@media only screen and (min-width: 73rem) {
+@media only screen and (min-width: 65.625rem) {
+  .image-showcase img {
+    margin: 0;
+  }
+}
+
+@media only screen and (min-width: 74rem) {
   .image-showcase img {
     max-width: 39rem;
   }
@@ -1789,7 +1796,7 @@ div.wh-page-box img {
   }
 }
 
-@media only screen and (min-width: 72rem) {
+@media only screen and (min-width: 74rem) {
   .h-bottom-content {
     width: 45%;
   }
