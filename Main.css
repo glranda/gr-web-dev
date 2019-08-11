@@ -559,6 +559,10 @@ body {
   background-color: #FF776E;
 }
 
+.homepage-wrapper .home-att-box h2 {
+    text-decoration: underline;
+}
+
 .dev-header-home {
   margin-top: 10rem;
   font-size: 1.8rem;
