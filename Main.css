@@ -1711,12 +1711,6 @@ div.wh-page-box img {
   display: block;
 }
 
-@media only screen and (min-width: 26.25rem) {
-  .image-showcase {
-    width: 57%;
-  }
-}
-
 @media only screen and (min-width: 40.625rem) {
   .image-showcase {
     width: 100%;
@@ -1749,31 +1743,39 @@ div.wh-page-box img {
   padding-bottom: 4rem;
 }
 
-.image-showcase img:first-child {
+.image-showcase img:first-child, .image-showcase img:last-child {
   padding-top: 1.5rem;
-  border-top: 3px solid #ccc;
+  border-top: none;
 }
 
-.image-showcase img:last-child {
-  padding-bottom: 1.5rem;
-  border-bottom: 3px solid #ccc;
+@media only screen and (min-width: 40.625rem) {
+  .image-showcase img:first-child, .image-showcase img:last-child {
+    border-bottom: 2px solid #73ADA1;
+  }
 }
 
 .h-bottom-content {
-  width: 34%;
+  width: 80%;
   right: 0;
-  padding: 5rem 2rem 0 6rem;
-  float: right;
-  position: absolute;
+  padding: 3rem 0rem;
+  position: relative;
+  float: none;
+  margin: 0 auto;
+  border-top: 1px solid #ccc;
 }
 
 @media only screen and (min-width: 40.625rem) {
   .h-bottom-content {
-    width: 45%;
+    width: 38%;
+    padding: 5rem 2rem 0 6rem;
+    float: right;
+    position: absolute;
+    margin: 0;
+    border: none;
   }
 }
 
-@media only screen and (min-width: 65.625rem) {
+@media only screen and (min-width: 70.6rem) {
   .h-bottom-content {
     width: 45%;
   }
