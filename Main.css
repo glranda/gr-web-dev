@@ -1707,7 +1707,11 @@ div.wh-page-box img {
   height: 28rem;
   margin-bottom: 3rem;
   overflow: scroll;
+  -ms-overflow-style: none;
+  overflow: -moz-scrollbars-none;
 }
+
+.image-showcase::-webkit-scrollbar { width: 0 !important }
 
 .image-showcase .h-images {
   position: absolute;
