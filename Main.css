@@ -1711,7 +1711,7 @@ div.wh-page-box img {
   display: block;
 }
 
-@media only screen and (min-width: 40.625rem) {
+@media only screen and (min-width: 65.625rem) {
   .image-showcase {
     width: 100%;
   }
@@ -1743,19 +1743,27 @@ div.wh-page-box img {
   padding-bottom: 4rem;
 }
 
-@media only screen and (min-width: 70rem) {
+@media only screen and (min-width: 73rem) {
   .image-showcase img {
     max-width: 39rem;
   }
 }
 
-.image-showcase img:first-child, .image-showcase img:last-child {
+.image-showcase img:first-child {
   padding-top: 1.5rem;
   border-top: none;
 }
 
-@media only screen and (min-width: 40.625rem) {
-  .image-showcase img:first-child, .image-showcase img:last-child {
+.image-showcase img:last-child {
+  padding-top: 1.5rem;
+  border-top: none;
+}
+
+@media only screen and (min-width: 65.625rem) {
+  .image-showcase img:first-child {
+    border-top: 2px solid #73ADA1;
+  }
+  .image-showcase img:last-child {
     border-bottom: 2px solid #73ADA1;
   }
 }
@@ -1770,7 +1778,7 @@ div.wh-page-box img {
   border-top: 1px solid #ccc;
 }
 
-@media only screen and (min-width: 40.625rem) {
+@media only screen and (min-width: 65.625rem) {
   .h-bottom-content {
     width: 38%;
     padding: 5rem 2rem 0 6rem;
