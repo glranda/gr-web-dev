@@ -1736,6 +1736,16 @@ div.wh-page-box img {
   padding-bottom: 4rem;
 }
 
+.image-showcase img:first-child {
+  padding-top: 1.5rem;
+  border-top: 3px solid #ccc;
+}
+
+.image-showcase img:last-child {
+  padding-bottom: 1.5rem;
+  border-bottom: 3px solid #ccc;
+}
+
 .h-bottom-content {
   width: 45%;
   right: 0;
