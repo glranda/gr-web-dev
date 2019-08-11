@@ -1728,11 +1728,12 @@ div.wh-page-box img {
   padding-bottom: 4rem;
 }
 
-.image-showcase .content {
+.image-showcase .h-bottom-content {
   width: 45%;
   right: 0;
   padding: 6rem 2rem 0 6rem;
   float: right;
+  position: absolute;
 }
 
 .cover-links.single {
