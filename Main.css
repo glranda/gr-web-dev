@@ -1140,6 +1140,10 @@ div.wh-page-box img {
   }
 }
 
+#lazyload {
+  position: relative;
+}
+
 .su-layout-box {
   padding-top: 1rem;
   margin-bottom: 6rem;
