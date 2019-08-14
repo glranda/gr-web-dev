@@ -70,7 +70,6 @@ var animateIntro = function() {
   if ($(window).width() >= 680) {
     desktopAnimations();
   } else {
-    logo.css('display', 'none');
     mobileAnimations();
   }
 }
