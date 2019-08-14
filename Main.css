@@ -164,6 +164,10 @@ div.logo-container .profile.finale {
   transition: none;
 }
 
+div.logo-container .my-logo.finale {
+  display: none;
+}
+
 .home-top-section h1 {
   font-size: 1.5rem;
   margin-bottom: 20%;
