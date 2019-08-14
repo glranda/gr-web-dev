@@ -127,7 +127,7 @@ function fakelazyload() {
 
 $(document).ready(function() {
   $(".image-showcase").on('scroll', function() {
-    if ($(window).width() <= 680) {
+    if ($(window).width() >= 680) {
       fakelazyload();
     }
   });
