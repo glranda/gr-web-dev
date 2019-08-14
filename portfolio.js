@@ -48,6 +48,7 @@ var animateIntro = function() {
     setTimeout(function() {
       body.removeClass('hide-main');
       profile.addClass('finale');
+      logo.addClass('finale');
     }, 5000);
     setTimeout(function() {
       header.addClass('show-intro');
@@ -68,22 +69,22 @@ var animateIntro = function() {
       .animate({ top: "0" }, 400 );
     profile
       .delay(400)
-      .animate({ top: "150" }, 400 )
+      .animate({ top: "-150" }, 400 )
       .delay(1100)
       .animate({ top: "0" }, 400 );
-    setTimeout(function() {
-      logo.removeClass('z');
-      profile.addClass('z');
-    }, 1500);
-    setTimeout(function() {
-      body.removeClass('hide-main');
-      profile.addClass('finale');
-    }, 3500);
-    setTimeout(function() {
-      header.addClass('show-intro');
-      intro.addClass('show-intro');
-      brow.addClass('show-under');
-    }, 3550);
+    // setTimeout(function() {
+    //   logo.removeClass('z');
+    //   profile.addClass('z');
+    // }, 1500);
+    // setTimeout(function() {
+    //   body.removeClass('hide-main');
+    //   profile.addClass('finale');
+    // }, 3500);
+    // setTimeout(function() {
+    //   header.addClass('show-intro');
+    //   intro.addClass('show-intro');
+    //   brow.addClass('show-under');
+    // }, 3550);
   }
 
   console.log($(window).width());
