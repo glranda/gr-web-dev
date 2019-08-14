@@ -35,19 +35,28 @@ var animateIntro = function() {
   let logo = $( ".my-logo" );
   let profile = $( ".profile" );
   let body = $('body');
+  let intro = $('#intro-content');
+  let brow = $('.underbrow');
   function runIt() {
     logo
-      .delay(2000)
+      .delay(300)
       .css( "opacity", "1" )
+      .delay(2000)
       .animate({ right: "+=350" }, 600 );
     profile
-      .delay(2000)
+      .delay(3000)
       .css( "opacity", "1" )
+      .delay(2000)
       .animate({ left: "+=350" }, 600 );
     body
       .delay(5000)
       .removeClass('hide-main');
-
+    intro
+      .delay(5000)
+      .addClass('show-intro');
+    brow
+      .delay(5000)
+      .addClass('show-under');
   }
 
   runIt();
