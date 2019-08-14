@@ -61,17 +61,13 @@ var animateIntro = function() {
     setTimeout(function() {
       logo.addClass('show');
       profile.addClass('show');
-    }, 200);
-    setTimeout(function() {
       profile.addClass('finale');
       logo.addClass('finale');
-    }, 2000);
-    setTimeout(function() {
       body.removeClass('hide-main');
       header.addClass('show-intro');
       intro.addClass('show-intro');
       brow.addClass('show-under');
-    }, 2300);
+    }, 200);
   }
 
   if ($(window).width() >= 680) {
