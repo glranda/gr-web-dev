@@ -53,7 +53,7 @@ GRAYSON.scrolling = {
 }($, GRAYSON || {}));
 
 function fakelazyload() {
-  let img1 = $('#hm-1'),
+  let img1 = document.getElementById('hm-1');,
       img2 = $('#hm-2'),
       img3 = $('#hm-3'),
       img4 = $('#hm-4');
