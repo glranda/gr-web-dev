@@ -144,11 +144,6 @@ body.hide-main .navigation {
   z-index: 2;
 }
 
-.my-logo {
-  background: #fff;
-  border-radius: 100%;
-}
-
 .my-logo.show, .profile.show {
   opacity: 1;
   -webkit-transition: all .7s ease-in;
