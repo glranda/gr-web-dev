@@ -41,10 +41,11 @@ var animateIntro = function() {
       .css( "opacity", "1" )
       .animate({ right: "+=350" }, 600 );
     profile
+      .delay(2000)
       .css( "opacity", "1" )
-      // .delay(2000)
       .animate({ left: "+=350" }, 600 );
     body
+      .delay(5000)
       .removeClass('hide-main');
 
   }
