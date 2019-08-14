@@ -144,12 +144,6 @@ body.hide-main .navigation {
   z-index: 2;
 }
 
-.logo-container .profile.finale {
-  position: relative;
-  border: 8px solid #72A2BA;
-  border-radius: 130px;
-}
-
 .my-logo.show, .profile.show {
   opacity: 1;
   -webkit-transition: all .7s ease-in;
@@ -157,6 +151,13 @@ body.hide-main .navigation {
   -o-transition: all .7s ease-in;
   -ms-transition: all .7s ease-in;
   transition: all .7s ease-in;
+}
+
+div.logo-container .profile.finale {
+  position: relative;
+  border: 8px solid #72A2BA;
+  border-radius: 130px;
+  transition: none;
 }
 
 .home-top-section h1 {
