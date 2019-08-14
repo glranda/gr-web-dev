@@ -25,6 +25,15 @@ body {
   color: #343434;
 }
 
+body.hide-main {
+  height: 100vh;
+  overflow: hidden;
+}
+
+body.hide-main .navigation {
+  opacity: 0;
+}
+
 .outer-wrapper {
   max-width: 1366px;
   margin: 0 auto;
@@ -47,6 +56,11 @@ body {
   right: 0;
   z-index: 3;
   opacity: .9;
+  -webkit-transition: all .7s ease-in;
+  -moz-transition: all .7s ease-in;
+  -o-transition: all .7s ease-in;
+  -ms-transition: all .7s ease-in;
+  transition: all .7s ease-in;
 }
 
 @media only screen and (min-width: 19.375rem) {
