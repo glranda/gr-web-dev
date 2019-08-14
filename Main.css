@@ -146,17 +146,17 @@ body.hide-main .navigation {
 
 .logo-container .profile.finale {
   position: relative;
-  border: 8px solid #FF776E;
+  border: 8px solid #72A2BA;
   border-radius: 130px;
 }
 
 .my-logo.show, .profile.show {
   opacity: 1;
-  -webkit-transition: opacity .7s ease-in;
-  -moz-transition: opacity .7s ease-in;
-  -o-transition: opacity .7s ease-in;
-  -ms-transition: opacity .7s ease-in;
-  transition: opacity .7s ease-in;
+  -webkit-transition: all .7s ease-in;
+  -moz-transition: all .7s ease-in;
+  -o-transition: all .7s ease-in;
+  -ms-transition: all .7s ease-in;
+  transition: all .7s ease-in;
 }
 
 .home-top-section h1 {
