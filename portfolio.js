@@ -63,18 +63,15 @@ function fakelazyload() {
       bottom3 = img3 + $('#hm-3').height(),
       bottom4 = img4 + $('#hm-4').height();
 
-  console.log('bottoms = ' + bottom1 + ', ' + bottom2 + ', ' + bottom3 + ', ' + bottom4);
-
   let containerTop = $('#lazyload').offset().top;
 
   console.log('top = ' + containerTop);
 
   let bottoms = [bottom1, bottom2, bottom3, bottom4];
 
-  console.log('bottoms.length = ' + bottoms.length);
-
   for (i=0; i<=bottoms.length; i++) {
     if (bottoms[i]>= containerTop) {
+      console.log('bottoms = ' + bottom1 + ', ' + bottom2 + ', ' + bottom3 + ', ' + bottom4);
       console.log('bottoms[i] = ' + bottoms[i]);
 
       $('#hm-' + [i]).css("display", "none");
