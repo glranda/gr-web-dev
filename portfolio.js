@@ -44,11 +44,11 @@ var animateIntro = function() {
     }, 500);
     logo
       .delay(2000)
-      .animate({ right: "+=350" }, 600 );
+      .animate({ right: "+=350" }, 600 )
       .delay(2000)
       .animate({ right: "-=0" }, 600 );
     profile
-      .animate({ left: "+=350" }, 600 );
+      .animate({ left: "+=350" }, 600 )
       .delay(2000)
       .animate({ left: "-=0" }, 600 );
 
@@ -58,10 +58,10 @@ var animateIntro = function() {
     }, 5000);
     setTimeout(function() {
       intro.addClass('show-intro');
-    }, 7000);
+    }, 11000);
     setTimeout(function() {
       brow.addClass('show-under');
-    }, 7000);
+    }, 11000);
   }
 
   runIt();
