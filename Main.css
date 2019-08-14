@@ -1721,9 +1721,6 @@ div.wh-page-box img {
   }
 }
 
-
-.image-showcase::-webkit-scrollbar { width: 0 !important }
-
 .image-showcase .h-images {
   position: absolute;
   height: 100%;
@@ -1761,7 +1758,7 @@ div.wh-page-box img {
 }
 
 .image-showcase img:first-child {
-  padding-top: 2.5rem;
+  padding-top: 5.5rem;
   border-top: none;
 }
 
@@ -1792,7 +1789,7 @@ div.wh-page-box img {
 @media only screen and (min-width: 65.625rem) {
   .h-bottom-content {
     width: 38%;
-    padding: 5rem 2rem 0 6rem;
+    padding: 7rem 2rem 0 6rem;
     float: right;
     position: absolute;
     margin: 0;
