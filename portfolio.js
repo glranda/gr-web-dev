@@ -36,13 +36,12 @@ var animateIntro = function() {
   function runIt() {
     div
       .css( "opacity", "1" )
-      .animate({ left: "+=200" }, 2000 )
+      .animate({ right: "+=200" }, 600 );
       // .slideToggle( 1000 )
       // .slideToggle( "fast" )
       // .animate({ left: "-=200" }, 1500 )
       // .hide( "slow" )
       // .show( 1200 )
-      .slideUp( "normal");
   }
 
 
