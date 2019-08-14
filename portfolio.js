@@ -43,26 +43,28 @@ var animateIntro = function() {
       profile.addClass('show');
     }, 500);
     logo
-      .delay(2000)
+      .delay(1500)
       .animate({ right: "350" }, 600 )
       .delay(2000)
       .animate({ right: "0" }, 600 );
     profile
-      .delay(2000)
+      .delay(1500)
       .animate({ left: "350" }, 600 )
       .delay(2000)
       .animate({ left: "0" }, 600 );
-
-
+    setTimeout(function() {
+      logo.removeClass('z');
+      profile.addClass('z');
+    }, 2000);
     setTimeout(function() {
       body.removeClass('hide-main');
     }, 5000);
     setTimeout(function() {
       intro.addClass('show-intro');
-    }, 11000);
+    }, 8000);
     setTimeout(function() {
       brow.addClass('show-under');
-    }, 11000);
+    }, 8000);
   }
 
   runIt();
