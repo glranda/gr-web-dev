@@ -71,10 +71,6 @@ function fakelazyload() {
   containerTop = containerTop + 300;
   containerActual = containerActual - 200;
 
-  console.log('containerActual = ' + containerActual);
-  console.log('containerTop = ' + containerTop);
-  console.log('containerBottom = ' + containerBottom);
-
   function load(x) {
     $(eval('img' + x)).attr("src","/portfolio/image/" + x + "-load.png");
   }
@@ -90,8 +86,10 @@ function fakelazyload() {
     console.log('currentBot = ' + currentBot);
     if (currentBot <= containerTop && currentBot <= containerBottom && currentTop >= containerActual) {
         load(i);
+        console.log('loaded ' + i);
     } else if (currentBot >= containerTop && currentBot <= containerBottom && currentTop >= containerActual) {
         unload(i);
+        console.log('unloaded ' + i);
     }
   }
 }
