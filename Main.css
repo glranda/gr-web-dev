@@ -128,6 +128,13 @@ body.hide-main .navigation {
   position: relative;
 }
 
+.logo-container .my-logo {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
 .main-logo {
   max-width: 15rem;
   opacity: 0;
