@@ -56,18 +56,18 @@ var animateIntro = function() {
     setTimeout(function() {
       logo.removeClass('z');
       profile.addClass('z');
-      header.addClass('show-intro');
     }, 3000);
     setTimeout(function() {
       body.removeClass('hide-main');
     }, 3000);
     setTimeout(function() {
+      header.addClass('show-intro');
       intro.addClass('show-intro');
       brow.addClass('show-under');
-    }, 5000);
+    }, 5500);
     setTimeout(function() {
       profile.addClass('finale');
-    }, 4300);
+    }, 5000);
   }
   runIt();
 
