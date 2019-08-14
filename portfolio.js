@@ -42,17 +42,17 @@ var animateIntro = function() {
     setTimeout(function() {
       logo.addClass('show');
       profile.addClass('show');
-    }, 300);
+    }, 200);
     logo
-      .delay(900)
-      .animate({ right: "350" }, 700 )
-      .delay(2000)
-      .animate({ right: "0" }, 700 );
+      .delay(800)
+      .animate({ right: "350" }, 600 )
+      .delay(1800)
+      .animate({ right: "0" }, 600 );
     profile
-      .delay(900)
-      .animate({ left: "350" }, 700 )
-      .delay(2000)
-      .animate({ left: "0" }, 700 );
+      .delay(800)
+      .animate({ left: "350" }, 600 )
+      .delay(1800)
+      .animate({ left: "0" }, 600 );
     setTimeout(function() {
       logo.removeClass('z');
       profile.addClass('z');
@@ -61,13 +61,13 @@ var animateIntro = function() {
       body.removeClass('hide-main');
     }, 3000);
     setTimeout(function() {
+      profile.addClass('finale');
+    }, 5000);
+    setTimeout(function() {
       header.addClass('show-intro');
       intro.addClass('show-intro');
       brow.addClass('show-under');
-    }, 5500);
-    setTimeout(function() {
-      profile.addClass('finale');
-    }, 5000);
+    }, 5050);
   }
   runIt();
 
