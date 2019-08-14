@@ -70,10 +70,6 @@ function fakelazyload() {
   let containerBottom = containerTop + $('.image-showcase').height();
   containerTop = containerTop + 300;
 
-  console.log('containerActual ' + containerActual);
-  console.log('containerTop ' + containerTop);
-  console.log('containerBottom ' + containerBottom);
-
   function load(x) {
     $(eval('img' + x)).attr("src","/portfolio/image/" + x + "-load.png");
   }
@@ -84,12 +80,10 @@ function fakelazyload() {
   for (i=1; i<=4; i++) {
     let currentTop = eval('top' + i);
     let currentBot = eval('bottom' + i);
-    if (currentBot <= containerTop && currentBot <= containerBottom && currentTop >= containerTop) {
+    if (currentBot <= containerTop && currentBot <= containerBottom && currentTop >= containerActual) {
         load(i);
-        console.log('loaded ' + i + ' top and bottom = ' + currentTop + ' ' + currentBot);
-    } else if (currentBot >= containerTop && currentBot <= containerBottom && currentTop >= containerTop) {
+    } else if (currentBot >= containerTop && currentBot <= containerBottom && currentTop >= containerActual) {
         unload(i);
-        console.log('unloaded ' + i);
     }
   }
 }
