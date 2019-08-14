@@ -84,10 +84,10 @@ function fakelazyload() {
   for (i=1; i<=4; i++) {
     let currentTop = eval('top' + i);
     let currentBot = eval('bottom' + i);
-    if (currentBot <= containerTop && currentBot <= containerBottom && currentTop <= containerActual) {
+    if (currentBot <= containerTop && currentBot <= containerBottom && currentTop >= containerTop) {
         load(i);
         console.log('loaded ' + i + ' top and bottom = ' + currentTop + ' ' + currentBot);
-    } else if (currentBot >= containerTop && currentBot <= containerBottom && currentTop <= containerActual) {
+    } else if (currentBot >= containerTop && currentBot <= containerBottom && currentTop >= containerTop) {
         unload(i);
         console.log('unloaded ' + i);
     }
