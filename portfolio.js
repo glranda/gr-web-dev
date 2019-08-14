@@ -72,12 +72,12 @@ function fakelazyload() {
   console.log('container = ' + containerTop);
 
   function load(x) {
-    $(img + x).addClass('load');
-    $(img + x).removeClass('unload');
+    $(eval('img' + x)).addClass('load');
+    $(eval('img' + x)).removeClass('unload');
   }
   function unload(x) {
-    $(img + x).addClass('unload');
-    $(img + x).removeClass('load');
+    $(eval('img' + x)).addClass('unload');
+    $(eval('img' + x)).removeClass('load');
   }
 
   for (i=1; i<=4; i++) {
