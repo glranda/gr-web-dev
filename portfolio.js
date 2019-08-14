@@ -31,14 +31,16 @@ var animateIntro = function() {
       logo.addClass('show');
       profile.addClass('show');
     }, 200);
-    setTimeout(function() {
-      logo.animate({ right: "350" }, 450 );
-      profile.animate({ left: "350" }, 450 );
-    }, 650);
-    setTimeout(function() {
-      logo.animate({ right: "0" }, 250 );
-      profile.animate({ left: "0" }, 250 );
-    }, 1500);
+    logo
+      .delay(650)
+      .animate({ right: "350" }, 450 )
+      .delay(1500)
+      .animate({ right: "0" }, 250 );
+    profile
+      .delay(650)
+      .animate({ left: "350" }, 450 )
+      .delay(1500)
+      .animate({ left: "0" }, 250 );
     setTimeout(function() {
       logo.removeClass('z');
       profile.addClass('z');
