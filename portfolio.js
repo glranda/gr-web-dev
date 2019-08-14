@@ -62,30 +62,10 @@ var animateIntro = function() {
       logo.addClass('show');
       profile.addClass('show');
     }, 200);
-    logo
-      .delay(400)
-      .animate({ top: "150" }, 400 )
-      .delay(1100)
-      .animate({ top: "0" }, 400 );
-    profile
-      .delay(400)
-      .animate({ bottom: "150" }, 400 )
-      .delay(1100)
-      .animate({ bottom: "0" }, 400 );
     setTimeout(function() {
-      logo.removeClass('z');
-      profile.addClass('z');
-    }, 2000);
-    setTimeout(function() {
-      body.removeClass('hide-main');
       profile.addClass('finale');
       logo.addClass('finale');
-    }, 3500);
-    setTimeout(function() {
-      header.addClass('show-intro');
-      intro.addClass('show-intro');
-      brow.addClass('show-under');
-    }, 3550);
+    }, 2000);
   }
 
   console.log($(window).width());
