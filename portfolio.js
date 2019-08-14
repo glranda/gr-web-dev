@@ -65,7 +65,9 @@ function fakelazyload() {
   let bottom2 = top2 + $('#hm-2').height();
   let bottom3 = top3 + $('#hm-3').height();
   let bottom4 = top4 + $('#hm-4').height();
+  let containerActual = $('.image-showcase').offset().top;
   let containerTop = $('.image-showcase').offset().top;
+  let containerBottom = containerTop + $('.image-showcase').height();
   containerTop = containerTop + 300;
 
   function load(x) {
@@ -76,11 +78,14 @@ function fakelazyload() {
   }
 
   for (i=1; i<=4; i++) {
-    let current = eval('bottom' + i);
-    if (current <= containerTop) {
+    let currentTop = eval('top' + i);
+    let currentBot = eval('bottom' + i);
+    if (currentBot <= containerTop && currentBot >= containerBottom) {
         load(i);
-    } else if (current >= containerTop) {
+        console.log('loaded ' + i);
+    } else if (currentBot >= containerTop && currentBot >= containerBottom) {
         unload(i);
+        console.log('unloaded ' + i);
     }
   }
 }
