@@ -34,14 +34,11 @@ var animateIntro = function() {
 
   let logo = $( ".my-logo" );
   let profile = $( ".profile" );
-  let body = $('body')
+  let body = $('body');
   function runIt() {
     logo
-      .delay(2000)
       .css( "opacity", "1" )
       .animate({ right: "+=350" }, 600 );
-      .animate({ right: "+=350" }, 600 );
-      .slideup()
     profile
       .css( "opacity", "1" )
       .animate({ left: "+=350" }, 600 );
@@ -50,8 +47,7 @@ var animateIntro = function() {
 
   }
 
-
-runIt();
+  runIt();
 
     // setTimeout(function() {
     //   $('#intro-content').addClass('show-intro');
