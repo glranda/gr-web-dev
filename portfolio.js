@@ -117,5 +117,5 @@ if (scrollStart === true) {
   $(window).scroll(function() {
     console.log('working...');
     fakelazyload();
-  }
+  });
 }
