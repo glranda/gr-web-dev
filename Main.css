@@ -128,7 +128,7 @@ body.hide-main .navigation {
   position: relative;
 }
 
-.logo-container .my-logo {
+.logo-container .my-logo, .logo-container .profile {
   position: absolute;
   left: 0;
   right: 0;
