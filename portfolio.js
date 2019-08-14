@@ -44,12 +44,12 @@ var animateIntro = function() {
       profile.addClass('show');
     }, 300);
     logo
-      .delay(1300)
+      .delay(900)
       .animate({ right: "350" }, 700 )
       .delay(2000)
       .animate({ right: "0" }, 700 );
     profile
-      .delay(1300)
+      .delay(900)
       .animate({ left: "350" }, 700 )
       .delay(2000)
       .animate({ left: "0" }, 700 );
@@ -59,18 +59,23 @@ var animateIntro = function() {
     }, 3000);
     setTimeout(function() {
       body.removeClass('hide-main');
-    }, 4000);
+    }, 3000);
     setTimeout(function() {
       intro.addClass('show-intro');
+      brow.addClass('show-under');
+      header.addClass('show-intro');
     }, 4500);
+    // setTimeout(function() {
+    //   profile.addClass('finale');
+    // }, 6000);
   }
   runIt();
 
   setTimeout(function() {
-    profile.addClass('finale');
-    brow.addClass('show-under');
-    header.addClass('show-intro');
-  }, 5000);
+    $('#intro-content').addClass('show-intro');
+    $('.underbrow').addClass('show-under');
+    $('body').removeClass('hide-main');
+  }, 800);
 
 }
 
