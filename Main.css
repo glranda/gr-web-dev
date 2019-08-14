@@ -144,7 +144,7 @@ body.hide-main .navigation {
   z-index: 2;
 }
 
-.profile.finale {
+.logo-container .profile.finale {
   position: relative;
   border: 8px solid #FF776E;
   border-radius: 130px;
