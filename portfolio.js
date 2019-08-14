@@ -41,26 +41,24 @@ var animateIntro = function() {
     setTimeout(function() {
       logo.addClass('show');
     }, 500);
-
-    profile.addClass('show');
-
+    setTimeout(function() {
+      profile.addClass('show');
+    }, 800);
     logo
       .delay(2000)
       .animate({ right: "+=350" }, 600 );
     profile
       .delay(2000)
       .animate({ left: "+=350" }, 600 );
-
     setTimeout(function() {
       body.removeClass('hide-main');
-    }, 500);
-
+    }, 3000);
     setTimeout(function() {
       intro.addClass('show-intro');
-    }, 5000);
+    }, 4000);
     setTimeout(function() {
       brow.addClass('show-under');
-    }, 5000);
+    }, 4000);
   }
 
   runIt();
