@@ -77,7 +77,7 @@ function fakelazyload() {
     if (bottoms[i]>= containerTop) {
       console.log('bottoms[i] = ' + bottoms[i]);
 
-      bottom[i].css("display", "none");
+      $('#hm-' + [i]).css("display", "none");
     }
   }
 }
