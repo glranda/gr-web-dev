@@ -1847,11 +1847,17 @@ div.wh-page-box img {
 .h-bottom-content {
   width: 80%;
   right: 0;
-  padding: 3rem 0rem;
+  padding: 3rem 0 0;
   position: relative;
   float: none;
   margin: 0 auto;
   border-top: 1px solid #ccc;
+}
+
+@media only screen and (max-width: 680px) {
+  .h-bottom-content {
+    padding: 3rem 0rem;
+  }
 }
 
 @media only screen and (min-width: 65.625rem) {
