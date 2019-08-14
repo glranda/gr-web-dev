@@ -157,11 +157,11 @@ div.logo-container .profile.finale {
   position: relative;
   border: 8px solid #72A2BA;
   border-radius: 130px;
-  -webkit-transition: all .2s ease-in;
-  -moz-transition: all .2s ease-in;
-  -o-transition: all .2s ease-in;
-  -ms-transition: all .2s ease-in;
-  transition: all .2s ease-in;
+  -webkit-transition: none;
+  -moz-transition: none;
+  -o-transition: none;
+  -ms-transition: none;
+  transition: none;
 }
 
 .home-top-section h1 {
