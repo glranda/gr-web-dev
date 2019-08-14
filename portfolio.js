@@ -35,12 +35,12 @@ var animateIntro = function() {
       .delay(800)
       .animate({ right: "350" }, 600 )
       .delay(1800)
-      .animate({ right: "0" }, 600 );
+      .animate({ right: "0" }, 300 );
     profile
       .delay(800)
       .animate({ left: "350" }, 600 )
       .delay(1800)
-      .animate({ left: "0" }, 600 );
+      .animate({ left: "0" }, 300 );
     setTimeout(function() {
       logo.removeClass('z');
       profile.addClass('z');
