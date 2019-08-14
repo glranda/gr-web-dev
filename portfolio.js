@@ -44,17 +44,17 @@ var animateIntro = function() {
     setTimeout(function() {
       logo.removeClass('z');
       profile.addClass('z');
-    }, 3000);
+    }, 2500);
     setTimeout(function() {
       body.removeClass('hide-main');
       profile.addClass('finale');
       logo.addClass('finale');
-    }, 5000);
+    }, 4000);
     setTimeout(function() {
       header.addClass('show-intro');
       intro.addClass('show-intro');
       brow.addClass('show-under');
-    }, 5050);
+    }, 4050);
   }
 
   function mobileAnimations() {
