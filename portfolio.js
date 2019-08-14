@@ -56,6 +56,7 @@ var animateIntro = function() {
     setTimeout(function() {
       logo.removeClass('z');
       profile.addClass('z');
+      header.addClass('show-intro');
     }, 3000);
     setTimeout(function() {
       body.removeClass('hide-main');
@@ -63,8 +64,7 @@ var animateIntro = function() {
     setTimeout(function() {
       intro.addClass('show-intro');
       brow.addClass('show-under');
-      header.addClass('show-intro');
-    }, 4500);
+    }, 5000);
     // setTimeout(function() {
     //   profile.addClass('finale');
     // }, 6000);
