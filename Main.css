@@ -144,8 +144,8 @@ body.hide-main .navigation {
   z-index: 2;
 }
 
-.logo-container .profile {
-  max-width: 14.5rem;
+.profile.finale {
+  position: relative;
   border: 8px solid #FF776E;
   border-radius: 130px;
 }
