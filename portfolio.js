@@ -29,7 +29,7 @@ var animateIntro = function() {
   function desktopAnimations() {
     setTimeout(function() {
       logo.addClass('show');
-      profile.addClass('show');
+      // profile.addClass('show');
     }, 200);
     logo
       .delay(400)
