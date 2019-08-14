@@ -153,6 +153,12 @@ body.hide-main .navigation {
   transition: all .7s ease-in;
 }
 
+@media only screen and (min-width: 680px) {
+  .my-logo {
+    display: none;
+  }
+}
+
 div.logo-container .profile.finale {
   position: relative;
   border: 8px solid #72A2BA;
