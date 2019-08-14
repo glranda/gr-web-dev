@@ -100,11 +100,7 @@ function fakelazyload() {
 //
 // }
 
-$(window).scroll(function() {
-  var scrollStart = false;
-  $('#lazyload').mouseenter(function(){scrollStart=true;});
-  $('#lazyload').mouseleave(function(){scrollStart=false;});
-  console.log(scrollStart);
+$( "#lazyload" ).scroll(function() {
   console.log('working...');
   // fakelazyload();
 });
