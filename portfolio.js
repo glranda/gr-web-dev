@@ -43,20 +43,20 @@ var animateIntro = function() {
       .css( "opacity", "1" )
       .delay(2000)
       .animate({ right: "+=350" }, 600 );
-    profile
-      .delay(3000)
-      .css( "opacity", "1" )
-      .delay(2000)
-      .animate({ left: "+=350" }, 600 );
-    body
-      .delay(5000)
-      .removeClass('hide-main');
-    intro
-      .delay(5000)
-      .addClass('show-intro');
-    brow
-      .delay(5000)
-      .addClass('show-under');
+    // profile
+    //   .delay(3000)
+    //   .css( "opacity", "1" )
+    //   .delay(2000)
+    //   .animate({ left: "+=350" }, 600 );
+    // body
+    //   .delay(5000)
+    //   .removeClass('hide-main');
+    // intro
+    //   .delay(5000)
+    //   .addClass('show-intro');
+    // brow
+    //   .delay(5000)
+    //   .addClass('show-under');
   }
 
   runIt();
