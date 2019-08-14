@@ -140,7 +140,7 @@ body.hide-main .navigation {
   opacity: 0;
 }
 
-.my-logo {
+.z {
   z-index: 2;
 }
 
@@ -177,6 +177,15 @@ body.hide-main .navigation {
 
 .main-header {
   opacity: 0;
+}
+
+.main-header.show {
+  opacity: 1;
+  -webkit-transition: all .7s ease-in;
+  -moz-transition: all .7s ease-in;
+  -o-transition: all .7s ease-in;
+  -ms-transition: all .7s ease-in;
+  transition: all .7s ease-in;
 }
 
 .home-top-section .underbrow {
