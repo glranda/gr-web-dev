@@ -67,8 +67,8 @@ function fakelazyload() {
       bottom4 = top4 + $('#hm-4').height();
   let containerTop = $('.image-showcase').offset().top;
 
-  console.log('tops =  ' + top1 ' ' + ' ' top2 ' ' + ' ' top3 ' ' + ' ' top4);
-  console.log('bottoms =  ' + bottom1 ' ' + ' ' bottom2 ' ' + ' ' bottom3 ' ' + ' ' bottom4);
+  console.log('tops =  ' + top1 + ' ' + top2 + ' ' + top3 + ' ' + top4);
+  console.log('bottoms =  ' + bottom1 + ' ' + bottom2 + ' ' + bottom3 + ' ' + bottom4);
   console.log('container = ' + containerTop);
 
   function load(x) {
