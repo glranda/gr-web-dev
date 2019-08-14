@@ -42,14 +42,14 @@ var animateIntro = function() {
     setTimeout(function() {
       logo.addClass('show');
       profile.addClass('show');
-    }, 500);
+    }, 300);
     logo
-      .delay(1500)
+      .delay(1300)
       .animate({ right: "350" }, 700 )
       .delay(2000)
       .animate({ right: "0" }, 700 );
     profile
-      .delay(1500)
+      .delay(1300)
       .animate({ left: "350" }, 700 )
       .delay(2000)
       .animate({ left: "0" }, 700 );
@@ -63,20 +63,14 @@ var animateIntro = function() {
     setTimeout(function() {
       intro.addClass('show-intro');
     }, 4500);
-    setTimeout(function() {
-      profile.addClass('finale');
-      brow.addClass('show-under');
-      header.addClass('show-intro');
-    }, 5000);
   }
-
   runIt();
 
-    // setTimeout(function() {
-    //   $('#intro-content').addClass('show-intro');
-    //   $('.underbrow').addClass('show-under');
-    //   $('body').removeClass('hide-main');
-    // }, 800);
+  setTimeout(function() {
+    profile.addClass('finale');
+    brow.addClass('show-under');
+    header.addClass('show-intro');
+  }, 5000);
 
 }
 
