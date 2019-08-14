@@ -100,7 +100,7 @@ function fakelazyload() {
 //
 // }
 
-$( "#lazyload" ).scroll(function() {
+$("#lazyload").on('scroll', function() {
   console.log('working...');
-  // fakelazyload();
+  fakelazyload();
 });
