@@ -1736,7 +1736,7 @@ div.wh-page-box img {
   }
 }
 
-.image-showcase img {
+.image-showcase .image {
   width: 100%;
   max-width: 35rem;
   display: block;
@@ -1745,33 +1745,58 @@ div.wh-page-box img {
   margin: 0 auto;
 }
 
+#hm-1.load {
+  background: url('/portfolio/image/1-load.png');
+}
+#hm-1.unload {
+  background: url('/portfolio/image/1-unload.png');
+}
+#hm-2.load {
+  background: url('/portfolio/image/2-load.png');
+}
+#hm-2.unload {
+  background: url('/portfolio/image/2-unload.png');
+}
+#hm-3.load {
+  background: url('/portfolio/image/3-unload.png');
+}
+#hm-3.unload {
+  background: url('/portfolio/image/3-unload.png');
+}
+#hm-4.load {
+  background: url('/portfolio/image/4-unload.png');
+}
+#hm-4.unload {
+  background: url('/portfolio/image/4-unload.png');
+}
+
 @media only screen and (min-width: 65.625rem) {
-  .image-showcase img {
+  .image-showcase .image {
     margin: 0;
   }
 }
 
 @media only screen and (min-width: 74rem) {
-  .image-showcase img {
+  .image-showcase .image {
     max-width: 39rem;
   }
 }
 
-.image-showcase img:first-child {
+.image-showcase .image:first-child {
   padding-top: 5.5rem;
   border-top: none;
 }
 
-.image-showcase img:last-child {
+.image-showcase .image:last-child {
   padding-bottom: 16rem;
   border-top: none;
 }
 
 @media only screen and (min-width: 65.625rem) {
-  .image-showcase img:first-child {
+  .image-showcase .image:first-child {
     border-top: 2px solid #73ADA1;
   }
-  .image-showcase img:last-child {
+  .image-showcase .image:last-child {
     border-bottom: 2px solid #73ADA1;
   }
 }
