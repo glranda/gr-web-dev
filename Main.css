@@ -1744,7 +1744,7 @@ div.wh-page-box img {
   max-width: 35rem;
   display: block;
   border-radius: 2px;
-  padding-bottom: 4rem;
+  padding: 3rem 0 5rem;
   margin: 0 auto;
 }
 
@@ -1761,12 +1761,12 @@ div.wh-page-box img {
 }
 
 .image-showcase img:first-child {
-  padding-top: 1.5rem;
+  padding-top: 2.5rem;
   border-top: none;
 }
 
 .image-showcase img:last-child {
-  padding-top: 1.5rem;
+  padding-bottom: 16rem;
   border-top: none;
 }
 
