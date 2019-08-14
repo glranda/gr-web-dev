@@ -75,10 +75,11 @@ var animateIntro = function() {
     setTimeout(function() {
       logo.removeClass('z');
       profile.addClass('z');
-    }, 1500);
+    }, 2000);
     setTimeout(function() {
       body.removeClass('hide-main');
       profile.addClass('finale');
+      logo.addClass('finale');
     }, 3500);
     setTimeout(function() {
       header.addClass('show-intro');
