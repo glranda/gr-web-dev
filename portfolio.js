@@ -69,7 +69,7 @@ function fakelazyload() {
   let containerTop = $('.image-showcase').offset().top;
   let containerBottom = containerTop + $('.image-showcase').height();
   containerTop = containerTop + 300;
-  containerActual = containerActual + 30;
+  containerActual = containerActual - 200;
 
   console.log('containerActual = ' + containerActual);
   console.log('containerTop = ' + containerTop);
