@@ -58,9 +58,9 @@ function fakelazyload() {
   let img3 = $('#hm-3');
   let img4 = $('#hm-4');
   let top1 = img1.offset().top;
-  let top2 = img1.offset().top;
-  let top3 = img1.offset().top;
-  let top4 = img1.offset().top;
+  let top2 = img2.offset().top;
+  let top3 = img3.offset().top;
+  let top4 = img4.offset().top;
   let bottom1 = top1 + $('#hm-1').height();
   let bottom2 = top2 + $('#hm-2').height();
   let bottom3 = top3 + $('#hm-3').height();
