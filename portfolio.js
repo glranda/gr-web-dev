@@ -58,10 +58,8 @@ var animateIntro = function() {
       profile.addClass('z');
     }, 3000);
     setTimeout(function() {
-      body.removeClass('hide-main');
-    }, 3000);
-    setTimeout(function() {
       profile.addClass('finale');
+      body.removeClass('hide-main');
     }, 5000);
     setTimeout(function() {
       header.addClass('show-intro');
