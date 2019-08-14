@@ -71,10 +71,8 @@ var animateIntro = function() {
       header.addClass('show-intro');
       intro.addClass('show-intro');
       brow.addClass('show-under');
-    }, 4000);
+    }, 2500);
   }
-
-  console.log($(window).width());
 
   if ($(window).width() >= 680) {
     desktopAnimations();
