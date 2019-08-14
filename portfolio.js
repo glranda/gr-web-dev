@@ -44,11 +44,6 @@ var init = function() {
   animateIntro();
 };
 
-function myFunction() {
-  console.log('working...');
-  //fakelazyload();
-}
-
 GRAYSON.scrolling = {
         init: init
     };
@@ -57,46 +52,48 @@ GRAYSON.scrolling = {
 
 }($, GRAYSON || {}));
 
-// function fakelazyload() {
-//   let img1 = $('#hm-1'),
-//       img2 = $('#hm-2'),
-//       img3 = $('#hm-3'),
-//       img4 = $('#hm-4');
-//   let top1 = img1.offset.top(),
-//       top2 = img1.offset.top(),
-//       top3 = img1.offset.top(),
-//       top4 = img1.offset.top();
-//   let bottom1 = top1 + $('#hm-1').height(),
-//       bottom2 = top2 + $('#hm-2').height(),
-//       bottom3 = top3 + $('#hm-3').height(),
-//       bottom4 = top4 + $('#hm-4').height();
-//   let containerTop = $('.image-showcase').offset().top;
-//
-//   function load(x) {
-//     $(img + x).addClass('load');
-//     $(img + x).removeClass('unload');
-//   }
-//   function unload(x) {
-//     $(img + x).addClass('unload');
-//     $(img + x).removeClass('load');
-//   }
-//
-//   for (i=1; i<=4; i++) {
-//     if ((bottom + i) <= containerTop) {
-//       console('almost load ' + i);
-//       if (!(bottom + i).hasClass('load')) {
-//         load(i);
-//       }
-//     } else if ((bottom + i) >= containerTop) {
-//       console('almost unload ' + i);
-//       if (!(bottom + i).hasClass('unload')) {
-//         unload(i);
-//       }
-//     }
-//   }
-// }
+function fakelazyload() {
+  let img1 = $('#hm-1'),
+      img2 = $('#hm-2'),
+      img3 = $('#hm-3'),
+      img4 = $('#hm-4');
+  let top1 = img1.offset.top(),
+      top2 = img1.offset.top(),
+      top3 = img1.offset.top(),
+      top4 = img1.offset.top();
+  let bottom1 = top1 + $('#hm-1').height(),
+      bottom2 = top2 + $('#hm-2').height(),
+      bottom3 = top3 + $('#hm-3').height(),
+      bottom4 = top4 + $('#hm-4').height();
+  let containerTop = $('.image-showcase').offset().top;
 
-// $(".image-showcase").on('scroll', function() {
-//   console.log('working...');
-//   fakelazyload();
-// });
+  function load(x) {
+    $(img + x).addClass('load');
+    $(img + x).removeClass('unload');
+  }
+  function unload(x) {
+    $(img + x).addClass('unload');
+    $(img + x).removeClass('load');
+  }
+
+  for (i=1; i<=4; i++) {
+    if ((bottom + i) <= containerTop) {
+      console('almost load ' + i);
+      if (!(bottom + i).hasClass('load')) {
+        load(i);
+      }
+    } else if ((bottom + i) >= containerTop) {
+      console('almost unload ' + i);
+      if (!(bottom + i).hasClass('unload')) {
+        unload(i);
+      }
+    }
+  }
+}
+
+$(document).ready(function() {
+  $(".image-showcase").on('scroll', function() {
+    console.log('working...');
+    fakelazyload();
+  });
+}
