@@ -28,7 +28,6 @@ body {
 body.hide-main {
   height: 100vh;
   overflow: hidden;
-  opacity: 0;
 }
 
 body.hide-main .navigation {
