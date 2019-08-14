@@ -53,32 +53,74 @@ GRAYSON.scrolling = {
 }($, GRAYSON || {}));
 
 function fakelazyload() {
-  let img1 = $('#hm-1').offset().top,
-      img2 = $('#hm-2').offset().top,
-      img3 = $('#hm-3').offset().top,
-      img4 = $('#hm-4').offset().top;
+  let img1 = $('#hm-1'),
+      img2 = $('#hm-2'),
+      img3 = $('#hm-3'),
+      img4 = $('#hm-4');
 
-  let bottom1 = img1 + $('#hm-1').height(),
-      bottom2 = img2 + $('#hm-2').height(),
-      bottom3 = img3 + $('#hm-3').height(),
-      bottom4 = img4 + $('#hm-4').height();
+  let top1 = img1.offset.top(),
+      top2 = img1.offset.top(),
+      top3 = img1.offset.top(),
+      top4 = img1.offset.top();
+
+  let bottom1 = top1 + $('#hm-1').height(),
+      bottom2 = top2 + $('#hm-2').height(),
+      bottom3 = top3 + $('#hm-3').height(),
+      bottom4 = top4 + $('#hm-4').height();
 
   let containerTop = $('#lazyload').offset().top;
 
-  console.log('top = ' + containerTop);
 
-  let bottoms = [bottom1, bottom2, bottom3, bottom4];
+  // let bottoms = [bottom1, bottom2, bottom3, bottom4];
 
-  for (i=0; i<=bottoms.length; i++) {
-    i=0;
-    if (bottoms[i]>= containerTop) {
-      console.log('bottoms = ' + bottom1 + ', ' + bottom2 + ', ' + bottom3 + ', ' + bottom4);
-      console.log('bottoms[i] = ' + bottoms[i]);
-
-      $('#hm-' + [i]).css("visibility", "hidden");
-    }
+  switch(true) {
+    case bottom1 >= containerTop:
+      $(img1).addClass('unload');
+      $(img1).removeClass('load');
+    break;
+    case bottom2 >= containerTop:
+      $(img2).addClass('unload');
+      $(img2).removeClass('load');
+    break;
+    case bottom3 >= containerTop:
+      $(img3).addClass('unload');
+      $(img3).removeClass('load');
+    break;
+    case bottom4 >= containerTop:
+      $(img4).addClass('unload');
+      $(img4).removeClass('load');
+    break;
+    case bottom1 <= containerTop:
+      $(img1).addClass('load');
+      $(img1).removeClass('unload');
+    break;
+    case bottom2 <= containerTop:
+      $(img2).addClass('load');
+      $(img2).removeClass('unload');
+    break;
+    case bottom3 <= containerTop:
+      $(img3).addClass('load');
+      $(img3).removeClass('unload');
+    break;
+    case bottom4 <= containerTop:
+      $(img4).addClass('load');
+      $(img4).removeClass('unload');
+    break;
   }
 }
+
+
+
+  // for (i=0; i<=bottoms.length; i++) {
+  //   i=0;
+  //   if (bottoms[i]>= containerTop) {
+  //     console.log('bottoms = ' + bottom1 + ', ' + bottom2 + ', ' + bottom3 + ', ' + bottom4);
+  //     console.log('bottoms[i] = ' + bottoms[i]);
+  //
+  //     $('#hm-' + [i]).css("visibility", "hidden");
+  //   }
+  // }
+// }
 
 $(window).scroll(function() {
   fakelazyload();
