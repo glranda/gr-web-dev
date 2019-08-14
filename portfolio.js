@@ -79,7 +79,7 @@ function fakelazyload() {
     $(img + x).removeClass('load');
   }
 
-  if (bottom1.hasClass('unload'); || bottom1.hasClass("");) {
+  if (bottom1.hasClass('unload') || bottom1.hasClass("")) {
     switch(true) {
       case bottom1 <= containerTop:
         load(1);
@@ -94,7 +94,7 @@ function fakelazyload() {
         load(4);
       break;
     }
-  } else if (bottom4.hasClass('unload');) {
+  } else if (bottom4.hasClass('unload') || bottom1.hasClass("")) {
       switch(true) {
         case bottom1 >= containerTop:
           unload(1);
