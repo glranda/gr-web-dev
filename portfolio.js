@@ -55,16 +55,16 @@ var animateIntro = function() {
     setTimeout(function() {
       logo.removeClass('z');
       profile.addClass('z');
-    }, 2000);
+    }, 3000);
     setTimeout(function() {
       body.removeClass('hide-main');
-    }, 5000);
+    }, 4000);
     setTimeout(function() {
       intro.addClass('show-intro');
-    }, 8000);
+    }, 4500);
     setTimeout(function() {
       brow.addClass('show-under');
-    }, 8000);
+    }, 4500);
   }
 
   runIt();
