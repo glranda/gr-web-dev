@@ -123,8 +123,11 @@ body.hide-main .navigation {
   }
 }
 
-.main-logo {
+.logo-container {
   padding-top: 14rem;
+}
+
+.main-logo {
   max-width: 15rem;
   opacity: 0;
 }
@@ -146,7 +149,7 @@ body.hide-main .navigation {
     margin-bottom: inherit;
   }
 
-  .main-logo {
+  .logo-container {
     padding-top: 16rem;
   }
 }
