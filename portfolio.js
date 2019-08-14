@@ -79,12 +79,12 @@ function fakelazyload() {
   for (i=1; i<=4; i++) {
     if (('bottom' + i) <= containerTop) {
       console('almost load ' + i);
-      if (!(bottom + i).hasClass('load')) {
+      if (!('bottom' + i).hasClass('load')) {
         load(i);
       }
-    } else if ((bottom + i) >= containerTop) {
+    } else if (('bottom' + i) >= containerTop) {
       console('almost unload ' + i);
-      if (!(bottom + i).hasClass('unload')) {
+      if (!('bottom' + i).hasClass('unload')) {
         unload(i);
       }
     }
