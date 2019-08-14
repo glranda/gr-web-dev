@@ -144,6 +144,12 @@ body.hide-main .navigation {
   z-index: 2;
 }
 
+.logo-container .profile {
+  max-width: 14.5rem;
+  border: 8px solid #FF776E;
+  border-radius: 130px;
+}
+
 .my-logo.show, .profile.show {
   opacity: 1;
   -webkit-transition: all .7s ease-in;
