@@ -120,14 +120,23 @@ function fakelazyload() {
   // }
 // }
 
-$(window).scroll(function() {
-  var scrollStart = false;
-  $('#lazyload').mouseenter(function(){scrollStart=true;});
-  $('#lazyload').mouseleave(function(){scrollStart=false;});
-  console.log(scrollStart);
+var scrollStart = false;
+$('#lazyload').mouseenter(function(){scrollStart=true;});
+$('#lazyload').mouseleave(function(){scrollStart=false;});
 
-  if (scrollStart === true) {
+console.log(scrollStart);
+
+if (scrollStart === true) {
+  console.log('mouse in div');
+  $(window).scroll(function() {
     console.log('working...');
     fakelazyload();
   }
+}
+
+
+
+
+
+
 });
