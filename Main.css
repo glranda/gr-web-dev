@@ -142,6 +142,11 @@ body.hide-main .navigation {
 
 .my-logo.show, .profile.show {
   opacity: 1;
+  -webkit-transition: all .7s ease-in;
+  -moz-transition: all .7s ease-in;
+  -o-transition: all .7s ease-in;
+  -ms-transition: all .7s ease-in;
+  transition: all .7s ease-in;
 }
 
 .home-top-section h1 {
