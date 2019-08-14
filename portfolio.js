@@ -36,6 +36,7 @@ var animateIntro = function() {
   let profile = $( ".profile" );
   let body = $('body');
   let intro = $('#intro-content');
+  let header = $('.main-header');
   let brow = $('.underbrow');
   function runIt() {
     setTimeout(function() {
@@ -61,6 +62,8 @@ var animateIntro = function() {
     }, 4000);
     setTimeout(function() {
       intro.addClass('show-intro');
+      header.addClass('show-intro');
+      profile.addClass('finale');
     }, 4500);
     setTimeout(function() {
       brow.addClass('show-under');
