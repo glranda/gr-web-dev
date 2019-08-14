@@ -68,16 +68,11 @@ function fakelazyload() {
   let containerTop = $('.image-showcase').offset().top;
   containerTop = containerTop + 250;
 
-  console.log('tops =  ' + top1 + ' ' + top2 + ' ' + top3 + ' ' + top4);
-  console.log('bottoms =  ' + bottom1 + ' ' + bottom2 + ' ' + bottom3 + ' ' + bottom4);
-  console.log('container = ' + containerTop);
-
   function load(x) {
-    $(eval('img' + x)).addClass('load');
-    $(eval('img' + x)).removeClass('unload');
+    $(eval('img' + x)).attr("src","/portfolio/image/" + x + "-load.png");
   }
   function unload(x) {
-    $(eval('img' + x)).attr("src","/portfolio/image/" + x + "hc.png");
+    $(eval('img' + x)).attr("src","/portfolio/image/" + x + "-unload.png");
   }
 
   for (i=1; i<=4; i++) {
