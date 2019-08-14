@@ -57,17 +57,18 @@ function fakelazyload() {
       img2 = $('#hm-2'),
       img3 = $('#hm-3'),
       img4 = $('#hm-4');
-  let top1 = img1.offset().top,
-      top2 = img1.offset().top,
-      top3 = img1.offset().top,
-      top4 = img1.offset().top;
+  let top1 = img1.position().top,
+      top2 = img1.position().top,
+      top3 = img1.position().top,
+      top4 = img1.position().top;
   let bottom1 = top1 + $('#hm-1').height(),
       bottom2 = top2 + $('#hm-2').height(),
       bottom3 = top3 + $('#hm-3').height(),
       bottom4 = top4 + $('#hm-4').height();
   let containerTop = $('.image-showcase').offset().top;
 
-  console.log('bottoms = ' + bottom1 + bottom2 + bottom3 + bottom4);
+  console.log('tops =  ' + top1 ' ' + ' ' top2 ' ' + ' ' top3 ' ' + ' ' top4);
+  console.log('bottoms =  ' + bottom1 ' ' + ' ' bottom2 ' ' + ' ' bottom3 ' ' + ' ' bottom4);
   console.log('container = ' + containerTop);
 
   function load(x) {
@@ -80,7 +81,6 @@ function fakelazyload() {
   }
 
   for (i=1; i<=4; i++) {
-    console.log(i);
     if (('bottom' + i) <= containerTop) {
       console('almost load ' + i);
       if (!('bottom' + i).hasClass('load')) {
