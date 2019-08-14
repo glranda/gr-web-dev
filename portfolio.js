@@ -33,18 +33,17 @@ var animateIntro = function() {
   // });
 
   var div = $( ".my-logo" );
-
-function runIt() {
-  div
-    .css( "opacity", "1" )
-    .animate({ left: "+=200" }, 2000 )
-    .slideToggle( 1000 )
-    .slideToggle( "fast" )
-    .animate({ left: "-=200" }, 1500 )
-    .hide( "slow" )
-    .show( 1200 )
-    .slideUp( "normal");
-}
+  function runIt() {
+    div
+      .css( "opacity", "1" )
+      .animate({ left: "+=200" }, 2000 )
+      // .slideToggle( 1000 )
+      // .slideToggle( "fast" )
+      // .animate({ left: "-=200" }, 1500 )
+      // .hide( "slow" )
+      // .show( 1200 )
+      .slideUp( "normal");
+  }
 
 
 runIt();
