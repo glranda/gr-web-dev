@@ -66,7 +66,7 @@ function fakelazyload() {
   let bottom3 = top3 + $('#hm-3').height();
   let bottom4 = top4 + $('#hm-4').height();
   let containerTop = $('.image-showcase').offset().top;
-  containerTop = containerTop + 250;
+  containerTop = containerTop + 275;
 
   function load(x) {
     $(eval('img' + x)).attr("src","/portfolio/image/" + x + "-load.png");
