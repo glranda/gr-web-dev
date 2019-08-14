@@ -125,6 +125,7 @@ body.hide-main .navigation {
 
 .logo-container {
   padding-top: 14rem;
+  position: relative;
 }
 
 .main-logo {
