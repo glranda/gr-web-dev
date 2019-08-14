@@ -59,10 +59,8 @@ var animateIntro = function() {
 
   function mobileAnimations() {
     setTimeout(function() {
-      logo.addClass('show');
-      profile.addClass('show');
-      profile.addClass('finale');
-      logo.addClass('finale');
+      profile.css('style', 'none');
+      logo.addClass('show').css('position', 'absolute');
       body.removeClass('hide-main');
       header.addClass('show-intro');
       intro.addClass('show-intro');
