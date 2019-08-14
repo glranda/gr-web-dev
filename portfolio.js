@@ -17,24 +17,26 @@ $(document).ready(function() {
     });
 });
 
-var setupValues = function() {
-  myHeader = document.querySelector('.main-header');
-  subHead = document.querySelector('.underbrow');
-};
+// var animateIntro = function() {
+//   $(".my-logo").delay(100).animate({
+//         opacity: 1
+//     }, 1200, function() {
+//         $(".main-header").animate({
+//             opacity: 1
+//         }, 1600);
+//     });
 
-var animateIntro = function() {
-  $(".main-logo").delay(100).animate({
-        opacity: 1
-    }, 1200, function() {
-        $(".main-header").animate({
-            opacity: 1
-        }, 1600);
-    });
+var animateIntro = $('#tip')
+  .delay(800)
+  .queue(function (next) {
+    $(this).css('display', 'none');
+    next();
+  });
 
     setTimeout(function() {
-      $('#intro-content').addClass('show-intro');
-      $('.underbrow').addClass('show-under');
-      $('body').removeClass('hide-main');
+      // $('#intro-content').addClass('show-intro');
+      // $('.underbrow').addClass('show-under');
+      // $('body').removeClass('hide-main');
     }, 800);
 
 };
