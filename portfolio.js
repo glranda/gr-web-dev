@@ -40,7 +40,7 @@ var animateIntro = function() {
   function runIt() {
     logo
       .delay(5000)
-      .addClass('show');
+      .addClass('show')
       .delay(2000)
       .animate({ right: "+=350" }, 600 );
     // profile
