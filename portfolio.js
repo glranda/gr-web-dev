@@ -44,10 +44,10 @@ var init = function() {
   animateIntro();
 };
 
-$(".image-showcase").on('scroll', function() {
+function myFunction() {
   console.log('working...');
   //fakelazyload();
-});
+}
 
 GRAYSON.scrolling = {
         init: init
