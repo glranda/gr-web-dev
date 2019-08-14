@@ -150,13 +150,17 @@ body.hide-main .navigation {
   border-radius: 130px;
 }
 
-.my-logo.show, .profile.show {
+.my-logo.show {
   opacity: 1;
   -webkit-transition: all .7s ease-in;
   -moz-transition: all .7s ease-in;
   -o-transition: all .7s ease-in;
   -ms-transition: all .7s ease-in;
   transition: all .7s ease-in;
+}
+
+.profile.show {
+  opacity: 1;
 }
 
 .home-top-section h1 {
