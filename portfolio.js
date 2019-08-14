@@ -17,20 +17,7 @@ $(document).ready(function() {
     });
 });
 
-// var animateIntro = function() {
-//   $(".my-logo").delay(100).animate({
-//         opacity: 1
-//     }, 1200, function() {
-//         $(".main-header").animate({
-//             opacity: 1
-//         }, 1600);
-//     });
-
 var animateIntro = function() {
-  // $('.my-logo').delay(800).queue(function (next) {
-  //   $(this).css('display', 'none');
-  //   next();
-  // });
 
   let logo = $( ".my-logo" );
   let profile = $( ".profile" );
@@ -38,13 +25,14 @@ var animateIntro = function() {
   let intro = $('#intro-content');
   let header = $('.main-header');
   let brow = $('.underbrow');
-  function runIt() {
+
+  function desktopAnimations() {
     setTimeout(function() {
       logo.addClass('show');
       profile.addClass('show');
     }, 200);
     logo
-      .delay(800)
+      .delay(400)
       .animate({ right: "350" }, 600 )
       .delay(1800)
       .animate({ right: "0" }, 600 );
@@ -58,8 +46,8 @@ var animateIntro = function() {
       profile.addClass('z');
     }, 3000);
     setTimeout(function() {
-      profile.addClass('finale');
       body.removeClass('hide-main');
+      profile.addClass('finale');
     }, 5000);
     setTimeout(function() {
       header.addClass('show-intro');
@@ -67,19 +55,48 @@ var animateIntro = function() {
       brow.addClass('show-under');
     }, 5050);
   }
-  runIt();
 
-  // setTimeout(function() {
-  //   $('#intro-content').addClass('show-intro');
-  //   $('.underbrow').addClass('show-under');
-  //   $('body').removeClass('hide-main');
-  // }, 800);
+  function mobileAnimations() {
+    setTimeout(function() {
+      logo.addClass('show');
+      profile.addClass('show');
+    }, 200);
+    logo
+      .delay(400)
+      .animate({ top: "150" }, 400 )
+      .delay(1100)
+      .animate({ top: "0" }, 400 );
+    profile
+      .delay(800)
+      .animate({ top: "150" }, 400 )
+      .delay(1100)
+      .animate({ top: "0" }, 400 );
+    setTimeout(function() {
+      logo.removeClass('z');
+      profile.addClass('z');
+    }, 1500);
+    setTimeout(function() {
+      body.removeClass('hide-main');
+      profile.addClass('finale');
+    }, 3500);
+    setTimeout(function() {
+      header.addClass('show-intro');
+      intro.addClass('show-intro');
+      brow.addClass('show-under');
+    }, 3550);
+  }
 
+  console.log($(window).width());
+
+  if ($(window).width() >= 680) {
+    desktopAnimations();
+  } else {
+    mobileAnimations();
+  }
 }
 
 
 var init = function() {
-  // setupValues();
   animateIntro();
 };
 
