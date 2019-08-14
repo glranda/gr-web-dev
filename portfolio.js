@@ -52,7 +52,7 @@ GRAYSON.scrolling = {
 
 }($, GRAYSON || {}));
 
-function fakelazyload = () {
+function fakelazyload() {
   let img1 = $('#hm-1').offset().top,
       img2 = $('#hm-2').offset().top,
       img3 = $('#hm-3').offset().top,
@@ -72,7 +72,7 @@ function fakelazyload = () {
   for (i=0; i<=3; i++) {
     if (bottom[i] >= containerTop) {
       console.log('bottom[i] = ' + bottom[i]);
-      
+
       bottom[i].css("display", "none");
     }
   }
