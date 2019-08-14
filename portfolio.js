@@ -59,7 +59,6 @@ var animateIntro = function() {
 
   function mobileAnimations() {
     setTimeout(function() {
-      logo.css('display', 'none');
       profile.addClass('show').css('position', 'relative');
       body.removeClass('hide-main');
       header.addClass('show-intro');
@@ -71,6 +70,7 @@ var animateIntro = function() {
   if ($(window).width() >= 680) {
     desktopAnimations();
   } else {
+    logo.css('display', 'none');
     mobileAnimations();
   }
 }
