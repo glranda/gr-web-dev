@@ -27,12 +27,27 @@ $(document).ready(function() {
 //     });
 
 var animateIntro = function() {
-  $('.my-logo')
-  .delay(800)
-  .queue(function (next) {
-    $(this).css('display', 'none');
-    next();
-  });
+  // $('.my-logo').delay(800).queue(function (next) {
+  //   $(this).css('display', 'none');
+  //   next();
+  // });
+
+  var div = $( ".my-logo" );
+
+function runIt() {
+  div
+    .show( "slow" )
+    .animate({ left: "+=200" }, 2000 )
+    .slideToggle( 1000 )
+    .slideToggle( "fast" )
+    .animate({ left: "-=200" }, 1500 )
+    .hide( "slow" )
+    .show( 1200 )
+    .slideUp( "normal", runIt );
+}
+
+
+runIt();
 
     // setTimeout(function() {
     //   $('#intro-content').addClass('show-intro');
