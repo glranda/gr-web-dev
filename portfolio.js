@@ -26,7 +26,7 @@ $(document).ready(function() {
 //         }, 1600);
 //     });
 
-var animateIntro = $('#my-logo')
+var animateIntro = $('.my-logo')
   .delay(800)
   .queue(function (next) {
     $(this).css('display', 'none');
