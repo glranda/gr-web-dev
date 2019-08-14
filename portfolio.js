@@ -61,21 +61,21 @@ var animateIntro = function() {
     setTimeout(function() {
       body.removeClass('hide-main');
     }, 3000);
-    // setTimeout(function() {
-    //   intro.addClass('show-intro');
-    //   brow.addClass('show-under');
-    // }, 5000);
-    // setTimeout(function() {
-    //   profile.addClass('finale');
-    // }, 6000);
+    setTimeout(function() {
+      intro.addClass('show-intro');
+      brow.addClass('show-under');
+    }, 5000);
+    setTimeout(function() {
+      profile.addClass('finale');
+    }, 6000);
   }
   runIt();
 
-  setTimeout(function() {
-    $('#intro-content').addClass('show-intro');
-    $('.underbrow').addClass('show-under');
-    $('body').removeClass('hide-main');
-  }, 800);
+  // setTimeout(function() {
+  //   $('#intro-content').addClass('show-intro');
+  //   $('.underbrow').addClass('show-under');
+  //   $('body').removeClass('hide-main');
+  // }, 800);
 
 }
 
