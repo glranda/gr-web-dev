@@ -53,18 +53,18 @@ GRAYSON.scrolling = {
 }($, GRAYSON || {}));
 
 function fakelazyload() {
-  let img1 = $('#hm-1'),
-      img2 = $('#hm-2'),
-      img3 = $('#hm-3'),
-      img4 = $('#hm-4');
-  let top1 = img1.offset().top,
-      top2 = img1.offset().top,
-      top3 = img1.offset().top,
-      top4 = img1.offset().top;
-  let bottom1 = top1 + $('#hm-1').height(),
-      bottom2 = top2 + $('#hm-2').height(),
-      bottom3 = top3 + $('#hm-3').height(),
-      bottom4 = top4 + $('#hm-4').height();
+  let img1 = $('#hm-1');
+  let img2 = $('#hm-2');
+  let img3 = $('#hm-3');
+  let img4 = $('#hm-4');
+  let top1 = img1.offset().top;
+  let top2 = img1.offset().top;
+  let top3 = img1.offset().top;
+  let top4 = img1.offset().top;
+  let bottom1 = top1 + $('#hm-1').height();
+  let bottom2 = top2 + $('#hm-2').height();
+  let bottom3 = top3 + $('#hm-3').height();
+  let bottom4 = top4 + $('#hm-4').height();
   let containerTop = $('.image-showcase').offset().top;
 
   console.log('tops =  ' + top1 + ' ' + top2 + ' ' + top3 + ' ' + top4);
