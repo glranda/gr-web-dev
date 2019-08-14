@@ -105,20 +105,6 @@ function fakelazyload() {
       break;
     }
   }
-}
-
-
-
-  // for (i=0; i<=bottoms.length; i++) {
-  //   i=0;
-  //   if (bottoms[i]>= containerTop) {
-  //     console.log('bottoms = ' + bottom1 + ', ' + bottom2 + ', ' + bottom3 + ', ' + bottom4);
-  //     console.log('bottoms[i] = ' + bottoms[i]);
-  //
-  //     $('#hm-' + [i]).css("visibility", "hidden");
-  //   }
-  // }
-// }
 
 var scrollStart = false;
 $('#lazyload').mouseenter(function(){scrollStart=true;});
