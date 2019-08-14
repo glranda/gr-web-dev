@@ -66,6 +66,12 @@ var animateIntro = function() {
       profile.addClass('finale');
       logo.addClass('finale');
     }, 2000);
+    setTimeout(function() {
+      body.removeClass('hide-main');
+      header.addClass('show-intro');
+      intro.addClass('show-intro');
+      brow.addClass('show-under');
+    }, 4000);
   }
 
   console.log($(window).width());
