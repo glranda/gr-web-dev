@@ -32,16 +32,16 @@ var animateIntro = function() {
   //   next();
   // });
 
-  var div = $( ".my-logo" );
+  let logo = $( ".my-logo" );
+  var profile = $( ".profile" );
   function runIt() {
-    div
+    logo
       .css( "opacity", "1" )
-      .animate({ right: "+=200" }, 600 );
-      // .slideToggle( 1000 )
-      // .slideToggle( "fast" )
-      // .animate({ left: "-=200" }, 1500 )
-      // .hide( "slow" )
-      // .show( 1200 )
+      .animate({ right: "+=350" }, 600 );
+    profile
+      .css( "opacity", "1" )
+      .animate({ left: "+=350" }, 600 );
+
   }
 
 
