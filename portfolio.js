@@ -61,10 +61,10 @@ var animateIntro = function() {
     setTimeout(function() {
       body.removeClass('hide-main');
     }, 3000);
-    setTimeout(function() {
-      intro.addClass('show-intro');
-      brow.addClass('show-under');
-    }, 5000);
+    // setTimeout(function() {
+    //   intro.addClass('show-intro');
+    //   brow.addClass('show-under');
+    // }, 5000);
     // setTimeout(function() {
     //   profile.addClass('finale');
     // }, 6000);
