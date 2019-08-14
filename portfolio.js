@@ -70,42 +70,45 @@ function fakelazyload() {
 
   let containerTop = $('#lazyload').offset().top;
 
+  function load(x) {
+    $(img + x).addClass('load');
+    $(img + x).removeClass('unload');
+  }
+  function unload(x) {
+    $(img + x).addClass('unload');
+    $(img + x).removeClass('load');
+  }
 
-  // let bottoms = [bottom1, bottom2, bottom3, bottom4];
-
-  switch(true) {
-    case bottom1 >= containerTop:
-      $(img1).addClass('unload');
-      $(img1).removeClass('load');
-    break;
-    case bottom2 >= containerTop:
-      $(img2).addClass('unload');
-      $(img2).removeClass('load');
-    break;
-    case bottom3 >= containerTop:
-      $(img3).addClass('unload');
-      $(img3).removeClass('load');
-    break;
-    case bottom4 >= containerTop:
-      $(img4).addClass('unload');
-      $(img4).removeClass('load');
-    break;
-    case bottom1 <= containerTop:
-      $(img1).addClass('load');
-      $(img1).removeClass('unload');
-    break;
-    case bottom2 <= containerTop:
-      $(img2).addClass('load');
-      $(img2).removeClass('unload');
-    break;
-    case bottom3 <= containerTop:
-      $(img3).addClass('load');
-      $(img3).removeClass('unload');
-    break;
-    case bottom4 <= containerTop:
-      $(img4).addClass('load');
-      $(img4).removeClass('unload');
-    break;
+  if (bottom1.hasClass('unload'); || bottom1.hasClass("");) {
+    switch(true) {
+      case bottom1 <= containerTop:
+        load(1);
+      break;
+      case bottom2 <= containerTop:
+        load(2);
+      break;
+      case bottom3 <= containerTop:
+        load(3);
+      break;
+      case bottom4 <= containerTop:
+        load(4);
+      break;
+    }
+  } else if (bottom4.hasClass('unload');) {
+      switch(true) {
+        case bottom1 >= containerTop:
+          unload(1);
+        break;
+        case bottom2 >= containerTop:
+          unload(2);
+        break;
+        case bottom3 >= containerTop:
+          unload(3);
+        break;
+        case bottom4 >= containerTop:
+          unload(4);
+        break;
+    }
   }
 }
 
@@ -123,5 +126,11 @@ function fakelazyload() {
 // }
 
 $(window).scroll(function() {
-  fakelazyload();
+  var scrollStart = false;
+  $('#lazyload').mouseenter(function(){scrollStart=true;});
+  $('#lazyload').mouseleave(function(){scrollStart=false;});
+
+  if (scrollStart === true) {
+    fakelazyload();
+  }
 });
