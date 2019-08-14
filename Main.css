@@ -150,17 +150,13 @@ body.hide-main .navigation {
   border-radius: 130px;
 }
 
-.my-logo.show {
+.my-logo.show, .profile.show {
   opacity: 1;
-  -webkit-transition: all .7s ease-in;
-  -moz-transition: all .7s ease-in;
-  -o-transition: all .7s ease-in;
-  -ms-transition: all .7s ease-in;
-  transition: all .7s ease-in;
-}
-
-.profile.show {
-  opacity: 1;
+  -webkit-transition: opacity .7s ease-in;
+  -moz-transition: opacity .7s ease-in;
+  -o-transition: opacity .7s ease-in;
+  -ms-transition: opacity .7s ease-in;
+  transition: opacity .7s ease-in;
 }
 
 .home-top-section h1 {
