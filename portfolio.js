@@ -38,9 +38,11 @@ var animateIntro = function() {
   let intro = $('#intro-content');
   let brow = $('.underbrow');
   function runIt() {
+    setTimeout(function() {
+      logo.css( "opacity", "1" );
+    }, 800);
+
     logo
-      .delay(300)
-      .css( "opacity", "1" )
       .delay(2000)
       .animate({ right: "+=350" }, 600 );
     // profile
