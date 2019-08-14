@@ -26,18 +26,19 @@ $(document).ready(function() {
 //         }, 1600);
 //     });
 
-var animateIntro = $('.my-logo')
+var animateIntro = function() {
+  $('.my-logo')
   .delay(800)
   .queue(function (next) {
     $(this).css('display', 'none');
     next();
   });
 
-    setTimeout(function() {
-      // $('#intro-content').addClass('show-intro');
-      // $('.underbrow').addClass('show-under');
-      // $('body').removeClass('hide-main');
-    }, 800);
+    // setTimeout(function() {
+    //   $('#intro-content').addClass('show-intro');
+    //   $('.underbrow').addClass('show-under');
+    //   $('body').removeClass('hide-main');
+    // }, 800);
 
 };
 
