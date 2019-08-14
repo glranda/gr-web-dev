@@ -119,10 +119,3 @@ if (scrollStart === true) {
     fakelazyload();
   }
 }
-
-
-
-
-
-
-});
