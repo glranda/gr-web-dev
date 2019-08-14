@@ -43,7 +43,7 @@ function runIt() {
     .animate({ left: "-=200" }, 1500 )
     .hide( "slow" )
     .show( 1200 )
-    .slideUp( "normal", runIt );
+    .slideUp( "normal");
 }
 
 
