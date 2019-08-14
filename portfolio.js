@@ -77,8 +77,8 @@ function fakelazyload() {
     $(eval('img' + x)).removeClass('unload');
   }
   function unload(x) {
-    $(eval('img' + x)).addClass('unload');
-    $(eval('img' + x)).removeClass('load');
+    $(eval('img' + x)).attr("src","/portfolio/image/hc.png");;
+    $(eval('img' + x)).attr("src","/portfolio/image/sfg.png");;
   }
 
   for (i=1; i<=4; i++) {
