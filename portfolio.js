@@ -33,14 +33,20 @@ var animateIntro = function() {
   // });
 
   let logo = $( ".my-logo" );
-  var profile = $( ".profile" );
+  let profile = $( ".profile" );
+  let body = $('body')
   function runIt() {
     logo
+      .delay(2000)
       .css( "opacity", "1" )
       .animate({ right: "+=350" }, 600 );
+      .animate({ right: "+=350" }, 600 );
+      .slideup()
     profile
       .css( "opacity", "1" )
       .animate({ left: "+=350" }, 600 );
+    body
+      .removeClass('hide-main');
 
   }
 
