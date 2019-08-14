@@ -40,11 +40,11 @@ var animateIntro = function() {
     //   $('body').removeClass('hide-main');
     // }, 800);
 
-};
+}
 
 
 var init = function() {
-  setupValues();
+  // setupValues();
   animateIntro();
 };
 
