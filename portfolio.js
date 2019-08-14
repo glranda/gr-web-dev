@@ -78,44 +78,28 @@ function fakelazyload() {
     $(img + x).addClass('unload');
     $(img + x).removeClass('load');
   }
-    switch(true) {
-      case bottom1 <= containerTop:
-        load(1);
-      break;
-      case bottom2 <= containerTop:
-        load(2);
-      break;
-      case bottom3 <= containerTop:
-        load(3);
-      break;
-      case bottom4 <= containerTop:
-        load(4);
-      break;
-      case bottom1 >= containerTop:
-        unload(1);
-      break;
-      case bottom2 >= containerTop:
-        unload(2);
-      break;
-      case bottom3 >= containerTop:
-        unload(3);
-      break;
-      case bottom4 >= containerTop:
-        unload(4);
-      break;
+
+    for (i=1; i<=4; i++) {
+      if ((bottom + i) containerTop) {
+
+      }
     }
   }
 
-var scrollStart = false;
-$('#lazyload').mouseenter(function(){scrollStart=true;});
-$('#lazyload').mouseleave(function(){scrollStart=false;});
 
-console.log(scrollStart);
 
-if (scrollStart === true) {
-  console.log('mouse in div');
-  $(window).scroll(function() {
-    console.log('working...');
-    fakelazyload();
-  });
-}
+
+
+// if (scrollStart === true) {
+//   console.log('mouse in div');
+//
+// }
+
+$(window).scroll(function() {
+  var scrollStart = false;
+  $('#lazyload').mouseenter(function(){scrollStart=true;});
+  $('#lazyload').mouseleave(function(){scrollStart=false;});
+  console.log(scrollStart);
+  console.log('working...');
+  // fakelazyload();
+});
