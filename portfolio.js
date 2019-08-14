@@ -69,9 +69,13 @@ function fakelazyload() {
 
   console.log('top = ' + containerTop);
 
-  for (i=0; i<=3; i++) {
-    if (bottom[i] >= containerTop) {
-      console.log('bottom[i] = ' + bottom[i]);
+  let bottoms = [bottom1, bottom2, bottom3, bottom4];
+
+  console.log('bottoms.length = ' + bottoms.length);
+
+  for (i=0; i<=bottoms.length; i++) {
+    if (bottoms[i]>= containerTop) {
+      console.log('bottoms[i] = ' + bottoms[i]);
 
       bottom[i].css("display", "none");
     }
