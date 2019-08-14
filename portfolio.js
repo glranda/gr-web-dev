@@ -44,13 +44,14 @@ var animateIntro = function() {
     }, 500);
     logo
       .delay(2000)
-      .animate({ right: "+=350" }, 600 )
+      .animate({ right: "350" }, 600 )
       .delay(2000)
-      .animate({ right: "-=0" }, 600 );
+      .animate({ right: "0" }, 600 );
     profile
-      .animate({ left: "+=350" }, 600 )
       .delay(2000)
-      .animate({ left: "-=0" }, 600 );
+      .animate({ left: "350" }, 600 )
+      .delay(2000)
+      .animate({ left: "0" }, 600 );
 
 
     setTimeout(function() {
