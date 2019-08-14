@@ -1,0 +1,441 @@
+/* ----- Designed and coded by Grayson Randall -----
+----- https://graysonrandall.github.io/portfolio/index.html ----- */
+
+.wh-progress-content {
+  margin-top: 4rem;
+}
+
+.text-spacer-center {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.text-spacer-center p {
+  font-size: 1.4rem;
+}
+
+.wh-mockups {
+  margin-bottom: 8rem;
+}
+
+.wh-mockups img {
+  width: 100%;
+}
+
+.process-page-header {
+  margin-top: 12rem;
+}
+
+.dev-page-header {
+  margin-top: 9rem;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+
+.dev-wrapper .su-page-box .hearst {
+  border-radius: 5px;
+}
+
+.su-page-box , .su-layout-box , .su-main-box {
+  background-color: #72A2BA;
+}
+
+.wh-page-box , .wh-main-box {
+  background-color: #73ADA1;
+}
+
+.anni-main-box {
+  background-color: #72A2BA;
+}
+
+.ci-main-box {
+  background-color: #F9E399;
+}
+
+.att-main-box {
+  background-color: #FF776E;
+}
+
+div.wh-page-box img {
+  width: 100%;
+  border-radius: 0;
+  box-shadow: none;
+  margin-bottom: 0;
+}
+
+.wh-main-box:hover h2 {
+  text-decoration: underline;
+}
+
+.wh-main-box h2 {
+  text-decoration: underline;
+}
+
+.wh-main-box:hover {
+  opacity: .9;
+}
+
+.anni-main-box:hover h2 {
+  text-decoration: underline;
+}
+
+.anni-main-box h2 {
+  text-decoration: underline;
+}
+
+.anni-main-box:hover {
+  opacity: .9;
+}
+
+.ci-main-box:hover h2 {
+  text-decoration: underline;
+}
+
+.ci-main-box h2 {
+  text-decoration: underline;
+}
+
+.ci-main-box:hover {
+  opacity: .9;
+}
+
+.att-main-box:hover h2 {
+  text-decoration: underline;
+}
+
+.att-main-box h2 {
+  text-decoration: underline;
+}
+
+.att-main-box:hover {
+  opacity: .9;
+}
+
+.photography-showcase:hover h2 {
+  text-decoration: underline;
+}
+
+.photography-showcase h2 {
+  text-decoration: underline;
+}
+
+.reference-section {
+    display: block;
+    margin-top: 10rem;
+}
+
+.reference-section p {
+    padding-left: 0;
+    margin-bottom: 10rem;
+}
+
+.reference-section p:before {
+  content: '';
+  background-image: url(/portfolio/image/nelnet-logo.png);
+  background-size: 9rem;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  position: absolute;
+  width: 9rem;
+  height: 9rem;
+  margin-left: -12.5rem;
+  display: none;
+}
+
+.nelnet-logo-mobile {
+  display: block;
+  margin: 0 auto;
+}
+
+.reference-quote {
+  display: block;
+  margin-top: 1.5rem;
+  font-weight: bold;
+}
+
+.mypicture {
+  display: block;
+  margin-bottom: 3rem;
+  max-width: 200px;
+  border: 8px solid #FF776E;
+  border-radius: 108px;
+}
+
+.photography-main-section {
+  margin: 5rem 0;
+  padding: 0;
+}
+
+.photo-spacer {
+  display: inline;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0;
+}
+
+.photo-spacer img {
+  max-width: 20rem;
+  max-height: 20rem;
+  margin: 1rem 0;
+  display: inline;
+}
+
+.su-main-box:hover h2 {
+  text-decoration: underline;
+}
+
+.su-main-box h2 {
+  text-decoration: underline;
+}
+
+.su-main-box:hover {
+  opacity: .9;
+}
+
+.su-main-box {
+  margin-top: 6rem;
+}
+
+.su-page-box , .wh-page-box {
+  padding-top: 1.5rem;
+}
+
+.wh-page-box {
+  margin-bottom: 2rem;
+  padding-bottom: 0;
+}
+
+.su-page-box {
+  margin-bottom: 5rem;
+}
+
+.su-page-box img , .wh-page-box img {
+  width: 40%;
+}
+
+.su-page-box img:first-child {
+  margin-left: -1rem;
+  margin-right: 1rem;
+  display: none;
+}
+
+.su-page-box img:last-child {
+  min-width: 17rem;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.wh-page-box img:first-child {
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.wh-page-box.hearst img:first-child {
+  margin-bottom: -1rem;
+}
+
+.wh-page-box.hearst {
+  padding-bottom: 0;
+}
+
+.wh-page-box.hearst img {
+  border-radius: 5px 5px 0 0;
+}
+
+#lazyload {
+  position: relative;
+}
+
+.su-layout-box {
+  padding-top: 1rem;
+  margin-bottom: 6rem;
+}
+
+.su-layout-box .images {
+  display: inherit;
+  margin: 0 auto;
+  width: fit-content;
+  width: -moz-fit-content;
+}
+
+.su-layout-box .images img {
+  border-radius: 0;
+  box-shadow: none;
+  max-width: 16rem;
+}
+
+.su-layout-box .images a {
+  margin: 0rem auto 2rem auto;
+}
+
+.su-layout-box a.second img {
+  box-shadow: 2px 3px 7px 0px #333;
+  max-width: 13rem;
+}
+
+.su-layout-box .images a:last-child {
+  margin: 2rem auto;
+}
+
+.su-layout-box a {
+  display: block;
+  margin: 4rem 0 2rem;
+}
+
+.su-layout-box a {
+  margin: 2rem auto 4rem;
+  width: fit-content;
+  width: -moz-fit-content;
+  display: table;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.site-wrapper-link {
+  text-decoration: none;
+  color: #fff;
+}
+
+@media only screen and (min-width: 23.75rem) {
+  .wh-page-box img:first-child {
+    margin-top: 0rem;
+  }
+  .su-layout-box .images img {
+    max-width: 20rem;
+  }
+  .su-layout-box a.second img {
+    max-width: 18rem;
+  }
+}
+
+@media only screen and (min-width: 26.25rem) {
+  .wh-progress-content {
+    margin-top: 6rem;
+  }
+  .text-spacer-center {
+    width: 70%;
+  }
+  .su-page-box , .wh-page-box {
+    padding-top: 4rem;
+  }
+  .wh-page-box {
+    margin-bottom: inherit;
+  }
+  .su-page-box img:last-child {
+    width: 48%;
+  }
+  .wh-page-box img:first-child {
+    margin-top: -2rem;
+  }
+  .su-layout-box .images a {
+    margin: 4rem 2rem 2rem auto;
+  }
+}
+
+@media only screen and (min-width: 27rem) {
+  .process-page-header {
+    font-size: 2.5rem;
+  }
+  .dev-page-header {
+    font-size: 2.5rem;
+    text-align: center;
+    width: auto;
+  }
+}
+
+@media only screen and (min-width: 35rem) {
+  .photography-main-section {
+    padding: 0 2rem;
+  }
+  .photo-spacer img {
+    margin: 1rem;
+  }
+}
+
+@media only screen and (min-width: 40rem) {
+  .su-layout-box .images img {
+    max-width: 40rem;
+  }
+}
+
+@media only screen and (min-width: 43rem) {
+  .dev-page-header {
+    margin-top: 12rem;
+  }
+  .reference-section p {
+    padding-left: 12rem;
+  }
+  .reference-section p:before {
+    display: block;
+  }
+  .nelnet-logo-mobile {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 65.625rem) {
+  .wh-mockups img {
+    width: 90%;
+  }
+  .wh-main-box h2 {
+    text-decoration: none;
+  }
+  .anni-main-box h2 {
+    text-decoration: none;
+  }
+  .ci-main-box h2 {
+    text-decoration: none;
+  }
+  .att-main-box h2 {
+    text-decoration: none;
+  }
+  .photography-showcase h2 {
+    text-decoration: none;
+  }
+  .su-main-box h2 {
+    text-decoration: none;
+  }
+  .su-main-box {
+    margin-top: 0;
+  }
+  .wh-page-box {
+    padding-bottom: 2rem;
+  }
+  .su-page-box img:first-child {
+    display: inline;
+    border-radius: 0;
+  }
+  .wh-page-box img:first-child {
+    margin-left: -1rem;
+    margin-right: 1rem;
+    margin-top: inherit;
+    margin-bottom: inherit;
+  }
+  .su-layout-box .images {
+    display: flex;
+    align-items: center;
+  }
+  .su-layout-box .images a:last-child {
+    margin: auto auto auto 2rem;
+  }
+}
+
+@media only screen and (min-width: 70.6rem) {
+  .photo-spacer {
+    display: flex;
+    margin-bottom: 2rem;
+  }
+  .photo-spacer img {
+    margin: 0 1rem;
+  }
+}
+
+@media only screen and (min-width: 75rem) {
+  .su-layout-box .images img {
+    max-width: 53rem;
+  }
+}
