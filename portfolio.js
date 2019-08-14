@@ -65,7 +65,7 @@ function fakelazyload() {
       bottom2 = top2 + $('#hm-2').height(),
       bottom3 = top3 + $('#hm-3').height(),
       bottom4 = top4 + $('#hm-4').height();
-  let containerTop = $('#lazyload').offset().top;
+  let containerTop = $('.image-showcase').offset().top;
 
   function load(x) {
     $(img + x).addClass('load');
@@ -100,7 +100,7 @@ function fakelazyload() {
 //
 // }
 
-$("#lazyload").on('scroll', function() {
+$(".image-showcase").on('scroll', function() {
   console.log('working...');
   fakelazyload();
 });
