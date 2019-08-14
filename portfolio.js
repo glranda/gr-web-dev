@@ -40,25 +40,28 @@ var animateIntro = function() {
   function runIt() {
     setTimeout(function() {
       logo.addClass('show');
-    }, 500);
-    setTimeout(function() {
       profile.addClass('show');
-    }, 800);
+    }, 500);
     logo
       .delay(2000)
       .animate({ right: "+=350" }, 600 );
-    profile
       .delay(2000)
+      .animate({ right: "-=0" }, 600 );
+    profile
       .animate({ left: "+=350" }, 600 );
+      .delay(2000)
+      .animate({ left: "-=0" }, 600 );
+
+
     setTimeout(function() {
       body.removeClass('hide-main');
-    }, 3000);
+    }, 5000);
     setTimeout(function() {
       intro.addClass('show-intro');
-    }, 4000);
+    }, 7000);
     setTimeout(function() {
       brow.addClass('show-under');
-    }, 4000);
+    }, 7000);
   }
 
   runIt();
