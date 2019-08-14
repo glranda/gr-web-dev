@@ -40,8 +40,9 @@ var animateIntro = function() {
   function runIt() {
     setTimeout(function() {
       logo.addClass('show');
-      profile.addClass('show');
     }, 500);
+
+    profile.addClass('show');
 
     logo
       .delay(2000)
@@ -53,13 +54,13 @@ var animateIntro = function() {
     setTimeout(function() {
       body.removeClass('hide-main');
     }, 500);
-    
-    intro
-      .delay(5000)
-      .addClass('show-intro');
-    brow
-      .delay(5000)
-      .addClass('show-under');
+
+    setTimeout(function() {
+      intro.addClass('show-intro');
+    }, 5000);
+    setTimeout(function() {
+      brow.addClass('show-under');
+    }, 5000);
   }
 
   runIt();
