@@ -69,6 +69,11 @@ function fakelazyload() {
   let containerTop = $('.image-showcase').offset().top;
   let containerBottom = containerTop + $('.image-showcase').height();
   containerTop = containerTop + 300;
+  containerActual = containerActual + 30;
+
+  console.log('containerActual = ' + containerActual);
+  console.log('containerTop = ' + containerTop);
+  console.log('containerBottom = ' + containerBottom);
 
   function load(x) {
     $(eval('img' + x)).attr("src","/portfolio/image/" + x + "-load.png");
@@ -80,6 +85,9 @@ function fakelazyload() {
   for (i=1; i<=4; i++) {
     let currentTop = eval('top' + i);
     let currentBot = eval('bottom' + i);
+
+    console.log('currentTop = ' + currentTop);
+    console.log('currentBot = ' + currentBot);
     if (currentBot <= containerTop && currentBot <= containerBottom && currentTop >= containerActual) {
         load(i);
     } else if (currentBot >= containerTop && currentBot <= containerBottom && currentTop >= containerActual) {
