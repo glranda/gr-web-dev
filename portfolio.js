@@ -67,7 +67,7 @@ var animateIntro = function() {
     }, 5000);
     setTimeout(function() {
       profile.addClass('finale');
-    }, 6000);
+    }, 4300);
   }
   runIt();
 
