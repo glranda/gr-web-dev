@@ -1778,7 +1778,7 @@ div.wh-page-box img {
   position: relative;
   height: 28rem;
   margin-bottom: 3rem;
-  overflow: scroll;
+  overflow: hidden;
   margin: 0 auto;
   display: block;
 }
@@ -1857,6 +1857,10 @@ div.wh-page-box img {
 @media only screen and (min-width: 680px) {
   .h-bottom-content {
     padding: 3rem 0;
+  }
+
+  .image-showcase {
+    overflow: scroll;
   }
 }
 
