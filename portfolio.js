@@ -81,14 +81,15 @@ function fakelazyload() {
   }
 
   for (i=1; i<=4; i++) {
-    if (eval('bottom' + i) <= containerTop) {
+    let current = eval('bottom' + i);
+    if (current <= containerTop) {
       console.log('almost load ' + i);
-      if (!(eval('bottom' + i).hasClass('load'))) {
+      if (!current.hasClass('load'))) {
         load(i);
       }
-    } else if (eval('bottom' + i) >= containerTop) {
+    } else if (current >= containerTop) {
       console.log('almost unload ' + i);
-      if (!eval('bottom' + i).hasClass('unload')) {
+      if (!current.hasClass('unload')) {
         unload(i);
       }
     }
