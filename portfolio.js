@@ -36,7 +36,7 @@ var animateIntro = function() {
 
 function runIt() {
   div
-    //.css( "opacity", "1" );
+    .css( "opacity", "1" )
     .animate({ left: "+=200" }, 2000 )
     .slideToggle( 1000 )
     .slideToggle( "fast" )
