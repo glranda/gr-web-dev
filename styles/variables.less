@@ -9,22 +9,30 @@
 @rorange: #FF776E;
 
 // CLASSES
-.transitions-all {
+.transitions-all() {
   -webkit-transition: all .7s ease-in;
   -moz-transition: all .7s ease-in;
   -o-transition: all .7s ease-in;
   -ms-transition: all .7s ease-in;
   transition: all .7s ease-in;
 }
-.gothic() {
-  font-family: 'Hiragino Kaku Gothic Std';
+.transition-translate400() {
+  -webkit-transform: translate(0, 400px);
+  -moz-transform: translate(0, 400px);
+  -o-transform: translate(0, 400px);
+  -ms-transform: translate(0, 400px);
+  transform: translate(0, 400px);
 }
-.arial() {
-  font-family: 'Arial Rounded MT Bold', 'Helvetica Rounded', Arial, sans-serif;
+.transition-translate0() {
+  -webkit-transform: translate(0, 0);
+  -moz-transform: translate(0, 0);
+  -o-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  transform: translate(0, 0);
 }
-.transition2() {
-  transition: all .2s ease-in-out;
-}
+.gothic() { font-family: 'Hiragino Kaku Gothic Std'; }
+.arial() { font-family: 'Arial Rounded MT Bold', 'Helvetica Rounded', Arial, sans-serif; }
+.transition2() { transition: all .2s ease-in-out; }
 .ext-stuff() {
   content: '';
   background-image: url(/portfolio/image/link-external.png);

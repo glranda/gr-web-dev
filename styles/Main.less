@@ -59,49 +59,38 @@ div.logo-container .my-logo.finale {
 
 .main-header {
   opacity: 0;
+  &.show {
+    opacity: 1;
+    .transitions-all();
+  }
 }
 
-.main-header.show {
-  opacity: 1;
-  .transitions-all();
-}
-
-.home-top-section .underbrow {
-  border-top: 1px solid black;
-  margin-top: .5rem;
-  display: inline-block;
-  padding-top: 0.5rem;
-  font-size: 1.2rem;
-  opacity: 0;
-  transform: translate(0, 400px);
-  -webkit-transform: translate(0, 400px);
-  -moz-transform: translate(0, 400px);
-  -o-transform: translate(0, 400px);
-  -ms-transform: translate(0, 400px);
-  transform: translate(0, 400px);
-}
-
-.home-top-section .show-under {
-  opacity: 1;
-  .transitions-all();
-  -webkit-transform: translate(0, 0);
-  -moz-transform: translate(0, 0);
-  -o-transform: translate(0, 0);
-  -ms-transform: translate(0, 0);
-  transform: translate(0, 0);
-}
-
-.home-top-section p.intro-text {
-  font-size: 1.2rem;
-  width: 80%;
-  text-align: left;
-  margin: 5rem auto;
-}
-
-.home-top-section p.intro-text.paragraph {
-  border-top: 1px solid #ccc;
-  padding-top: 4rem;
-  margin: -7rem auto 7.5rem;
+.home-top-section {
+  .underbrow {
+    border-top: 1px solid black;
+    margin-top: .5rem;
+    display: inline-block;
+    padding-top: 0.5rem;
+    font-size: 1.2rem;
+    opacity: 0;
+    .transition-translate400();
+  }
+  .show-under {
+    opacity: 1;
+    .transitions-all();
+    .transition-translate0()
+  }
+  p.intro-text {
+    font-size: 1.2rem;
+    width: 80%;
+    text-align: left;
+    margin: 5rem auto;
+    &.paragraph {
+      border-top: 1px solid #ccc;
+      padding-top: 4rem;
+      margin: -7rem auto 7.5rem;
+    }
+  }
 }
 
 .homepage-button {
@@ -115,15 +104,13 @@ div.logo-container .my-logo.finale {
   border-radius: 7px;
   cursor: pointer;
   .transition2();
-}
-
-.homepage-button:visited {
-  color: @white;
-}
-
-.homepage-button:hover {
-  text-decoration: underline;
-  transform: scale(1.06);
+  &:visited {
+    color: @white;
+  }
+  &:hover {
+    text-decoration: underline;
+    transform: scale(1.06);
+  }
 }
 
 .photography-header {
@@ -145,22 +132,13 @@ div.logo-container .my-logo.finale {
 
 .intro-content {
   opacity: 0;
-  transform: translate(0, 400px);
-  -webkit-transform: translate(0, 400px);
-  -moz-transform: translate(0, 400px);
-  -o-transform: translate(0, 400px);
-  -ms-transform: translate(0, 400px);
-  transform: translate(0, 400px);
+  .transition-translate400();
 }
 
 .show-intro {
   opacity: 1;
   .transitions-all();
-  -webkit-transform: translate(0, 0);
-  -moz-transform: translate(0, 0);
-  -o-transform: translate(0, 0);
-  -ms-transform: translate(0, 0);
-  transform: translate(0, 0);
+  .transition-translate0()
 }
 
 .home-top-section p {
@@ -199,14 +177,23 @@ div.logo-container .my-logo.finale {
   margin-top: 12%;
 }
 
-.showcase-box img {
-  display: inline-block;
-  max-width: 16rem;
-  margin-bottom: -.3rem;
-  box-shadow: 2px 3px 7px 0px #333;
-  border-radius: 16px 16px 0 0;
-  border-radius: 5px 5px 0 0;
-  margin-top: 12%;
+.showcase-box {
+  img {
+    display: inline-block;
+    max-width: 16rem;
+    margin-bottom: -.3rem;
+    box-shadow: 2px 3px 7px 0px #333;
+    border-radius: 16px 16px 0 0;
+    border-radius: 5px 5px 0 0;
+    margin-top: 12%;
+  }
+  h2 {
+    padding: 3rem 0 1rem;
+    margin: 0;
+    font-size: 2rem;
+    .arial();
+    font-weight: normal;
+  }
 }
 
 .showcase-box-home img {
@@ -221,14 +208,6 @@ div.logo-container .my-logo.finale {
 
 .showcase-box-secondary img {
   max-width: 16rem;
-}
-
-.showcase-box h2 {
-  padding: 3rem 0 1rem;
-  margin: 0;
-  font-size: 2rem;
-  .arial();
-  font-weight: normal;
 }
 
 .home-box-hover {
@@ -248,29 +227,25 @@ div.logo-container .my-logo.finale {
   z-index: 2;
   font-size: 1.8rem;
   text-decoration: underline;
+  a {
+    text-decoration: none;
+    color: @white;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  &:last-child {
+    margin-top: 5.5rem;
+  }
 }
 
 .mobile-cover-links {
   display: block;
   position: relative;
   font-size: 1.15rem;
-}
-
-.mobile-cover-links a {
-  color: @white;
-}
-
-.cover-links a {
-  text-decoration: none;
-  color: @white;
-}
-
-.cover-links a:hover {
-  text-decoration: underline;
-}
-
-.cover-links:last-child {
-  margin-top: 5.5rem;
+  a {
+    color: @white;
+  }
 }
 
 .showcase-box .cover {
@@ -347,17 +322,15 @@ div.logo-container .my-logo.finale {
   max-width: 80%;
   justify-content: space-between;
   display: none;
-}
-
-.logos-home-container img {
-  width: 3rem;
-}
-
-.logos-home-container span {
-  display: block;
-  text-align: center;
-  padding-top: .5rem;
-  font-size: .8rem;
+  img {
+    width: 3rem;
+  }
+  span {
+    display: block;
+    text-align: center;
+    padding-top: .5rem;
+    font-size: .8rem;
+  }
 }
 
 .logos-home-container-mobile {
@@ -366,18 +339,16 @@ div.logo-container .my-logo.finale {
   align-items: center;
   max-width: 100%;
   justify-content: space-around;
-}
-
-.logos-home-container-mobile img {
-  width: 3rem;
-}
-
-.logos-home-container-mobile span {
-  display: block;
-  text-align: center;
-  padding-top: .5rem;
-  padding-bottom: 1.8rem;
-  font-size: .8rem;
+  img {
+    width: 3rem;
+  }
+  span {
+    display: block;
+    text-align: center;
+    padding-top: .5rem;
+    padding-bottom: 1.8rem;
+    font-size: .8rem;
+  }
 }
 
 .home-about-wrapper {
@@ -390,17 +361,15 @@ div.logo-container .my-logo.finale {
   margin: 2rem auto;
   display: block;
   align-items: baseline;
-}
-
-.about-section-spacer p {
-  font-size: 1.4rem;
-}
-
-.about-section-spacer h3 {
-  width: 100%;
-  min-width: 8rem;
-  margin-right: 4rem;
-  font-size: 2.5rem;
+  p {
+    font-size: 1.4rem;
+  }
+  h3 {
+    width: 100%;
+    min-width: 8rem;
+    margin-right: 4rem;
+    font-size: 2.5rem;
+  }
 }
 
 .resume-link {
@@ -414,14 +383,12 @@ div.logo-container .my-logo.finale {
 .text-spacer {
   width: 80%;
   margin: 0 auto;
-}
-
-.text-spacer p {
-  font-size: 1.4rem;
-}
-
-.text-spacer h2 {
-  font-size: 2rem;
+  p {
+    font-size: 1.4rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
 }
 
 .before-after p {
@@ -445,44 +412,39 @@ div.logo-container .my-logo.finale {
   text-align: center;
   margin-bottom: 6rem;
   margin-top: 4.3%;
-}
-
-.interview-section img {
-  max-width: 15rem;
-  margin-right: 0;
-  margin-bottom: 1.5rem;
-  box-shadow: 2px 3px 7px 0px #333;
-}
-
-.interview-section a:last-child img {
-  max-width: 15rem;
-  margin-right: 0;
+  img {
+    max-width: 15rem;
+    margin-right: 0;
+    margin-bottom: 1.5rem;
+    box-shadow: 2px 3px 7px 0px #333;
+  }
+  a:last-child img {
+    max-width: 15rem;
+    margin-right: 0;
+  }
 }
 
 .before-after {
   margin-top: 1rem;
-}
-
-.before-after img {
-  box-shadow: 2px 3px 7px 0px #333;
+  img {
+    box-shadow: 2px 3px 7px 0px #333;
+  }
 }
 
 .before-after .top {
   display: inherit;
   margin: 0 2rem;
-}
-
-.before-after .top .content {
-  display: inline-block;
-  width: auto;
-  text-align: left;
-  padding-left: 0;
-}
-
-.before-after .top img {
-  max-width: 14rem;
-  max-height: 30rem;
-  display: inline-block;
+  .content {
+    display: inline-block;
+    width: auto;
+    text-align: left;
+    padding-left: 0;
+  }
+  img {
+    max-width: 14rem;
+    max-height: 30rem;
+    display: inline-block;
+  }
 }
 
 .before-after .bottom {
@@ -490,14 +452,15 @@ div.logo-container .my-logo.finale {
   justify-content: space-between;
   align-items: center;
   margin: 2rem 2rem 7rem;
+  img {
+    max-width: 23rem;
+    max-height: 15rem;
+    height: 15rem;
+    width: 33%;
+  }
 }
 
-.before-after .bottom img {
-  max-width: 23rem;
-  max-height: 15rem;
-  height: 15rem;
-  width: 33%;
-}
+.before-after .bottom
 .mobile-background {
   background: url(/portfolio/image/madison-mobile.jpg);
   position: absolute;
@@ -512,14 +475,13 @@ div.logo-container .my-logo.finale {
 }
 
 .functionality-section {
-    background-image: none;
-    height: 41rem;
-    overflow: hidden;
-    position: relative;
-}
-
-.functionality-section h2 {
-  .gothic();
+  background-image: none;
+  height: 41rem;
+  overflow: hidden;
+  position: relative;
+  h2 {
+    .gothic();
+  }
 }
 
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
@@ -553,105 +515,90 @@ div.logo-container .my-logo.finale {
   display: block;
   align-items: start;
   justify-content: space-around;
+  img {
+    max-width: 13rem;
+    margin: .5rem auto 1.5rem;
+  }
+  .columns {
+    margin: 5rem 0;
+    text-align: center;
+  }
+  .column-right {
+    margin-left: 0;
+  }
+  .cds {
+    display: block;
+    margin-bottom: 5rem;
+    img {
+       max-width: 24rem;
+       max-height: 6rem;
+     }
+  }
+  .stickers {
+    max-width: 13rem;
+  }
 }
-
-.print-media img {
-  max-width: 13rem;
-  margin: .5rem auto 1.5rem;
-}
-
-.print-media .columns {
-  margin: 5rem 0;
-  text-align: center;
-}
-
-.print-media .column-right {
-  margin-left: 0;
-}
-
-.print-media .cds {
-  display: block;
-  margin-bottom: 5rem;
-}
-
-.print-media .stickers {
-  max-width: 13rem;
-}
-
-.print-media .cds img {
-   max-width: 24rem;
-   max-height: 6rem;
- }
 
 .what-i-did {
   margin-top: 5rem;
   margin-bottom: 3rem;
-}
-
-.what-i-did ul {
-  padding-left: 1.3rem;
-  display: block;
-}
-
-.what-i-did  li {
-  font-size: 1.2rem;
-  padding: .3rem 0;
-}
-
-.what-i-did .dev-list-left {
-  margin: 0 3rem 0 0;
-  display: block;
-  width: 100%;
-}
-
-.what-i-did .dev-list-right {
-  margin: 0;
-  display: block;
-  width: 100%;
+  ul {
+    padding-left: 1.3rem;
+    display: block;
+  }
+  li {
+    font-size: 1.2rem;
+    padding: .3rem 0;
+  }
+  .dev-list-left {
+    margin: 0 3rem 0 0;
+    display: block;
+    width: 100%;
+  }
+  .dev-list-right {
+    margin: 0;
+    display: block;
+    width: 100%;
+  }
 }
 
 .next-project {
   margin-top: 1.5rem;
-}
-
-.next-project p {
-  display: inline-block;
-  position: relative;
-}
-
-.next-project p:after {
-  content: '';
-  background-image: url(/portfolio/image/arrow-dev.png);
-  background-size: 3rem;
-  background-repeat: no-repeat;
-  background-color: transparent;
-  position: absolute;
-  width: 3rem;
-  height: 1rem;
-  display: none;
-  margin-left: 1rem;
-  top: .25rem;
-}
-
-.next-project ul {
-  display: block;
-  width: auto;
-  margin: 0;
-  padding: 0;
-}
-
-.next-project li {
-  display: inline-block;
-  width: 10px;
-  height: 10px;
-  margin: 0 18px;
-  background: #333;
-  border-radius: 50%;
-  opacity: .25;
-}
-
-.next-project li.active {
-  opacity: 1;
+  p {
+    display: inline-block;
+    position: relative;
+    &:after {
+      content: '';
+      background-image: url(/portfolio/image/arrow-dev.png);
+      background-size: 3rem;
+      background-repeat: no-repeat;
+      background-color: transparent;
+      position: absolute;
+      width: 3rem;
+      height: 1rem;
+      display: none;
+      margin-left: 1rem;
+      top: .25rem;
+    }
+  }
+  ul {
+    display: block;
+    width: auto;
+    margin: 0;
+    padding: 0;
+  }
+  li {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 18px;
+    background: #333;
+    border-radius: 50%;
+    opacity: .25;
+  }
+  &.active {
+    opacity: 1;
+  }
 }
 
 .image-showcase {
@@ -662,34 +609,30 @@ div.logo-container .my-logo.finale {
   overflow: hidden;
   margin: 0 auto;
   display: block;
-}
-
-.image-showcase .h-images {
-  position: absolute;
-  height: 100%;
-  width: 87%;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
-}
-
-.image-showcase img {
-  width: 100%;
-  max-width: 35rem;
-  display: block;
-  border-radius: 2px;
-  padding: 10rem 0 5rem;
-  margin: 0 auto;
-}
-
-.image-showcase img:first-child {
-  padding-top: 5.5rem;
-  border-top: none;
-}
-
-.image-showcase img:last-child {
-  padding-bottom: 16rem;
-  border-top: none;
+  .h-images {
+    position: absolute;
+    height: 100%;
+    width: 87%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+  img {
+    width: 100%;
+    max-width: 35rem;
+    display: block;
+    border-radius: 2px;
+    padding: 10rem 0 5rem;
+    margin: 0 auto;
+    &:first-child {
+      padding-top: 5.5rem;
+      border-top: none;
+    }
+    &:last-child {
+      padding-bottom: 16rem;
+      border-top: none;
+    }
+  }
 }
 
 .h-bottom-content {
@@ -747,15 +690,17 @@ div.logo-container .my-logo.finale {
 }
 
 @media only screen and (min-width: 25rem) {
-  .home-top-section h1  {
-    font-size: 2rem;
-  }
-  .home-top-section .underbrow {
-    font-size: 1.7rem;
-    margin-top: .8rem;
-  }
-  .home-top-section p.intro-text {
-    font-size: 1.4rem;
+  .home-top-section {
+    h1 {
+      font-size: 2rem;
+    }
+    .underbrow {
+      font-size: 1.7rem;
+      margin-top: .8rem;
+    }
+    p.intro-text {
+      font-size: 1.4rem;
+    }
   }
 }
 
@@ -937,11 +882,13 @@ div.logo-container .my-logo.finale {
 }
 
 @media only screen and (min-width: 65.625rem) {
-  .home-top-section p.intro-text {
-    width: 65%;
-  }
-  .home-top-section p {
-    font-size: 2.5rem;
+  .home-top-section {
+    p {
+      font-size: 2.5rem;
+      &.intro-text {
+        width: 65%;
+      }
+    }
   }
   .homepage-wrapper h2 {
     text-decoration: none;
@@ -998,18 +945,18 @@ div.logo-container .my-logo.finale {
   }
   .print-media {
     display: flex;
-  }
-  .print-media img {
-    margin: .5rem 0 1.5rem;
-  }
-  .print-media .columns {
-    margin: 0;
-  }
-  .print-media .column-right {
-    margin-left: 16%;
-  }
-  .print-media .cds {
-    display: flex;
+    img {
+      margin: .5rem 0 1.5rem;
+    }
+    .columns {
+      margin: 0;
+    }
+    .column-right {
+      margin-left: 16%;
+    }
+    .cds {
+      display: flex;
+    }
   }
   .what-i-did ul {
     display: flex;
@@ -1019,18 +966,18 @@ div.logo-container .my-logo.finale {
   }
   .image-showcase {
     width: 100%;
-  }
-  .image-showcase .h-images {
-    width: 100%;
-  }
-  .image-showcase img {
-    margin: 0;
-  }
-  .image-showcase img:first-child {
-    border-top: 2px solid @green;
-  }
-  .image-showcase img:last-child {
-    border-bottom: 2px solid @green;
+    .h-images {
+      width: 100%;
+    }
+    img {
+      margin: 0;
+      &:first-child {
+        border-top: 2px solid @green;
+      }
+      &:last-child {
+        border-bottom: 2px solid @green;
+      }
+    }
   }
   .h-bottom-content {
     width: 38%;

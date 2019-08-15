@@ -8,18 +8,16 @@
 .text-spacer-center {
   width: 80%;
   margin: 0 auto;
-}
-
-.text-spacer-center p {
-  font-size: 1.4rem;
+  p {
+    font-size: 1.4rem;
+  }
 }
 
 .wh-mockups {
   margin-bottom: 8rem;
-}
-
-.wh-mockups img {
-  width: 100%;
+  img {
+    width: 100%;
+  }
 }
 
 .process-page-header {
@@ -65,52 +63,52 @@ div.wh-page-box img {
   margin-bottom: 0;
 }
 
-.wh-main-box:hover h2 {
-  text-decoration: underline;
+.wh-main-box {
+  h2 {
+    text-decoration: underline;
+  }
+  &:hover {
+    opacity: .9;
+    h2 {
+      text-decoration: underline;
+    }
+  }
 }
 
-.wh-main-box h2 {
-  text-decoration: underline;
+.anni-main-box {
+  h2 {
+    text-decoration: underline;
+  }
+  &:hover {
+    opacity: .9;
+    h2 {
+      text-decoration: underline;
+    }
+  }
 }
 
-.wh-main-box:hover {
-  opacity: .9;
+.ci-main-box {
+  h2 {
+    text-decoration: underline;
+  }
+  &:hover {
+    opacity: .9;
+    h2 {
+      text-decoration: underline;
+    }
+  }
 }
 
-.anni-main-box:hover h2 {
-  text-decoration: underline;
-}
-
-.anni-main-box h2 {
-  text-decoration: underline;
-}
-
-.anni-main-box:hover {
-  opacity: .9;
-}
-
-.ci-main-box:hover h2 {
-  text-decoration: underline;
-}
-
-.ci-main-box h2 {
-  text-decoration: underline;
-}
-
-.ci-main-box:hover {
-  opacity: .9;
-}
-
-.att-main-box:hover h2 {
-  text-decoration: underline;
-}
-
-.att-main-box h2 {
-  text-decoration: underline;
-}
-
-.att-main-box:hover {
-  opacity: .9;
+.att-main-box {
+  h2 {
+    text-decoration: underline;
+  }
+  &:hover {
+    opacity: .9;
+    h2 {
+      text-decoration: underline;
+    }
+  }
 }
 
 .photography-showcase:hover h2 {
@@ -122,13 +120,12 @@ div.wh-page-box img {
 }
 
 .reference-section {
-    display: block;
-    margin-top: 10rem;
-}
-
-.reference-section p {
-    padding-left: 0;
-    margin-bottom: 10rem;
+  display: block;
+  margin-top: 10rem;
+  p {
+      padding-left: 0;
+      margin-bottom: 10rem;
+  }
 }
 
 .reference-section p:before {
@@ -173,13 +170,12 @@ div.wh-page-box img {
   align-items: center;
   justify-content: center;
   margin-bottom: 0;
-}
-
-.photo-spacer img {
-  max-width: 20rem;
-  max-height: 20rem;
-  margin: 1rem 0;
-  display: inline;
+  img {
+    max-width: 20rem;
+    max-height: 20rem;
+    margin: 1rem 0;
+    display: inline;
+  }
 }
 
 .su-main-box:hover h2 {
@@ -253,19 +249,17 @@ div.wh-page-box img {
 .su-layout-box {
   padding-top: 1rem;
   margin-bottom: 6rem;
-}
-
-.su-layout-box .images {
-  display: inherit;
-  margin: 0 auto;
-  width: fit-content;
-  width: -moz-fit-content;
-}
-
-.su-layout-box .images img {
-  border-radius: 0;
-  box-shadow: none;
-  max-width: 16rem;
+  .images {
+    display: inherit;
+    margin: 0 auto;
+    width: fit-content;
+    width: -moz-fit-content;
+    img {
+      border-radius: 0;
+      box-shadow: none;
+      max-width: 16rem;
+    }
+  }
 }
 
 .su-layout-box .images a {
@@ -368,9 +362,9 @@ div.wh-page-box img {
   }
   .reference-section p {
     padding-left: 12rem;
-  }
-  .reference-section p:before {
-    display: block;
+    &:before {
+      display: block;
+    }
   }
   .nelnet-logo-mobile {
     display: none;
