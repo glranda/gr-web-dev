@@ -33,16 +33,12 @@ body.hide-main .navigation {
 
 .my-logo.show, .profile.show {
   opacity: 1;
-  -webkit-transition: all .7s ease-in;
-  -moz-transition: all .7s ease-in;
-  -o-transition: all .7s ease-in;
-  -ms-transition: all .7s ease-in;
-  transition: all .7s ease-in;
+  .transitions-all();
 }
 
 div.logo-container .profile.finale {
   position: relative;
-  border: 8px solid #72A2BA;
+  border: 8px solid @blue;
   border-radius: 130px;
   -webkit-transition: none;
   -moz-transition: none;
@@ -67,11 +63,7 @@ div.logo-container .my-logo.finale {
 
 .main-header.show {
   opacity: 1;
-  -webkit-transition: all .7s ease-in;
-  -moz-transition: all .7s ease-in;
-  -o-transition: all .7s ease-in;
-  -ms-transition: all .7s ease-in;
-  transition: all .7s ease-in;
+  .transitions-all();
 }
 
 .home-top-section .underbrow {
@@ -91,11 +83,7 @@ div.logo-container .my-logo.finale {
 
 .home-top-section .show-under {
   opacity: 1;
-  -webkit-transition: all .7s ease-in;
-  -moz-transition: all .7s ease-in;
-  -o-transition: all .7s ease-in;
-  -ms-transition: all .7s ease-in;
-  transition: all .7s ease-in;
+  .transitions-all();
   -webkit-transform: translate(0, 0);
   -moz-transform: translate(0, 0);
   -o-transform: translate(0, 0);
@@ -117,8 +105,8 @@ div.logo-container .my-logo.finale {
 }
 
 .homepage-button {
-  background: #72a2ba;
-  color: #fff;
+  background: @blue;
+  color: @white;
   display: inline-block;
   font-size: .85rem;
   padding: 1.5rem 0;
@@ -130,7 +118,7 @@ div.logo-container .my-logo.finale {
 }
 
 .homepage-button:visited {
-  color: #fff;
+  color: @white;
 }
 
 .homepage-button:hover {
@@ -167,11 +155,7 @@ div.logo-container .my-logo.finale {
 
 .show-intro {
   opacity: 1;
-  -webkit-transition: all .7s ease-in;
-  -moz-transition: all .7s ease-in;
-  -o-transition: all .7s ease-in;
-  -ms-transition: all .7s ease-in;
-  transition: all .7s ease-in;
+  .transitions-all();
   -webkit-transform: translate(0, 0);
   -moz-transform: translate(0, 0);
   -o-transform: translate(0, 0);
@@ -186,7 +170,7 @@ div.logo-container .my-logo.finale {
 
 .showcase-box {
   text-align: center;
-  color: #fff;
+  color: @white;
   overflow: hidden;
   position: relative;
   border-radius: 5px 5px 0 0;
@@ -243,7 +227,7 @@ div.logo-container .my-logo.finale {
   padding: 3rem 0 1rem;
   margin: 0;
   font-size: 2rem;
-  font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
+  .arial()
   font-weight: normal;
 }
 
@@ -260,7 +244,7 @@ div.logo-container .my-logo.finale {
   top: 40%;
   height: auto;
   margin: auto;
-  color: #fff;
+  color: @white;
   z-index: 2;
   font-size: 1.8rem;
   text-decoration: underline;
@@ -273,12 +257,12 @@ div.logo-container .my-logo.finale {
 }
 
 .mobile-cover-links a {
-  color: #fff;
+  color: @white;
 }
 
 .cover-links a {
   text-decoration: none;
-  color: #fff;
+  color: @white;
 }
 
 .cover-links a:hover {
@@ -315,7 +299,7 @@ div.logo-container .my-logo.finale {
 }
 
 .home-hearst-box {
-  background-color: #73ADA1;
+  background-color: @green;
 }
 
 .home-hearst-box img {
@@ -323,15 +307,15 @@ div.logo-container .my-logo.finale {
 }
 
 .home-su-box {
-  background-color: #72A2BA;
+  background-color: @blue;
 }
 
 .home-wh-box {
-  background-color: #73ADA1;
+  background-color: @green;
 }
 
 .home-anni-box {
-  background-color: #72A2BA;
+  background-color: @blue;
 }
 
 .home-ci-box {
@@ -339,7 +323,7 @@ div.logo-container .my-logo.finale {
 }
 
 .home-att-box {
-  background-color: #FF776E;
+  background-color: @rorange;
 }
 
 .homepage-wrapper .home-att-box h2 {
@@ -535,7 +519,7 @@ div.logo-container .my-logo.finale {
 }
 
 .functionality-section h2 {
-  font-family: 'Hiragino Kaku Gothic Std';
+  .gothic();
 }
 
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
@@ -546,12 +530,12 @@ div.logo-container .my-logo.finale {
 
 @-moz-document url-prefix() {
   .functionality-section h2 {
-    font-family: 'Hiragino Kaku Gothic Std';
+    .gothic();
   }
 }
 
 .functionality-section h2 {
-  color: #fff;
+  color: @white;
   text-transform: uppercase;
   position: absolute;
   left: 0;
@@ -1043,10 +1027,10 @@ div.logo-container .my-logo.finale {
     margin: 0;
   }
   .image-showcase img:first-child {
-    border-top: 2px solid #73ADA1;
+    border-top: 2px solid @green;
   }
   .image-showcase img:last-child {
-    border-bottom: 2px solid #73ADA1;
+    border-bottom: 2px solid @green;
   }
   .h-bottom-content {
     width: 38%;
@@ -1075,7 +1059,7 @@ div.logo-container .my-logo.finale {
 
 @media only screen and (min-width: 75rem) {
   .functionality-section h2 {
-    font-family: 'Hiragino Kaku Gothic Std';
+    .gothic();
   }
 }
 
