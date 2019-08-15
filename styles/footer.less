@@ -15,58 +15,53 @@
   padding: 1rem 0;
   background: @white;
   margin-top: 5rem;
+  ul {
+    padding: 0 .8rem;
+    display: flex;
+    align-items: center;
+    li {
+      list-style-type: none;
+      margin: 0;
+      width: 120px;
+      padding-right: 1rem;
+      &:last-child {
+        margin-right: 0;
+        margin-left: auto;
+        width: 95px;
+        display: none;
+      }
+      &.linkedin {
+        margin-left: auto;
+        margin-top: -.5rem;
+        padding-right: 0;
+        img {
+          max-width: 3rem;
+          margin-right: auto;
+          margin-left: auto;
+        }
+      }
+    }
+  }
 }
-
-.footer ul {
-  padding: 0 .8rem;
-  display: flex;
-  align-items: center;
-}
-
-.footer ul li {
-  list-style-type: none;
-  margin: 0;
-  width: 120px;
-  padding-right: 1rem;
-}
-
-.footer ul li:last-child {
-  margin-right: 0;
-  margin-left: auto;
-  width: 95px;
-  display: none;
-}
-
-.footer ul li.linkedin {
-  margin-left: auto;
-  margin-top: -.5rem;
-  padding-right: 0;
-}
-
-.footer .linkedin img {
-  max-width: 3rem;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-.footer-home ul li.linkedin {
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: -.5rem;
-}
-
-.footer-home .linkedin img {
-  max-width: 3rem;
-  margin-right: auto;
-  margin-left: 0;
-}
-
-.footer-home ul li:last-child {
-  display: block;
-}
-
-.footer-home ul li:first-child {
-  padding-left: 0rem;
+.footer-home {
+  ul li {
+    &.linkedin {
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: -.5rem;
+    }
+    &:last-child {
+      display: block;
+    }
+    &:first-child {
+      padding-left: 0rem;
+    }
+  }
+  .linkedin img {
+    max-width: 3rem;
+    margin-right: auto;
+    margin-left: 0;
+  }
 }
 
 .linkedin a:hover {
@@ -77,6 +72,8 @@
   display: none;
 }
 
+
+// THIRD PARTY SHIT
 .light-box-desktop {
   display: none;
 }
@@ -126,15 +123,21 @@
   bottom: 4.319rem;
  }
 
+//
+
  @media only screen and (min-width: 19.375rem) {
-   .footer ul li:last-child {
-     display: block;
-   }
-   .footer ul li.linkedin {
-     padding-right: 21px;
-   }
-   .footer-home ul li:first-child {
-     padding-left: 1rem;
+   .footer {
+     ul li {
+       &:last-child {
+         display: block;
+       }
+       &.linkedin {
+         padding-right: 21px;
+       }
+       &:first-child {
+         padding-left: 1rem;
+       }
+     }
    }
  }
 
@@ -142,9 +145,9 @@
    .footer ul li {
      margin: 0 0 0 2rem;
      padding-right: 1rem;
-   }
-   .footer ul li:last-child {
-     margin-right: 2rem;
+     &:last-child {
+       margin-right: 2rem;
+     }
    }
  }
 
