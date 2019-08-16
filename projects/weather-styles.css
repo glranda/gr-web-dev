@@ -1,5 +1,4 @@
-<style>
-	html, body {
+html, body {
 		margin:  0;
 		padding: 0;
 		background-color: white;
@@ -43,4 +42,3 @@
 	.darkmode #forecast li {
 		border-bottom: 1px solid #fff;
 	}
-</style>
