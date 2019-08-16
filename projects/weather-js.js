@@ -70,7 +70,8 @@
 				let day = data.cities[city].weekly[i].day;
 				let week = data.cities[city].weekly[i].condition;
 				let icon = data.cities[city].weekly[i].icon;
-				let iconUrl = '/not/a/really/thing/' + icon + '.png'
+        console.log(icon);
+				let iconUrl = 'portfolio/projects/assets.js' + icon + '.png'
 				let img = '<img class="weather-icon" src=\"' + iconUrl + '\"' + 'alt=\"' + icon +' weather icon\"' + '>' + '</img>';
 				let text;
 				if (day == 'Thu') {
