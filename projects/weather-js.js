@@ -5,7 +5,7 @@
 		let weeklyList = document.querySelector('ul');
 		let selectCity = document.getElementById('selectCity');
 		let body = document.querySelector('body');
-		let city = 9; 
+		let city = 9;
 		//initially populate the page
 		window.onload = () => {
 			populateSelect();
