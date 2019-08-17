@@ -52,11 +52,9 @@
 			let temp = '<p>' + 'The current temperature is: ' + '<strong>' + data.cities[city].current[0].temp + '&deg;' + '</strong>' + '</p>';
 			let condition = '<p>' + 'The current condition is: ' + '<strong>' + data.cities[city].current[0].condition + '</strong>' + '</p>';
 			currentDiv.innerHTML =  temp + condition;
-			//For dark mode, I just converted NY time to West Coast time. Going further than this would require the user's location
 			let nyTime = new Date().toLocaleString("en-US", {timeZone: "America/New_York"});
 			nyTime = new Date(nyTime);
 			let hours = nyTime.getHours();
-			hours = hours - 3;
 			if (hours >= 20 || hours <= 7) {
 				body.classList.add('darkmode');
 			} else {
@@ -79,7 +77,7 @@
 				let li = document.createElement('li');
 				let day = data.cities[city].weekly[i].day;
 				let week = data.cities[city].weekly[i].condition;
-				console.log(week);
+				console.log(day);
 				let icon = data.cities[city].weekly[i].icon;
 				console.log(icon);
 				let iconUrl = obj.weather[0].icon;
