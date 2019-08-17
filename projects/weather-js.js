@@ -66,7 +66,7 @@
 
 		var text = '{"weather" : [' +
 									'{"id":"sunny","icon":"☀️" },' +
-									'{"firstName":"Anna","lastName":"Smith" },' +
+									'{"firstName":"Anna","icon":"Smith" },' +
 									'{"firstName":"Peter","lastName":"Jones" }' +
 							 ']}';
 
@@ -83,7 +83,7 @@
 				let iconUrl = obj.weather[0].icon;
 
 
-				let img = '<img class="weather-icon" src=\"' + iconUrl + '\"' + 'alt=\"' + icon +' weather icon\"' + '>' + '</img>';
+				let img = iconUrl;
 				let text;
 				if (day == 'Thu') {
 					text = '<strong>' + day + 'rsday: ' + '</strong>' + week + img;
