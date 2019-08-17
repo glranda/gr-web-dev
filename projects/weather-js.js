@@ -79,6 +79,7 @@
 				let li = document.createElement('li');
 				let day = data.cities[city].weekly[i].day;
 				let week = data.cities[city].weekly[i].condition;
+				console.log(week);
 				let icon = data.cities[city].weekly[i].icon;
 				console.log(icon);
 				let iconUrl = obj.weather[0].icon;
