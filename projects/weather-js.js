@@ -63,9 +63,10 @@
 		}
 
 		var text = '{"weather" : [' +
+									'{"id":"mostlysunny","icon":"☀️" },' +
 									'{"id":"sunny","icon":"☀️" },' +
-									'{"id":"sunny","icon":"☀️" },' +
-									'{"id":"sunny","icon":"☀️" }' +
+									'{"id":"mostlysunny","icon":"☀️" },' +
+									'{"id":"partlycloudy","icon":"☀️" }' +
 							 ']}';
 
 		var obj = JSON.parse(text);
@@ -76,11 +77,11 @@
 			for (let i = 0; i < data.cities[city].weekly.length; i++) {
 				let li = document.createElement('li');
 				let day = data.cities[city].weekly[i].day;
-				let week = data.cities[city].weekly[i].condition;
-				console.log(day);
-				let icon = data.cities[city].weekly[i].icon;
+				let high = data.cities[city].weekly[i].high;
+				let low = data.cities[city].weekly[i].low;
+				let icon = data.cities[city].weekly[i].daycondition;
 				console.log(icon);
-				let iconUrl = obj.weather[0].icon;
+				let urlSetup = obj.weather[icon].icon;
 
 
 				let img = iconUrl;
