@@ -68,7 +68,7 @@
 									'{"id":"sunny","icon":"☀️" },' +
 									'{"firstName":"Anna","lastName":"Smith" },' +
 									'{"firstName":"Peter","lastName":"Jones" }' +
-							 ']';
+							 ']}';
 
 		var obj = JSON.parse(text);
 
