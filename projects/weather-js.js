@@ -90,13 +90,13 @@
 				if (day == 'Thu') {
 					text = '<strong>' + day + 'rsday: ' + '</strong>' + 'the high is: ' + high + 'and the low: ' +  low;
 				} else if (day == 'Sat') {
-					text = '<strong>' + day + 'urday: ' + '</strong>' + week + img;
+					text = '<strong>' + day + 'urday: ' + '</strong>' + 'the high is: ' + high + 'and the low: ' +  low;
 				} else if (day == 'Tue') {
-					text = '<strong>' + day + 'sday: ' + '</strong>' + week + img;
+					text = '<strong>' + day + 'sday: ' + '</strong>' + 'the high is: ' + high + 'and the low: ' +  low;
 				} else if (day == 'Wed') {
-					text = '<strong>' + day + 'nesday: ' + '</strong>' + week + img;
+					text = '<strong>' + day + 'nesday: ' + '</strong>' + 'the high is: ' + high + 'and the low: ' +  low;
 				} else {
-					text = '<strong>' + day + 'day: ' + '</strong>' + week + img;
+					text = '<strong>' + day + 'day: ' + '</strong>' + 'the high is: ' + high + 'and the low: ' +  low;
 				}
 				li.innerHTML = text;
 				weeklyList.appendChild(li);
