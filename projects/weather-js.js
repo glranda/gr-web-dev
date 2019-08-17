@@ -1,3 +1,5 @@
+import { weather } from 'assets';
+
 	// Load and display data
 	function hdnWeatherJsonpCallback(data) {
 		let currentDiv = document.getElementById('current');
@@ -64,13 +66,8 @@
 			}
 		}
 
-		var text = '{"employees":[' +
-								'{"firstName":"John","lastName":"Doe" },' +
-								'{"firstName":"Anna","lastName":"Smith" },' +
-								'{"firstName":"Peter","lastName":"Jones" }]}';
-
-								var obj = JSON.parse(text);
-
+		var text = weather();
+		var obj = JSON.parse(text);
 
 		//Populate list with weekly forecast and icons
 		function weeklyForecast() {
