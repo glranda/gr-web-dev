@@ -67,7 +67,7 @@
 		var text = '{"weather" : [' +
 									'{"id":"sunny","icon":"☀️" },' +
 									'{"id":"sunny","icon":"☀️" },' +
-									'{"id":"sunny","icon":"☀️" },' +
+									'{"id":"sunny","icon":"☀️" }' +
 							 ']}';
 
 		var obj = JSON.parse(text);
