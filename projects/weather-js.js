@@ -85,7 +85,7 @@
 				// let urlSetup = obj.weather[icon].icon;
 
 
-				let img = iconUrl;
+				let img;
 				let text;
 				if (day == 'Thu') {
 					text = '<strong>' + day + 'rsday: ' + '</strong>' + week + img;
