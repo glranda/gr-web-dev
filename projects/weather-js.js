@@ -88,7 +88,7 @@
 				let img;
 				let text;
 				if (day == 'Thu') {
-					text = '<strong>' + day + 'rsday: ' + '</strong>' + week + img;
+					text = '<strong>' + day + 'rsday: ' + '</strong>' + 'the high is: ' + high + 'and the low: ' +  low;
 				} else if (day == 'Sat') {
 					text = '<strong>' + day + 'urday: ' + '</strong>' + week + img;
 				} else if (day == 'Tue') {
