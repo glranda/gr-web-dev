@@ -66,8 +66,8 @@
 
 		var text = '{"weather" : [' +
 									'{"id":"sunny","icon":"☀️" },' +
-									'{"firstName":"Anna","icon":"Smith" },' +
-									'{"firstName":"Peter","lastName":"Jones" }' +
+									'{"id":"sunny","icon":"☀️" },' +
+									'{"id":"sunny","icon":"☀️" },' +
 							 ']}';
 
 		var obj = JSON.parse(text);
@@ -80,10 +80,9 @@
 				let day = data.cities[city].weekly[i].day;
 				let week = data.cities[city].weekly[i].condition;
 				let icon = data.cities[city].weekly[i].icon;
-				let iconUrl = obj.weather[0].icon;
+				console.log(icon);
+				let img = obj.weather[0].icon;
 
-
-				let img = iconUrl;
 				let text;
 				if (day == 'Thu') {
 					text = '<strong>' + day + 'rsday: ' + '</strong>' + week + img;
