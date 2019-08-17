@@ -1,4 +1,4 @@
-import { weather } from 'assets';
+// import { weather } from 'assets';
 
 	// Load and display data
 	function hdnWeatherJsonpCallback(data) {
