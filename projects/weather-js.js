@@ -1,4 +1,4 @@
-import { weather } from 'assets';
+import * as text from './assets.json';
 
 	// Load and display data
 	function hdnWeatherJsonpCallback(data) {
@@ -66,7 +66,6 @@ import { weather } from 'assets';
 			}
 		}
 
-		var text = weather();
 		var obj = JSON.parse(text);
 
 		//Populate list with weekly forecast and icons
