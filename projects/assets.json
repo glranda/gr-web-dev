@@ -4,12 +4,12 @@
     "icon": ☀️,
   },
   {
-    "userId": "sun",
+    "userId": "cloud",
     "icon": 1,
   },
   {
-    "userId": "sun",
-    "icon": 1,
+    "userId": "rain",
+    "icon": 2,
   },
   {
     "userId": "sun",
