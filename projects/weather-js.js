@@ -81,8 +81,10 @@
 				let week = data.cities[city].weekly[i].condition;
 				let icon = data.cities[city].weekly[i].icon;
 				console.log(icon);
-				let img = obj.weather[0].icon;
+				let iconUrl = obj.weather[0].icon;
 
+
+				let img = iconUrl;
 				let text;
 				if (day == 'Thu') {
 					text = '<strong>' + day + 'rsday: ' + '</strong>' + week + img;
