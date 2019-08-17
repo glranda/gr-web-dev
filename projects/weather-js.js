@@ -80,7 +80,7 @@
 				let day = data.cities[city].weekly[i].day;
 				let week = data.cities[city].weekly[i].condition;
 				let icon = data.cities[city].weekly[i].icon;
-				let iconUrl = obj.weather[0].icon + " " + obj.employees[0].lastName;
+				let iconUrl = obj.weather[0].icon;
 
 
 				let img = '<img class="weather-icon" src=\"' + iconUrl + '\"' + 'alt=\"' + icon +' weather icon\"' + '>' + '</img>';
