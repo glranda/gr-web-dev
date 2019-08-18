@@ -71,14 +71,16 @@
 			console.log(data.cities[city].current[0].condition);
 			console.log(typeof(data.cities[city].current[0].condition));
 			if (hours >= 20 || hours <= 7) {
-				body.classList.add('darkmode');
 				body.classList.remove('day');
 				body.classList.remove('cloudy');
+				body.classList.add('darkmode');
 			} else if (hours <= 20 && hours >= 7) {
-				body.classList.add('day');
 				body.classList.remove('darkmode');
 				body.classList.remove('cloudy');
+				body.classList.add('day');
 			} else if (hours <= 20 && hours >= 7 && data.cities[city].current[0].condition == 'Cloudy') {
+				body.classList.remove('darkmode');
+				body.classList.remove('day');
 				body.classList.add('cloudy');
 			}
 
