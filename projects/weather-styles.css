@@ -1,11 +1,13 @@
 html, body {
 	margin:  0;
 	padding: 0;
-	background-color: white;
 	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 	font-size:   18px;
 	line-height: 1.36em;
 	color: black;
+}
+body {
+	background: url("/jgp/day.jpg") no-repeat cover 100%;
 }
 label {
 	font-size: 14px;
@@ -32,11 +34,15 @@ label {
 	padding: .5rem 0;
 	border-bottom: 1px solid #000;
 }
+
+#forecast ul img {
+	max-width: 5rem;
+}
 .weather-icon {
 	margin-left: 1rem;
 }
 .darkmode {
-	background-color: #4e4e4e;
+	background: url("/jgp/night.jpg") no-repeat cover 100%;
 	color: #fff;
 }
 .darkmode #forecast li {
