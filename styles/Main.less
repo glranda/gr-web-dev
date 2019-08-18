@@ -376,7 +376,7 @@ div.logo-container .my-logo.finale {
   margin: 2rem 0;
 }
 
-.su-wrapper , .wh-wrapper, .dev-wrapper {
+div.su-wrapper , div.wh-wrapper, div.dev-wrapper {
   text-align: left;
 }
 
@@ -596,10 +596,11 @@ div.logo-container .my-logo.finale {
     background: #333;
     border-radius: 50%;
     opacity: .25;
+    &.active {
+      opacity: 1;
+    }
   }
-  &.active {
-    opacity: 1;
-  }
+
 }
 
 .image-showcase {
@@ -920,9 +921,6 @@ div.logo-container .my-logo.finale {
     margin-top: 6rem;
     display: flex;
     max-width: 65%;
-  }
-  .text-spacer {
-    margin: 0 auto 0 7rem;
   }
   .before-after {
     margin-top: 6.5rem;
