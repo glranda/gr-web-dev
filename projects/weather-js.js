@@ -68,7 +68,6 @@
 									'{"id":"clear","icon":"32.svg" },' +
 									'{"id":"partlysunny","icon":"34.svg" },' +
 									'{"id":"cloudy","icon":"26.svg" },' +
-									'{"id":"thunderstorms","icon":"03.svg" },' +
 									'{"id":"rainy","icon":"11.svg" },' +
 									'{"id":"partlycloudy","icon":"28.svg" }' +
 							 ']}';
@@ -79,15 +78,17 @@
 		//Populate list with weekly forecast and icons
 		function weeklyForecast() {
 			for (let i = 0; i < (data.cities[city].weekly.length); i++) {
-				if (i >= 2 && i <= [8]) {
+				if (i >= 2 && i <= 8) {
 					let li = document.createElement('li');
 					let text, img;
 					let day = data.cities[city].weekly[i].weekday;
+					let d = new Date();
+				  let current = d.getDay()
+					current = (current + 2);
 					let high = data.cities[city].weekly[i].high;
 					let low = data.cities[city].weekly[i].low;
 					let condition = data.cities[city].weekly[i].daycondition;
 					let awicon = data.cities[city].weekly[i].awdayicon;
-					// console.log('condition = ' + condition);
 					console.log(i + ' = icon = ' + awicon);
 					// console.log(obj.weather[i].id);
 
@@ -102,10 +103,16 @@
 					// }
 
 
-
-					text = '<strong>' + day + '</strong>' + 'the high is: ' + high + 'and the low: ' +  low + img;
-					li.innerHTML = text;
-					weeklyList.appendChild(li);
+					if (current == i) {
+						text = '<strong>' + day + '</strong>' + 'the high is: ' + high + 'and the low: ' +  low + img + '<span>' + condition + '</span>';
+						li.classList.add("current-day");
+						li.innerHTML = text;
+						weeklyList.appendChild(li);
+					} else {
+						text = '<strong>' + day + '</strong>' + 'the high is: ' + high + 'and the low: ' +  low + img + '<span>' + condition + '</span>';
+						li.innerHTML = text;
+						weeklyList.appendChild(li);
+					}
 				}
 			}
 		}
