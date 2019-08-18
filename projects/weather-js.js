@@ -92,7 +92,7 @@
 					console.log(i + ' = icon = ' + awicon);
 					// console.log(obj.weather[i].id);
 
-					for (let j=0; j<=obj.weather.length; j++) {
+					for (let j=1; j<=obj.weather.length; j++) {
 						let urlSetup = obj.weather[j].id;
 						console.log(urlSetup);
 						if (awicon == urlSetup) {
