@@ -66,7 +66,7 @@
 			//darkmode
 			let nyTime = new Date().toLocaleString("en-US", {timeZone: "America/New_York"});
 			nyTime = new Date(nyTime);
-			let hours = 17;
+			let hours = 21;
 			console.log(hours);
 			console.log(data.cities[city].current[0].condition);
 			if (hours >= 20 || hours <= 7 && data.cities[city].current[0].condition != 'Cloudy') {
