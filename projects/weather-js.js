@@ -91,7 +91,8 @@
 					let awicon = data.cities[city].weekly[i].awdayicon;
 					console.log(i + ' = icon = ' + awicon);
 
-					for (let j=0; j<=obj.weather.length; j++) {
+					for (var j=0; j<=obj.weather.length; j++) {
+						console.log(j + ' = j');
 						let x = 6;
 						let urlSetup = obj.weather[j].id;
 						if (awicon == urlSetup && j <= x) {
