@@ -95,10 +95,11 @@
 						let urlSetup = obj.weather[j].id;
 						if (awicon == urlSetup) {
 							console.log('yay');
-							img = '<img src=\"portfolio/projects/svg/' + urlSetup + '.svg\" alt=\"' + condition + '\" />';
+							img = '<img src=\"portfolio/projects/svg/' + urlSetup + '.svg\" alt=\"' + awicon + '\" />';
 							break;
 						} else {
-							img = '<img src=\"portfolio/projects/svg/cloudy.svg\" alt=\"' + condition + '\" />';
+							console.log('else');
+							img = '<img src=\"portfolio/projects/svg/cloudy.svg\" alt=\"' + awicon + '\" />';
 							break;
 						}
 					}
