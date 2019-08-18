@@ -85,7 +85,7 @@
 				let high = data.cities[city].weekly[i].high;
 				let low = data.cities[city].weekly[i].low;
 				let condition = data.cities[city].weekly[i].daycondition;
-				let awicon = data.cities[city].weekly[i].awicon;
+				let awicon = data.cities[city].weekly[i].awdayicon;
 				let urlSetup = obj.weather[i].id;
 				let img;
 				console.log(i + ' = icon = ' + awicon);
