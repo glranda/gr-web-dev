@@ -80,7 +80,7 @@
 		function weeklyForecast() {
 			for (let i = 0; i < (data.cities[city].weekly.length); i++) {
 				console.log(data.cities[city].weekly[i]);
-				if (data.cities[city].weekly[i] >= data.cities[city].weekly[2] && data.cities[city].weekly[i] <= data.cities[city].weekly[8]) {
+				if (i >= 2 && i <= [8]) {
 					console.log('^ yep');
 				}
 				// let li = document.createElement('li');
