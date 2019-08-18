@@ -63,10 +63,14 @@
 		}
 
 		var text = '{"weather" : [' +
-									'{"id":"mostlysunny","icon":"☀️" },' +
-									'{"id":"sunny","icon":"☀️" },' +
-									'{"id":"mostlysunny","icon":"☀️" },' +
-									'{"id":"partlycloudy","icon":"☀️" }' +
+									'{"id":"sunny","icon":"32.svg" },' +
+									'{"id":"mostlysunny","icon":"34.svg" },' +
+									'{"id":"clear","icon":"32.svg" },' +
+									'{"id":"partlysunny","icon":"34.svg" },' +
+									'{"id":"cloudy","icon":"26.svg" },' +
+									'{"id":"thunderstorms","icon":"03.svg" },' +
+									'{"id":"rainy","icon":"11.svg" },' +
+									'{"id":"partlycloudy","icon":"28.svg" }' +
 							 ']}';
 
 		var obj = JSON.parse(text);
@@ -76,28 +80,22 @@
 		function weeklyForecast() {
 			for (let i = 0; i < data.cities[city].weekly.length; i++) {
 				let li = document.createElement('li');
-				let day = data.cities[city].weekly[i].day;
+				let text;
+				let day = data.cities[city].weekly[i].weekday;
 				let high = data.cities[city].weekly[i].high;
 				let low = data.cities[city].weekly[i].low;
 				let condition = data.cities[city].weekly[i].daycondition;
 				let awicon = data.cities[city].weekly[i].awicon;
-				console.log(awicon);
-				// let urlSetup = obj.weather[icon].icon;
-
-
+				let urlSetup = obj.weather[i].id;
 				let img;
-				let text;
-				if (day == 'Thu') {
-					text = '<strong>' + day + 'rsday: ' + '</strong>' + 'the high is: ' + high + 'and the low: ' +  low;
-				} else if (day == 'Sat') {
-					text = '<strong>' + day + 'urday: ' + '</strong>' + 'the high is: ' + high + 'and the low: ' +  low;
-				} else if (day == 'Tue') {
-					text = '<strong>' + day + 'sday: ' + '</strong>' + 'the high is: ' + high + 'and the low: ' +  low;
-				} else if (day == 'Wed') {
-					text = '<strong>' + day + 'nesday: ' + '</strong>' + 'the high is: ' + high + 'and the low: ' +  low;
-				} else {
-					text = '<strong>' + day + 'day: ' + '</strong>' + 'the high is: ' + high + 'and the low: ' +  low;
+				console.log(i + ' = icon = ' + awicon);
+				console.log(i + ' = url = ' + urlSetup);
+
+				if (awicon == urlSetup) {
+					console.log('yey');
 				}
+
+				text = '<strong>' + day + '</strong>' + 'the high is: ' + high + 'and the low: ' +  low + img;
 				li.innerHTML = text;
 				weeklyList.appendChild(li);
 			}
