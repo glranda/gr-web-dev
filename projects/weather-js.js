@@ -95,18 +95,21 @@
 						let urlSetup = obj.weather[j].id;
 						if (awicon == urlSetup) {
 							console.log('yay');
-							img = '<img ' + 'src=\"' + 'portfolio/projects/svg/' + urlSetup + '.svg\"' + ' alt=\"' + '' + condition + '\"';
+							img = '<img src=\"portfolio/projects/svg/' + urlSetup + '.svg\" alt=\"' + condition + '\" />';
+							break;
+						} else {
+							img = '<img src=\"portfolio/projects/svg/cloudy.svg\" alt=\"' + condition + '\" />';
 							break;
 						}
 					}
 
 					if (current == i) {
-						text = '<strong>' + day + '</strong>' + 'the high is: ' + high + 'and the low: ' +  low + img + '<span>' + condition + '</span>';
+						text = img + '<strong>' + day + '</strong>' + 'the high is: ' + high + 'and the low: ' +  low + '<span>' + condition + '</span>';
 						li.classList.add("current-day");
 						li.innerHTML = text;
 						weeklyList.appendChild(li);
 					} else {
-						text = '<strong>' + day + '</strong>' + 'the high is: ' + high + 'and the low: ' +  low + img + '<span>' + condition + '</span>';
+						text = img + '<strong>' + day + '</strong>' + 'the high is: ' + high + 'and the low: ' +  low + '<span>' + condition + '</span>';
 						li.innerHTML = text;
 						weeklyList.appendChild(li);
 					}
