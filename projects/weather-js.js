@@ -80,7 +80,7 @@
 		function weeklyForecast() {
 			for (let i = 0; i < data.cities[city].weekly.length; i++) {
 				let li = document.createElement('li');
-				let text;
+				let text, img;
 				let day = data.cities[city].weekly[i].weekday;
 				let high = data.cities[city].weekly[i].high;
 				let low = data.cities[city].weekly[i].low;
@@ -88,20 +88,21 @@
 				let awicon = data.cities[city].weekly[i].awdayicon;
 				// console.log('condition = ' + condition);
 				console.log(i + ' = icon = ' + awicon);
-				// console.log(obj.weather[i].id);
-
-				let img;
 
 				for (let j=0; j<=obj.weather.length; j++) {
 					let urlSetup = obj.weather[j].id;
-					console.log(urlSetup);
-					if (awicon == urlSetup) {
+					console.log('url = ' + urlSetup);
+					if (urlSetup == undefined) {
+						console.log('false');
+						img = "WOOOOOO FALSE";
+					} else if (awicon == urlSetup) {
 						console.log('yay');
 						img = "WOOOOOO " + i;
+					} else {
+						img = "WOOOOOO something ese";
+						console.log('else');
 					}
 				}
-
-
 
 				text = '<strong>' + day + '</strong>' + 'the high is: ' + high + 'and the low: ' +  low + img;
 				li.innerHTML = text;
