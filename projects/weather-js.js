@@ -49,8 +49,8 @@
 		}
 		//Display current temp and condition and set dark mode
 		function displayCurrent() {
-			let temp = '<p>' + 'The current temperature is: ' + '<strong>' + data.cities[city].current[0].temp + '&deg;' + '</strong>' + '</p>';
-			let condition = '<p>' + 'The current condition is: ' + '<strong>' + data.cities[city].current[0].condition + '</strong>' + '</p>';
+			let temp = '<p>' + 'It is ' + '<strong>' + data.cities[city].current[0].temp + '&deg;' + '</strong>' + ' outside now' + '</p>';
+			let condition = '<p>' + 'The condition is: ' + '<strong>' + data.cities[city].current[0].condition + '</strong>' + '</p>';
 			currentDiv.innerHTML =  temp + condition;
 			let nyTime = new Date().toLocaleString("en-US", {timeZone: "America/New_York"});
 			nyTime = new Date(nyTime);
@@ -105,12 +105,12 @@
 					}
 
 					if (current == i) {
-						text = img + '<p><strong>' + day + '</strong>' + 'the high is: ' + high + 'and the low: ' +  low + '<span>' + condition + '</span>' + '</p>';
+						text = img + '<p><strong>' + day + ' &middot</strong>' + ' High of ' + high + '/ Low of ' +  low + '<span>' + condition + '</span>' + '</p>';
 						li.classList.add("current-day");
 						li.innerHTML = text;
 						weeklyList.appendChild(li);
 					} else {
-						text = img + '<p><strong>' + day + '</strong>' + 'the high is: ' + high + 'and the low: ' +  low + '<span>' + condition + '</span>' + '</p>';
+						text = img + '<p><strong>' + day + ' &middot</strong>' + ' High of ' + high + '/ Low of ' +  low + '<span>' + condition + '</span>' + '</p>';
 						li.innerHTML = text;
 						weeklyList.appendChild(li);
 					}
