@@ -26,6 +26,19 @@
 			displayCurrent();
 			weeklyForecast();
 		}, 600000);
+
+		//Icon Data
+		let weathericons = '{"weather" : [' +
+									'{"id":"sunny"},' +
+									'{"id":"mostlysunny"},' +
+									'{"id":"clear"},' +
+									'{"id":"partlysunny"},' +
+									'{"id":"cloudy"},' +
+									'{"id":"rainy"},' +
+									'{"id":"partlycloudy"}' +
+							 ']}';
+		let obj = JSON.parse(weathericons);
+
 		//remove previous data before populating new list items
 		function removeListItems() {
 			let allListItems = document.querySelectorAll('li');
@@ -47,11 +60,33 @@
 				selectCity.appendChild(option);
 			}
 		}
-		//Display current temp and condition and set dark mode
+		//Display current temp and condition and set night mode or cloudy mode
 		function displayCurrent() {
+
 			let temp = '<p>' + 'It is ' + '<strong>' + data.cities[city].current[0].temp + '&deg;' + '</strong>' + ' outside now' + '</p>';
 			let condition = '<p>' + 'The condition is: ' + '<strong>' + data.cities[city].current[0].condition + '</strong>' + '</p>';
-			currentDiv.innerHTML =  temp + condition;
+
+			if (data.cities[city].current[0].condition == 'Sunny') {
+				currentDiv.innerHTML =  temp + condition;
+				currentDiv.classList.add('sunny');
+				body.classList.add('cloudy');
+			} else if (data.cities[city].current[0].condition == 'Cloudy') {
+				currentDiv.innerHTML =  temp + condition;
+				currentDiv.classList.add('cloudy');
+			} else if (data.cities[city].current[0].condition == 'Rainy') {
+				currentDiv.innerHTML =  temp + condition;
+				currentDiv.classList.add('rainy');
+			} else if (data.cities[city].current[0].condition == 'Partly Sunny') {
+				currentDiv.innerHTML =  temp + condition;
+				currentDiv.classList.add('partly-sunny');
+			} else if (data.cities[city].current[0].condition == 'Partly Cloudy') {
+				currentDiv.innerHTML =  temp + condition;
+				currentDiv.classList.add('partly-cloudy');
+			} else {
+				currentDiv.innerHTML =  temp + condition;
+			}
+
+			//darkmode
 			let nyTime = new Date().toLocaleString("en-US", {timeZone: "America/New_York"});
 			nyTime = new Date(nyTime);
 			let hours = nyTime.getHours();
@@ -61,19 +96,6 @@
 				body.classList.remove('darkmode');
 			}
 		}
-
-		var weathericons = '{"weather" : [' +
-									'{"id":"sunny"},' +
-									'{"id":"mostlysunny"},' +
-									'{"id":"clear"},' +
-									'{"id":"partlysunny"},' +
-									'{"id":"cloudy"},' +
-									'{"id":"rainy"},' +
-									'{"id":"partlycloudy"}' +
-							 ']}';
-
-		var obj = JSON.parse(weathericons);
-
 
 		//Populate list with weekly forecast and icons
 		function weeklyForecast() {
@@ -105,12 +127,12 @@
 					}
 
 					if (current == i) {
-						text = img + '<p><strong>' + day + ' &middot</strong>' + ' High of ' + high + '/ Low of ' +  low + '<span>' + condition + '</span>' + '</p>';
+						text = img + '<p><strong><i>Today</i> / ' + day + ' &middot</strong>' + ' High of ' + high + ' / Low of ' +  low + '<span>' + condition + '</span>' + '</p>';
 						li.classList.add("current-day");
 						li.innerHTML = text;
 						weeklyList.appendChild(li);
 					} else {
-						text = img + '<p><strong>' + day + ' &middot</strong>' + ' High of ' + high + '/ Low of ' +  low + '<span>' + condition + '</span>' + '</p>';
+						text = img + '<p><strong>' + day + ' &middot</strong>' + ' High of ' + high + ' / Low of ' +  low + '<span>' + condition + '</span>' + '</p>';
 						li.innerHTML = text;
 						weeklyList.appendChild(li);
 					}

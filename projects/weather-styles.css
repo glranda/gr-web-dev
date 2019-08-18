@@ -26,8 +26,7 @@ label {
 	font-size: 24px;
 }
 #forecast p {
-	margin: 2rem 0 .8rem 1rem;
-	font-style: italic;
+	margin: 1.25rem 0 0 1rem;
 }
 #forecast ul {
 	margin-top: 0;
@@ -44,14 +43,20 @@ label {
 	display: block;
 	padding-top: .3rem;
   font-size: .8rem;
+	font-style: italic;
 }
 #forecast ul img {
 	max-width: 3rem;
 	display: inline-block;
 }
 #forecast .forecast-title {
-  margin-left: 0;
+	margin: 2.5rem 0 .5rem;
+	font-weight: bold;
+	font-style: inherit;
 }
 .darkmode {
 	background: url("/portfolio/projects/jpg/night.jpg");
+}
+.cloudy {
+	background: url("/portfolio/projects/jpg/cloudy.jpg");
 }
