@@ -75,7 +75,7 @@
 			} else if (hours <= 20 || hours >= 7 && data.cities[city].current[0].condition == 'Cloudy') {
 				body.classList.add('cloudy');
 				body.classList.remove('darkmode', 'day');
-			} else if (hours <= 20 || hours >= 7) {
+			} else if (hours <= 20 || hours >= 7 && data.cities[city].current[0].condition !== 'Cloudy') {
 				body.classList.add('day');
 				body.classList.remove('darkmode', 'cloudy');
 			}
