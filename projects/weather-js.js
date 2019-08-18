@@ -98,7 +98,7 @@
 							console.log('yay');
 							img = '<img src=\"portfolio/projects/svg/' + urlSetup + '.svg\" alt=\"' + awicon + '\" />';
 							break;
-						} else if (awicon != urlSetup && j <= x) {
+						} else if (j >= x) {
 							console.log('else');
 							img = '<img src=\"portfolio/projects/svg/cloudy.svg\" alt=\"' + awicon + '\" />';
 							break;
