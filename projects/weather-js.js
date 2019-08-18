@@ -86,19 +86,18 @@
 				let low = data.cities[city].weekly[i].low;
 				let condition = data.cities[city].weekly[i].daycondition;
 				let awicon = data.cities[city].weekly[i].awdayicon;
-				console.log('condition = ' + condition);
+				// console.log('condition = ' + condition);
 				console.log(i + ' = icon = ' + awicon);
-				console.log(obj.weather.length);
-				console.log(obj.weather[i].id);
+				// console.log(obj.weather[i].id);
 
 				let img;
 
 				for (let j=0; j<=obj.weather.length; j++) {
-					console.log('second for loop');
 					let urlSetup = obj.weather[j].id;
-					console.log('urlSetup = ' + urlSetup);
+					console.log(urlSetup);
 					if (awicon == urlSetup) {
 						console.log('yay');
+						img = "WOOOOOO " + i;
 					}
 				}
 
