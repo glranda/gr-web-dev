@@ -95,11 +95,11 @@
 						let x = 6;
 						let urlSetup = obj.weather[j].id;
 						if (awicon == urlSetup && j <= x) {
-							console.log('yay');
+							console.log('yay ' + awicon);
 							img = '<img src=\"portfolio/projects/svg/' + urlSetup + '.svg\" alt=\"' + awicon + '\" />';
 							break;
 						} else if (j >= x) {
-							console.log('else');
+							console.log('else' + awicon);
 							img = '<img src=\"portfolio/projects/svg/cloudy.svg\" alt=\"' + awicon + '\" />';
 							break;
 						}
