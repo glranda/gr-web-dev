@@ -78,10 +78,6 @@
 				body.classList.remove('darkmode');
 				body.classList.remove('cloudy');
 				body.classList.add('day');
-			} else if (data.cities[city].current[0].condition === 'Cloudy') {
-				body.classList.remove('darkmode');
-				body.classList.remove('day');
-				body.classList.add('cloudy');
 			}
 
 			let temp = '<p>' + 'It is ' + '<strong>' + data.cities[city].current[0].temp + '&deg;' + '</strong>' + ' outside now' + '</p>';
