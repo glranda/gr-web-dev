@@ -88,8 +88,16 @@
 				let awicon = data.cities[city].weekly[i].awdayicon;
 				let urlSetup = obj.weather[i].id;
 				let img;
-				console.log(i + ' = icon = ' + awicon);
-				console.log(i + ' = url = ' + urlSetup);
+
+				// for (j=0; j<=urlSetup.length; j++) {
+				// 	if () {
+				//
+				// 	}
+				//
+				// }
+				// console.log(i + ' = icon = ' + awicon);
+				// console.log(i + ' = url = ' + urlSetup);
+				console.log(obj.weather.length);
 
 				if (awicon == urlSetup) {
 					console.log('yey');
