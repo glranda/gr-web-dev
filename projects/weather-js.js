@@ -78,20 +78,24 @@
 
 		//Populate list with weekly forecast and icons
 		function weeklyForecast() {
-			for (let i = 0; i < data.cities[city].weekly.length; i++) {
-				let li = document.createElement('li');
-				let text;
-				let day = data.cities[city].weekly[i].weekday;
-				let high = data.cities[city].weekly[i].high;
-				let low = data.cities[city].weekly[i].low;
-				let condition = data.cities[city].weekly[i].daycondition;
-				let awicon = data.cities[city].weekly[i].awdayicon;
+			for (let i = 0; i < ((data.cities[city].weekly.length) - 3); i++) {
+				console.log(data.cities[city].weekly[i]);
+				if (data.cities[city].weekly[i] >= 2 && data.cities[city].weekly[i] <= 8) {
+					console.log('^ yep');
+				}
+				// let li = document.createElement('li');
+				// let text;
+				// let img;
+				// let day = data.cities[city].weekly[i].weekday;
+				// let high = data.cities[city].weekly[i].high;
+				// let low = data.cities[city].weekly[i].low;
+				// let condition = data.cities[city].weekly[i].daycondition;
+				// let awicon = data.cities[city].weekly[i].awdayicon;
 				// console.log('condition = ' + condition);
-				console.log(i + ' = icon = ' + awicon);
-				// console.log(obj.weather[i].id);
-				console.log();
+				// console.log(i + ' = icon = ' + awicon);
+				// // console.log(obj.weather[i].id);
+				// console.log();
 
-				let img;
 
 				// for (let j=0; j<=obj.weather.length; j++) {
 				// 	if () {
@@ -107,9 +111,9 @@
 
 
 
-				text = '<strong>' + day + '</strong>' + 'the high is: ' + high + 'and the low: ' +  low + img;
-				li.innerHTML = text;
-				weeklyList.appendChild(li);
+				// text = '<strong>' + day + '</strong>' + 'the high is: ' + high + 'and the low: ' +  low + img;
+				// li.innerHTML = text;
+				// weeklyList.appendChild(li);
 			}
 		}
 	}
