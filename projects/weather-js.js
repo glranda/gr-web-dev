@@ -63,13 +63,13 @@
 		}
 
 		var weathericons = '{"weather" : [' +
-									'{"id":"sunny","icon":"32.svg" },' +
-									'{"id":"mostlysunny","icon":"34.svg" },' +
-									'{"id":"clear","icon":"32.svg" },' +
-									'{"id":"partlysunny","icon":"34.svg" },' +
-									'{"id":"cloudy","icon":"26.svg" },' +
-									'{"id":"rainy","icon":"11.svg" },' +
-									'{"id":"partlycloudy","icon":"28.svg" }' +
+									'{"id":"sunny"},' +
+									'{"id":"mostlysunny"},' +
+									'{"id":"clear"},' +
+									'{"id":"partlysunny"},' +
+									'{"id":"cloudy"},' +
+									'{"id":"rainy"},' +
+									'{"id":"partlycloudy"}' +
 							 ']}';
 
 		var obj = JSON.parse(weathericons);
