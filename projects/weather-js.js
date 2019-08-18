@@ -91,13 +91,14 @@
 					let awicon = data.cities[city].weekly[i].awdayicon;
 					console.log(i + ' = icon = ' + awicon);
 
-					for (let j=1; j<=obj.weather.length; j++) {
+					for (let j=0; j<=obj.weather.length; j++) {
+						let x = 6;
 						let urlSetup = obj.weather[j].id;
-						if (awicon == urlSetup) {
+						if (awicon == urlSetup && j <= x) {
 							console.log('yay');
 							img = '<img src=\"portfolio/projects/svg/' + urlSetup + '.svg\" alt=\"' + awicon + '\" />';
 							break;
-						} else {
+						} else if (awicon != urlSetup && j <= x) {
 							console.log('else');
 							img = '<img src=\"portfolio/projects/svg/cloudy.svg\" alt=\"' + awicon + '\" />';
 							break;
