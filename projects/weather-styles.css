@@ -27,16 +27,36 @@ label {
 	font-size: 24px;
 }
 #current.sunny p:last-child:after {
-	content: url('/portfolio/projects/svg/sunny.svg');
+	background-image: url('/portfolio/projects/svg/sunny.svg');
+  background-size: 10px 20px;
+  display: inline-block;
+  width: 10px;
+  height: 20px;
+  content:"";
 }
 #current.cloudy p:last-child:after {
-	content: url('/portfolio/projects/svg/cloudy.svg');
+	background-image: url('/portfolio/projects/svg/cloudy.svg');
+  background-size: 10px 20px;
+  display: inline-block;
+  width: 10px;
+  height: 20px;
+  content:"";
 }
 #current.rainy p:last-child:after {
-	content: url('/portfolio/projects/svg/rainy.svg');
+	background-image: url('/portfolio/projects/svg/rainy.svg');
+  background-size: 10px 20px;
+  display: inline-block;
+  width: 10px;
+  height: 20px;
+  content:"";
 }
-#current.partly-sunny p:last-child:after, #current.partly-cloudy p:last-child:after{
-	content: url('/portfolio/projects/svg/partlycloudy.svg');
+#current.partly-sunny p:last-child:after, #current.partly-cloudy p:last-child:after {
+	background-image: url('/portfolio/projects/svg/partlycloudy.svg');
+  background-size: 10px 20px;
+  display: inline-block;
+  width: 10px;
+  height: 20px;
+  content:"";
 }
 #forecast p {
 	margin: 1.25rem 0 0 1rem;
