@@ -86,22 +86,20 @@
 				let low = data.cities[city].weekly[i].low;
 				let condition = data.cities[city].weekly[i].daycondition;
 				let awicon = data.cities[city].weekly[i].awdayicon;
-				let urlSetup = obj.weather[i].id;
+
 				let img;
 
-				// for (j=0; j<=urlSetup.length; j++) {
-				// 	if () {
-				//
-				// 	}
-				//
-				// }
-				// console.log(i + ' = icon = ' + awicon);
-				// console.log(i + ' = url = ' + urlSetup);
-				console.log(obj.weather.length);
+				for (j=0; j<=obj.weather.length; j++) {
+					let urlSetup = obj.weather[j].id;
+					if (awicon == urlSetup) {
+						console.log('yay');
+					}
 
-				if (awicon == urlSetup) {
-					console.log('yey');
 				}
+				console.log(i + ' = icon = ' + awicon);
+				console.log(i + ' = url = ' + urlSetup);
+
+
 
 				text = '<strong>' + day + '</strong>' + 'the high is: ' + high + 'and the low: ' +  low + img;
 				li.innerHTML = text;
