@@ -72,10 +72,10 @@
 			if (hours >= 20 || hours <= 7 && data.cities[city].current[0].condition !== 'Cloudy') {
 				body.classList.add('darkmode');
 				body.classList.remove('day', 'cloudy');
-			} else if (hours <= 20 || hours >= 7 && data.cities[city].current[0].condition == 'Cloudy') {
+			} else if (hours <= 20 && hours >= 7 && data.cities[city].current[0].condition == 'Cloudy') {
 				body.classList.add('cloudy');
 				body.classList.remove('darkmode', 'day');
-			} else if (hours <= 20 || hours >= 7 && data.cities[city].current[0].condition !== 'Cloudy') {
+			} else if (hours <= 20 && hours >= 7 && data.cities[city].current[0].condition !== 'Cloudy') {
 				body.classList.add('day');
 				body.classList.remove('darkmode', 'cloudy');
 			}
@@ -123,7 +123,6 @@
 						let x = 6;
 						let urlSetup = obj.weather[j].id;
 						if (awicon == urlSetup && j <= x) {
-							console.log('True ' + awicon);
 							img = '<img src=\"svg/' + urlSetup + '.svg\" alt=\"' + awicon + '\" />';
 							break;
 						} else if (j >= x) {
