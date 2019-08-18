@@ -67,9 +67,6 @@ label {
 .darkmode {
 	background-image: url("/portfolio/projects/jpg/night.jpg");
 }
-.cloudy {
-	background-image: url("/portfolio/projects/jpg/cloudy.jpg");
-}
 @media only screen and (min-width: 47rem) {
 	#container {
 		max-width: 40rem;
