@@ -78,9 +78,6 @@
 		//Populate list with weekly forecast and icons
 		function weeklyForecast() {
 			for (let i = 0; i < (data.cities[city].weekly.length); i++) {
-
-				console.log(data.cities[city].weekly.length);
-				console.log(obj.weather.length);
 				if (i >= 2 && i <= 8) {
 					let li = document.createElement('li');
 					let text, img;
@@ -101,6 +98,7 @@
 						if (awicon == urlSetup) {
 							console.log('yay');
 							img = "WOOOOOO"
+							break;
 						}
 					}
 
