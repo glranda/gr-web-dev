@@ -26,17 +26,17 @@ label {
 #current p {
 	font-size: 24px;
 }
-#current.sunny strong:after {
-	content: url('/portfolio/projects/svg/sunny.jpg');
+#current.sunny p:last-child:after {
+	content: url('/portfolio/projects/svg/sunny.svg');
 }
-#current.cloudy strong:after {
-	content: url('/portfolio/projects/svg/cloudy.jpg');
+#current.cloudy p:last-child:after {
+	content: url('/portfolio/projects/svg/cloudy.svg');
 }
-#current.rainy strong:after {
-	content: url('/portfolio/projects/svg/rainy.jpg');
+#current.rainy p:last-child:after {
+	content: url('/portfolio/projects/svg/rainy.svg');
 }
-#current.partly-sunny strong:after, #current.partly-cloudy strong:after{
-	content: url('/portfolio/projects/svg/partlycloudy.jpg');
+#current.partly-sunny p:last-child:after, #current.partly-cloudy p:last-child:after{
+	content: url('/portfolio/projects/svg/partlycloudy.svg');
 }
 #forecast p {
 	margin: 1.25rem 0 0 1rem;
