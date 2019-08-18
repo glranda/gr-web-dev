@@ -105,12 +105,12 @@
 					}
 
 					if (current == i) {
-						text = img + '<p><strong>' + day + '</strong>' + 'the high is: ' + high + 'and the low: ' +  low + '</p>' + '<span>' + condition + '</span>';
+						text = img + '<p><strong>' + day + '</strong>' + 'the high is: ' + high + 'and the low: ' +  low + '<span>' + condition + '</span>' + '</p>';
 						li.classList.add("current-day");
 						li.innerHTML = text;
 						weeklyList.appendChild(li);
 					} else {
-						text = img + '<p><strong>' + day + '</strong>' + 'the high is: ' + high + 'and the low: ' +  low + '</p>' + '<span>' + condition + '</span>';
+						text = img + '<p><strong>' + day + '</strong>' + 'the high is: ' + high + 'and the low: ' +  low + '<span>' + condition + '</span>' + '</p>';
 						li.innerHTML = text;
 						weeklyList.appendChild(li);
 					}
