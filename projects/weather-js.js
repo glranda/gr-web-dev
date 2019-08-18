@@ -88,6 +88,8 @@
 				let awicon = data.cities[city].weekly[i].awdayicon;
 				console.log('condition = ' + condition);
 				console.log(i + ' = icon = ' + awicon);
+				console.log(obj.weather.length);
+				console.log(obj.weather[j].id);
 
 				let img;
 
