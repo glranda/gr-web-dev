@@ -78,9 +78,9 @@
 
 		//Populate list with weekly forecast and icons
 		function weeklyForecast() {
-			for (let i = 0; i < ((data.cities[city].weekly.length) - 3); i++) {
+			for (let i = 0; i < (data.cities[city].weekly.length); i++) {
 				console.log(data.cities[city].weekly[i]);
-				if (data.cities[city].weekly[i] >= 2 && data.cities[city].weekly[i] <= 8) {
+				if (data.cities[city].weekly[i] >= data.cities[city].weekly[2] && data.cities[city].weekly[i] <= data.cities[city].weekly[8]) {
 					console.log('^ yep');
 				}
 				// let li = document.createElement('li');
