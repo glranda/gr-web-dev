@@ -90,14 +90,12 @@
 					let condition = data.cities[city].weekly[i].daycondition;
 					let awicon = data.cities[city].weekly[i].awdayicon;
 					console.log(i + ' = icon = ' + awicon);
-					// console.log(obj.weather[i].id);
 
 					for (let j=1; j<=obj.weather.length; j++) {
 						let urlSetup = obj.weather[j].id;
-						console.log(urlSetup);
 						if (awicon == urlSetup) {
 							console.log('yay');
-							img = "WOOOOOO"
+							img = '<img ' + 'src=\"' + 'portfolio/projects/svg/' + urlSetup + '.svg\"' + ' alt=\"' + '' + condition + '\"';
 							break;
 						}
 					}
