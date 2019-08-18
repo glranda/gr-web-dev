@@ -63,6 +63,21 @@
 		//Display current temp and condition and set night mode or cloudy mode
 		function displayCurrent() {
 
+			//darkmode
+			let nyTime = new Date().toLocaleString("en-US", {timeZone: "America/New_York"});
+			nyTime = new Date(nyTime);
+			let hours = nyTime.getHours();
+			if (hours >= 20 || hours <= 7) {
+				body.classList.add('darkmode');
+				body.classList.remove('day', 'cloudy');
+			} else if (hours <= 20 || hours >= 7 && data.cities[city].current[0].condition == 'Cloudy') {
+				body.classList.add('cloudy');
+				body.classList.remove('darkmode', 'day');
+			} else if (hours <= 20 || hours >= 7) {
+				body.classList.add('day');
+				body.classList.remove('darkmode', 'cloudy');
+			}
+
 			let temp = '<p>' + 'It is ' + '<strong>' + data.cities[city].current[0].temp + '&deg;' + '</strong>' + ' outside now' + '</p>';
 			let condition = '<p>' + 'The condition is: ' + '<strong>' + data.cities[city].current[0].condition + '</strong>' + '</p>';
 
@@ -84,16 +99,6 @@
 				currentDiv.classList.add('partly-cloudy');
 			} else {
 				currentDiv.innerHTML =  temp + condition;
-			}
-
-			//darkmode
-			let nyTime = new Date().toLocaleString("en-US", {timeZone: "America/New_York"});
-			nyTime = new Date(nyTime);
-			let hours = nyTime.getHours();
-			if (hours >= 20 || hours <= 7) {
-				body.classList.add('darkmode');
-			} else {
-				body.classList.remove('darkmode');
 			}
 		}
 

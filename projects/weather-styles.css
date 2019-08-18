@@ -7,7 +7,6 @@ html, body {
 	color: white;
 }
 body {
-	background: url("/portfolio/projects/jpg/day.jpg");
 	background-position: top;
 	background-size: cover;
 }
@@ -58,6 +57,9 @@ label {
 	margin: 2.5rem 0 .5rem;
 	font-weight: bold;
 	font-style: inherit;
+}
+.day {
+	background: url("/portfolio/projects/jpg/day.jpg");
 }
 .darkmode {
 	background: url("/portfolio/projects/jpg/night.jpg");
