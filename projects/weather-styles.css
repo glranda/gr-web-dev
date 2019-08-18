@@ -7,7 +7,9 @@ html, body {
 	color: black;
 }
 body {
-	background: url("/jgp/day.jpg") no-repeat cover 100%;
+	background: url("/portfolio/projects/jpg/day.jpg");
+	background-position: top;
+	background-size: cover;
 }
 label {
 	font-size: 14px;
@@ -36,13 +38,14 @@ label {
 }
 
 #forecast ul img {
-	max-width: 5rem;
+	max-width: 3rem;
+	display: inline-block;
 }
 .weather-icon {
 	margin-left: 1rem;
 }
 .darkmode {
-	background: url("/jgp/night.jpg") no-repeat cover 100%;
+	background: url("/portfolio/projects/jpg/night.jpg");
 	color: #fff;
 }
 .darkmode #forecast li {

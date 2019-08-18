@@ -89,30 +89,28 @@
 					let low = data.cities[city].weekly[i].low;
 					let condition = data.cities[city].weekly[i].daycondition;
 					let awicon = data.cities[city].weekly[i].awdayicon;
-					console.log(i + ' = icon = ' + awicon);
 
 					for (var j=0; j<=obj.weather.length; j++) {
-						console.log(j + ' = j');
 						let x = 6;
 						let urlSetup = obj.weather[j].id;
 						if (awicon == urlSetup && j <= x) {
-							console.log('yay ' + awicon);
+							console.log('True ' + awicon);
 							img = '<img src=\"svg/' + urlSetup + '.svg\" alt=\"' + awicon + '\" />';
 							break;
 						} else if (j >= x) {
-							console.log('else' + awicon);
+							console.log('Else ' + awicon);
 							img = '<img src=\"svg/cloudy.svg\" alt=\"' + awicon + '\" />';
 							break;
 						}
 					}
 
 					if (current == i) {
-						text = img + '<strong>' + day + '</strong>' + 'the high is: ' + high + 'and the low: ' +  low + '<span>' + condition + '</span>';
+						text = img + '<p><strong>' + day + '</strong>' + 'the high is: ' + high + 'and the low: ' +  low + '</p>' + '<span>' + condition + '</span>';
 						li.classList.add("current-day");
 						li.innerHTML = text;
 						weeklyList.appendChild(li);
 					} else {
-						text = img + '<strong>' + day + '</strong>' + 'the high is: ' + high + 'and the low: ' +  low + '<span>' + condition + '</span>';
+						text = img + '<p><strong>' + day + '</strong>' + 'the high is: ' + high + 'and the low: ' +  low + '</p>' + '<span>' + condition + '</span>';
 						li.innerHTML = text;
 						weeklyList.appendChild(li);
 					}
