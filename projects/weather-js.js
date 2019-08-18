@@ -62,7 +62,7 @@
 			}
 		}
 
-		var text = '{"weather" : [' +
+		var weathericons = '{"weather" : [' +
 									'{"id":"sunny","icon":"32.svg" },' +
 									'{"id":"mostlysunny","icon":"34.svg" },' +
 									'{"id":"clear","icon":"32.svg" },' +
@@ -72,7 +72,7 @@
 									'{"id":"partlycloudy","icon":"28.svg" }' +
 							 ']}';
 
-		var obj = JSON.parse(text);
+		var obj = JSON.parse(weathericons);
 
 
 		//Populate list with weekly forecast and icons
@@ -92,16 +92,14 @@
 					console.log(i + ' = icon = ' + awicon);
 					// console.log(obj.weather[i].id);
 
-
-					// for (let j=0; j<=obj.weather.length; j++) {
-					// 	let urlSetup = obj.weather[j].id;
-					// 	console.log(urlSetup);
-					// 	if (awicon == urlSetup) {
-					// 		console.log('yay');
-					// 		img = "WOOOOOO"
-					// 	}
-					// }
-
+					for (let j=0; j<=obj.weather.length; j++) {
+						let urlSetup = obj.weather[j].id;
+						console.log(urlSetup);
+						if (awicon == urlSetup) {
+							console.log('yay');
+							img = "WOOOOOO"
+						}
+					}
 
 					if (current == i) {
 						text = '<strong>' + day + '</strong>' + 'the high is: ' + high + 'and the low: ' +  low + img + '<span>' + condition + '</span>';
