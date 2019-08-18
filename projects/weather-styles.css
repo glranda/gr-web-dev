@@ -27,6 +27,18 @@ label {
 #current p {
 	font-size: 24px;
 }
+#current.sunny strong:after {
+	content: url('/portfolio/projects/svg/sunny.jpg');
+}
+#current.cloudy strong:after {
+	content: url('/portfolio/projects/svg/cloudy.jpg');
+}
+#current.rainy strong:after {
+	content: url('/portfolio/projects/svg/rainy.jpg');
+}
+#current.partly-sunny strong:after, #current.partly-cloudy strong:after{
+	content: url('/portfolio/projects/svg/partlycloudy.jpg');
+}
 #forecast p {
 	margin: 1.25rem 0 0 1rem;
 }
