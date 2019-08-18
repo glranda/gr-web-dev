@@ -59,11 +59,11 @@ label {
 	font-style: inherit;
 }
 .day {
-	background: url("/portfolio/projects/jpg/day.jpg");
+	background-image: url("/portfolio/projects/jpg/day.jpg");
 }
 .darkmode {
-	background: url("/portfolio/projects/jpg/night.jpg");
+	background-image: url("/portfolio/projects/jpg/night.jpg");
 }
 .cloudy {
-	background: url("/portfolio/projects/jpg/cloudy.jpg");
+	background-image: url("/portfolio/projects/jpg/cloudy.jpg");
 }

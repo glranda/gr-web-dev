@@ -67,6 +67,8 @@
 			let nyTime = new Date().toLocaleString("en-US", {timeZone: "America/New_York"});
 			nyTime = new Date(nyTime);
 			let hours = nyTime.getHours();
+			console.log(hours);
+			console.log(data.cities[city].current[0].condition);
 			if (hours >= 20 || hours <= 7) {
 				body.classList.add('darkmode');
 				body.classList.remove('day', 'cloudy');
