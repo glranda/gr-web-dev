@@ -69,18 +69,12 @@
 			let hours = nyTime.getHours();
 			console.log(hours);
 			console.log(data.cities[city].current[0].condition);
-			if (hours >= 20 || hours <= 7 && data.cities[city].current[0].condition !== 'Cloudy') {
+			if (hours >= 20 || hours <= 7 && data.cities[city].current[0].condition != 'Cloudy') {
 				body.classList.add('darkmode');
-				body.classList.remove('day');
-				body.classList.remove('cloudy');
 			} else if (hours <= 20 && hours >= 7 && data.cities[city].current[0].condition == 'Cloudy') {
 				body.classList.add('cloudy');
-				body.classList.remove('darkmode');
-				body.classList.remove('day');
-			} else if (hours <= 20 && hours >= 7 && data.cities[city].current[0].condition !== 'Cloudy') {
+			} else if (hours <= 20 && hours >= 7 && data.cities[city].current[0].condition != 'Cloudy') {
 				body.classList.add('day');
-				body.classList.remove('darkmode');
-				body.classList.remove('cloudy');
 			}
 
 			let temp = '<p>' + 'It is ' + '<strong>' + data.cities[city].current[0].temp + '&deg;' + '</strong>' + ' outside now' + '</p>';
