@@ -90,12 +90,10 @@
 				console.log(i + ' = icon = ' + awicon);
 
 				for (let j=0; j<=obj.weather.length; j++) {
-					let urlSetup = obj.weather[j].id;
-					console.log('url = ' + urlSetup);
-					if (urlSetup == undefined) {
+					if (obj.weather[j].id == undefined) {
 						console.log('false');
 						img = "WOOOOOO FALSE";
-					} else if (awicon == urlSetup) {
+					} else if (awicon == obj.weather[j].id) {
 						console.log('yay');
 						img = "WOOOOOO " + i;
 					} else {
