@@ -83,7 +83,7 @@
 				currentDiv.classList.add('sunny');
 			} else if (data.cities[city].current[0].condition == 'Cloudy') {
 				currentDiv.innerHTML =  temp + condition;
-				currentDiv.classList.add('cloudy');
+				currentDiv.classList.add('cloudy-h');
 			} else if (data.cities[city].current[0].condition == 'Rainy') {
 				currentDiv.innerHTML =  temp + condition;
 				currentDiv.classList.add('rainy');

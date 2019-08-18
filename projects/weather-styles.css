@@ -39,7 +39,7 @@ label {
 #current.sunny p:last-child:after {
 	background-image: url('/portfolio/projects/svg/sunny.svg');
 }
-#current.cloudy p:last-child:after {
+#current.cloudy-h p:last-child:after {
 	background-image: url('/portfolio/projects/svg/cloudy.svg');
 }
 #current.rainy p:last-child:after {
