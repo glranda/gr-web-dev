@@ -40,6 +40,7 @@ var animateIntro = function() {
       .delay(1500)
       .animate({ left: "0" }, 250 );
     setTimeout(function() {
+      header.addClass('show-intro');
       logo.removeClass('z');
       profile.addClass('z');
     }, 2500);
@@ -47,12 +48,9 @@ var animateIntro = function() {
       body.removeClass('hide-main');
       profile.addClass('finale');
       logo.addClass('finale');
-    }, 4000);
-    setTimeout(function() {
-      header.addClass('show-intro');
       intro.addClass('show-intro');
       brow.addClass('show-under');
-    }, 4050);
+    }, 4000);
   }
 
   function mobileAnimations() {
