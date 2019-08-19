@@ -53,7 +53,7 @@ var animateIntro = function() {
       profile.addClass('finale');
       intro.addClass('show-intro');
       brow.addClass('show-under');
-    }, 4000);
+    }, 3000);
   }
 
   function mobileAnimations() {
