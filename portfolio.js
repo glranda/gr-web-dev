@@ -30,30 +30,30 @@ var animateIntro = function() {
       profile.addClass('show');
     });
     logo
-      .delay(250)
-      .animate({ right: "350" }, 400 )
-      .delay(1000)
-      .animate({ right: "0" }, 250 )
+      .delay(200)
+      .animate({ right: "350" }, 350 )
+      .delay(950)
+      .animate({ right: "0" }, 200 )
     profile
-      .delay(250)
-      .animate({ left: "350" }, 400 )
-      .delay(1000)
-      .animate({ left: "0" }, 250 );
+      .delay(200)
+      .animate({ left: "350" }, 350 )
+      .delay(950)
+      .animate({ left: "0" }, 200 );
     setTimeout(function() {
       body.removeClass('hide-main');
-    }, 1100);
+    }, 1050);
     setTimeout(function() {
       logo.addClass('finale');
-    }, 1600);
+    }, 1450);
     setTimeout(function() {
       profile.addClass('z');
-      header.addClass('show-intro');
-    }, 2600);
+    }, 2550);
     setTimeout(function() {
       profile.addClass('finale');
-      intro.addClass('show-intro');
+      header.addClass('show-intro');
       brow.addClass('show-under');
-    }, 3000);
+      intro.addClass('show-intro');
+    }, 2600);
   }
 
   function mobileAnimations() {
