@@ -41,17 +41,17 @@ var animateIntro = function() {
     setTimeout(function() {
       body.removeClass('hide-main');
       logo.addClass('finale');
-    }, 600);
+    }, 1050);
     setTimeout(function() {
       // header.addClass('show-intro');
       // logo.removeClass('z');
       profile.addClass('z');
-    }, 1800);
+    }, 1550);
     setTimeout(function() {
       profile.addClass('finale');
       // intro.addClass('show-intro');
       // brow.addClass('show-under');
-    }, 1000);
+    }, 1600);
   }
 
   function mobileAnimations() {
