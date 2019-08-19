@@ -31,16 +31,18 @@ var animateIntro = function() {
     }, 50);
     logo
       .delay(650)
-      .animate({ right: "300" }, 250 )
+      .animate({ right: "350" }, 250 )
       .delay(800)
-      .animate({ right: "0" }, 200 );
+      .animate({ right: "0" }, 250 );
     profile
       .delay(650)
-      .animate({ left: "300" }, 250 )
+      .animate({ left: "350" }, 250 )
       .delay(800)
-      .animate({ left: "0" }, 200 );
+      .animate({ left: "0" }, 250 );
     setTimeout(function() {
       body.removeClass('hide-main');
+    }, 800);
+    setTimeout(function() {
       header.addClass('show-intro');
       logo.removeClass('z');
       profile.addClass('z');
