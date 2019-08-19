@@ -44,7 +44,7 @@ var animateIntro = function() {
     }, 1100);
     setTimeout(function() {
       logo.addClass('finale');
-    }, 2500);
+    }, 1700);
     setTimeout(function() {
       header.addClass('show-intro');
       profile.addClass('z');
