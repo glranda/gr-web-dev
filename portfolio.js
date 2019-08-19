@@ -31,27 +31,27 @@ var animateIntro = function() {
     });
     logo
       .delay(250)
-      .animate({ right: "350" }, 250 )
-      .delay(600)
+      .animate({ right: "350" }, 400 )
+      .delay(1100)
     profile
       .delay(250)
-      .animate({ left: "350" }, 250 )
-      .delay(800)
-      .animate({ left: "0" }, 250 );
+      .animate({ left: "350" }, 400 )
+      .delay(1100)
+      .animate({ left: "0" }, 400 );
     setTimeout(function() {
       body.removeClass('hide-main');
       logo.addClass('finale');
-    }, 1050);
+    }, 1750);
     setTimeout(function() {
       // header.addClass('show-intro');
       // logo.removeClass('z');
       profile.addClass('z');
-    }, 1550);
+    }, 2050);
     setTimeout(function() {
       profile.addClass('finale');
       // intro.addClass('show-intro');
       // brow.addClass('show-under');
-    }, 1600);
+    }, 2100);
   }
 
   function mobileAnimations() {
