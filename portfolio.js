@@ -28,31 +28,30 @@ var animateIntro = function() {
     setTimeout(function() {
       logo.addClass('show');
       profile.addClass('show');
-    }, 50);
+    });
     logo
-      .delay(650)
+      .delay(250)
       .animate({ right: "350" }, 250 )
-      .delay(800)
-      .animate({ right: "0" }, 250 );
+      .delay(600)
     profile
-      .delay(650)
+      .delay(250)
       .animate({ left: "350" }, 250 )
       .delay(800)
       .animate({ left: "0" }, 250 );
     setTimeout(function() {
       body.removeClass('hide-main');
-    }, 800);
+      logo.addClass('finale');
+    }, 600);
     setTimeout(function() {
-      header.addClass('show-intro');
-      logo.removeClass('z');
+      // header.addClass('show-intro');
+      // logo.removeClass('z');
       profile.addClass('z');
     }, 1800);
     setTimeout(function() {
       profile.addClass('finale');
-      logo.addClass('finale');
-      intro.addClass('show-intro');
-      brow.addClass('show-under');
-    }, 1900);
+      // intro.addClass('show-intro');
+      // brow.addClass('show-under');
+    }, 1000);
   }
 
   function mobileAnimations() {
