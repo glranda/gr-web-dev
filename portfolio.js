@@ -37,21 +37,21 @@ var animateIntro = function() {
       .delay(250)
       .animate({ left: "350" }, 400 )
       .delay(1100)
-      .animate({ left: "0" }, 400 );
+      .animate({ left: "0" }, 650 );
     setTimeout(function() {
       body.removeClass('hide-main');
       logo.addClass('finale');
     }, 1750);
     setTimeout(function() {
-      // header.addClass('show-intro');
+      header.addClass('show-intro');
       // logo.removeClass('z');
       profile.addClass('z');
-    }, 2050);
+    }, 2350);
     setTimeout(function() {
       profile.addClass('finale');
-      // intro.addClass('show-intro');
-      // brow.addClass('show-under');
-    }, 2100);
+      intro.addClass('show-intro');
+      brow.addClass('show-under');
+    }, 2400);
   }
 
   function mobileAnimations() {
