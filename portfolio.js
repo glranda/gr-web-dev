@@ -32,7 +32,8 @@ var animateIntro = function() {
     logo
       .delay(250)
       .animate({ right: "350" }, 400 )
-      .delay(1100)
+      .delay(1000)
+      .animate({ right: "0" }, 200 )
     profile
       .delay(250)
       .animate({ left: "350" }, 400 )
@@ -41,17 +42,16 @@ var animateIntro = function() {
     setTimeout(function() {
       body.removeClass('hide-main');
       logo.addClass('finale');
-    }, 1750);
+    }, 1900);
     setTimeout(function() {
       header.addClass('show-intro');
-      // logo.removeClass('z');
       profile.addClass('z');
-    }, 2350);
-    setTimeout(function() {
-      profile.addClass('finale');
-      intro.addClass('show-intro');
-      brow.addClass('show-under');
-    }, 2400);
+    }, 2600);
+    // setTimeout(function() {
+    //   profile.addClass('finale');
+    //   intro.addClass('show-intro');
+    //   brow.addClass('show-under');
+    // }, 2400);
   }
 
   function mobileAnimations() {
