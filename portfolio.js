@@ -5,7 +5,6 @@ var GRAYSON = (function($, GRAYSON) {
 
 $(document).ready(function() {
     $("a").on('click', function(event) {
-
         if (this.hash !== "") {
             event.preventDefault();
             var hash = this.hash;
@@ -18,7 +17,6 @@ $(document).ready(function() {
 });
 
 var animateIntro = function() {
-
   let logo = $( ".my-logo" );
   let profile = $( ".profile" );
   let body = $('body');
@@ -74,7 +72,6 @@ var animateIntro = function() {
   }
 }
 
-
 var init = function() {
   animateIntro();
 };
@@ -82,7 +79,6 @@ var init = function() {
 GRAYSON.scrolling = {
         init: init
     };
-
     return GRAYSON;
 
 }($, GRAYSON || {}));
