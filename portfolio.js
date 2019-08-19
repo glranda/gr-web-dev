@@ -33,7 +33,7 @@ var animateIntro = function() {
       .delay(250)
       .animate({ right: "350" }, 400 )
       .delay(1000)
-      .animate({ right: "0" }, 200 )
+      .animate({ right: "0" }, 300 )
     profile
       .delay(250)
       .animate({ left: "350" }, 400 )
@@ -41,17 +41,19 @@ var animateIntro = function() {
       .animate({ left: "0" }, 650 );
     setTimeout(function() {
       body.removeClass('hide-main');
+    }, 1100);
+    setTimeout(function() {
       logo.addClass('finale');
-    }, 1900);
+    }, 2500);
     setTimeout(function() {
       header.addClass('show-intro');
       profile.addClass('z');
     }, 2600);
-    // setTimeout(function() {
-    //   profile.addClass('finale');
-    //   intro.addClass('show-intro');
-    //   brow.addClass('show-under');
-    // }, 2400);
+    setTimeout(function() {
+      profile.addClass('finale');
+      intro.addClass('show-intro');
+      brow.addClass('show-under');
+    }, 2400);
   }
 
   function mobileAnimations() {
