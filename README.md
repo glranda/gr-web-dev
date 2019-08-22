@@ -12,3 +12,4 @@ It features:
   - CSS3 Pseudo Selectors
   - CSS3 Transitions and Keyframes
   - CSS3 Flex Box
+  - Optimized images
