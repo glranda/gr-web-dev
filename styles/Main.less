@@ -547,9 +547,9 @@ div.su-wrapper , div.wh-wrapper, div.dev-wrapper {
 .image-showcase {
   width: 95%;
   position: relative;
-  height: 28rem;
   margin-bottom: 3rem;
   overflow: hidden;
+  height: 20rem;
   margin: 0 auto;
   display: block;
   .h-images {
@@ -568,13 +568,14 @@ div.su-wrapper , div.wh-wrapper, div.dev-wrapper {
     padding: 10rem 0 5rem;
     margin: 0 auto;
     &:first-child {
-      padding-top: 5.5rem;
+      padding-top: 1.5rem;
       border-top: none;
     }
     &:last-child {
       padding-bottom: 16rem;
       border-top: none;
     }
+    &.mobile { display: none; }
   }
 }
 .h-bottom-content {
@@ -739,12 +740,17 @@ div.su-wrapper , div.wh-wrapper, div.dev-wrapper {
   }
 }
 @media only screen and (min-width: 680px) {
-  .image-showcase img { padding: 3rem 0 5rem; }
+  .image-showcase img {
+    padding: 3rem 0 5rem;
+    &:first-child { padding-top: 5.5rem; }
+    &.mobile { display: block; }
+  }
   .h-bottom-content {
     padding: 3rem 0;
   }
   .image-showcase {
     overflow: scroll;
+    height: 28rem;
   }
 }
 @media only screen and (min-width: 45rem) {
